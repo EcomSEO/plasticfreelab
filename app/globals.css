@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-sage: #7A8B6F;
+  --color-cream: #F4EFE6;
+  --color-forest: #2C3E2F;
+  --color-terracotta: #C97D4F;
+  --color-charcoal: #1F1F1F;
+}
+
+html {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+::selection {
+  background: var(--color-sage);
+  color: var(--color-cream);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.prose p {
+  margin-bottom: 1.1em;
+  line-height: 1.75;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-forest);
+}
+
+.prose h3 {
+  font-size: 1.375rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-forest);
+}
+
+.prose ul, .prose ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+
+.prose a {
+  color: var(--color-sage);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
