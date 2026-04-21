@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { Eyebrow } from "./editorial/Eyebrow";
 
 export function EmailCapture({
   headline = "Get the Kitchen Swap Audit.",
@@ -22,50 +23,98 @@ export function EmailCapture({
     setStatus("ok");
   }
 
-  const wrapper =
-    variant === "end-of-article"
-      ? "my-12 p-8 rounded-lg bg-sage/10 border border-sage/20 text-center"
-      : "my-12 p-8 rounded-lg bg-white/70 border border-forest/10 text-center";
+  const isEnd = variant === "end-of-article";
 
   return (
-    <section id="email-capture" className={wrapper}>
-      <h2 className="font-serif text-2xl text-forest mb-2">{headline}</h2>
-      <p className="text-charcoal/80 max-w-xl mx-auto">{subhead}</p>
-      {status === "ok" ? (
-        <p className="mt-6 text-forest">Thanks — check your inbox.</p>
-      ) : (
-        <form
-          onSubmit={onSubmit}
-          className="mt-6 flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto"
-        >
-          <label htmlFor="email" className="sr-only">
-            Email address
-          </label>
-          <input
-            id="email"
-            type="email"
-            required
-            placeholder="you@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 rounded-md border border-forest/20 px-4 py-3 bg-white"
-          />
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="rounded-md bg-forest px-6 py-3 text-cream hover:bg-sage transition disabled:opacity-50"
-          >
-            {status === "loading" ? "Sending…" : "Send me the audit"}
-          </button>
-        </form>
-      )}
-      <p className="mt-4 text-xs text-charcoal/50 max-w-md mx-auto">
-        By subscribing, you agree to our{" "}
-        <a href="/privacy" className="underline">
-          Privacy Policy
-        </a>
-        . One calm email a week. Unsubscribe anytime.
-      </p>
+    <section
+      id="email-capture"
+      className={`relative ${isEnd ? "my-12" : ""}`}
+    >
+      <div
+        className={`bg-paper border border-forest/15 rounded-sm p-8 md:p-10 shadow-soft ${
+          isEnd ? "" : ""
+        }`}
+      >
+        <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <Eyebrow tone="terracotta">The Kitchen Swap Audit</Eyebrow>
+            <h2 className="font-serif text-[1.7rem] md:text-[2rem] text-forest mt-2 leading-[1.1]">
+              {headline}
+            </h2>
+            <p className="mt-3 text-[15px] text-charcoal/80 max-w-2xl leading-relaxed">
+              {subhead}
+            </p>
+
+            {status === "ok" ? (
+              <p className="mt-6 font-serif text-lg text-forest italic">
+                Thanks — check your inbox. The audit is on its way.
+              </p>
+            ) : (
+              <form
+                onSubmit={onSubmit}
+                className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg"
+              >
+                <label htmlFor="email" className="sr-only">
+                  Email address
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 rounded-sm border border-forest/20 px-4 py-3 bg-cream-deep/40 focus:outline-none focus:border-sage focus:bg-paper transition text-[15px]"
+                />
+                <button
+                  type="submit"
+                  disabled={status === "loading"}
+                  className="btn-primary !py-3 justify-center"
+                >
+                  {status === "loading" ? "Sending…" : "Send me the audit →"}
+                </button>
+              </form>
+            )}
+
+            <p className="mt-4 text-xs text-stone max-w-lg leading-relaxed">
+              By subscribing, you agree to our{" "}
+              <a href="/privacy" className="underline text-forest">
+                Privacy Policy
+              </a>
+              . One calm email a week. Unsubscribe anytime.
+            </p>
+          </div>
+
+          {/* Decorative icon column */}
+          <div className="hidden md:flex flex-col items-center justify-center px-6 py-4 border-l border-forest/10">
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 70 70"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.1"
+              className="text-sage"
+              aria-hidden
+            >
+              <rect x="14" y="10" width="42" height="52" rx="2" />
+              <line x1="22" y1="22" x2="48" y2="22" />
+              <line x1="22" y1="30" x2="48" y2="30" />
+              <line x1="22" y1="38" x2="48" y2="38" />
+              <line x1="22" y1="46" x2="40" y2="46" />
+              <circle cx="18" cy="22" r="1.5" fill="currentColor" />
+              <circle cx="18" cy="30" r="1.5" fill="currentColor" />
+              <circle cx="18" cy="38" r="1.5" fill="currentColor" />
+              <circle cx="18" cy="46" r="1.5" fill="currentColor" />
+            </svg>
+            <div className="mt-4 caps-label text-stone text-center">
+              12 pages
+              <br />
+              50+ items
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

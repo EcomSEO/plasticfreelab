@@ -11,12 +11,14 @@ import { ArticleJsonLd } from "../schema/ArticleJsonLd";
 import { BreadcrumbJsonLd } from "../schema/BreadcrumbJsonLd";
 import { ItemListJsonLd } from "../schema/ItemListJsonLd";
 import { ArticleShell } from "./PageShell";
+import { Eyebrow } from "../editorial/Eyebrow";
+import { DotRule, LabRule } from "../editorial/DotRule";
 
 export function ListicleTemplate({ post }: { post: Post }) {
   const hub = getHub(post.hub);
   const crumbs = [
     { label: "Home", href: "/" },
-    { label: "Guides", href: "/#hubs" },
+    { label: "Guides", href: "/#issue-contents" },
     hub ? { label: hub.name, href: `/guides/${hub.slug}` } : { label: "" },
     { label: post.title },
   ];
@@ -40,37 +42,65 @@ export function ListicleTemplate({ post }: { post: Post }) {
 
       <ArticleShell>
         <Breadcrumbs crumbs={crumbs} />
-        <h1 className="font-serif text-3xl md:text-4xl text-forest mt-4 leading-tight">
-          {post.h1}
-        </h1>
-        <div className="mt-3">
-          <ReviewStamp updatedAt={post.updatedAt} readingTime={post.readingTime} />
+
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Eyebrow tone="terracotta">The Audit</Eyebrow>
+          {hub && (
+            <span className="caps-label text-stone">· {hub.shortName}</span>
+          )}
         </div>
 
-        <p className="mt-6 text-lg text-charcoal/90 leading-relaxed">
+        <h1 className="display-headline text-forest mt-4 text-[2.1rem] md:text-[2.85rem] leading-[1.06]">
+          {post.h1}
+        </h1>
+
+        <div className="mt-5 flex flex-wrap items-center gap-4">
+          <ReviewStamp
+            updatedAt={post.updatedAt}
+            readingTime={post.readingTime}
+          />
+        </div>
+
+        <LabRule className="mt-7" />
+
+        <p className="mt-8 text-[1.08rem] md:text-[1.14rem] leading-[1.65] text-charcoal/90 max-w-[60ch]">
           {post.description}
         </p>
 
-        {post.items && (
-          <ol className="mt-10 space-y-6">
+        {post.items && post.items.length > 0 && (
+          <ol className="mt-12 space-y-0 border-t border-forest/10">
             {post.items.map((item) => (
               <li
                 key={item.rank}
-                className="p-5 rounded-lg border border-forest/10 bg-white/60"
+                className="group grid grid-cols-[auto_1fr] gap-5 md:gap-7 py-7 border-b border-forest/10"
               >
-                <h2 className="font-serif text-xl text-forest">
-                  <span className="text-sage">{item.rank}.</span> {item.name}
-                </h2>
-                <p className="mt-2 text-charcoal/80 text-[15px]">{item.summary}</p>
+                <div className="pt-1">
+                  <span className="rank-numeral">
+                    {String(item.rank).padStart(2, "0")}
+                  </span>
+                </div>
+                <div>
+                  <h2 className="font-serif text-[1.4rem] md:text-[1.55rem] text-forest leading-tight group-hover:text-sage transition">
+                    {item.name}
+                  </h2>
+                  <p className="mt-2.5 text-[15px] text-charcoal/85 leading-relaxed max-w-[62ch]">
+                    {item.summary}
+                  </p>
+                </div>
               </li>
             ))}
           </ol>
         )}
 
+        <DotRule className="my-14" />
+
         <SourcesList sources={post.sources ?? []} />
         <AuthorBio />
         <RelatedPosts posts={related} />
-        <EmailCapture variant="end-of-article" />
+
+        <div className="mt-14">
+          <EmailCapture variant="end-of-article" />
+        </div>
       </ArticleShell>
     </>
   );

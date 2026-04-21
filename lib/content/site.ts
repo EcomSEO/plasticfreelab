@@ -1,10 +1,12 @@
 export const SITE = {
   name: "PlasticFreeLab",
   url: "https://plasticfreelab.com",
-  tagline: "We test the non-toxic swaps so you don't have to.",
+  tagline: "The non-toxic lab for everyday life.",
   description:
-    "Calm, cited, investigative guides to reducing plastic, PFAS, and endocrine disruptors in your home. Tested recommendations, quarterly updates.",
+    "We test the swaps, read the studies, and publish calm, cited guides to microplastics, PFAS, and the household changes actually worth making.",
   author: "The PlasticFreeLab Team",
   email: "hello@plasticfreelab.com",
   launched: false,
+  volume: "Vol. I",
+  issue: "No. 01",
 } as const;
