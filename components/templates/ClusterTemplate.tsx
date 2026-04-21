@@ -3,7 +3,6 @@ import { getHub } from "@/lib/content/hubs";
 import { relatedPosts } from "@/lib/content/posts";
 import { Breadcrumbs } from "../Breadcrumbs";
 import { ReviewStamp } from "../ReviewStamp";
-import { Callout } from "../Callout";
 import { AuthorBio } from "../AuthorBio";
 import { RelatedPosts } from "../RelatedPosts";
 import { SourcesList } from "../SourcesList";
@@ -48,13 +47,21 @@ export function ClusterTemplate({ post }: { post: Post }) {
           {post.description}
         </p>
 
-        <Callout variant="note" title="Status">
-          Stub. The direct-answer paragraph, body, and FAQ land once the draft clears review.
-        </Callout>
-
-        <div className="prose prose-lg mt-8 text-charcoal">
-          <p className="text-charcoal/60 italic">TODO: draft body per brief.</p>
-        </div>
+        {post.faq && post.faq.length > 0 && (
+          <section className="mt-10">
+            <h2 className="font-serif text-2xl text-forest mb-3">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-4">
+              {post.faq.map((f, i) => (
+                <div key={i}>
+                  <h3 className="font-serif text-lg text-forest">{f.q}</h3>
+                  <p className="text-charcoal/80">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <SourcesList sources={post.sources ?? []} />
         <AuthorBio />

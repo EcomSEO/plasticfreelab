@@ -3,3 +3,5 @@ next-env.d.ts
 .turbo
 node_modules
 .env.local
+tsconfig.tsbuildinfo
+.claude/
