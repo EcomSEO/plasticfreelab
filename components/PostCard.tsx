@@ -36,7 +36,7 @@ export function PostCard({ post, variant = "compact" }: { post: Post; variant?: 
       </span>
       <h3 className="font-serif text-lg text-forest mt-2 mb-2 leading-snug">{post.title}</h3>
       <p className="text-sm text-charcoal/70 line-clamp-2">{post.description}</p>
-      <span className="mt-3 inline-block text-xs text-charcoal/50">
+      <span className="mt-3 inline-block text-xs text-stone">
         {post.readingTime} min read
       </span>
     </Link>

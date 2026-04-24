@@ -58,7 +58,7 @@ export default function AffiliateDisclosurePage() {
         hello@plasticfreelab.com.
       </p>
 
-      <p className="text-sm text-charcoal/60">Last updated: April 2026.</p>
+      <p className="text-sm text-stone">Last updated: April 2026.</p>
     </TrustPageTemplate>
   );
 }

@@ -76,7 +76,7 @@ export function Footer() {
               {SITE.volume} · {SITE.issue}
             </span>
           </div>
-          <div className="normal-case tracking-normal text-stone/80 text-xs max-w-xl md:text-right leading-relaxed">
+          <div className="normal-case tracking-normal text-stone text-xs max-w-xl md:text-right leading-relaxed">
             Commissions on some links help fund our testing and never affect our
             rankings. We update comparisons quarterly.
           </div>

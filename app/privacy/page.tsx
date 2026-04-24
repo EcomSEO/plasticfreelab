@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
 export default function PrivacyPage() {
   return (
     <TrustPageTemplate title="Privacy Policy">
-      <p className="text-sm text-charcoal/60">Last updated: April 20, 2026.</p>
+      <p className="text-sm text-stone">Last updated: April 20, 2026.</p>
       <p>
         This Privacy Policy describes how PlasticFreeLab (&ldquo;we,&rdquo;
         &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares

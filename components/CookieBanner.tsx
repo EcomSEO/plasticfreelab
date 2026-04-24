@@ -35,21 +35,23 @@ export function CookieBanner() {
       <p className="text-sm text-charcoal/90">
         We use a small number of cookies for analytics and session continuity.
         No advertising cookies. See our{" "}
-        <a href="/privacy" className="underline">
+        <a href="/privacy" className="underline text-forest hover:text-sage transition-colors">
           Privacy Policy
         </a>
         .
       </p>
       <div className="mt-3 flex gap-2 justify-end">
         <button
+          type="button"
           onClick={() => accept("reject")}
-          className="text-sm px-3 py-2 text-charcoal/70 hover:text-forest"
+          className="cursor-pointer min-h-[44px] text-sm px-3 py-2 rounded-md text-stone hover:text-forest transition-colors"
         >
           Reject
         </button>
         <button
+          type="button"
           onClick={() => accept("accept")}
-          className="text-sm px-3 py-2 rounded-md bg-forest text-cream hover:bg-sage"
+          className="cursor-pointer min-h-[44px] text-sm px-4 py-2 rounded-md bg-forest text-cream hover:bg-sage transition-colors"
         >
           Accept
         </button>

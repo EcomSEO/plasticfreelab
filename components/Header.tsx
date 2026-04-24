@@ -111,8 +111,9 @@ export function Header() {
         </nav>
 
         <button
+          type="button"
           onClick={() => setMobileOpen(true)}
-          className="md:hidden text-forest"
+          className="md:hidden text-forest inline-flex items-center justify-center min-h-[44px] min-w-[44px] -mr-2"
           aria-label="Open menu"
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
@@ -128,9 +129,10 @@ export function Header() {
           <div className="flex items-center justify-between px-6 py-4 border-b border-forest/10">
             <Wordmark size="sm" />
             <button
+              type="button"
               onClick={() => setMobileOpen(false)}
               aria-label="Close menu"
-              className="text-forest"
+              className="text-forest inline-flex items-center justify-center min-h-[44px] min-w-[44px] -mr-2"
             >
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -154,16 +156,16 @@ export function Header() {
               </Link>
             ))}
             <div className="eyebrow text-stone mt-6 mb-2">The masthead</div>
-            <Link href="/about" onClick={() => setMobileOpen(false)} className="py-2 text-lg text-forest">
+            <Link href="/about" onClick={() => setMobileOpen(false)} className="min-h-[44px] flex items-center py-2 text-lg text-forest">
               About
             </Link>
-            <Link href="/editorial-standards" onClick={() => setMobileOpen(false)} className="py-2 text-lg text-forest">
+            <Link href="/editorial-standards" onClick={() => setMobileOpen(false)} className="min-h-[44px] flex items-center py-2 text-lg text-forest">
               Editorial standards
             </Link>
-            <Link href="/newsletter" onClick={() => setMobileOpen(false)} className="py-2 text-lg text-forest">
+            <Link href="/newsletter" onClick={() => setMobileOpen(false)} className="min-h-[44px] flex items-center py-2 text-lg text-forest">
               Newsletter
             </Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)} className="py-2 text-lg text-forest">
+            <Link href="/contact" onClick={() => setMobileOpen(false)} className="min-h-[44px] flex items-center py-2 text-lg text-forest">
               Contact
             </Link>
             <div className="mt-6">

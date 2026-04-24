@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
 export default function TermsPage() {
   return (
     <TrustPageTemplate title="Terms of Service">
-      <p className="text-sm text-charcoal/60">Last updated: April 20, 2026.</p>
+      <p className="text-sm text-stone">Last updated: April 20, 2026.</p>
       <p>
         By accessing plasticfreelab.com (&ldquo;the Site&rdquo;), you agree to
         these Terms. If you don&apos;t agree, don&apos;t use the Site.
