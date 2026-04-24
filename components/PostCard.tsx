@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Post } from "@/lib/content/posts";
 import { getHub } from "@/lib/content/hubs";
+import { Byline } from "./editorial/Monogram";
 
 const typeLabel: Record<Post["postType"], string> = {
   pillar: "Guide",
@@ -22,7 +23,9 @@ export function PostCard({ post, variant = "compact" }: { post: Post; variant?: 
         </span>
         <h3 className="font-serif text-2xl text-forest mt-2 mb-3">{post.title}</h3>
         <p className="text-charcoal/80 text-[15px] leading-relaxed">{post.description}</p>
-        <span className="mt-4 inline-block text-sage text-sm">Read the full comparison →</span>
+        <div className="mt-4">
+          <Byline readingTime={post.readingTime} />
+        </div>
       </Link>
     );
   }
@@ -36,9 +39,9 @@ export function PostCard({ post, variant = "compact" }: { post: Post; variant?: 
       </span>
       <h3 className="font-serif text-lg text-forest mt-2 mb-2 leading-snug">{post.title}</h3>
       <p className="text-sm text-charcoal/70 line-clamp-2">{post.description}</p>
-      <span className="mt-3 inline-block text-xs text-stone">
-        {post.readingTime} min read
-      </span>
+      <div className="mt-3">
+        <Byline readingTime={post.readingTime} compact />
+      </div>
     </Link>
   );
 }

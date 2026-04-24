@@ -7,6 +7,14 @@ import { RankNumeral } from "@/components/editorial/RankNumeral";
 import { EmailCapture } from "@/components/EmailCapture";
 import { HeroMasthead } from "@/components/HeroMasthead";
 import { PinnedInvestigation } from "@/components/PinnedInvestigation";
+import { IssueBanner } from "@/components/editorial/IssueBanner";
+import { SignatureDivider } from "@/components/editorial/SignatureDivider";
+import { MagazineGrid } from "@/components/MagazineGrid";
+import { InvestigationTiles } from "@/components/InvestigationTiles";
+import { EditorialBoard } from "@/components/EditorialBoard";
+import { LabNotebook } from "@/components/LabNotebook";
+import { BackToMasthead } from "@/components/BackToMasthead";
+import { Byline } from "@/components/editorial/Monogram";
 
 const typeLabel: Record<string, string> = {
   pillar: "The Guide",
@@ -20,6 +28,7 @@ export default function HomePage() {
   const recent = latestPosts(6);
   const comparisons = posts.filter((p) => p.postType === "comparison").slice(0, 3);
   const explainers = posts.filter((p) => p.postType === "cluster").slice(0, 3);
+  const pillars = posts.filter((p) => p.postType === "pillar").slice(0, 3);
 
   const issueItems = [
     featured,
@@ -29,8 +38,38 @@ export default function HomePage() {
     .filter((p): p is NonNullable<typeof p> => Boolean(p))
     .map((p) => ({ post: p, hub: getHub(p.hub) }));
 
+  // ---- Magazine grid slots ------------------------------------------------
+  // Left: the featured investigation (falls back to first comparison).
+  const magFeaturedPost = featured ?? comparisons[0] ?? posts[0]!;
+  const magFeatured = { post: magFeaturedPost, hub: getHub(magFeaturedPost.hub) };
+
+  // Center: a vertical list of 7 headlines covering a mix of pillars +
+  // comparisons + clusters, excluding whatever sits in the featured slot.
+  const seen = new Set<string>([magFeaturedPost.slug]);
+  const mixed: Array<{ post: (typeof posts)[number]; hub: ReturnType<typeof getHub> }> = [];
+  const pushUnique = (pool: typeof posts) => {
+    for (const p of pool) {
+      if (seen.has(p.slug)) continue;
+      mixed.push({ post: p, hub: getHub(p.hub) });
+      seen.add(p.slug);
+      if (mixed.length >= 7) return;
+    }
+  };
+  pushUnique(pillars);
+  pushUnique(comparisons);
+  pushUnique(explainers);
+  pushUnique(posts); // fill remainder in declared order
+
+  const magHeadlines = mixed.slice(0, 7);
+
+  // Right: 3 "currently testing" cards.
+  const testingPool = posts.filter((p) => !seen.has(p.slug));
+  const magTesting = (testingPool.length >= 3 ? testingPool : posts)
+    .slice(0, 3)
+    .map((p) => ({ post: p, hub: getHub(p.hub) }));
+
   return (
-    <main>
+    <main className="home-warmshift">
       {/* === HERO: extreme editorial masthead ===
           Fluid-scale (clamp) Fraunces headline with an enlarged
           Instrument Serif italic "quietly" as the signature moment.
@@ -38,6 +77,19 @@ export default function HomePage() {
           rule in the left gutter. Floating footnote in the right
           gutter (≥lg). Staggered post-intro cascade. */}
       <HeroMasthead issueItems={issueItems} />
+
+      {/* === ISSUE BANNER — thin sage strip below the masthead === */}
+      <IssueBanner />
+
+      {/* === MAGAZINE GRID — density below the hero === */}
+      <MagazineGrid
+        featured={magFeatured}
+        headlines={magHeadlines}
+        testing={magTesting}
+      />
+
+      {/* === SHOP THE INVESTIGATIONS — 4-up category row === */}
+      <InvestigationTiles />
 
       {/* === FEATURED INVESTIGATION — pinned, scroll-narrated ===
           The signature scroll moment: headline & three claims pin
@@ -47,6 +99,11 @@ export default function HomePage() {
       {featured && (
         <PinnedInvestigation post={featured} hub={getHub(featured.hub)} />
       )}
+
+      {/* === SIGNATURE DIVIDER === */}
+      <div className="mx-auto max-w-6xl px-6">
+        <SignatureDivider label="— § —" />
+      </div>
 
       {/* === THE FIVE HUBS — editorial index === */}
       <section id="issue-contents" className="border-b border-forest/10" data-reveal>
@@ -96,6 +153,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* === EDITORIAL BOARD — trust signal === */}
+      <EditorialBoard />
+
+      {/* === LAB NOTEBOOK — Q&A dialogue block === */}
+      <LabNotebook />
+
       {/* === LATEST — editorial two-column with choreographed hover === */}
       <section className="border-b border-forest/10" data-reveal>
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
@@ -138,8 +201,8 @@ export default function HomePage() {
                   <p className="mt-3 text-charcoal/80 text-[15.5px] leading-relaxed line-clamp-3">
                     {recent[0].description}
                   </p>
-                  <div className="mt-4 caps-label text-stone">
-                    {getHub(recent[0].hub)?.shortName} · {recent[0].readingTime} min read
+                  <div className="mt-4">
+                    <Byline readingTime={recent[0].readingTime} />
                   </div>
                 </Link>
               </article>
@@ -162,13 +225,8 @@ export default function HomePage() {
                   <p className="mt-1.5 text-[13.5px] text-charcoal/70 leading-snug line-clamp-2">
                     {p.description}
                   </p>
-                  <div className="mt-2 post-card-edit__read">
-                    <span className="post-card-edit__read-min">
-                      {p.readingTime} MIN
-                    </span>
-                    <span className="post-card-edit__read-full">
-                      {p.readingTime}:00 READ
-                    </span>
+                  <div className="mt-2">
+                    <Byline readingTime={p.readingTime} compact />
                   </div>
                 </Link>
               ))}
@@ -255,6 +313,9 @@ export default function HomePage() {
                   <p className="text-sm text-charcoal/75 mt-2 leading-relaxed line-clamp-3">
                     {p.description}
                   </p>
+                  <div className="mt-4">
+                    <Byline readingTime={p.readingTime} compact />
+                  </div>
                 </Link>
               ))}
             </div>
@@ -289,6 +350,9 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* === BACK-TO-MASTHEAD FAB === */}
+      <BackToMasthead />
     </main>
   );
 }
