@@ -23,24 +23,32 @@ export default function HomePage() {
   return (
     <main>
       {/* === HERO: editorial front page === */}
-      <section className="border-b border-forest/10">
+      <section className="hero-light border-b border-forest/10">
         <div className="mx-auto max-w-6xl px-6 pt-14 md:pt-20 pb-14 md:pb-20">
           <div className="grid md:grid-cols-12 gap-10 items-start">
-            <div className="md:col-span-8 fade-up">
-              <Eyebrow tone="terracotta">
-                Issue No. 01 &nbsp;·&nbsp; The Launch Edition
-              </Eyebrow>
+            <div className="md:col-span-8">
+              <div className="stagger-1">
+                <Eyebrow tone="terracotta">
+                  Issue No. 01 &nbsp;·&nbsp; The Launch Edition
+                </Eyebrow>
+              </div>
               <h1 className="display-headline text-forest mt-5 text-[2.75rem] sm:text-5xl md:text-[4.25rem] leading-[1.02]">
-                Calm, cited guides to the things <br className="hidden md:inline" />
-                <em className="not-italic text-terracotta">quietly</em> leaching
-                into your house.
+                <span className="stagger-2 block">
+                  Calm, cited guides to the things
+                </span>
+                <span className="stagger-3 block">
+                  <em className="not-italic text-terracotta quiet-accent">
+                    quietly
+                  </em>{" "}
+                  leaching into your house.
+                </span>
               </h1>
-              <p className="mt-7 text-lg md:text-xl text-charcoal/85 max-w-2xl leading-[1.55]">
+              <p className="stagger-4 mt-7 text-lg md:text-xl text-charcoal/85 max-w-2xl leading-[1.55]">
                 PlasticFreeLab reads the studies, tests the swaps, and publishes
                 what we'd tell a friend — with sources. No scolding, no
                 lifestyle pastel, no "10 shocking toxins" fear bait.
               </p>
-              <div className="mt-9 flex flex-wrap gap-3">
+              <div className="stagger-5 mt-9 flex flex-wrap gap-3">
                 <Link href="/guides/non-toxic-kitchen" className="btn-primary">
                   Start with the kitchen
                   <span aria-hidden>→</span>
@@ -51,9 +59,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Editorial "in this issue" sidebar */}
-            <aside className="md:col-span-4 md:pl-8 md:border-l md:border-forest/10 fade-up-delay-1">
-              <div className="eyebrow text-stone mb-4">In this issue</div>
+            {/* Editorial "in this issue" sidebar — items walk down one by one */}
+            <aside className="md:col-span-4 md:pl-8 md:border-l md:border-forest/10">
+              <div className="eyebrow text-stone mb-4 stagger-3">
+                In this issue
+              </div>
               <ul className="space-y-4">
                 {[featured, ...comparisons.filter((c) => c.slug !== featured?.slug)]
                   .slice(0, 4)
@@ -61,7 +71,7 @@ export default function HomePage() {
                   .map((p, i) => {
                     const hub = getHub(p.hub);
                     return (
-                      <li key={p.slug} className="flex gap-3">
+                      <li key={p.slug} className="issue-item flex gap-3">
                         <span className="rank-numeral !text-xl !text-sage/50 tnum shrink-0">
                           {String(i + 1).padStart(2, "0")}
                         </span>
@@ -87,7 +97,7 @@ export default function HomePage() {
 
       {/* === FEATURED INVESTIGATION === */}
       {featured && (
-        <section className="border-b border-forest/10 bg-cream-deep/30">
+        <section className="border-b border-forest/10 bg-cream-deep/30" data-reveal>
           <div className="mx-auto max-w-6xl px-6 py-14 md:py-20">
             <div className="grid md:grid-cols-12 gap-10 items-start">
               <div className="md:col-span-5">
@@ -139,7 +149,7 @@ export default function HomePage() {
       )}
 
       {/* === THE FIVE HUBS — editorial index === */}
-      <section id="issue-contents" className="border-b border-forest/10">
+      <section id="issue-contents" className="border-b border-forest/10" data-reveal>
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
           <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
@@ -183,7 +193,7 @@ export default function HomePage() {
       </section>
 
       {/* === LATEST — two-column editorial === */}
-      <section className="border-b border-forest/10">
+      <section className="border-b border-forest/10" data-reveal>
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
           <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
@@ -258,7 +268,7 @@ export default function HomePage() {
       </section>
 
       {/* === THE CREDO — what we stand for === */}
-      <section className="border-b border-forest/10 bg-forest text-cream relative overflow-hidden">
+      <section className="border-b border-forest/10 bg-forest text-cream relative overflow-hidden" data-reveal>
         <div className="mx-auto max-w-5xl px-6 py-20 md:py-28 relative">
           <div className="absolute top-8 left-6 right-6">
             <LabRule className="text-sage-light" />
@@ -309,7 +319,7 @@ export default function HomePage() {
 
       {/* === EXPLAINERS === */}
       {explainers.length > 0 && (
-        <section className="border-b border-forest/10">
+        <section className="border-b border-forest/10" data-reveal>
           <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
             <div className="flex items-end justify-between mb-8 flex-wrap gap-3">
               <div>
@@ -341,7 +351,7 @@ export default function HomePage() {
       )}
 
       {/* === NEWSLETTER === */}
-      <section className="bg-cream-deep/60 border-b border-forest/10">
+      <section className="bg-cream-deep/60 border-b border-forest/10" data-reveal>
         <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
           <div className="text-center mb-8">
             <Eyebrow tone="terracotta">The Dispatch</Eyebrow>
@@ -359,9 +369,9 @@ export default function HomePage() {
       </section>
 
       {/* === CLOSING DATELINE === */}
-      <section>
+      <section data-reveal>
         <div className="mx-auto max-w-6xl px-6 py-10">
-          <DotRule />
+          <DotRule className="rule-draw" />
           <p className="text-center caps-label text-stone mt-6">
             Last updated · {new Date().toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })}
           </p>

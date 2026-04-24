@@ -15,13 +15,42 @@
   --color-terracotta-deep: #A35E36;
   --color-charcoal: #1F1F1F;
   --color-stone: #6B6B68;
+
+  /* Reading progress — updated by ReadingProgress client component */
+  --reading-progress: 0;
+
+  /* Easing tokens */
+  --ease-soft: cubic-bezier(0.32, 0.72, 0.25, 1);
+  --ease-paper: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 html {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   scroll-behavior: smooth;
   font-feature-settings: "ss01", "cv11";
+
+  /* Firefox custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-forest) rgba(122, 139, 111, 0.12);
 }
+
+/* Webkit custom scrollbar — thin, letterpress-register look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(122, 139, 111, 0.08);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage);
+  border-radius: 0;
+  border: 2px solid var(--color-paper);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-forest);
+}
+::-webkit-scrollbar-corner { background: transparent; }
 
 body {
   background-color: var(--color-paper);
@@ -33,7 +62,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
   line-height: 1.65;
+  position: relative;
 }
+
+/* ---------- Paper-texture atmospheric grain ----------
+   Fixed-position inline SVG noise. ~4% opacity. Makes the cream
+   feel like actual paper. Does not hurt contrast — sits behind
+   content via z-index. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.173 0 0 0 0 0.243 0 0 0 0 0.184 0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+}
+
+/* Ensure layout siblings sit above grain */
+body > * { position: relative; z-index: 1; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Fraunces", "Source Serif 4", Georgia, serif;
@@ -43,9 +92,16 @@ h1, h2, h3, h4, h5 {
   color: var(--color-forest);
 }
 
+/* ---------- Custom selection — terracotta on cream ---------- */
 ::selection {
-  background: var(--color-sage);
+  background: var(--color-terracotta);
   color: var(--color-cream);
+  text-shadow: none;
+}
+::-moz-selection {
+  background: var(--color-terracotta);
+  color: var(--color-cream);
+  text-shadow: none;
 }
 
 /* Editorial utilities */
@@ -125,7 +181,7 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
 }
 
-/* Drop cap — opens long-form articles like a magazine */
+/* ---------- Drop cap with subtle hover shimmer ---------- */
 .drop-cap::first-letter {
   font-family: "Fraunces", serif;
   font-weight: 600;
@@ -135,12 +191,19 @@ h1, h2, h3, h4, h5 {
   margin: 0.12em 0.09em 0 0;
   color: var(--color-forest);
   font-variation-settings: "opsz" 144;
+  transition: color 0.6s var(--ease-soft);
+}
+.drop-cap:hover::first-letter {
+  color: var(--color-terracotta);
 }
 
 /* Tabular numerals for specs / ranks */
 .tnum { font-variant-numeric: tabular-nums; }
 
-/* Large rank numeral used on ranked lists */
+/* ---------- Rank numeral with hover promotion ----------
+   Hover-linked: in .group contexts we lift from 0.98→1 and fade
+   terracotta → forest, suggesting "clicking through will load
+   issue N." At rest and outside .group, the numeral stays as-is. */
 .rank-numeral {
   font-family: "Fraunces", serif;
   font-variation-settings: "opsz" 144;
@@ -149,6 +212,18 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
   color: var(--color-sage);
   font-variant-numeric: tabular-nums;
+  display: inline-block;
+  transition:
+    color 0.5s var(--ease-soft),
+    transform 0.5s var(--ease-soft);
+  transform-origin: left top;
+}
+.group .rank-numeral {
+  transform: scale(0.98);
+}
+.group:hover .rank-numeral {
+  color: var(--color-forest);
+  transform: scale(1);
 }
 
 /* Prose (long-form article body) */
@@ -235,7 +310,7 @@ h1, h2, h3, h4, h5 {
   border: 0;
 }
 
-/* Subtle grain for papers feel — kept very light so body text stays crisp */
+/* Subtle grain for paper feel — kept very light so body text stays crisp */
 .paper-texture {
   background-color: var(--color-paper);
   background-image:
@@ -248,11 +323,38 @@ h1, h2, h3, h4, h5 {
     );
 }
 
-/* Hover underline for nav links */
+/* ---------- Hero gradient mesh: afternoon light through a window ---------- */
+.hero-light {
+  position: relative;
+  isolation: isolate;
+}
+.hero-light::before {
+  content: "";
+  position: absolute;
+  inset: -10% -5% -20% -5%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 38% at 18% 12%, rgba(168, 182, 158, 0.32) 0%, transparent 70%),
+    radial-gradient(36% 32% at 82% 24%, rgba(201, 125, 79, 0.18) 0%, transparent 72%),
+    radial-gradient(50% 45% at 65% 85%, rgba(44, 62, 47, 0.07) 0%, transparent 75%),
+    conic-gradient(from 215deg at 30% 30%, rgba(122, 139, 111, 0.0) 0deg, rgba(122, 139, 111, 0.09) 90deg, rgba(201, 125, 79, 0.06) 200deg, rgba(122, 139, 111, 0.0) 360deg);
+  filter: blur(2px);
+  opacity: 0.85;
+  animation: heroDrift 22s var(--ease-soft) infinite alternate;
+}
+
+@keyframes heroDrift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(-1.5%, 0.8%, 0) scale(1.02); }
+}
+
+/* ---------- Nav link — stroke draws from left ---------- */
 .nav-link {
   position: relative;
   color: var(--color-forest);
   transition: color 0.15s ease;
+  padding-left: 0;
 }
 
 .nav-link::after {
@@ -264,13 +366,63 @@ h1, h2, h3, h4, h5 {
   height: 1.5px;
   background: var(--color-sage);
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.2s ease;
+  transform-origin: left center;
+  transition: transform 0.45s var(--ease-paper);
 }
 
 .nav-link:hover::after,
 .nav-link[aria-current="page"]::after {
   transform: scaleX(1);
+}
+
+/* Current-page sage dot (left of label) */
+.nav-link[aria-current="page"] {
+  padding-left: 0.85rem;
+}
+.nav-link[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-sage);
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 3px rgba(122, 139, 111, 0.15);
+  animation: dotPulse 3.2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(122, 139, 111, 0.15); }
+  50%      { box-shadow: 0 0 0 5px rgba(122, 139, 111, 0.05); }
+}
+
+/* ---------- Reading progress bar (sage line at masthead bottom) ---------- */
+.reading-progress {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+  overflow: hidden;
+}
+.reading-progress::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-sage) 0%,
+    var(--color-forest) 50%,
+    var(--color-terracotta) 100%
+  );
+  transform-origin: left center;
+  transform: scaleX(calc(var(--reading-progress, 0) * 1));
+  transition: transform 60ms linear;
 }
 
 /* Button styles — editorial, not SaaS */
@@ -285,11 +437,17 @@ h1, h2, h3, h4, h5 {
   font-size: 0.9375rem;
   letter-spacing: 0.01em;
   border-radius: 2px;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.1s var(--ease-paper), box-shadow 0.2s ease;
 }
 
 .btn-primary:hover {
   background: var(--color-forest-deep);
+}
+
+/* Printing-press press animation */
+.btn-primary:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
 }
 
 .btn-secondary {
@@ -303,12 +461,29 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
   font-size: 0.9375rem;
   border-radius: 2px;
-  transition: background 0.15s ease;
+  transition: background 0.15s ease, transform 0.1s var(--ease-paper);
 }
 
 .btn-secondary:hover {
   background: var(--color-forest);
   color: var(--color-cream);
+}
+.btn-secondary:active { transform: translateY(1px); }
+
+/* ---------- Form inputs — warm sage focus glow ---------- */
+.field-input {
+  transition:
+    border-color 0.2s var(--ease-soft),
+    background-color 0.2s var(--ease-soft),
+    box-shadow 0.3s var(--ease-soft);
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-sage);
+  background-color: var(--color-paper);
+  box-shadow:
+    0 0 0 3px rgba(122, 139, 111, 0.22),
+    inset 0 1px 0 rgba(44, 62, 47, 0.04);
 }
 
 /* Tier badge used on ranked products */
@@ -342,12 +517,177 @@ h1, h2, h3, h4, h5 {
 .tier-badge-skip { background: #6B6B68; }
 .tier-badge-skip::before { background: #F4EFE6; }
 
-/* Animation — subtle fade-in for hero */
+/* ---------- Animations ---------- */
+
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.fade-up { animation: fadeUp 0.6s ease-out both; }
-.fade-up-delay-1 { animation: fadeUp 0.6s ease-out 0.1s both; }
-.fade-up-delay-2 { animation: fadeUp 0.6s ease-out 0.2s both; }
+@keyframes drawLine {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.7; }
+  50%      { opacity: 1; }
+}
+
+@keyframes stampIn {
+  0%   { opacity: 0; transform: translate(-50%, -50%) rotate(-6deg) scale(1.18); }
+  70%  { opacity: 0.55; transform: translate(-50%, -50%) rotate(-8deg) scale(0.96); }
+  100% { opacity: 0.35; transform: translate(-50%, -50%) rotate(-7deg) scale(1); }
+}
+
+.fade-up { animation: fadeUp 0.7s var(--ease-soft) both; }
+.fade-up-delay-1 { animation: fadeUp 0.7s var(--ease-soft) 0.1s both; }
+.fade-up-delay-2 { animation: fadeUp 0.7s var(--ease-soft) 0.2s both; }
+
+/* Staggered home-page reveals — eyebrow → headline → quiet moment →
+   body → CTAs → sidebar items */
+.stagger-1 { animation: fadeUp 0.7s var(--ease-soft) 0.05s both; }
+.stagger-2 { animation: fadeUp 0.7s var(--ease-soft) 0.18s both; }
+.stagger-3 { animation: fadeUp 0.7s var(--ease-soft) 0.34s both; }
+.stagger-4 { animation: fadeUp 0.7s var(--ease-soft) 0.48s both; }
+.stagger-5 { animation: fadeUp 0.7s var(--ease-soft) 0.62s both; }
+.stagger-6 { animation: fadeUp 0.7s var(--ease-soft) 0.78s both; }
+
+/* "Quietly" word gets a gentle italic rise */
+.quiet-accent {
+  display: inline-block;
+  animation: fadeUp 0.9s var(--ease-paper) 0.42s both;
+}
+
+/* Issue-list stagger — walks down the sidebar */
+.issue-item { animation: fadeUp 0.65s var(--ease-soft) both; opacity: 0; }
+.issue-item:nth-child(1) { animation-delay: 0.55s; }
+.issue-item:nth-child(2) { animation-delay: 0.70s; }
+.issue-item:nth-child(3) { animation-delay: 0.85s; }
+.issue-item:nth-child(4) { animation-delay: 1.00s; }
+
+/* ---------- Scroll-triggered reveal ----------
+   Elements marked [data-reveal] start hidden; the ScrollReveal client
+   component adds [data-reveal="in"] when they enter the viewport. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.9s var(--ease-paper),
+    transform 0.9s var(--ease-paper);
+  will-change: opacity, transform;
+}
+[data-reveal="in"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Native scroll-driven animations for browsers that support them */
+@supports (animation-timeline: view()) {
+  .reveal-native {
+    animation: fadeUp 1s var(--ease-paper) both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+  }
+}
+
+/* ---------- Decorative rule draw-in ---------- */
+.rule-draw {
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 1.2s var(--ease-paper);
+}
+[data-reveal="in"] .rule-draw,
+.rule-draw[data-reveal="in"] {
+  transform: scaleX(1);
+}
+
+/* Also support native scroll-driven where available */
+@supports (animation-timeline: view()) {
+  .rule-draw-native {
+    animation: drawLine 1.4s var(--ease-paper) both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+    transform-origin: left center;
+  }
+}
+
+/* ---------- PostCard / HubCard micro-motion ----------
+   A hairline underline draws 0→100% in sage on hover,
+   and the card shifts a pixel up — "lifted off the stack." */
+.card-editorial {
+  position: relative;
+  transition:
+    transform 0.4s var(--ease-paper),
+    border-color 0.25s ease,
+    box-shadow 0.4s var(--ease-paper);
+}
+.card-editorial::after {
+  content: "";
+  position: absolute;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 0;
+  height: 1.5px;
+  background: var(--color-sage);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.55s var(--ease-paper);
+  pointer-events: none;
+}
+.card-editorial:hover {
+  transform: translateY(-2px);
+  border-color: rgba(122, 139, 111, 0.55);
+}
+.card-editorial:hover::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Footer imprint — letterpress registration mark ---------- */
+.imprint-pulse {
+  animation: breathe 6s ease-in-out infinite;
+}
+
+/* ---------- 404 missing-page stamp ---------- */
+.missing-stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg);
+  animation: stampIn 1.4s var(--ease-paper) 0.4s both;
+  pointer-events: none;
+}
+
+/* ---------- Reduced motion: the kill switch ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .hero-light::before { animation: none; }
+  .imprint-pulse { animation: none; opacity: 0.9; }
+  .nav-link[aria-current="page"]::before { animation: none; }
+  .missing-stamp { animation: none; transform: translate(-50%, -50%) rotate(-7deg); opacity: 0.35; }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .fade-up, .fade-up-delay-1, .fade-up-delay-2,
+  .stagger-1, .stagger-2, .stagger-3, .stagger-4, .stagger-5, .stagger-6,
+  .quiet-accent, .issue-item {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .rule-draw, .rule-draw-native { transform: scaleX(1) !important; }
+  .card-editorial:hover { transform: none; }
+  .rank-numeral, .group:hover .rank-numeral { transform: none; }
+}

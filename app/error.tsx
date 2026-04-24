@@ -33,8 +33,8 @@ export default function Error({
             the front page and the rest of the site should still behave.
           </p>
 
-          <div className="mt-10">
-            <DotRule />
+          <div className="mt-10" data-reveal>
+            <DotRule className="rule-draw" />
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">

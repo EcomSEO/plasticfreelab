@@ -14,8 +14,71 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <main>
-      <section className="border-b border-forest/10">
-        <div className="mx-auto max-w-4xl px-6 pt-16 md:pt-24 pb-16 md:pb-20">
+      <section className="relative border-b border-forest/10 overflow-hidden">
+        {/* "NOT ON FILE" stamp — pure SVG, no JS, decorative */}
+        <div className="missing-stamp hidden md:block" aria-hidden>
+          <svg
+            width="280"
+            height="280"
+            viewBox="0 0 280 280"
+            fill="none"
+            className="text-terracotta/70"
+          >
+            <circle
+              cx="140"
+              cy="140"
+              r="120"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeDasharray="3 5"
+            />
+            <circle
+              cx="140"
+              cy="140"
+              r="102"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+            <text
+              x="140"
+              y="125"
+              textAnchor="middle"
+              fontFamily="Fraunces, serif"
+              fontSize="28"
+              fontWeight="600"
+              letterSpacing="4"
+              fill="currentColor"
+            >
+              NOT ON
+            </text>
+            <text
+              x="140"
+              y="165"
+              textAnchor="middle"
+              fontFamily="Fraunces, serif"
+              fontSize="28"
+              fontWeight="600"
+              letterSpacing="4"
+              fill="currentColor"
+            >
+              FILE
+            </text>
+            <text
+              x="140"
+              y="200"
+              textAnchor="middle"
+              fontFamily="Inter, sans-serif"
+              fontSize="9"
+              letterSpacing="3"
+              fill="currentColor"
+              opacity="0.7"
+            >
+              · PLASTICFREELAB ARCHIVE ·
+            </text>
+          </svg>
+        </div>
+
+        <div className="relative mx-auto max-w-4xl px-6 pt-16 md:pt-24 pb-16 md:pb-20">
           <Eyebrow tone="terracotta">404 &middot; Not on file</Eyebrow>
           <h1 className="display-headline text-forest mt-5 text-[2.5rem] sm:text-5xl md:text-[3.75rem] leading-[1.04]">
             We couldn&apos;t find that page.
@@ -34,8 +97,8 @@ export default function NotFound() {
             </p>
           </div>
 
-          <div className="mt-10">
-            <DotRule />
+          <div className="mt-10" data-reveal>
+            <DotRule className="rule-draw" />
           </div>
 
           <div className="mt-10">

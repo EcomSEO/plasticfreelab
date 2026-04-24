@@ -69,7 +69,12 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <span>©&nbsp;{new Date().getFullYear()} PlasticFreeLab</span>
             <span aria-hidden className="text-sage/50">·</span>
-            <span>{SITE.volume} · {SITE.issue}</span>
+            <span
+              className="imprint-pulse"
+              title="Registered volume & issue"
+            >
+              {SITE.volume} · {SITE.issue}
+            </span>
           </div>
           <div className="normal-case tracking-normal text-stone/80 text-xs max-w-xl md:text-right leading-relaxed">
             Commissions on some links help fund our testing and never affect our

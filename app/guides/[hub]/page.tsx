@@ -101,7 +101,9 @@ export default async function HubPage({
               </div>
             </div>
 
-            <LabRule className="mt-14" />
+            <div data-reveal className="mt-14">
+              <LabRule className="rule-draw" />
+            </div>
           </div>
         </section>
 
@@ -253,8 +255,8 @@ export default async function HubPage({
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 py-10">
-          <DotRule />
+        <section className="mx-auto max-w-6xl px-6 py-10" data-reveal>
+          <DotRule className="rule-draw" />
         </section>
       </main>
     </>

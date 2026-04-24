@@ -2,34 +2,47 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { hubs } from "@/lib/content/hubs";
 import { Wordmark } from "./editorial/Wordmark";
 import { Dateline } from "./editorial/Dateline";
+import { ReadingProgress } from "./ReadingProgress";
 
 export function Header() {
   const [guidesOpen, setGuidesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isCurrent = (href: string) => {
+    if (!pathname) return false;
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(href + "/");
+  };
+  const curr = (href: string) =>
+    isCurrent(href) ? { "aria-current": "page" as const } : {};
 
   return (
     <header className="bg-paper/95 backdrop-blur sticky top-0 z-40 border-b border-forest/10">
       {/* Masthead strip — newspaper/editorial cue */}
-      <div className="border-b border-forest/10 hidden md:block">
+      <div className="relative border-b border-forest/10 hidden md:block">
         <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between">
           <Dateline />
           <div className="flex items-center gap-5 text-[11px] tracking-[0.14em] uppercase text-stone">
-            <Link href="/editorial-standards" className="nav-link">
+            <Link href="/editorial-standards" className="nav-link" {...curr("/editorial-standards")}>
               Editorial standards
             </Link>
             <span aria-hidden className="text-sage/50">·</span>
-            <Link href="/about" className="nav-link">
+            <Link href="/about" className="nav-link" {...curr("/about")}>
               About
             </Link>
             <span aria-hidden className="text-sage/50">·</span>
-            <Link href="/contact" className="nav-link">
+            <Link href="/contact" className="nav-link" {...curr("/contact")}>
               Contact
             </Link>
           </div>
         </div>
+        {/* Reading progress — very thin sage→forest→terracotta line that
+            fills as the reader scrolls the page. The signature micro-interaction. */}
+        <ReadingProgress />
       </div>
 
       {/* Main bar */}
@@ -47,6 +60,7 @@ export function Header() {
               className="nav-link flex items-center gap-1"
               aria-expanded={guidesOpen}
               aria-haspopup="menu"
+              {...(pathname?.startsWith("/guides") ? { "aria-current": "page" as const } : {})}
             >
               Guides
               <span aria-hidden className="text-sage">▾</span>
@@ -82,10 +96,10 @@ export function Header() {
               </div>
             )}
           </div>
-          <Link href="/guides/non-toxic-kitchen" className="nav-link">
+          <Link href="/guides/non-toxic-kitchen" className="nav-link" {...curr("/guides/non-toxic-kitchen")}>
             Kitchen
           </Link>
-          <Link href="/newsletter" className="nav-link">
+          <Link href="/newsletter" className="nav-link" {...curr("/newsletter")}>
             Newsletter
           </Link>
           <Link

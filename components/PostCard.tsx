@@ -15,7 +15,7 @@ export function PostCard({ post, variant = "compact" }: { post: Post; variant?: 
     return (
       <Link
         href={`/${post.slug}`}
-        className="block p-8 bg-white/70 border border-forest/10 rounded-lg hover:border-sage transition"
+        className="card-editorial block p-8 bg-white/70 border border-forest/10 rounded-lg"
       >
         <span className="text-xs uppercase tracking-wide text-sage">
           {hub?.shortName} · {typeLabel[post.postType]}
@@ -29,7 +29,7 @@ export function PostCard({ post, variant = "compact" }: { post: Post; variant?: 
   return (
     <Link
       href={`/${post.slug}`}
-      className="block p-5 bg-white/60 border border-forest/10 rounded-lg hover:border-sage transition"
+      className="card-editorial block p-5 bg-white/60 border border-forest/10 rounded-lg"
     >
       <span className="text-xs uppercase tracking-wide text-sage">
         {hub?.shortName} · {typeLabel[post.postType]}
