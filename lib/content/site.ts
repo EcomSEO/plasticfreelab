@@ -6,7 +6,7 @@ export const SITE = {
     "We test the swaps, read the studies, and publish calm, cited guides to microplastics, PFAS, and the household changes actually worth making.",
   author: "The PlasticFreeLab Team",
   email: "hello@plasticfreelab.com",
-  launched: false,
+  launched: true,
   volume: "Vol. I",
   issue: "No. 01",
 } as const;
