@@ -1,6 +1,6 @@
 # Project Notes — 7-Site Health Information Network
 
-Last updated: 2026-04-24 — **ALL 7 SITES REDESIGNED, POLISHED, AUDITED, INDEXABLE, DEPLOYED**
+Last updated: 2026-04-24 — **ALL 7 SITES: DESIGN + POLISH + AUDIT + MOTION + INDEXABLE + DEPLOYED**
 
 ## Network overview
 
@@ -262,6 +262,51 @@ Notable landmines avoided (reported by agents):
 ### Nano Banana API (kie.ai) — tested, then gated
 - Confirmed POST `https://api.kie.ai/api/v1/jobs/createTask` + GET `/api/v1/jobs/recordInfo?taskId=…` works with the `KIE_AI_API_KEY`. Generated a test illustration for plasticfreelab (1344×768 PNG, on-brand sage-botanical).
 - **Did not deploy** — CLAUDE.md rule: "Do not commit binary files (images go to Supabase CDN when that's wired)." Test image deleted locally. Blocked until Supabase is set up or the rule is explicitly waived.
+
+## What we shipped in pass 4 (frontend-design skill)
+
+Applied the `frontend-design` skill (source: `~/Downloads/SKILL (11).md`) to all 7 sites in parallel. Each agent kept the brand-book-locked palette/typography but layered in atmosphere, motion, and a signature micro-interaction.
+
+**Signature moment per site** (the "one thing someone will remember"):
+
+| Site | Signature |
+|---|---|
+| plasticfreelab | Sage→forest→terracotta reading-progress line in the masthead, plus paper-grain overlay + gradient-mesh drift behind hero |
+| peptips | Warm gradient-mesh hero + `FieldRule` dot-traces-along-line (nurse's pen stroke); Cormorant Garamond italic pull-quotes |
+| circadianstack | Live `Protocol Log · HH:MM:SS · UTC` in masthead + chronotype phase-dot cycling amber/zenith/ember by local hour + LuxBadge count-up from 0 |
+| injectcompass | TechniqueCard step-draw-in animation + custom clinical-blue crosshair cursor on hero + Wordmark crosshair 90° calibration rotation on load |
+| larderlab | SystemsTable row-hover copper `·` specimen dot + minute-ticking `Spec Revision` clock in masthead + 56px engineering blueprint grid |
+| pepvise | Oxblood drop-cap scales 5.5rem→4.6rem on pillar openings + EvidenceLedger tier-chips stagger-pulse on reveal + parchment-noise texture |
+| thatcleanchef | NutritionLedger numeric count-up (calories + protein + macros tick from 0 to USDA value on first viewport entry) + ScaleButton value-animation + photo-slot gradient wave |
+
+**Shared primitives added to every site:**
+- Custom `::selection` in brand accent
+- Thin custom scrollbar in brand colors
+- Reading-progress hairline pinned to masthead bottom
+- Staggered page-load reveal on hero (eyebrow → headline → CTAs → sidebar sequenced)
+- Scroll-triggered section fades via IntersectionObserver + `animation-timeline: view()` progressive enhancement
+- `DotRule` / `LabRule` / `SpecRule` / `FieldRule` / `KitchenRule` / `LedgerRule` draw-in animation on scroll
+- Nav-link underline stroke-from-left + current-page brand-accent dot prefix
+- EmailCapture focus glow + brand-accent bottom border draw + 1px press on active
+- 404 page signature flourish (archival stamp / breathing dot / signal-lost pulse / redacted-quote / spec-not-found log line / kitchen improvising)
+- Full `@media (prefers-reduced-motion: reduce)` kill-switch on every keyframe
+
+**New components across network:**
+- `ReadingProgress` / `ReadingProgressBar` — rAF-driven scroll-progress bar
+- `ScrollReveal` / `Reveal` — IntersectionObserver one-shot fade-up wrapper
+- Per-site atmosphere components: `PaperGrain`, `GradientMesh`, `Starfield`, `Aurora`, `Atmosphere`
+- circadianstack: `ProtocolLog` (live ticker), `ChronotypeDot`, `PhaseResponseCurve` SVG, `FooterTelemetry`, `LuxBadge` count-up
+- larderlab: `SpecRevisionClock`
+- peptips: `OpeningParagraph`, `AnimatedFieldRule`, `LiveMonth`
+- pepvise: `Cite` (CSS-only footnote popover)
+- thatcleanchef: `CountUp`, `AnimatedNumber`
+
+**Verification:**
+- All 7 typecheck clean, build clean
+- All 7 live at stable aliases, HTTP 200
+- HTML contains expected `reveal` + `progress` hooks on every homepage
+- Vendor URL grep (injectcompass + pepvise): 0 matches
+- Reduced-motion support verified by inspection in each agent's CSS
 
 ## What's next
 
