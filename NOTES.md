@@ -308,6 +308,45 @@ Applied the `frontend-design` skill (source: `~/Downloads/SKILL (11).md`) to all
 - Vendor URL grep (injectcompass + pepvise): 0 matches
 - Reduced-motion support verified by inspection in each agent's CSS
 
+## What we shipped in pass 5 (humanizer + brand marks)
+
+### Humanizer skill applied to all 7 sites
+Source: `~/Documents/Claude/skills/humanizer-main/SKILL.md` (based on Wikipedia WikiProject AI Cleanup's "Signs of AI writing" guide, 24 patterns).
+
+7 parallel agents each read their brand book + all content + page copy, scrubbed AI writing patterns while preserving every citation and medical-legal framing. Biggest wins by site:
+
+| Site | Primary AI-tell killed | Count |
+|---|---|---|
+| peptips | Em-dash overuse in `posts.ts` | 429 → 5 |
+| plasticfreelab | Em-dash overuse in `posts.ts` + trust pages | 117 → 47 (rest preserved in source labels) |
+| circadianstack | Em-dashes in prose + negative parallelisms | 25 + 3 fixes |
+| injectcompass | Copula avoidance + vague passives | 19 total edits |
+| larderlab | Rule-of-three cute copy | 7 edits (content was already tight) |
+| pepvise | Abstract "landscape" noun + promotional adjectives | 3 targeted rewrites (content was already literary) |
+| thatcleanchef | Rule-of-three + copula avoidance | 3 edits (content was already chef-register) |
+
+Zero violations found across the network for: AI stock vocab (crucial/delve/pivotal/testament/etc.), promotional language ("nestled"/"breathtaking"), superficial -ing phrases, false ranges, vague attributions, sycophantic tone, curly quotes in prose, emojis, knowledge-cutoff disclaimers. Citation URLs, trial names, FDA labels, tiers, prices, brand names — all preserved untouched.
+
+### Professional SVG brand marks, hand-designed per site
+Nano Banana attempt: credits depleted after my earlier test image. **Pivoted to hand-crafted SVG marks** — which for a production web brand is actually superior to raster T2I logos (crisp at any size, scalable, exact brand hex values, tiny file size).
+
+Each site gets a custom SVG at `public/brand/mark.svg`, wired into the `Wordmark` component (rendered alongside the text wordmark, scales with size prop):
+
+| Site | Mark concept | File size |
+|---|---|---|
+| plasticfreelab | Abstract botanical leaf with stem and terracotta accent dot, sage hairlines | 672 B |
+| peptips | Pine crescent + sage inner crescent + coral cap dot (medical-friendly) | 479 B |
+| circadianstack | Dawn crescent on midnight disc + zenith + ember accent dots | 573 B |
+| injectcompass | Precise crosshair/compass-rose in clinical blue, concentric rings | 797 B |
+| larderlab | Nested copper hexagons with edge-struts + specimen center dot | 934 B |
+| pepvise | Oxblood peptide ribbon swirl + inknavy shadow ribbon | 502 B |
+| thatcleanchef | Sprig of three sage-herb leaves on a stem + terracotta dot | 595 B |
+
+All scalable SVG, all brand-accurate hex values, all deployed and serving live.
+
+### Heads-up on credits
+- `KIE_AI_API_KEY` account ran out of credits after first test image. **Top up at kie.ai if you want to use Nano Banana later** (for OG photography, author portraits, recipe photos, editorial spot art). Hand-crafted SVG marks cover the brand-identity layer without needing it.
+
 ## What's next
 
 ### 1. User review
