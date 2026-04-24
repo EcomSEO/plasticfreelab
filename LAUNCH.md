@@ -21,29 +21,59 @@ Do each site end-to-end before moving to the next, so you can catch any weirdnes
 
 ### Step 1 — Connect custom domain to Vercel
 
-For each site, from that site's repo:
+**STATUS (2026-04-24): All 14 domains already added to their Vercel projects via API.** You don't need to `vercel domains add` again. See `Step 1b` for the DNS change still needed.
+
+The domains added, all verified=true at Vercel:
+
+| Site | Apex + www | Project |
+|---|---|---|
+| plasticfreelab | plasticfreelab.com + www | `prj_WZqmwpwzi83MTotFjoy6ztWUvO0G` |
+| peptips | peptips.com + www | `prj_4YbdsL4qYedZe5MtVyeAlkfq5RKY` |
+| circadianstack | circadianstack.com + www | `prj_RQ6iwMRHif9Uw0OPahdOeXUvpKjF` |
+| injectcompass | injectcompass.com + www | `prj_DzhouyAK10A63IEqHECqULdRvhax` |
+| larderlab | larderlab.com + www | `prj_5LLbzpeGwrhGEc4ixJntysPE9F7f` |
+| pepvise | pepvise.com + www | `prj_VvSJPRqDdNuNCAkBMCitLkefmBRX` |
+| thatcleanchef | thatcleanchef.com + www | `prj_2cRQMPyo7yJuOhbFziT0bANJUNB7` |
+
+### Step 1b — DNS: change the 7 domains at GoDaddy from parked → Vercel
+
+Confirmed state:
+- All 7 domains are registered at **GoDaddy** (nameservers = `ns*.domaincontrol.com`)
+- All currently parked on AWS (`3.33.130.190`, `15.197.148.33` — GoDaddy's default parking)
+- All need to point to Vercel's edge: `76.76.21.21` (apex) + `cname.vercel-dns.com` (www)
+
+**GoDaddy clickpath (same for all 7 domains):**
+
+1. Log in to https://dcc.godaddy.com/ → My Products → Domains → click the domain
+2. Go to DNS → Manage Zones (or the "DNS Records" tab)
+3. **Delete the two existing A records** pointing to `3.33.130.190` and `15.197.148.33` (parking)
+4. **Add one new A record:**
+   - Type: `A`
+   - Name: `@`
+   - Value: `76.76.21.21`
+   - TTL: 600 seconds (or lowest available)
+5. **Update the `www` CNAME:**
+   - Type: `CNAME`
+   - Name: `www`
+   - Value: `cname.vercel-dns.com`
+   - TTL: 600 seconds
+6. Save. Propagation is 5–60 min.
+
+Do this for each of the 7 domains. Confirm with:
 
 ```bash
-cd ~/Developer/active/plasticfreelab-standalone   # (example)
-export VERCEL_TOKEN="vcp_..."
-CLAUDECODE=0 npx vercel@latest domains add plasticfreelab.com --token $VERCEL_TOKEN
-CLAUDECODE=0 npx vercel@latest domains add www.plasticfreelab.com --token $VERCEL_TOKEN
+dig +short plasticfreelab.com A
+# expect: 76.76.21.21
+
+dig +short www.plasticfreelab.com CNAME
+# expect: cname.vercel-dns.com.
 ```
 
-Vercel will output the DNS records you need to add at your registrar — usually:
-- An `A` record pointing `plasticfreelab.com` → `76.76.21.21`
-- A `CNAME` record pointing `www.plasticfreelab.com` → `cname.vercel-dns.com.`
+Once DNS is correct, Vercel auto-provisions the Let's Encrypt cert (2–15 min) and the domain goes live.
 
-Add these at your registrar. Propagation is usually 5–60 min.
+**Alternative (faster, one-time):** Change the nameservers to Vercel's (`ns1.vercel-dns.com`, `ns2.vercel-dns.com`) via GoDaddy → Domain → Nameservers → "Use custom nameservers." Then Vercel manages DNS entirely and the above A/CNAME work happens automatically. Downside: you lose any non-Vercel DNS records (MX for email, etc.). Only use this path if you don't have email or other services on these domains yet.
 
-Repeat for all 7:
-- `plasticfreelab.com`
-- `peptips.com`
-- `circadianstack.com`
-- `injectcompass.com`
-- `larderlab.com`
-- `pepvise.com`
-- `thatcleanchef.com`
+**Fastest for you if you want me to do it:** give me a GoDaddy API key + secret (https://developer.godaddy.com/keys) and I'll batch-update all 7 domains' DNS in one call. Otherwise the clickpath above takes ~5 min per domain × 7 = ~35 min manual.
 
 ### Step 2 — Verify HTTPS + Vercel confirms domain
 
