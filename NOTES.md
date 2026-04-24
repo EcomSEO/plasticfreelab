@@ -1,6 +1,6 @@
 # Project Notes — 7-Site Health Information Network
 
-Last updated: 2026-04-24 — **ALL 7 SITES REDESIGNED + DEPLOYED**
+Last updated: 2026-04-24 — **ALL 7 SITES REDESIGNED, POLISHED, AUDITED, INDEXABLE, DEPLOYED**
 
 ## Network overview
 
@@ -214,17 +214,70 @@ Each site's home page, hubs, and article templates render unique palettes and co
 
 ---
 
+## What we shipped in pass 2 (polish + indexing)
+
+7 parallel polish agents, one per site. Each site got:
+- `app/not-found.tsx` — editorial 404 in brand voice with 5-hub fallback index
+- `app/error.tsx` — client error boundary with brand-voice copy + `reset()` retry
+- `app/icon.tsx` — 32×32 dynamic favicon via `next/og` ImageResponse (brand serif letter on brand background)
+- `app/apple-icon.tsx` — 180×180 apple-touch icon with wordmark-style composition
+- `app/opengraph-image.tsx` — 1200×630 dynamic OG image with wordmark + tagline + dateline (medical disclaimer line on peptips/injectcompass/pepvise)
+- `app/twitter-image.tsx` — Twitter card (re-exports OG image)
+- `SITE.launched: false → true` — unblocks robots.txt + `robots: { index: true, follow: true }`
+
+**Verification matrix (all 7 sites, all green):**
+
+```
+SITE             HOME    /robots.txt       /icon  /apple  /og-image   /404  /sitemap
+plasticfreelab   200     Allow: /           200   200     image/png   404   200
+peptips          200     Allow: /           200   200     image/png   404   200
+circadianstack   200     Allow: /           200   200     image/png   404   200
+injectcompass    200     Allow: /           200   200     image/png   404   200
+larderlab        200     Allow: /           200   200     image/png   404   200
+pepvise          200     Allow: /           200   200     image/png   404   200
+thatcleanchef    200     Allow: /           200   200     image/png   404   200
+```
+
+Every site is now indexable, OG-shareable, 404-styled, favicon-branded.
+
+Notable landmines avoided (reported by agents):
+- `@vercel/og` Satori parser chokes on multi-stop radial gradients in inline `background:` shorthand → agents refactored to flat fills or split backgroundImage layers.
+- `export { runtime } from "./opengraph-image"` in twitter-image.tsx breaks Next.js static route-segment-config analyzer → agents declared `runtime = "edge"` as string literal and called the OG default function directly.
+- One thatcleanchef GitHub→Vercel webhook miss → resolved with empty-commit nudge; now building at sha dc72e8b8.
+
+## What we shipped in pass 3 (content + quality audit)
+
+### Content
+- Resolved all **10 `[VERIFY]` flags** across peptips (1), circadianstack (5), larderlab (4). Citations, manufacturer specs, and price dates normalized.
+- peptips Trommelen 2023 citation now points to the correct PubMed entry (38118410).
+
+### Quality audit — all 7 sites pass
+- **JSON-LD schema**: Article + FAQPage + BreadcrumbList + Organization on every site. ItemList on comparison pages. Recipe + NutritionInformation + HowToStep on thatcleanchef. 3 scripts per sample page, all types valid.
+- **Cross-network leakage**: 0 references to any other network site in any `posts.ts` (grep-verified across all 7). Operator-footprint clean.
+- **Sitemaps**: 23 URLs consistently (5 hubs + 12 posts + 6 trust pages). Confirmed over the wire.
+- **llms.txt**: all 7 serve with proper `# SiteName` header for AI-crawler consumption.
+- **Vendor URL check (injectcompass + pepvise)**: 0 matches for `aminoasylum|limitlesslife|peptidesciences|pepsci|puritansource|researchpeptides`. Legal rail holds.
+- **Sample-post render**: all 7 return HTTP 200 with 75–112 kB page sizes, TTFB 0.13–1.5s (cold-start dependent).
+
+### Nano Banana API (kie.ai) — tested, then gated
+- Confirmed POST `https://api.kie.ai/api/v1/jobs/createTask` + GET `/api/v1/jobs/recordInfo?taskId=…` works with the `KIE_AI_API_KEY`. Generated a test illustration for plasticfreelab (1344×768 PNG, on-brand sage-botanical).
+- **Did not deploy** — CLAUDE.md rule: "Do not commit binary files (images go to Supabase CDN when that's wired)." Test image deleted locally. Blocked until Supabase is set up or the rule is explicitly waived.
+
 ## What's next
 
 ### 1. User review
 Open each URL. If anything needs tuning on a specific site, name it + the site and I'll apply targeted fixes. The design systems are now locked per brand — tweaks, not rebuilds.
 
-### 2. Launch gates still to clear (per `docs/site-spec.md` §Launch checklist, all 7 sites)
-- [ ] Flip `SITE.launched` from `false` → `true` in `lib/content/site.ts` (currently robots.txt blocks all crawl)
-- [ ] Connect custom domains via Vercel → DNS: `plasticfreelab.com`, `peptips.com`, `circadianstack.com`, `injectcompass.com`, `larderlab.com`, `pepvise.com`, `thatcleanchef.com`
-- [ ] Search Console + Bing Webmaster Tools property verification per site
+### 2. Launch gates still to clear (manual — require human or domain ownership)
+- [x] ~~Flip `SITE.launched`~~ — **DONE pass 2, all 7 sites**
+- [x] ~~Cross-network leakage check~~ — **DONE pass 3, all 7 clean**
+- [x] ~~Content [VERIFY] pass~~ — **DONE pass 3, 10 flags resolved**
+- [x] ~~JSON-LD schema audit~~ — **DONE pass 3, all types valid**
+- [ ] Connect custom domains via Vercel → DNS: `plasticfreelab.com`, `peptips.com`, `circadianstack.com`, `injectcompass.com`, `larderlab.com`, `pepvise.com`, `thatcleanchef.com` (requires you to own domains and update DNS)
+- [ ] Search Console + Bing Webmaster Tools property verification per site (requires your Google/Microsoft account)
 - [ ] Submit sitemaps, submit first 10 URLs each for indexing
 - [ ] Vercel SSO/Deployment Protection confirmed OFF (done earlier; verify still off after re-deploys)
+- [ ] Wire Supabase Storage (needs your Supabase project + key) — unblocks Nano Banana hero images + author headshots + OG photography
 
 ### 3. Content-gap items flagged by content agents (pre-this-pass)
 - `[VERIFY]` tags on prices across several sites — need one pass to check prices against current Amazon/retailer data
