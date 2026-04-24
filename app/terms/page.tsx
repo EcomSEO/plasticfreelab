@@ -31,8 +31,8 @@ export default function TermsPage() {
         condition.
       </p>
       <p>
-        Always consult a qualified professional — a physician, pediatrician,
-        environmental health specialist — before making decisions based on
+        Always consult a qualified professional (a physician, pediatrician,
+        environmental health specialist) before making decisions based on
         content you read here, especially regarding pregnancy, infants, medical
         conditions, or regulatory compliance.
       </p>
@@ -56,7 +56,7 @@ export default function TermsPage() {
 
       <h2>4. Intellectual property</h2>
       <p>
-        All content on the Site — text, images, logos, design — is owned by
+        All content on the Site (text, images, logos, design) is owned by
         PlasticFreeLab or licensed to us. You may share excerpts with
         attribution. You may not republish articles in full, train AI models
         on our content at scale, or use our name or brand in a way that

@@ -14,9 +14,9 @@ export default function AboutPage() {
     <TrustPageTemplate title="About PlasticFreeLab">
       <p>PlasticFreeLab exists because the information about non-toxic living is a mess.</p>
       <p>
-        Some of it is real — peer-reviewed science on microplastics, PFAS, and
+        Some of it is real: peer-reviewed science on microplastics, PFAS, and
         endocrine disruptors, moving faster than most people realize. Some of
-        it is garbage — wellness influencers with a supplement line to sell,
+        it is garbage: wellness influencers with a supplement line to sell,
         scaring their audience about something that isn&apos;t actually a problem.
         A lot of it is somewhere in between, from well-meaning writers who
         didn&apos;t have time to read the studies.
@@ -36,8 +36,8 @@ export default function AboutPage() {
           that we evaluated it from research. We don&apos;t blur the line.
         </li>
         <li>
-          <strong>We cite.</strong> Every health claim has a source you can check
-          — a peer-reviewed paper, a regulatory document, a manufacturer
+          <strong>We cite.</strong> Every health claim has a source you can check:
+          a peer-reviewed paper, a regulatory document, a manufacturer
           disclosure. No &ldquo;studies show.&rdquo; No &ldquo;experts say.&rdquo;
         </li>
         <li>

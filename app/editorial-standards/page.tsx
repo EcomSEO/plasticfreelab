@@ -30,7 +30,7 @@ export default function EditorialStandardsPage() {
       </ul>
       <p>
         For any significant health claim, we require <strong>two</strong> independent
-        sources — one peer-reviewed study and one regulatory or industry
+        sources: one peer-reviewed study and one regulatory or industry
         reference. When the science is genuinely mixed, we say so in the text.
         We don&apos;t pretend to have certainty we don&apos;t have.
       </p>
@@ -55,7 +55,7 @@ export default function EditorialStandardsPage() {
       <h2>Rankings</h2>
       <p>
         Every comparison page on this site commits to a #1 pick. When we update
-        a page — quarterly, at minimum — and our pick changes, we note the
+        a page (quarterly, at minimum) and our pick changes, we note the
         change at the top of the post and keep an archive of the previous
         ranking.
       </p>
@@ -88,7 +88,7 @@ export default function EditorialStandardsPage() {
 
       <h2>AI and our editorial process</h2>
       <p>
-        We use AI tools — including large language models — in parts of our
+        We use AI tools, including large language models, in parts of our
         editorial workflow: research synthesis, draft generation, grammar
         checks, and formatting. Every post on this site is reviewed,
         fact-checked, and edited by a human before publication. No post is

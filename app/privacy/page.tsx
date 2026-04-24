@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         location, or any data that directly identifies you.
       </p>
       <p>
-        <strong>Cookies:</strong> We use a small number of cookies — one for
+        <strong>Cookies:</strong> We use a small number of cookies: one for
         session continuity, one for analytics, and (where applicable) one to
         remember your cookie consent choice. We do not use third-party
         advertising cookies.
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
       <p>
         We protect your information with standard industry safeguards,
         including encryption in transit (HTTPS) and access controls on our
-        databases. No system is perfectly secure — if a breach occurs, we will
+        databases. No system is perfectly secure. If a breach occurs, we will
         notify affected users consistent with applicable law.
       </p>
 

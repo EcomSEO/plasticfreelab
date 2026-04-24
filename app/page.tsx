@@ -45,7 +45,7 @@ export default function HomePage() {
               </h1>
               <p className="stagger-4 mt-7 text-lg md:text-xl text-charcoal/85 max-w-2xl leading-[1.55]">
                 PlasticFreeLab reads the studies, tests the swaps, and publishes
-                what we'd tell a friend — with sources. No scolding, no
+                what we'd tell a friend, with sources. No scolding, no
                 lifestyle pastel, no "10 shocking toxins" fear bait.
               </p>
               <div className="stagger-5 mt-9 flex flex-wrap gap-3">
@@ -106,7 +106,7 @@ export default function HomePage() {
                   The one we're pushing this month.
                 </h2>
                 <p className="mt-5 text-charcoal/75 text-[15px] leading-relaxed">
-                  Every month we anchor one long read — the post that took real
+                  Every month we anchor one long read: the post that took real
                   testing, real reading, and a willingness to name names. This
                   one has been on our lab bench for six weeks.
                 </p>
@@ -293,7 +293,7 @@ export default function HomePage() {
               <h3 className="font-serif text-xl text-cream mb-2">Methodology, open.</h3>
               <p className="text-cream/80 text-[14.5px] leading-relaxed">
                 Every comparison explains how we picked, what we verified, and
-                who disagrees with us — and why.
+                who disagrees with us, and why.
               </p>
             </div>
             <div>

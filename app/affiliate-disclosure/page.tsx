@@ -30,7 +30,7 @@ export default function AffiliateDisclosurePage() {
       <p>
         When we have a choice between two genuinely-tied products, and one has
         an affiliate program and one doesn&apos;t, we go with the one that&apos;s
-        actually better — and we&apos;ll tell you about the one without the link in
+        actually better, and we&apos;ll tell you about the one without the link in
         the post.
       </p>
 

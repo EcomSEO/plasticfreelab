@@ -16,7 +16,7 @@ export default function NewsletterPage() {
         One calm email a week.
       </h1>
       <p className="mt-6 text-lg text-charcoal/80 leading-relaxed">
-        A single useful thing — the most important post we published, the
+        A single useful thing: the most important post we published, the
         swap we&apos;d make first, or a study we read so you don&apos;t have to. No
         upsells, no affiliate spam, no 4,000-word emails.
       </p>
