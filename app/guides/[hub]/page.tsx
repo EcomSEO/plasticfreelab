@@ -79,7 +79,7 @@ export default async function HubPage({
                 <h1 className="display-headline text-forest mt-3 text-[2.5rem] md:text-[3.6rem] leading-[1.02]">
                   {hub.name}
                 </h1>
-                <p className="mt-6 font-serif italic text-xl md:text-2xl text-charcoal/80 max-w-2xl leading-[1.4]">
+                <p className="mt-6 font-instrument italic text-2xl md:text-[1.8rem] text-charcoal/85 max-w-2xl leading-[1.35]">
                   {hub.oneLiner}
                 </p>
               </div>

@@ -82,6 +82,14 @@ export function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Signature bleed type — "plasticfreelab" clipping off the bottom */}
+      <div className="footer-bleed" aria-hidden>
+        <div className="footer-bleed__type">
+          plastic<span className="footer-bleed__type-accent">free</span>lab
+          <span className="footer-bleed__type-dot" />
+        </div>
+      </div>
     </footer>
   );
 }
