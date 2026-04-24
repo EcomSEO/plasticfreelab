@@ -347,6 +347,49 @@ All scalable SVG, all brand-accurate hex values, all deployed and serving live.
 ### Heads-up on credits
 - `KIE_AI_API_KEY` account ran out of credits after first test image. **Top up at kie.ai if you want to use Nano Banana later** (for OG photography, author portraits, recipe photos, editorial spot art). Hand-crafted SVG marks cover the brand-identity layer without needing it.
 
+## What we shipped in pass 6 (ui-ux-pro-max audit)
+
+Source: `~/.claude/skills/ui-ux-pro-max/SKILL.md` (installed via `npx claude-code-templates@latest --skill creative-design/ui-ux-pro-max`).
+
+7 parallel agents ran the skill's Pre-Delivery Checklist against each site and shipped concrete a11y + interaction fixes. No redesigns — palette and typography stayed locked.
+
+### Network-wide adds (all 7 sites)
+- **Global `:focus-visible` ring** on every interactive element (`a`, `button`, `[role=button]`, `summary`, form controls, `[tabindex]`). Ring color = site's primary accent. Offset 2px. Respects `:focus-visible` (mouse clicks don't show the ring).
+- **`cursor: pointer`** enforced globally on `a[href]`, `button:not(:disabled)`, `[role=button]`, `summary`; `cursor: not-allowed` on disabled.
+- **44×44 touch targets** on mobile nav, hamburger/close, CookieBanner buttons, `.btn-primary`/`.btn-secondary`, CTA links.
+- **`aria-label` / `role="dialog"`** on mobile menus; Escape-to-close + body-scroll-lock added where missing.
+- **Decorative `<img>` / `photo-slot`** marked `aria-hidden` / `role="presentation"`; meaningful placeholders get `role="img"` + descriptive `aria-label`.
+- **Reduced-motion** compliance reconfirmed across all new animation surfaces.
+
+### Site-specific highlights
+| Site | Concrete fixes |
+|---|---|
+| plasticfreelab | Global focus ring (sage), lifted `text-charcoal/60` → `text-stone` on trust pages, mobile nav 44px, cursor-pointer on all controls |
+| peptips | `text-sage` body links → `text-pine` (was 2.5:1, now 10:1), MedicalDisclaimerStrip gets `role="note"`, scroll-margin-top: 140px for in-page anchors (clears disclaimer + masthead), SVG chevron replaces text `▾` |
+| circadianstack | Dark-mode focus ring (amber on midnight), EmailCapture end-variant visibility fix, Escape-key dropdown close, animate-pulse added to reduced-motion cut list, `viewport` + `themeColor=#0B1929` export added to layout |
+| injectcompass | PeptideCalculator wrapped in `<form>` + `<fieldset>` + `<legend>`, outputs as `<dl>` with `aria-live="polite"`, warnings as `role="alert"`, `useId` for label/input wiring, mobile menu dialog with `aria-modal` |
+| larderlab | **Copper audit**: copper body text (3.4:1, fails AA) → `copper-deep` (5.1:1) or `text-ink + decoration-copper`. Copper retained only for non-text accents (≥3:1 threshold for UI components). MacroCalculator labels wired with `htmlFor`/`id`, kg/lb as proper `role="radiogroup"`, SystemsTable sort buttons with `aria-sort` + descriptive `aria-label` |
+| pepvise | **TierBadge rewritten** so color is not sole indicator — each tier now has a distinct `::before` shape (solid/half/ring/dashed-hollow/slash) + `aria-label` + `sr-only` prefix. Cite footnote popover keyboard-reachable on mobile (was `display:none`), replaced with `opacity:0 / pointer-events:none` |
+| thatcleanchef | `.scale-btn` bumped to 44×44 with pressed-state focus ring in cream-on-terracotta, photo-slots marked `aria-hidden` (decorative) or `role="img" + aria-label` (meaningful placeholders), ScaleButton's terracotta contrast audited |
+
+### Network-wide contrast audit (AA pass)
+| Site | Worst remaining | Status |
+|---|---|---|
+| plasticfreelab | Body charcoal on cream: 14.4:1 | AAA |
+| peptips | Body charcoal on cream: 14.4:1; pine links: 10:1 | AAA |
+| circadianstack | Paper on midnight: 13:1; amber on midnight: 9.8:1 | AAA |
+| injectcompass | Clinical on paper: 7.2:1 | AAA |
+| larderlab | Copper-deep on paper: 5.1:1; ink on paper: 13.1:1 | AA (copper) / AAA (ink) |
+| pepvise | Oxblood on bone: 7.5:1; inknavy on bone: 12:1 | AAA |
+| thatcleanchef | Cream on terracotta button: 5.8:1; charcoal on cream: 12:1 | AA (button) / AAA (body) |
+
+### Verification
+- All 7 typecheck + build clean
+- All 7 deployed and serving 200
+- Vendor URL grep (injectcompass + pepvise): 0 matches
+- Medical disclaimers preserved
+- Reduced-motion respected
+
 ## What's next
 
 ### 1. User review
