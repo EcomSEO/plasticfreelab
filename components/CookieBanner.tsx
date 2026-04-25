@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const STORAGE_KEY = "pfl:cookie-consent";
 
 export function CookieBanner() {
+  const t = useTranslations("cookieBanner");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -33,12 +35,11 @@ export function CookieBanner() {
       className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-sm z-50 bg-cream border border-forest/20 rounded-lg shadow-lg p-4"
     >
       <p className="text-sm text-charcoal/90">
-        We use a small number of cookies for analytics and session continuity.
-        No advertising cookies. See our{" "}
+        {t("body.before")}{" "}
         <a href="/privacy" className="underline text-forest hover:text-sage transition-colors">
-          Privacy Policy
+          {t("body.privacyLink")}
         </a>
-        .
+        {t("body.after")}
       </p>
       <div className="mt-3 flex gap-2 justify-end">
         <button
@@ -46,14 +47,14 @@ export function CookieBanner() {
           onClick={() => accept("reject")}
           className="cursor-pointer min-h-[44px] text-sm px-3 py-2 rounded-md text-stone hover:text-forest transition-colors"
         >
-          Reject
+          {t("reject")}
         </button>
         <button
           type="button"
           onClick={() => accept("accept")}
           className="cursor-pointer min-h-[44px] text-sm px-4 py-2 rounded-md bg-forest text-cream hover:bg-sage transition-colors"
         >
-          Accept
+          {t("accept")}
         </button>
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 /**
  * BackToMasthead — floating circular return-to-hero control.
@@ -8,6 +9,7 @@ import { useEffect, useState } from "react";
  * Respects prefers-reduced-motion.
  */
 export function BackToMasthead() {
+  const t = useTranslations("common");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -30,7 +32,7 @@ export function BackToMasthead() {
     <button
       type="button"
       onClick={onClick}
-      aria-label="Back to masthead"
+      aria-label={t("backToMasthead")}
       className={`back-to-masthead ${visible ? "is-visible" : ""}`}
     >
       <span aria-hidden>↑</span>

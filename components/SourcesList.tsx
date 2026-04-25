@@ -1,16 +1,18 @@
+import { getTranslations } from "next-intl/server";
 import { Eyebrow } from "./editorial/Eyebrow";
 
-export function SourcesList({
+export async function SourcesList({
   sources,
 }: {
   sources: Array<{ label: string; url: string }>;
 }) {
   if (!sources || sources.length === 0) return null;
+  const t = await getTranslations("sources");
   return (
     <section className="mt-14 pt-8 border-t border-forest/15">
-      <Eyebrow tone="stone">References</Eyebrow>
+      <Eyebrow tone="stone">{t("eyebrow")}</Eyebrow>
       <h2 className="font-serif text-2xl text-forest mt-2 mb-5 leading-tight">
-        Sources we cited on this page.
+        {t("title")}
       </h2>
       <ol className="space-y-3 text-[14px] text-charcoal/85">
         {sources.map((s, i) => (

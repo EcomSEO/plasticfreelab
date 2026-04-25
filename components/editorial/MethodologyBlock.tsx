@@ -1,46 +1,36 @@
+import { getTranslations } from "next-intl/server";
+
 type Item = { label: string; detail: string };
 
-const defaultItems: Item[] = [
-  {
-    label: "What we picked for",
-    detail:
-      "Disclosed materials, third-party certification, durability in real cooking, independent contamination testing where available.",
-  },
-  {
-    label: "How we evaluated",
-    detail:
-      "Manufacturer disclosures, regulatory filings, peer-reviewed papers, and hands-on wear-testing. We read the labels and the filings, not the press releases.",
-  },
-  {
-    label: "Who disagrees with us",
-    detail:
-      "We steel-man the opposing view in every comparison, and name the brand we almost picked and the reason we didn't.",
-  },
-  {
-    label: "What would change our mind",
-    detail:
-      "New independent lab testing, reformulation by a ranked brand, or a peer-reviewed finding that contradicts our current reasoning.",
-  },
-];
+const KEYS = ["picked", "evaluated", "disagrees", "changeMind"] as const;
 
-export function MethodologyBlock({
-  items = defaultItems,
-  title = "How this comparison was made",
+export async function MethodologyBlock({
+  items,
+  title,
 }: {
   items?: Item[];
   title?: string;
-}) {
+} = {}) {
+  const t = await getTranslations("methodology");
+  const titleText = title ?? t("title");
+  const resolvedItems: Item[] =
+    items ??
+    KEYS.map((k) => ({
+      label: t(`items.${k}.label` as const),
+      detail: t(`items.${k}.detail` as const),
+    }));
+
   return (
     <section className="my-12 bg-cream-deep/40 border border-forest/10 rounded-sm p-7 md:p-9">
       <div className="flex items-center gap-3 mb-5">
         <span className="h-2 w-2 rounded-full bg-sage" />
-        <span className="caps-label text-forest">Methodology</span>
+        <span className="caps-label text-forest">{t("label")}</span>
       </div>
       <h2 className="font-serif text-2xl text-forest mb-6 leading-tight">
-        {title}
+        {titleText}
       </h2>
       <dl className="grid md:grid-cols-2 gap-x-10 gap-y-5">
-        {items.map((item) => (
+        {resolvedItems.map((item) => (
           <div key={item.label}>
             <dt className="eyebrow text-stone mb-1">{item.label}</dt>
             <dd className="text-[15px] text-charcoal/85 leading-relaxed">

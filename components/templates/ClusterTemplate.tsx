@@ -1,12 +1,15 @@
-import type { Post } from "@/lib/content/posts";
-import { getHub } from "@/lib/content/hubs";
+import { getTranslations, getLocale } from "next-intl/server";
+import { tPost, type Post } from "@/lib/content/posts";
+import { tHub, getHub } from "@/lib/content/hubs";
 import { relatedPosts } from "@/lib/content/posts";
+import type { Locale } from "@/i18n/routing";
 import { Breadcrumbs } from "../Breadcrumbs";
 import { ReviewStamp } from "../ReviewStamp";
 import { AuthorBio } from "../AuthorBio";
 import { RelatedPosts } from "../RelatedPosts";
 import { SourcesList } from "../SourcesList";
 import { EmailCapture } from "../EmailCapture";
+import { TranslationPendingBanner } from "../TranslationPendingBanner";
 import { ArticleJsonLd } from "../schema/ArticleJsonLd";
 import { BreadcrumbJsonLd } from "../schema/BreadcrumbJsonLd";
 import { FaqJsonLd } from "../schema/FaqJsonLd";
@@ -15,13 +18,18 @@ import { Eyebrow } from "../editorial/Eyebrow";
 import { DotRule, LabRule } from "../editorial/DotRule";
 import { KeyTakeaway } from "../editorial/KeyTakeaway";
 
-export function ClusterTemplate({ post }: { post: Post }) {
+export async function ClusterTemplate({ post }: { post: Post }) {
+  const t = await getTranslations("cluster");
+  const tHubPage = await getTranslations("hubPage");
+  const locale = (await getLocale()) as Locale;
   const hub = getHub(post.hub);
+  const ht = tHub(hub, locale);
+  const pt = tPost(post, locale);
   const crumbs = [
-    { label: "Home", href: "/" },
-    { label: "Guides", href: "/#issue-contents" },
-    hub ? { label: hub.name, href: `/guides/${hub.slug}` } : { label: "" },
-    { label: post.title },
+    { label: tHubPage("crumbHome"), href: "/" },
+    { label: tHubPage("crumbGuides"), href: "/#issue-contents" },
+    hub ? { label: ht.name, href: `/guides/${hub.slug}` } : { label: "" },
+    { label: pt.title },
   ];
   const related = relatedPosts(post);
 
@@ -29,8 +37,8 @@ export function ClusterTemplate({ post }: { post: Post }) {
     <>
       <ArticleJsonLd
         path={`/${post.slug}`}
-        headline={post.h1}
-        description={post.description}
+        headline={pt.h1}
+        description={pt.description}
         datePublished={post.publishedAt}
         dateModified={post.updatedAt}
       />
@@ -41,14 +49,14 @@ export function ClusterTemplate({ post }: { post: Post }) {
         <Breadcrumbs crumbs={crumbs} />
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Eyebrow tone="sage">The Explainer</Eyebrow>
+          <Eyebrow tone="sage">{t("eyebrow")}</Eyebrow>
           {hub && (
-            <span className="caps-label text-stone">· {hub.shortName}</span>
+            <span className="caps-label text-stone">· {ht.shortName}</span>
           )}
         </div>
 
         <h1 className="display-headline text-forest mt-4 text-[2.1rem] md:text-[2.75rem] leading-[1.07]">
-          {post.h1}
+          {pt.h1}
         </h1>
 
         <div className="mt-5 flex flex-wrap items-center gap-4">
@@ -60,21 +68,21 @@ export function ClusterTemplate({ post }: { post: Post }) {
 
         <LabRule className="mt-7" />
 
+        <TranslationPendingBanner />
+
         <p className="drop-cap mt-9 text-[1.08rem] leading-[1.75] text-charcoal/90">
-          {post.description}
+          {pt.description}
         </p>
 
-        <KeyTakeaway variant="key-takeaway" title="The short answer">
-          The TL;DR sits here for readers who need the answer now. The rest of
-          the page earns that answer — with sources, context, and the things
-          our team debated internally.
+        <KeyTakeaway variant="key-takeaway" title={t("shortAnswerTitle")}>
+          {t("shortAnswerBody")}
         </KeyTakeaway>
 
         {post.faq && post.faq.length > 0 && (
           <section className="mt-12">
-            <Eyebrow tone="terracotta">The FAQ</Eyebrow>
+            <Eyebrow tone="terracotta">{t("faqEyebrow")}</Eyebrow>
             <h2 className="font-serif text-2xl md:text-[1.75rem] text-forest mt-2 mb-5 leading-tight">
-              What people ask us next.
+              {t("faqTitle")}
             </h2>
             <dl className="divide-y divide-forest/10 border-y border-forest/10">
               {post.faq.map((f, i) => (

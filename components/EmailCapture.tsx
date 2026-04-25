@@ -1,17 +1,19 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useTranslations } from "next-intl";
 import { Eyebrow } from "./editorial/Eyebrow";
 
 export function EmailCapture({
-  headline = "Get the Kitchen Swap Audit.",
-  subhead = "A printable checklist of 50+ kitchen items, each ranked swap now / swap eventually / don't bother. Free. Delivered instantly.",
+  headline,
+  subhead,
   variant = "inline",
 }: {
   headline?: string;
   subhead?: string;
   variant?: "inline" | "end-of-article";
 }) {
+  const t = useTranslations("emailCapture");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
 
@@ -24,6 +26,8 @@ export function EmailCapture({
   }
 
   const isEnd = variant === "end-of-article";
+  const headlineText = headline ?? t("headline");
+  const subheadText = subhead ?? t("subhead");
 
   return (
     <section
@@ -37,17 +41,17 @@ export function EmailCapture({
       >
         <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
-            <Eyebrow tone="terracotta">The Kitchen Swap Audit</Eyebrow>
+            <Eyebrow tone="terracotta">{t("eyebrow")}</Eyebrow>
             <h2 className="font-serif text-[1.7rem] md:text-[2rem] text-forest mt-2 leading-[1.1]">
-              {headline}
+              {headlineText}
             </h2>
             <p className="mt-3 text-[15px] text-charcoal/80 max-w-2xl leading-relaxed">
-              {subhead}
+              {subheadText}
             </p>
 
             {status === "ok" ? (
               <p className="mt-6 font-serif text-lg text-forest italic">
-                Thanks — check your inbox. The audit is on its way.
+                {t("success")}
               </p>
             ) : (
               <form
@@ -55,13 +59,13 @@ export function EmailCapture({
                 className="mt-6 flex flex-col sm:flex-row gap-2 max-w-lg"
               >
                 <label htmlFor="email" className="sr-only">
-                  Email address
+                  {t("emailLabel")}
                 </label>
                 <input
                   id="email"
                   type="email"
                   required
-                  placeholder="you@example.com"
+                  placeholder={t("placeholder")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="field-input flex-1 rounded-sm border border-forest/20 px-4 py-3 bg-cream-deep/40 text-[15px]"
@@ -71,17 +75,17 @@ export function EmailCapture({
                   disabled={status === "loading"}
                   className="btn-primary !py-3 justify-center"
                 >
-                  {status === "loading" ? "Sending…" : "Send me the audit →"}
+                  {status === "loading" ? t("submitLoading") : t("submit")}
                 </button>
               </form>
             )}
 
             <p className="mt-4 text-xs text-stone max-w-lg leading-relaxed">
-              By subscribing, you agree to our{" "}
+              {t("consent.before")}{" "}
               <a href="/privacy" className="underline text-forest">
-                Privacy Policy
+                {t("consent.privacyLink")}
               </a>
-              . One calm email a week. Unsubscribe anytime.
+              {t("consent.after")}
             </p>
           </div>
 
@@ -108,9 +112,9 @@ export function EmailCapture({
               <circle cx="18" cy="46" r="1.5" fill="currentColor" />
             </svg>
             <div className="mt-4 caps-label text-stone text-center">
-              12 pages
+              {t("decoPages")}
               <br />
-              50+ items
+              {t("decoItems")}
             </div>
           </div>
         </div>

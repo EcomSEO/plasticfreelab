@@ -1,20 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { SITE } from "@/lib/content/site";
 
-/**
- * IntroOverlay — a full-page cream paper curtain that reads
- * "PlasticFreeLab · Vol. I · No. 01" before sliding up to reveal the
- * masthead. Shown once per session (sessionStorage). Skipped entirely
- * when the user prefers reduced motion.
- *
- * Total duration: ~1.6s. The curtain slides up as the page content is
- * already laid out behind it — the reveal is pure overlay.
- */
 const KEY = "pfl:intro-seen";
 
 export function IntroOverlay() {
+  const t = useTranslations("intro");
   const [phase, setPhase] = useState<"pending" | "show" | "rising" | "done">(
     "pending"
   );
@@ -27,12 +20,10 @@ export function IntroOverlay() {
 
     if (reduce || seen) {
       setPhase("done");
-      // Still mark — keeps state coherent
       document.documentElement.classList.add("pfl-intro-done");
       return;
     }
 
-    // Lock scroll briefly
     document.documentElement.classList.add("pfl-intro-lock");
     setPhase("show");
 
@@ -61,13 +52,13 @@ export function IntroOverlay() {
       <div className="pfl-intro__rule" />
       <div className="pfl-intro__content">
         <div className="pfl-intro__eyebrow">
-          {SITE.volume} &nbsp;·&nbsp; {SITE.issue} &nbsp;·&nbsp; The Launch Edition
+          {t("edition", { volume: SITE.volume, issue: SITE.issue })}
         </div>
         <div className="pfl-intro__mark">
           PlasticFree<span className="pfl-intro__mark-accent">Lab</span>
         </div>
         <div className="pfl-intro__tag">
-          The non-toxic lab for everyday life.
+          {t("tagline")}
         </div>
       </div>
       <div className="pfl-intro__footer">

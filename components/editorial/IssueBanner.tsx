@@ -1,17 +1,20 @@
+import { getTranslations } from "next-intl/server";
+
 /**
  * IssueBanner — thin sage strip that sits just below the masthead.
  * Sets the "this is a published issue" frame.
  */
-export function IssueBanner() {
+export async function IssueBanner() {
+  const t = await getTranslations("issueBanner");
   return (
-    <div className="issue-banner" role="complementary" aria-label="Issue">
+    <div className="issue-banner" role="complementary" aria-label={t("issue")}>
       <div className="issue-banner__inner">
         <span className="issue-banner__mark" aria-hidden />
-        <span>Issue No. 01</span>
+        <span>{t("issue")}</span>
         <span aria-hidden className="issue-banner__dot" />
-        <span>The Launch Edition</span>
+        <span>{t("edition")}</span>
         <span aria-hidden className="issue-banner__dot" />
-        <span>Opens with 12 Investigations</span>
+        <span>{t("investigations")}</span>
       </div>
     </div>
   );

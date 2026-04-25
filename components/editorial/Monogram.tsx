@@ -1,9 +1,9 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 /**
  * Monogram — small circular brand/author chip.
- *
- * Used as the avatar on every post card, hub card, and magazine
- * grid row. Fraunces on sage by default. Optional letter override
- * for role chips (R / T / M / S on the editorial board).
  */
 export function Monogram({
   size = 24,
@@ -45,7 +45,7 @@ export function Monogram({
 
 /**
  * Byline — the author treatment we apply to every card.
- * Monogram + "THE PLASTICFREELAB TEAM" caps + read time.
+ * Monogram + team name + read time, all locale-aware.
  */
 export function Byline({
   readingTime,
@@ -58,14 +58,18 @@ export function Byline({
   className?: string;
   compact?: boolean;
 }) {
+  const tBio = useTranslations("authorBio");
+  const tCommon = useTranslations("common");
   return (
     <div className={`pfl-byline ${compact ? "pfl-byline--compact" : ""} ${className}`}>
       <Monogram size={monogramSize} />
-      <span className="pfl-byline__name">The PlasticFreeLab Team</span>
+      <span className="pfl-byline__name">{tBio("name")}</span>
       {typeof readingTime === "number" && (
         <>
           <span className="pfl-byline__sep" aria-hidden>·</span>
-          <span className="pfl-byline__time">{readingTime} MIN</span>
+          <span className="pfl-byline__time">
+            {tCommon("minCaps", { n: readingTime })}
+          </span>
         </>
       )}
     </div>

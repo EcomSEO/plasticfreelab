@@ -1,0 +1,518 @@
+{
+  "common": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "minRead": "{n} min read",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "By",
+    "updated": "Updated {date}",
+    "lastUpdated": "Last updated · {date}",
+    "openHub": "Open hub",
+    "browse": "Browse →",
+    "readMore": "Read the pillar",
+    "backToHome": "Back to home",
+    "backToFront": "Back to the front page",
+    "backToMasthead": "Back to masthead",
+    "tryAgain": "Try again",
+    "more": "More",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Guides",
+    "kitchen": "Kitchen",
+    "newsletter": "Newsletter",
+    "getTheAudit": "Get the audit",
+    "getTheAuditArrow": "Get the audit →",
+    "editorialStandards": "Editorial standards",
+    "about": "About",
+    "contact": "Contact",
+    "fiveHubs": "The five hubs",
+    "masthead": "The masthead"
+  },
+  "footer": {
+    "leadParagraph": "A small team reading the studies, the labels, and the filings — publishing what we'd tell a friend. No product placement. No paid rankings.",
+    "fiveHubs": "The five hubs",
+    "masthead": "The masthead",
+    "finePrint": "Fine print",
+    "about": "About",
+    "editorialStandards": "Editorial standards",
+    "contact": "Contact & tips",
+    "newsletter": "Newsletter",
+    "affiliateDisclosure": "Affiliate disclosure",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "imprint": "Commissions on some links help fund our testing and never affect our rankings. We update comparisons quarterly."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  The Launch Edition",
+    "tagline": "The non-toxic lab for everyday life."
+  },
+  "issueBanner": {
+    "issue": "Issue No. 01",
+    "edition": "The Launch Edition",
+    "investigations": "Opens with 12 Investigations"
+  },
+  "masthead": {
+    "imprintEdition": "The Launch Edition",
+    "headlineLine1": "The non-toxic",
+    "headlineWordLab": "lab",
+    "headlineWordThe": "the",
+    "headlineQuietly": "quietly",
+    "headlineLast": "cited guide to every swap that matters.",
+    "footnoteFig": "Fig. 1.",
+    "footnoteText": "A field guide to the exposures your house keeps quiet — published one cited page at a time.",
+    "ledeBefore": "PlasticFreeLab reads the studies, tests the swaps, and publishes what we'd tell a friend, with sources. No scolding, no lifestyle pastel, no",
+    "ledeQuote": "10 shocking toxins",
+    "ledeAfter": "fear bait.",
+    "ctaPrimary": "Start with the kitchen",
+    "ctaSecondary": "In this issue",
+    "issueLabel": "In this issue",
+    "folioText": "Scroll — the table of contents is below"
+  },
+  "magazineGrid": {
+    "eyebrow": "In this issue",
+    "title": {
+      "before": "Twelve investigations,",
+      "italic": "one calm page",
+      "after": "."
+    },
+    "skipToToc": "Skip to the table of contents →",
+    "fromTheDesk": "From the desk",
+    "currentlyTesting": "Currently testing",
+    "featuredEyebrow": "Featured Investigation",
+    "team": "The PlasticFreeLab Team",
+    "testingLead": "Testing lead"
+  },
+  "investigationTiles": {
+    "eyebrow": "Currently in the lab",
+    "title": {
+      "before": "The categories we're",
+      "italic": "working through",
+      "after": "this quarter."
+    },
+    "statusTesting": "Testing",
+    "statusPublished": "Published",
+    "statusLabel": "Status · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Non-toxic cookware",
+        "blurb": "14 sets, six weeks, one pick we'd buy again."
+      },
+      "storage": {
+        "label": "Plastic-free food storage",
+        "blurb": "What to keep, what to replace, what to toss this weekend."
+      },
+      "filter": {
+        "label": "Water filter",
+        "blurb": "Brita vs Berkey vs AquaTru, one clear recommendation."
+      },
+      "bottles": {
+        "label": "Glass bottles",
+        "blurb": "Borosilicate, soda-lime, stainless — we're measuring each."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "The Investigation",
+    "title": {
+      "before": "The one we're",
+      "italic": "pushing",
+      "after": "this month."
+    },
+    "claims": {
+      "01": {
+        "label": "Material composition",
+        "body": "Every brand's own filings, not the marketing copy. Which layers are disclosed, which aren't, and what \u201Cnon-toxic\u201D actually ends up meaning in a claim."
+      },
+      "02": {
+        "label": "Heat & abrasion behaviour",
+        "body": "Six weeks on the lab bench. Infrared temperature maps, cast-iron comparison, and the one test most reviewers skip."
+      },
+      "03": {
+        "label": "Who disagrees, and why",
+        "body": "We name the critics, link their work, and say where we still disagree. Investigative, not performative."
+      }
+    },
+    "editorsPick": "Editor's pick",
+    "ourPick": "Our pick",
+    "cta": "Read the full investigation",
+    "bylineBy": "By",
+    "bylineName": "The PlasticFreeLab\nEditorial Team",
+    "bylineDate": "April · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "The Table of Contents",
+    "title": {
+      "before": "Five hubs.",
+      "italic": "One hundred and fifty",
+      "after": "posts on the way."
+    },
+    "linkAbout": "Why we built it this way →"
+  },
+  "editorialBoard": {
+    "eyebrow": "How we report · Who reports it",
+    "title": "The editorial board.",
+    "lede": "Four chairs at the table. Each one can kill a sentence we can't defend.",
+    "roles": {
+      "research": {
+        "title": "The Research Lead",
+        "bio": "Reads the primary literature. Cites the trial, not the press release. Disagreement with the consensus only shows up when the data earns it."
+      },
+      "testing": {
+        "title": "The Household Testing Lead",
+        "bio": "Cooks on every pan for a month. Weighs every bottle. Measures every claim. Tools and notebooks outnumber the opinions."
+      },
+      "medical": {
+        "title": "The Medical Reviewer",
+        "bio": "Flags YMYL claims. Confirms no fearmongering made it past the edit. The person who quietly removes the scary sentence."
+      },
+      "sourcing": {
+        "title": "The Sourcing Lead",
+        "bio": "Reads spec sheets. Triangulates manufacturer claims with third-party test data. Names the brands we reject, and says why."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "From the lab notebook",
+    "title": {
+      "before": "What we're",
+      "italic": "working on",
+      "after": "."
+    },
+    "qMarker": "Q.",
+    "aMarker": "A.",
+    "entries": {
+      "01": {
+        "q": "Which swap are we testing in April?",
+        "a": "Glass water bottles — borosilicate vs soda-lime vs stainless, weighed, dropped, temperature-shocked. Results publish in the May dispatch."
+      },
+      "02": {
+        "q": "What brand are we rejecting this month?",
+        "a": "One marketed as PFAS-free whose own MSDS lists a fluoropolymer coating. We'll name it when the full write-up lands, with the filing."
+      },
+      "03": {
+        "q": "A reader asked: is our water filter pick outdated?",
+        "a": "The 2024 NSF updates don't change our top recommendation. The runner-up slot is under review — expect a refresh note by end of month."
+      },
+      "04": {
+        "q": "What's the next investigation?",
+        "a": "Non-toxic mattresses. We've opened the spec sheets for five brands and started reaching out for third-party test data. Publication target: June."
+      },
+      "05": {
+        "q": "How do we handle a manufacturer that asks us to retest?",
+        "a": "We retest on our bench, not theirs. If their data contradicts ours, we publish both, name the disagreement, and let the reader see the work."
+      },
+      "06": {
+        "q": "Do affiliate links change our rankings?",
+        "a": "They never have. Commissions fund the testing; they don't buy placement. Anything a brand sends us unsolicited goes into the give-away pile, not the review."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "The Latest",
+    "title": "Freshly tested, freshly cited."
+  },
+  "credo": {
+    "eyebrow": "The Credo",
+    "title": {
+      "before": "",
+      "italic": "We promise",
+      "after": "a site where every claim is sourced, every ranking is earned, and every product we reject is named."
+    },
+    "01": {
+      "title": "Every claim cited.",
+      "body": "If it isn't in a peer-reviewed paper, a regulatory filing, or a manufacturer disclosure, it doesn't publish."
+    },
+    "02": {
+      "title": "Methodology, open.",
+      "body": "Every comparison explains how we picked, what we verified, and who disagrees with us, and why."
+    },
+    "03": {
+      "title": "No paid rankings.",
+      "body": "Commissions pay for the testing. They have never, and will never, buy a position on this page."
+    },
+    "fullStandards": "Read our full editorial standards"
+  },
+  "explainers": {
+    "eyebrow": "The Explainers",
+    "title": "The terms you keep seeing, in plain English."
+  },
+  "newsletterBlock": {
+    "eyebrow": "The Dispatch",
+    "title": "One calm, cited email every week.",
+    "body": "No scare headlines. No daily fire-hose. One thing we verified or changed our mind about, every Tuesday morning. Plus the free Kitchen Swap Audit when you subscribe."
+  },
+  "emailCapture": {
+    "eyebrow": "The Kitchen Swap Audit",
+    "headline": "Get the Kitchen Swap Audit.",
+    "subhead": "A printable checklist of 50+ kitchen items, each ranked swap now / swap eventually / don't bother. Free. Delivered instantly.",
+    "emailLabel": "Email address",
+    "placeholder": "you@example.com",
+    "submit": "Send me the audit →",
+    "submitLoading": "Sending…",
+    "success": "Thanks — check your inbox. The audit is on its way.",
+    "consent": {
+      "before": "By subscribing, you agree to our",
+      "privacyLink": "Privacy Policy",
+      "after": ". One calm email a week. Unsubscribe anytime."
+    },
+    "decoPages": "12 pages",
+    "decoItems": "50+ items"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "We use a small number of cookies for analytics and session continuity. No advertising cookies. See our",
+      "privacyLink": "Privacy Policy",
+      "after": "."
+    },
+    "reject": "Reject",
+    "accept": "Accept"
+  },
+  "hubPage": {
+    "crumbHome": "Home",
+    "crumbGuides": "Guides",
+    "hubXofY": "Hub {i} of {n}",
+    "ourThesisLabel": "Our thesis",
+    "totalLive": "Total posts live",
+    "planned": "Planned in hub",
+    "startHereEyebrow": "Start here",
+    "startHereTitle": "The complete guide.",
+    "guideEyebrow": "The Guide",
+    "readPillar": "Read the pillar",
+    "comparisonsEyebrow": "The ranked comparisons",
+    "comparisonsTitle": "What we'd actually buy.",
+    "explainersEyebrow": "The Explainers",
+    "explainersTitle": "Plain-English answers to the things people search.",
+    "auditsEyebrow": "The Audits",
+    "auditsTitle": "Weekend-ready checklists.",
+    "emptyBefore": "Posts land here as they clear editorial review. See the",
+    "emptyHomeLink": "home page",
+    "emptyAfter": "for what's live today.",
+    "minRead": "{n} min read",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "The Guide",
+    "comparison": "The Comparison",
+    "cluster": "The Explainer",
+    "listicle": "The Audit"
+  },
+  "postTypeShort": {
+    "pillar": "Guide",
+    "comparison": "Comparison",
+    "cluster": "Explainer",
+    "listicle": "Listicle"
+  },
+  "postChrome": {
+    "translationBanner": "",
+    "onThisPage": "On this page",
+    "shortAnswer": "The short answer",
+    "rankedList": "The ranked list",
+    "wouldSkip": "What we'd skip",
+    "methodologyTOC": "Methodology",
+    "faqShort": "FAQ",
+    "changeMind": "What would change our mind",
+    "sources": "Sources",
+    "frequentlyAsked": "Frequently asked questions",
+    "labLabel": "The lab",
+    "tested": "Tested",
+    "testedValue": "{n}+ products",
+    "cited": "Cited",
+    "citedValue": "{n} sources",
+    "readTime": "Read time",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Last updated"
+  },
+  "comparison": {
+    "eyebrow": "The Comparison",
+    "ourPickEyebrow": "Our pick",
+    "rankedEyebrow": "The Ranked List",
+    "rankedTitle": "Everything we'd buy, in order.",
+    "rankedMeta": "{n} picks · ranked by merit",
+    "skipsEyebrow": "What we'd skip — and why",
+    "skipsTitle": "Named, not hinted at.",
+    "faqEyebrow": "The FAQ",
+    "faqTitle": "What people ask us most.",
+    "changeMindLabel": "What would change our mind",
+    "changeMindBody": "New independent lab testing that contradicts our current ranking. A reformulation by a top pick that quietly drops a disclosed certification. A peer-reviewed paper that changes the safety picture on one of the materials above. We'll update this page within a week and mark what changed."
+  },
+  "pillar": {
+    "eyebrow": "The Guide",
+    "pullQuoteAttribution": "PlasticFreeLab house view",
+    "pullQuote": "We'd rather answer the question you actually asked in the first paragraph, then earn your trust by showing the work.",
+    "keyTakeawayTitle": "What this guide covers",
+    "keyTakeawayBody": "What the best available evidence says today, what's still genuinely uncertain, and what you can actually do this week — in priority order, with every claim sourced.",
+    "faqEyebrow": "The FAQ",
+    "faqTitle": "The questions people actually bring us."
+  },
+  "cluster": {
+    "eyebrow": "The Explainer",
+    "shortAnswerTitle": "The short answer",
+    "shortAnswerBody": "The TL;DR sits here for readers who need the answer now. The rest of the page earns that answer — with sources, context, and the things our team debated internally.",
+    "faqEyebrow": "The FAQ",
+    "faqTitle": "What people ask us next."
+  },
+  "listicle": {
+    "eyebrow": "The Audit"
+  },
+  "methodology": {
+    "label": "Methodology",
+    "title": "How this comparison was made",
+    "items": {
+      "picked": {
+        "label": "What we picked for",
+        "detail": "Disclosed materials, third-party certification, durability in real cooking, independent contamination testing where available."
+      },
+      "evaluated": {
+        "label": "How we evaluated",
+        "detail": "Manufacturer disclosures, regulatory filings, peer-reviewed papers, and hands-on wear-testing. We read the labels and the filings, not the press releases."
+      },
+      "disagrees": {
+        "label": "Who disagrees with us",
+        "detail": "We steel-man the opposing view in every comparison, and name the brand we almost picked and the reason we didn't."
+      },
+      "changeMind": {
+        "label": "What would change our mind",
+        "detail": "New independent lab testing, reformulation by a ranked brand, or a peer-reviewed finding that contradicts our current reasoning."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": ""
+  },
+  "affiliate": {
+    "label": "Disclosure",
+    "body": "PlasticFreeLab tests and recommends independently. We sometimes earn a commission when you buy through our links — it never affects our rankings."
+  },
+  "authorBio": {
+    "eyebrow": "About the byline",
+    "name": "The PlasticFreeLab Team",
+    "body": "A small group of researchers and writers cutting through the noise around non-toxic living. We read the studies, read the labels, test the products — and update our recommendations as the science evolves. We do not accept payment for product placement, we disclose every affiliate relationship, and we name the brands we reject.",
+    "standardsLink": "Our editorial standards →",
+    "correctionLink": "Send us a correction →"
+  },
+  "related": {
+    "eyebrow": "Keep reading",
+    "title": "Related in this hub."
+  },
+  "sources": {
+    "eyebrow": "References",
+    "title": "Sources we cited on this page."
+  },
+  "notFound": {
+    "metaTitle": "Not on file",
+    "metaDescription": "The page you asked for isn't on our index. A few places that might have what you were after.",
+    "eyebrow": "404 · Not on file",
+    "title": "We couldn't find that page.",
+    "p1": "Sometimes a URL changes when we reorganize a hub. Sometimes a post gets retired because the science moved and we'd rather pull it than leave a stale recommendation on the internet.",
+    "p2": "Either way, nothing useful lives at this address. The five hubs below cover everything we publish — one of them almost certainly has what you were looking for.",
+    "tryHubs": "Try the hubs",
+    "primary": "Back to the front page",
+    "secondary": "Get the weekly dispatch",
+    "stampLine1": "NOT ON",
+    "stampLine2": "FILE",
+    "stampSub": "· PLASTICFREELAB ARCHIVE ·"
+  },
+  "errorPage": {
+    "eyebrow": "Error · Something slipped",
+    "title": "Something broke on our side.",
+    "body": "Not the reader's fault. A page failed to render the way it was supposed to. Try again — if it keeps happening, head back to the front page and the rest of the site should still behave.",
+    "tryAgain": "Try again",
+    "backToHome": "Back to home",
+    "reference": "Reference · {digest}"
+  },
+  "newsletterPage": {
+    "title": "One calm email a week.",
+    "p1": {
+      "before": "A single useful thing: the most important post we published, the swap we'd make first, or a study we read so you don't have to. No upsells, no affiliate spam, no 4,000-word emails."
+    },
+    "p2": {
+      "before": "Subscribers also get the",
+      "bold": "Kitchen Swap Audit",
+      "after": "— a printable checklist of 50+ kitchen items, each ranked swap now / swap eventually / don't bother."
+    },
+    "captureHeadline": "Start with the audit.",
+    "captureSubhead": "Add your email and we'll send the PDF right away."
+  },
+  "trustNav": {
+    "home": "Home"
+  },
+  "trustPages": {
+    "about": {
+      "title": "About PlasticFreeLab",
+      "metaDescription": "Who we are, what we do, and why we built this.",
+      "intro": "PlasticFreeLab exists because the information about non-toxic living is a mess. We built a calm, cited, investigative resource that reads the studies, tests the products, and tells you the three things that actually matter."
+    },
+    "editorialStandards": {
+      "title": "Editorial Standards",
+      "metaDescription": "Our public-facing editorial policies — sourcing, corrections, affiliate disclosure, AI tooling.",
+      "intro": "Every site promises to be trustworthy. Here is what that actually means on PlasticFreeLab — sourcing rules, corrections policy, affiliate disclosure, and our use of AI tooling."
+    },
+    "affiliateDisclosure": {
+      "title": "Affiliate Disclosure",
+      "metaDescription": "How affiliate links work on PlasticFreeLab and what that means for you.",
+      "intro": "Some of the product links on this site are affiliate links. We earn a small commission when you buy through them, at no additional cost to you, and we never let those commissions influence our rankings."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "metaDescription": "What we collect, how we use it, and your rights.",
+      "intro": "This Privacy Policy describes how PlasticFreeLab collects, uses, and shares information when you visit plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "metaDescription": "The terms that govern your use of PlasticFreeLab.",
+      "intro": "By accessing plasticfreelab.com, you agree to these Terms. If you do not agree, please do not use the Site."
+    },
+    "contact": {
+      "title": "Contact",
+      "metaDescription": "How to reach us.",
+      "intro": "How to reach us — for general feedback, corrections, privacy requests, and product tips."
+    },
+    "newsletter": {
+      "title": "One calm email a week.",
+      "metaDescription": "One calm email a week — the most-useful post we published, plus the swap we'd make first. Free. Unsubscribe anytime."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français"
+  },
+  "site": {
+    "tagline": "The non-toxic lab for everyday life.",
+    "description": "We test the swaps, read the studies, and publish calm, cited guides to microplastics, PFAS, and the household changes actually worth making."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Microplastics & EDCs",
+      "shortName": "Microplastics",
+      "oneLiner": "The science, in plain English. What's actually known, what's still debated, and what to do about it."
+    },
+    "non-toxic-kitchen": {
+      "name": "Non-Toxic Kitchen",
+      "shortName": "Kitchen",
+      "oneLiner": "The highest-impact swaps in your home, ranked by how much they matter. Cookware, water, storage, the works."
+    },
+    "non-toxic-personal-care": {
+      "name": "Personal Care",
+      "shortName": "Personal Care",
+      "oneLiner": "Shampoo to sunscreen, the calm truth about what's in your bathroom and what's worth replacing."
+    },
+    "non-toxic-home": {
+      "name": "Home Environment",
+      "shortName": "Home",
+      "oneLiner": "Mattresses, cleaning products, air quality, and the quiet exposures you never think about."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Clothing & Textiles",
+      "shortName": "Clothing",
+      "oneLiner": "Microplastics, PFAS in clothes, and the textile supply chain — with the brands worth buying."
+    }
+  }
+}

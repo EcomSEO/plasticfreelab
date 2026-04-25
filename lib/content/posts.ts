@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/routing";
+import { POST_I18N, type LocalePost } from "./posts-i18n";
+
 export type PostType = "pillar" | "comparison" | "cluster" | "listicle";
 
 export type Post = {
@@ -22,6 +25,7 @@ export type Post = {
   faq?: Array<{ q: string; a: string }>;
   sources?: Array<{ label: string; url: string }>;
   featured?: boolean;
+  i18n?: Partial<Record<Locale, LocalePost>>;
 };
 
 export const posts: Post[] = [
@@ -1041,4 +1045,29 @@ export function relatedPosts(post: Post, limit = 3): Post[] {
   return posts
     .filter((p) => p.hub === post.hub && p.slug !== post.slug)
     .slice(0, limit);
+}
+
+/**
+ * Locale-aware accessor for the user-facing post fields.
+ * Falls back to the English copy field-by-field when a translation
+ * is missing — so phase-1 posts that lack a French h1 still render
+ * correctly with the English headline.
+ */
+export function tPost(
+  post: Post,
+  locale: Locale
+): { title: string; description: string; h1: string } {
+  const t = post.i18n?.[locale] ?? POST_I18N[post.slug]?.[locale];
+  return {
+    title: t?.title ?? post.title,
+    description: t?.description ?? post.description,
+    h1: t?.h1 ?? post.h1,
+  };
+}
+
+/** True when no translation is present for the given locale (banner gate). */
+export function isPostUntranslated(post: Post, locale: Locale): boolean {
+  if (locale === "en") return false;
+  const t = post.i18n?.[locale] ?? POST_I18N[post.slug]?.[locale];
+  return !t || (!t.title && !t.description);
 }

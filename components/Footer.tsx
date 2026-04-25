@@ -1,9 +1,14 @@
-import Link from "next/link";
-import { hubs } from "@/lib/content/hubs";
+import { getTranslations, getLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { hubs, tHub } from "@/lib/content/hubs";
 import { Wordmark } from "./editorial/Wordmark";
-import { SITE } from "@/lib/content/site";
+import { SITE, siteTagline } from "@/lib/content/site";
+import type { Locale } from "@/i18n/routing";
 
-export function Footer() {
+export async function Footer() {
+  const t = await getTranslations("footer");
+  const locale = (await getLocale()) as Locale;
+
   return (
     <footer className="mt-24 bg-cream-deep/40 border-t border-forest/10">
       {/* Masthead row */}
@@ -12,52 +17,53 @@ export function Footer() {
           <div>
             <Wordmark size="lg" asLink={false} />
             <p className="mt-3 font-serif text-lg text-forest italic max-w-md">
-              {SITE.tagline}
+              {siteTagline(locale)}
             </p>
           </div>
           <div className="max-w-md text-sm text-stone leading-relaxed">
-            A small team reading the studies, the labels, and the filings —
-            publishing what we'd tell a friend. No product placement. No paid
-            rankings.
+            {t("leadParagraph")}
           </div>
         </div>
 
         <div className="grid md:grid-cols-12 gap-10 mt-10">
           <div className="md:col-span-5">
-            <h4 className="eyebrow text-stone mb-4">The five hubs</h4>
+            <h4 className="eyebrow text-stone mb-4">{t("fiveHubs")}</h4>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
-              {hubs.map((hub, i) => (
-                <li key={hub.slug}>
-                  <Link
-                    href={`/guides/${hub.slug}`}
-                    className="group flex items-center gap-2 text-forest hover:text-sage transition"
-                  >
-                    <span className="rank-numeral !text-sm !text-sage/50 group-hover:!text-sage tnum">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-[15px]">{hub.name}</span>
-                  </Link>
-                </li>
-              ))}
+              {hubs.map((hub, i) => {
+                const th = tHub(hub, locale);
+                return (
+                  <li key={hub.slug}>
+                    <Link
+                      href={`/guides/${hub.slug}`}
+                      className="group flex items-center gap-2 text-forest hover:text-sage transition"
+                    >
+                      <span className="rank-numeral !text-sm !text-sage/50 group-hover:!text-sage tnum">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="text-[15px]">{th.name}</span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           <div className="md:col-span-3">
-            <h4 className="eyebrow text-stone mb-4">The masthead</h4>
+            <h4 className="eyebrow text-stone mb-4">{t("masthead")}</h4>
             <ul className="space-y-2.5 text-[15px]">
-              <li><Link href="/about" className="text-forest hover:text-sage transition">About</Link></li>
-              <li><Link href="/editorial-standards" className="text-forest hover:text-sage transition">Editorial standards</Link></li>
-              <li><Link href="/contact" className="text-forest hover:text-sage transition">Contact & tips</Link></li>
-              <li><Link href="/newsletter" className="text-forest hover:text-sage transition">Newsletter</Link></li>
+              <li><Link href="/about" className="text-forest hover:text-sage transition">{t("about")}</Link></li>
+              <li><Link href="/editorial-standards" className="text-forest hover:text-sage transition">{t("editorialStandards")}</Link></li>
+              <li><Link href="/contact" className="text-forest hover:text-sage transition">{t("contact")}</Link></li>
+              <li><Link href="/newsletter" className="text-forest hover:text-sage transition">{t("newsletter")}</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-4">
-            <h4 className="eyebrow text-stone mb-4">Fine print</h4>
+            <h4 className="eyebrow text-stone mb-4">{t("finePrint")}</h4>
             <ul className="space-y-2.5 text-[15px]">
-              <li><Link href="/affiliate-disclosure" className="text-forest hover:text-sage transition">Affiliate disclosure</Link></li>
-              <li><Link href="/privacy" className="text-forest hover:text-sage transition">Privacy policy</Link></li>
-              <li><Link href="/terms" className="text-forest hover:text-sage transition">Terms of service</Link></li>
+              <li><Link href="/affiliate-disclosure" className="text-forest hover:text-sage transition">{t("affiliateDisclosure")}</Link></li>
+              <li><Link href="/privacy" className="text-forest hover:text-sage transition">{t("privacy")}</Link></li>
+              <li><Link href="/terms" className="text-forest hover:text-sage transition">{t("terms")}</Link></li>
             </ul>
           </div>
         </div>
@@ -77,8 +83,7 @@ export function Footer() {
             </span>
           </div>
           <div className="normal-case tracking-normal text-stone text-xs max-w-xl md:text-right leading-relaxed">
-            Commissions on some links help fund our testing and never affect our
-            rankings. We update comparisons quarterly.
+            {t("imprint")}
           </div>
         </div>
       </div>

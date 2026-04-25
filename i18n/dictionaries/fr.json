@@ -1,0 +1,518 @@
+{
+  "common": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "skipToContent": "Aller au contenu",
+    "minRead": "{n} min de lecture",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "Par",
+    "updated": "Mis à jour le {date}",
+    "lastUpdated": "Dernière mise à jour · {date}",
+    "openHub": "Ouvrir la rubrique",
+    "browse": "Parcourir →",
+    "readMore": "Lire l’enquête de fond",
+    "backToHome": "Retour à l’accueil",
+    "backToFront": "Retour à la une",
+    "backToMasthead": "Retour au manchette",
+    "tryAgain": "Réessayer",
+    "more": "Plus",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Enquêtes",
+    "kitchen": "Cuisine",
+    "newsletter": "Infolettre",
+    "getTheAudit": "Recevoir l’audit",
+    "getTheAuditArrow": "Recevoir l’audit →",
+    "editorialStandards": "Charte éditoriale",
+    "about": "À propos",
+    "contact": "Contact",
+    "fiveHubs": "Les cinq rubriques",
+    "masthead": "L’ours"
+  },
+  "footer": {
+    "leadParagraph": "Une petite équipe qui lit les études, les étiquettes et les déclarations des fabricants — et publie ce que nous dirions à une amie. Aucun placement de produit. Aucun classement payé.",
+    "fiveHubs": "Les cinq rubriques",
+    "masthead": "L’ours",
+    "finePrint": "Mentions légales",
+    "about": "À propos",
+    "editorialStandards": "Charte éditoriale",
+    "contact": "Contact et signalements",
+    "newsletter": "Infolettre",
+    "affiliateDisclosure": "Liens affiliés",
+    "privacy": "Confidentialité",
+    "terms": "Conditions d’utilisation",
+    "imprint": "Les commissions issues de certains liens financent nos essais et n’influent jamais sur nos classements. Nous mettons les comparatifs à jour tous les trimestres."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  Édition de lancement",
+    "tagline": "Le laboratoire non toxique pour le quotidien."
+  },
+  "issueBanner": {
+    "issue": "Numéro 01",
+    "edition": "Édition de lancement",
+    "investigations": "S’ouvre avec douze enquêtes"
+  },
+  "masthead": {
+    "imprintEdition": "Édition de lancement",
+    "headlineLine1": "Le laboratoire",
+    "headlineWordLab": "non toxique",
+    "headlineWordThe": "et le",
+    "headlineQuietly": "guide discret,",
+    "headlineLast": "sourcé, à chaque changement qui compte.",
+    "footnoteFig": "Fig. 1.",
+    "footnoteText": "Un guide de terrain des expositions que votre logement passe sous silence — publié page après page, références à l’appui.",
+    "ledeBefore": "PlasticFreeLab lit les études, teste les alternatives et publie ce que nous dirions à une amie, sources à l’appui. Pas de morale, pas de pastel lifestyle, pas d’appâts en",
+    "ledeQuote": "10 toxiques choquants",
+    "ledeAfter": ".",
+    "ctaPrimary": "Commencer par la cuisine",
+    "ctaSecondary": "Au sommaire",
+    "issueLabel": "Au sommaire",
+    "folioText": "Faites défiler — le sommaire est plus bas"
+  },
+  "magazineGrid": {
+    "eyebrow": "Au sommaire",
+    "title": {
+      "before": "Douze enquêtes,",
+      "italic": "une page apaisée",
+      "after": "."
+    },
+    "skipToToc": "Aller au sommaire →",
+    "fromTheDesk": "De la rédaction",
+    "currentlyTesting": "En cours d’essai",
+    "featuredEyebrow": "Enquête à la une",
+    "team": "L’équipe PlasticFreeLab",
+    "testingLead": "Responsable des essais"
+  },
+  "investigationTiles": {
+    "eyebrow": "Actuellement au laboratoire",
+    "title": {
+      "before": "Les catégories que nous",
+      "italic": "examinons",
+      "after": "ce trimestre."
+    },
+    "statusTesting": "À l’essai",
+    "statusPublished": "Publié",
+    "statusLabel": "Statut · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Ustensiles non toxiques",
+        "blurb": "14 batteries, six semaines, un choix que nous racheterions."
+      },
+      "storage": {
+        "label": "Stockage alimentaire sans plastique",
+        "blurb": "Ce qu’on garde, ce qu’on remplace, ce qu’on jette ce week-end."
+      },
+      "filter": {
+        "label": "Filtre à eau",
+        "blurb": "Brita, Berkey, AquaTru — une recommandation claire."
+      },
+      "bottles": {
+        "label": "Bouteilles en verre",
+        "blurb": "Borosilicate, sodocalcique, inox — nous mesurons chacune."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "L’enquête",
+    "title": {
+      "before": "Celle que nous",
+      "italic": "mettons en avant",
+      "after": "ce mois-ci."
+    },
+    "claims": {
+      "01": {
+        "label": "Composition des matériaux",
+        "body": "Les déclarations des marques elles-mêmes, pas le discours marketing. Quelles couches sont divulguées, lesquelles ne le sont pas, et ce que «\u202Fnon toxique\u202F» finit par recouvrir dans une promesse commerciale."
+      },
+      "02": {
+        "label": "Comportement à la chaleur et à l’abrasion",
+        "body": "Six semaines au banc d’essai. Cartographie thermique infrarouge, comparaison à la fonte et le test que la plupart des journalistes négligent."
+      },
+      "03": {
+        "label": "Qui n’est pas d’accord, et pourquoi",
+        "body": "Nous nommons les voix critiques, lions leurs travaux et précisons les points où nous restons en désaccord. Enquêter, pas mettre en scène."
+      }
+    },
+    "editorsPick": "Choix de la rédaction",
+    "ourPick": "Notre choix",
+    "cta": "Lire l’enquête complète",
+    "bylineBy": "Par",
+    "bylineName": "L’équipe éditoriale\nPlasticFreeLab",
+    "bylineDate": "Avril · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "Le sommaire",
+    "title": {
+      "before": "Cinq rubriques.",
+      "italic": "Cent cinquante",
+      "after": "articles à venir."
+    },
+    "linkAbout": "Pourquoi nous l’avons construit ainsi →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Comment nous enquêtons · Qui enquête",
+    "title": "Le comité éditorial.",
+    "lede": "Quatre sièges autour de la table. Chacun peut supprimer une phrase que nous ne pouvons pas défendre.",
+    "roles": {
+      "research": {
+        "title": "Responsable de la recherche",
+        "bio": "Lit la littérature primaire. Cite l’étude, pas le communiqué de presse. Un désaccord avec le consensus n’apparaît que lorsque les données le justifient."
+      },
+      "testing": {
+        "title": "Responsable des essais en conditions réelles",
+        "bio": "Cuisine sur chaque poêle pendant un mois. Pèse chaque bouteille. Mesure chaque promesse. Les outils et les carnets l’emportent sur les opinions."
+      },
+      "medical": {
+        "title": "Relectrice médicale",
+        "bio": "Signale les sujets YMYL. Vérifie qu’aucune dramatisation n’a passé la relecture. Celle qui retire calmement la phrase anxiogène."
+      },
+      "sourcing": {
+        "title": "Responsable du sourcing",
+        "bio": "Lit les fiches techniques. Recoupe les déclarations des fabricants avec des essais indépendants. Nomme les marques que nous écartons, et explique pourquoi."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Du carnet de laboratoire",
+    "title": {
+      "before": "Ce sur quoi nous",
+      "italic": "travaillons",
+      "after": "."
+    },
+    "qMarker": "Q.",
+    "aMarker": "R.",
+    "entries": {
+      "01": {
+        "q": "Quelle alternative testons-nous en avril\u202F?",
+        "a": "Les bouteilles en verre — borosilicate, sodocalcique, inox — pesées, soumises à des chocs et à des écarts de température. Résultats publiés dans la dépêche de mai."
+      },
+      "02": {
+        "q": "Quelle marque écartons-nous ce mois-ci\u202F?",
+        "a": "Une marque vendue comme «\u202Fsans PFAS\u202F», dont la propre fiche de données de sécurité mentionne un revêtement fluoropolymère. Nous la nommerons à la publication, pièce à l’appui."
+      },
+      "03": {
+        "q": "Une lectrice nous demande\u202F: notre filtre à eau favori est-il dépassé\u202F?",
+        "a": "Les mises à jour NSF de 2024 ne changent pas notre recommandation principale. Le second choix est en cours de réévaluation — note de mise à jour attendue d’ici la fin du mois."
+      },
+      "04": {
+        "q": "Quelle est la prochaine enquête\u202F?",
+        "a": "Les matelas non toxiques. Nous avons ouvert les fiches techniques de cinq marques et sollicité des essais indépendants. Objectif de publication\u202F: juin."
+      },
+      "05": {
+        "q": "Comment réagissons-nous quand un fabricant demande un nouveau test\u202F?",
+        "a": "Nous retestons sur notre banc, pas sur le sien. Si ses données contredisent les nôtres, nous publions les deux, nommons le désaccord et laissons le lecteur juger sur pièces."
+      },
+      "06": {
+        "q": "Les liens affiliés influencent-ils nos classements\u202F?",
+        "a": "Jamais. Les commissions financent les essais\u202F; elles n’achètent pas de placement. Tout ce qu’une marque nous envoie sans sollicitation passe au tirage au sort, pas à la rédaction."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Les plus récentes",
+    "title": "Tout juste testées, tout juste sourcées."
+  },
+  "credo": {
+    "eyebrow": "Le Credo",
+    "title": {
+      "before": "",
+      "italic": "Nous promettons",
+      "after": "un site où chaque affirmation est sourcée, chaque classement mérité et chaque produit écarté nommément cité."
+    },
+    "01": {
+      "title": "Chaque affirmation sourcée.",
+      "body": "Si ce n’est pas dans une étude évaluée par les pairs, un document réglementaire ou une déclaration du fabricant, cela n’est pas publié."
+    },
+    "02": {
+      "title": "Méthodologie ouverte.",
+      "body": "Chaque comparatif explique comment nous avons choisi, ce que nous avons vérifié, qui n’est pas d’accord et pourquoi."
+    },
+    "03": {
+      "title": "Aucun classement payé.",
+      "body": "Les commissions paient les essais. Elles n’ont jamais acheté, et n’achèteront jamais, une position sur cette page."
+    },
+    "fullStandards": "Lire l’intégralité de notre charte éditoriale"
+  },
+  "explainers": {
+    "eyebrow": "Les explicatifs",
+    "title": "Les termes que vous croisez sans cesse, en français clair."
+  },
+  "newsletterBlock": {
+    "eyebrow": "La dépêche",
+    "title": "Une infolettre apaisée et sourcée, chaque semaine.",
+    "body": "Pas de gros titres anxiogènes. Pas de flux quotidien. Une chose vérifiée, ou une opinion révisée, chaque mardi matin. Plus l’audit cuisine offert à l’inscription."
+  },
+  "emailCapture": {
+    "eyebrow": "L’audit cuisine",
+    "headline": "Recevez l’audit cuisine.",
+    "subhead": "Une liste imprimable de plus de cinquante objets de cuisine, chacun classé en\u202F: à remplacer maintenant / à remplacer plus tard / à laisser. Gratuit. Reçu immédiatement.",
+    "emailLabel": "Adresse e-mail",
+    "placeholder": "vous@exemple.fr",
+    "submit": "Envoyez-moi l’audit →",
+    "submitLoading": "Envoi en cours…",
+    "success": "Merci — l’audit est en route. Pensez à vérifier votre boîte de réception.",
+    "consent": {
+      "before": "En vous abonnant, vous acceptez notre",
+      "privacyLink": "politique de confidentialité",
+      "after": ". Une infolettre apaisée par semaine. Désabonnement à tout moment."
+    },
+    "decoPages": "12 pages",
+    "decoItems": "50+ objets"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Nous utilisons un petit nombre de cookies pour la mesure d’audience et la continuité de session. Aucun cookie publicitaire. Voir notre",
+      "privacyLink": "politique de confidentialité",
+      "after": "."
+    },
+    "reject": "Refuser",
+    "accept": "Accepter"
+  },
+  "hubPage": {
+    "crumbHome": "Accueil",
+    "crumbGuides": "Enquêtes",
+    "hubXofY": "Rubrique {i} sur {n}",
+    "ourThesisLabel": "Notre thèse",
+    "totalLive": "Articles en ligne",
+    "planned": "Prévus dans la rubrique",
+    "startHereEyebrow": "Commencer ici",
+    "startHereTitle": "Le guide complet.",
+    "guideEyebrow": "L’enquête de fond",
+    "readPillar": "Lire l’enquête de fond",
+    "comparisonsEyebrow": "Les comparatifs classés",
+    "comparisonsTitle": "Ce que nous achèterions vraiment.",
+    "explainersEyebrow": "Les explicatifs",
+    "explainersTitle": "Des réponses claires aux questions que les lectrices se posent vraiment.",
+    "auditsEyebrow": "Les audits",
+    "auditsTitle": "Des listes prêtes pour le week-end.",
+    "emptyBefore": "Les articles paraissent ici dès qu’ils ont passé la relecture éditoriale. Voir la",
+    "emptyHomeLink": "page d’accueil",
+    "emptyAfter": "pour ce qui est en ligne aujourd’hui.",
+    "minRead": "{n} min de lecture",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "L’enquête de fond",
+    "comparison": "Le comparatif",
+    "cluster": "L’explicatif",
+    "listicle": "L’audit"
+  },
+  "postTypeShort": {
+    "pillar": "Enquête",
+    "comparison": "Comparatif",
+    "cluster": "Explicatif",
+    "listicle": "Audit"
+  },
+  "postChrome": {
+    "translationBanner": "Cette enquête n’est pour le moment disponible qu’en anglais. La traduction française est en cours.",
+    "onThisPage": "Sur cette page",
+    "shortAnswer": "La réponse courte",
+    "rankedList": "La liste classée",
+    "wouldSkip": "Ce que nous écartons",
+    "methodologyTOC": "Méthodologie",
+    "faqShort": "FAQ",
+    "changeMind": "Ce qui nous ferait changer d’avis",
+    "sources": "Sources",
+    "frequentlyAsked": "Questions fréquentes",
+    "labLabel": "Le laboratoire",
+    "tested": "Testés",
+    "testedValue": "{n}+ produits",
+    "cited": "Sourcés",
+    "citedValue": "{n} sources",
+    "readTime": "Temps de lecture",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Dernière mise à jour"
+  },
+  "comparison": {
+    "eyebrow": "Le comparatif",
+    "ourPickEyebrow": "Notre choix",
+    "rankedEyebrow": "La liste classée",
+    "rankedTitle": "Tout ce que nous achèterions, par ordre.",
+    "rankedMeta": "{n} sélections · classées au mérite",
+    "skipsEyebrow": "Ce que nous écartons — et pourquoi",
+    "skipsTitle": "Nommé, pas sous-entendu.",
+    "faqEyebrow": "La FAQ",
+    "faqTitle": "Les questions qui reviennent le plus.",
+    "changeMindLabel": "Ce qui nous ferait changer d’avis",
+    "changeMindBody": "De nouveaux essais indépendants contredisant notre classement. La reformulation discrète d’un produit en tête qui abandonne une certification déclarée. Un article évalué par les pairs modifiant le tableau de la sécurité pour l’un des matériaux ci-dessus. Nous mettons cette page à jour sous une semaine et signalons ce qui a changé."
+  },
+  "pillar": {
+    "eyebrow": "L’enquête de fond",
+    "pullQuoteAttribution": "Position de la rédaction PlasticFreeLab",
+    "pullQuote": "Nous préférons répondre dès le premier paragraphe à la question que vous vous posez vraiment, puis gagner votre confiance en montrant le travail.",
+    "keyTakeawayTitle": "Ce que couvre cette enquête",
+    "keyTakeawayBody": "Ce que dit aujourd’hui la meilleure preuve disponible, ce qui demeure réellement incertain et ce que vous pouvez faire dès cette semaine — par ordre de priorité, chaque affirmation sourcée.",
+    "faqEyebrow": "La FAQ",
+    "faqTitle": "Les questions que les lectrices nous adressent vraiment."
+  },
+  "cluster": {
+    "eyebrow": "L’explicatif",
+    "shortAnswerTitle": "La réponse courte",
+    "shortAnswerBody": "Le résumé est ici pour celles et ceux qui ont besoin de la réponse tout de suite. Le reste de la page la justifie — sources, contexte et points discutés en interne.",
+    "faqEyebrow": "La FAQ",
+    "faqTitle": "Ce que les lectrices demandent ensuite."
+  },
+  "listicle": {
+    "eyebrow": "L’audit"
+  },
+  "methodology": {
+    "label": "Méthodologie",
+    "title": "Comment ce comparatif a été établi",
+    "items": {
+      "picked": {
+        "label": "Critères de sélection",
+        "detail": "Matériaux divulgués, certifications indépendantes, durabilité en cuisine réelle, essais de contamination indépendants lorsque disponibles."
+      },
+      "evaluated": {
+        "label": "Méthode d’évaluation",
+        "detail": "Déclarations des fabricants, documents réglementaires, articles évalués par les pairs et essais d’usure en conditions réelles. Nous lisons les étiquettes et les pièces, pas les communiqués."
+      },
+      "disagrees": {
+        "label": "Qui nous contredit",
+        "detail": "Nous formulons la position adverse au mieux dans chaque comparatif, et nommons la marque que nous avons failli choisir, en disant pourquoi nous ne l’avons pas retenue."
+      },
+      "changeMind": {
+        "label": "Ce qui nous ferait changer d’avis",
+        "detail": "De nouveaux essais indépendants, la reformulation d’un produit classé ou un résultat évalué par les pairs contredisant notre raisonnement actuel."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Cette enquête n’est pour le moment disponible qu’en anglais. La traduction française est en cours."
+  },
+  "affiliate": {
+    "label": "Mention",
+    "body": "PlasticFreeLab teste et recommande en toute indépendance. Nous percevons parfois une commission lorsque vous achetez via nos liens — elle n’influe jamais sur nos classements."
+  },
+  "authorBio": {
+    "eyebrow": "À propos de la signature",
+    "name": "L’équipe PlasticFreeLab",
+    "body": "Un petit groupe de chercheuses et de rédacteurs qui démêle le bruit autour du quotidien non toxique. Nous lisons les études, lisons les étiquettes, testons les produits — et actualisons nos recommandations à mesure que la science évolue. Nous n’acceptons aucun paiement pour un placement, divulguons chaque relation d’affiliation et nommons les marques que nous écartons.",
+    "standardsLink": "Notre charte éditoriale →",
+    "correctionLink": "Nous signaler une correction →"
+  },
+  "related": {
+    "eyebrow": "À lire ensuite",
+    "title": "À découvrir dans cette rubrique."
+  },
+  "sources": {
+    "eyebrow": "Références",
+    "title": "Sources citées sur cette page."
+  },
+  "notFound": {
+    "metaTitle": "Hors archive",
+    "metaDescription": "La page demandée ne figure pas dans notre index. Voici quelques pistes qui pourraient correspondre à votre recherche.",
+    "eyebrow": "404 · Hors archive",
+    "title": "Cette page est introuvable.",
+    "p1": "Une URL change parfois quand nous réorganisons une rubrique. Un article est parfois retiré quand la science a évolué et que nous préférons ne pas laisser une recommandation périmée en ligne.",
+    "p2": "Quoi qu’il en soit, rien d’utile n’habite cette adresse. Les cinq rubriques ci-dessous couvrent tout ce que nous publions — l’une d’elles correspond presque certainement à ce que vous cherchiez.",
+    "tryHubs": "Essayer les rubriques",
+    "primary": "Retour à la une",
+    "secondary": "Recevoir la dépêche hebdomadaire",
+    "stampLine1": "HORS",
+    "stampLine2": "ARCHIVE",
+    "stampSub": "· ARCHIVE PLASTICFREELAB ·"
+  },
+  "errorPage": {
+    "eyebrow": "Erreur · Quelque chose a flanché",
+    "title": "Quelque chose a cassé chez nous.",
+    "body": "Pas de votre fait. Une page n’a pas été rendue comme prévu. Réessayez — si l’erreur persiste, revenez à la une, le reste du site devrait fonctionner normalement.",
+    "tryAgain": "Réessayer",
+    "backToHome": "Retour à l’accueil",
+    "reference": "Référence · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Une infolettre apaisée par semaine.",
+    "p1": {
+      "before": "Une chose utile à la fois\u202F: l’article le plus marquant de la semaine, l’alternative que nous adopterions en premier, ou une étude que nous avons lue à votre place. Pas de relance commerciale, pas de spam d’affiliation, pas d’e-mails de quatre mille mots."
+    },
+    "p2": {
+      "before": "Les abonnées reçoivent en plus l’",
+      "bold": "audit cuisine",
+      "after": " — une liste imprimable de plus de cinquante objets de cuisine, chacun classé\u202F: à remplacer maintenant / à remplacer plus tard / à laisser."
+    },
+    "captureHeadline": "Commencez par l’audit.",
+    "captureSubhead": "Indiquez votre adresse, nous envoyons le PDF immédiatement."
+  },
+  "trustNav": {
+    "home": "Accueil"
+  },
+  "trustPages": {
+    "about": {
+      "title": "À propos de PlasticFreeLab",
+      "metaDescription": "Qui nous sommes, ce que nous faisons et pourquoi nous avons construit ce magazine.",
+      "intro": "PlasticFreeLab existe parce que l’information sur le quotidien non toxique reste, le plus souvent, brouillonne. Nous avons construit une ressource posée, sourcée et investigatrice qui lit les études, teste les produits et vous dit les trois choses qui comptent vraiment."
+    },
+    "editorialStandards": {
+      "title": "Charte éditoriale",
+      "metaDescription": "Nos règles éditoriales publiques — sources, corrections, liens affiliés, recours à l’IA.",
+      "intro": "Chaque site promet d’être fiable. Voici ce que cela signifie concrètement chez PlasticFreeLab — règles de sourçage, politique de corrections, mention d’affiliation et recours à l’IA."
+    },
+    "affiliateDisclosure": {
+      "title": "Mentions sur les liens affiliés",
+      "metaDescription": "Comment fonctionnent les liens affiliés sur PlasticFreeLab et ce que cela implique pour vous.",
+      "intro": "Certains liens de produits sur ce site sont des liens affiliés. Nous percevons une petite commission lorsque vous achetez via ces liens, sans coût supplémentaire pour vous, et ces commissions n’influencent jamais nos classements."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "metaDescription": "Ce que nous collectons, ce que nous en faisons et vos droits.",
+      "intro": "Cette politique de confidentialité décrit la manière dont PlasticFreeLab collecte, utilise et partage les informations lorsque vous visitez plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Conditions d’utilisation",
+      "metaDescription": "Les conditions qui régissent votre utilisation de PlasticFreeLab.",
+      "intro": "En accédant à plasticfreelab.com, vous acceptez ces conditions. Si vous ne les acceptez pas, merci de ne pas utiliser le site."
+    },
+    "contact": {
+      "title": "Contact",
+      "metaDescription": "Comment nous joindre.",
+      "intro": "Comment nous joindre — pour les retours généraux, les corrections, les demandes liées à la vie privée et les suggestions de produits."
+    },
+    "newsletter": {
+      "title": "Une infolettre apaisée par semaine.",
+      "metaDescription": "Une infolettre apaisée par semaine — l’article le plus utile de la semaine et l’alternative que nous adopterions en premier. Gratuit. Désabonnement à tout moment."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Langue",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français"
+  },
+  "site": {
+    "tagline": "Le laboratoire non toxique pour le quotidien.",
+    "description": "Nous testons les alternatives, lisons les études et publions des guides apaisés, sourcés, sur les microplastiques, les PFAS et les changements domestiques qui valent la peine."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Microplastiques & PE",
+      "shortName": "Microplastiques",
+      "oneLiner": "La science, en français clair. Ce qui est établi, ce qui reste débattu et ce que cela implique au quotidien."
+    },
+    "non-toxic-kitchen": {
+      "name": "Cuisine non toxique",
+      "shortName": "Cuisine",
+      "oneLiner": "Les changements à plus fort impact dans le foyer, classés par importance. Ustensiles, eau, stockage — tout y est."
+    },
+    "non-toxic-personal-care": {
+      "name": "Hygiène et soins",
+      "shortName": "Hygiène",
+      "oneLiner": "Du shampoing à la crème solaire, la vérité posée sur ce qui occupe la salle de bains et ce qui mérite d’être remplacé."
+    },
+    "non-toxic-home": {
+      "name": "Environnement intérieur",
+      "shortName": "Maison",
+      "oneLiner": "Matelas, produits ménagers, qualité de l’air — et les expositions discrètes auxquelles personne ne pense."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Vêtements & textiles",
+      "shortName": "Textile",
+      "oneLiner": "Microplastiques, PFAS dans les vêtements et chaîne d’approvisionnement textile — avec les marques qui ont fait le travail."
+    }
+  }
+}
