@@ -1,0 +1,769 @@
+{
+  "common": {
+    "openMenu": "Abrir el menú",
+    "closeMenu": "Cerrar el menú",
+    "skipToContent": "Saltar al contenido",
+    "minRead": "{n} min de lectura",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "Por",
+    "updated": "Actualizado el {date}",
+    "lastUpdated": "Última actualización · {date}",
+    "openHub": "Abrir la sección",
+    "browse": "Explorar →",
+    "readMore": "Leer el reportaje",
+    "backToHome": "Volver al inicio",
+    "backToFront": "Volver a la portada",
+    "backToMasthead": "Volver a la cabecera",
+    "tryAgain": "Reintentar",
+    "more": "Más",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Reportajes",
+    "kitchen": "Cocina",
+    "newsletter": "Boletín",
+    "getTheAudit": "Recibir la auditoría",
+    "getTheAuditArrow": "Recibir la auditoría →",
+    "editorialStandards": "Normas editoriales",
+    "about": "Quiénes somos",
+    "contact": "Contacto",
+    "fiveHubs": "Las cinco secciones",
+    "masthead": "La cabecera"
+  },
+  "footer": {
+    "leadParagraph": "Un equipo pequeño que lee los estudios, las etiquetas y las declaraciones de los fabricantes — y publica lo que le diríamos a una amiga. Sin emplazamiento de producto. Sin clasificaciones pagadas.",
+    "fiveHubs": "Las cinco secciones",
+    "masthead": "La cabecera",
+    "finePrint": "Aviso legal",
+    "about": "Quiénes somos",
+    "editorialStandards": "Normas editoriales",
+    "contact": "Contacto y avisos",
+    "newsletter": "Boletín",
+    "affiliateDisclosure": "Aviso de afiliación",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "imprint": "Las comisiones de algunos enlaces financian nuestras pruebas y nunca afectan a las clasificaciones. Actualizamos los comparativos cada trimestre."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  La edición de lanzamiento",
+    "tagline": "El laboratorio sin tóxicos para la vida diaria."
+  },
+  "issueBanner": {
+    "issue": "Número 01",
+    "edition": "La edición de lanzamiento",
+    "investigations": "Abre con doce investigaciones"
+  },
+  "masthead": {
+    "imprintEdition": "La edición de lanzamiento",
+    "headlineLine1": "El laboratorio",
+    "headlineWordLab": "sin tóxicos",
+    "headlineWordThe": "y la",
+    "headlineQuietly": "guía discreta,",
+    "headlineLast": "documentada, de cada cambio que importa.",
+    "footnoteFig": "Fig. 1.",
+    "footnoteText": "Una guía de campo a las exposiciones que su casa silencia — publicada página a página, con fuentes.",
+    "ledeBefore": "PlasticFreeLab lee los estudios, prueba las alternativas y publica lo que le diríamos a una amiga, con fuentes. Sin sermón, sin pastel de lifestyle, sin cebos del tipo",
+    "ledeQuote": "10 tóxicos impactantes",
+    "ledeAfter": ".",
+    "ctaPrimary": "Empezar por la cocina",
+    "ctaSecondary": "En este número",
+    "issueLabel": "En este número",
+    "folioText": "Continúe bajando — el sumario está más abajo"
+  },
+  "magazineGrid": {
+    "eyebrow": "En este número",
+    "title": {
+      "before": "Doce investigaciones,",
+      "italic": "una página serena",
+      "after": "."
+    },
+    "skipToToc": "Ir al sumario →",
+    "fromTheDesk": "De la redacción",
+    "currentlyTesting": "En análisis",
+    "featuredEyebrow": "Investigación destacada",
+    "team": "El equipo de PlasticFreeLab",
+    "testingLead": "Responsable de pruebas"
+  },
+  "investigationTiles": {
+    "eyebrow": "Actualmente en el laboratorio",
+    "title": {
+      "before": "Las categorías que",
+      "italic": "estamos analizando",
+      "after": "este trimestre."
+    },
+    "statusTesting": "En análisis",
+    "statusPublished": "Publicado",
+    "statusLabel": "Estado · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Menaje sin tóxicos",
+        "blurb": "14 baterías, seis semanas, una elección que volveríamos a comprar."
+      },
+      "storage": {
+        "label": "Conservación de alimentos sin plástico",
+        "blurb": "Lo que conservar, lo que sustituir, lo que tirar este fin de semana."
+      },
+      "filter": {
+        "label": "Filtro de agua",
+        "blurb": "Brita, Berkey, AquaTru — una recomendación clara."
+      },
+      "bottles": {
+        "label": "Botellas de vidrio",
+        "blurb": "Borosilicato, sodocálcico, acero inoxidable — medimos cada una."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "La investigación",
+    "title": {
+      "before": "La que",
+      "italic": "destacamos",
+      "after": "este mes."
+    },
+    "claims": {
+      "01": {
+        "label": "Composición de los materiales",
+        "body": "Las propias declaraciones de las marcas, no el texto publicitario. Qué capas se declaran, cuáles no — y qué acaba significando «sin tóxicos» en una promesa comercial."
+      },
+      "02": {
+        "label": "Comportamiento al calor y a la abrasión",
+        "body": "Seis semanas en el banco de pruebas. Mapas térmicos por infrarrojos, comparación con el hierro fundido y la prueba que la mayoría de los analistas se salta."
+      },
+      "03": {
+        "label": "Quién está en desacuerdo, y por qué",
+        "body": "Nombramos a los críticos, enlazamos su trabajo y decimos en qué seguimos discrepando. Investigación, no espectáculo."
+      }
+    },
+    "editorsPick": "Elección de la redacción",
+    "ourPick": "Nuestra elección",
+    "cta": "Leer la investigación completa",
+    "bylineBy": "Por",
+    "bylineName": "El equipo editorial\nde PlasticFreeLab",
+    "bylineDate": "Abril · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "El sumario",
+    "title": {
+      "before": "Cinco secciones.",
+      "italic": "Ciento cincuenta",
+      "after": "artículos en preparación."
+    },
+    "linkAbout": "Por qué lo hemos construido así →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Cómo informamos · Quién informa",
+    "title": "El comité editorial.",
+    "lede": "Cuatro sillas a la mesa. Cada una puede eliminar una frase que no podamos defender.",
+    "roles": {
+      "research": {
+        "title": "Responsable de investigación",
+        "bio": "Lee la literatura primaria. Cita el ensayo, no la nota de prensa. La discrepancia con el consenso solo aparece cuando los datos la justifican."
+      },
+      "testing": {
+        "title": "Responsable de pruebas domésticas",
+        "bio": "Cocina un mes en cada sartén. Pesa cada botella. Mide cada afirmación. Las herramientas y los cuadernos superan en número a las opiniones."
+      },
+      "medical": {
+        "title": "Revisión médica",
+        "bio": "Marca los temas YMYL. Confirma que ningún alarmismo haya pasado la revisión. La persona que retira con calma la frase inquietante."
+      },
+      "sourcing": {
+        "title": "Responsable de aprovisionamiento",
+        "bio": "Lee las fichas técnicas. Triangula las afirmaciones de los fabricantes con pruebas independientes. Nombra las marcas que descartamos y dice por qué."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Del cuaderno de laboratorio",
+    "title": {
+      "before": "En qué",
+      "italic": "trabajamos",
+      "after": "."
+    },
+    "qMarker": "P.",
+    "aMarker": "R.",
+    "entries": {
+      "01": {
+        "q": "¿Qué alternativa estamos analizando en abril?",
+        "a": "Las botellas de vidrio — borosilicato, sodocálcico y acero inoxidable, pesadas, dejadas caer y sometidas a choques térmicos. Resultados en el despacho de mayo."
+      },
+      "02": {
+        "q": "¿Qué marca rechazamos este mes?",
+        "a": "Una vendida como «libre de PFAS» cuya propia ficha de seguridad declara un revestimiento fluoropolímero. Daremos su nombre con la publicación, con la documentación a la vista."
+      },
+      "03": {
+        "q": "Una lectora pregunta: ¿está obsoleta nuestra recomendación de filtro de agua?",
+        "a": "Las actualizaciones NSF de 2024 no modifican nuestra recomendación principal. Estamos revisando el segundo puesto — nota de actualización prevista para finales de mes."
+      },
+      "04": {
+        "q": "¿Cuál es la próxima investigación?",
+        "a": "Los colchones sin tóxicos. Hemos abierto las fichas técnicas de cinco marcas y solicitado las pruebas independientes. Objetivo de publicación: junio."
+      },
+      "05": {
+        "q": "¿Cómo respondemos cuando un fabricante pide otra prueba?",
+        "a": "Volvemos a probar en nuestro banco, no en el suyo. Si sus datos contradicen los nuestros, publicamos ambos, dejamos clara la discrepancia y permitimos que la lectora juzgue por sí misma."
+      },
+      "06": {
+        "q": "¿Cambian nuestras clasificaciones los enlaces de afiliación?",
+        "a": "Nunca lo han hecho. Las comisiones financian las pruebas; no compran posición. Lo que una marca nos manda sin pedirlo va al sorteo, no a la reseña."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Lo más reciente",
+    "title": "Recién probado, recién documentado."
+  },
+  "credo": {
+    "eyebrow": "El credo",
+    "title": {
+      "before": "",
+      "italic": "Prometemos",
+      "after": "una página en la que cada afirmación está documentada, cada clasificación está merecida y cada producto descartado se nombra."
+    },
+    "01": {
+      "title": "Cada afirmación, documentada.",
+      "body": "Si no está en un estudio revisado por pares, en un documento regulatorio o en una declaración del fabricante, no se publica."
+    },
+    "02": {
+      "title": "Metodología abierta.",
+      "body": "Cada comparativa explica cómo elegimos, qué verificamos, quién discrepa y por qué."
+    },
+    "03": {
+      "title": "Sin clasificaciones pagadas.",
+      "body": "Las comisiones pagan las pruebas. Nunca han comprado, ni comprarán, una posición en esta página."
+    },
+    "fullStandards": "Leer las normas editoriales completas"
+  },
+  "explainers": {
+    "eyebrow": "Las claves",
+    "title": "Los términos que no dejan de aparecer, en castellano claro."
+  },
+  "newsletterBlock": {
+    "eyebrow": "El despacho",
+    "title": "Un correo sereno y documentado, cada semana.",
+    "body": "Sin titulares alarmistas. Sin bombardeo diario. Una cosa que hemos verificado o sobre la que hemos cambiado de opinión, cada martes por la mañana. Más la auditoría de la cocina gratuita al suscribirse."
+  },
+  "emailCapture": {
+    "eyebrow": "La auditoría de la cocina",
+    "headline": "Reciba la auditoría de la cocina.",
+    "subhead": "Una lista imprimible con más de cincuenta artículos de cocina, cada uno clasificado como sustituir ya / sustituir más adelante / no merece la pena. Gratuito. Entrega inmediata.",
+    "emailLabel": "Correo electrónico",
+    "placeholder": "usted@ejemplo.es",
+    "submit": "Enviarme la auditoría →",
+    "submitLoading": "Enviando…",
+    "success": "Gracias — revise su buzón. La auditoría está en camino.",
+    "consent": {
+      "before": "Al suscribirse, acepta nuestra",
+      "privacyLink": "política de privacidad",
+      "after": ". Un correo sereno por semana. Cancele la suscripción cuando quiera."
+    },
+    "decoPages": "12 páginas",
+    "decoItems": "50+ artículos"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Utilizamos un número reducido de cookies para análisis y continuidad de sesión. Sin cookies publicitarias. Consulte nuestra",
+      "privacyLink": "política de privacidad",
+      "after": "."
+    },
+    "reject": "Rechazar",
+    "accept": "Aceptar"
+  },
+  "hubPage": {
+    "crumbHome": "Inicio",
+    "crumbGuides": "Reportajes",
+    "hubXofY": "Sección {i} de {n}",
+    "ourThesisLabel": "Nuestra tesis",
+    "totalLive": "Artículos publicados",
+    "planned": "Previstos en la sección",
+    "startHereEyebrow": "Empezar aquí",
+    "startHereTitle": "La guía completa.",
+    "guideEyebrow": "El reportaje de fondo",
+    "readPillar": "Leer el reportaje",
+    "comparisonsEyebrow": "Los comparativos clasificados",
+    "comparisonsTitle": "Lo que compraríamos de verdad.",
+    "explainersEyebrow": "Las claves",
+    "explainersTitle": "Respuestas claras a las preguntas que la gente plantea.",
+    "auditsEyebrow": "Las auditorías",
+    "auditsTitle": "Listas para el fin de semana.",
+    "emptyBefore": "Los artículos llegan aquí cuando superan la revisión editorial. Consulte la",
+    "emptyHomeLink": "página de inicio",
+    "emptyAfter": "para ver lo publicado hoy.",
+    "minRead": "{n} min de lectura",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "El reportaje de fondo",
+    "comparison": "El comparativo",
+    "cluster": "La clave",
+    "listicle": "La auditoría"
+  },
+  "postTypeShort": {
+    "pillar": "Reportaje",
+    "comparison": "Comparativo",
+    "cluster": "Clave",
+    "listicle": "Auditoría"
+  },
+  "postChrome": {
+    "translationBanner": "Esta investigación solo está disponible por ahora en inglés. Estamos trabajando en la traducción al español.",
+    "onThisPage": "En esta página",
+    "shortAnswer": "La respuesta breve",
+    "rankedList": "La lista clasificada",
+    "wouldSkip": "Lo que descartamos",
+    "methodologyTOC": "Metodología",
+    "faqShort": "Preguntas frecuentes",
+    "changeMind": "Lo que nos haría cambiar de opinión",
+    "sources": "Fuentes",
+    "frequentlyAsked": "Preguntas frecuentes",
+    "labLabel": "El laboratorio",
+    "tested": "Probados",
+    "testedValue": "{n}+ productos",
+    "cited": "Citadas",
+    "citedValue": "{n} fuentes",
+    "readTime": "Tiempo de lectura",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Última actualización",
+    "pflScoreEyebrow": "Puntuación PFL",
+    "scoreBreakdownEyebrow": "Desglose de la puntuación",
+    "scoreBreakdownTitle": "Cómo se obtuvo el {n}/100.",
+    "scoreDim": {
+      "materialSafety": "Seguridad de los materiales",
+      "performance": "Rendimiento",
+      "durability": "Durabilidad",
+      "useExperience": "Experiencia de uso",
+      "value": "Relación calidad-precio"
+    }
+  },
+  "comparison": {
+    "eyebrow": "El comparativo",
+    "ourPickEyebrow": "Nuestra elección",
+    "rankedEyebrow": "La lista clasificada",
+    "rankedTitle": "Todo lo que compraríamos, por orden.",
+    "rankedMeta": "{n} selecciones · ordenadas por mérito",
+    "skipsEyebrow": "Lo que descartamos — y por qué",
+    "skipsTitle": "Nombrado, no insinuado.",
+    "faqEyebrow": "Las preguntas frecuentes",
+    "faqTitle": "Lo que más nos preguntan.",
+    "changeMindLabel": "Lo que nos haría cambiar de opinión",
+    "changeMindBody": "Nuevas pruebas independientes que contradigan nuestra clasificación. La reformulación silenciosa de un producto bien situado que pierda una certificación declarada. Un artículo revisado por pares que cambie el cuadro de seguridad de uno de los materiales anteriores. Actualizaremos esta página en una semana y señalaremos qué ha cambiado."
+  },
+  "pillar": {
+    "eyebrow": "El reportaje de fondo",
+    "pullQuoteAttribution": "Posición de la redacción de PlasticFreeLab",
+    "pullQuote": "Preferimos responder en el primer párrafo a la pregunta que se ha planteado de verdad y, después, ganarnos su confianza mostrando el trabajo.",
+    "keyTakeawayTitle": "Lo que cubre este reportaje",
+    "keyTakeawayBody": "Lo que dice hoy la mejor evidencia disponible, lo que sigue siendo realmente incierto y lo que puede hacer ya esta semana — por orden de prioridad, con cada afirmación documentada.",
+    "faqEyebrow": "Las preguntas frecuentes",
+    "faqTitle": "Las preguntas que las lectoras nos plantean de verdad."
+  },
+  "cluster": {
+    "eyebrow": "La clave",
+    "shortAnswerTitle": "La respuesta breve",
+    "shortAnswerBody": "El resumen está aquí para quien necesita la respuesta de inmediato. El resto de la página la sostiene — fuentes, contexto y los puntos que hemos discutido en redacción.",
+    "faqEyebrow": "Las preguntas frecuentes",
+    "faqTitle": "Lo que las lectoras preguntan a continuación."
+  },
+  "listicle": {
+    "eyebrow": "La auditoría"
+  },
+  "methodology": {
+    "label": "Metodología",
+    "title": "Cómo se ha hecho este comparativo",
+    "items": {
+      "picked": {
+        "label": "Criterios de selección",
+        "detail": "Materiales declarados, certificación independiente, durabilidad en cocina real y pruebas independientes de contaminantes cuando están disponibles."
+      },
+      "evaluated": {
+        "label": "Cómo evaluamos",
+        "detail": "Declaraciones de los fabricantes, documentación regulatoria, artículos revisados por pares y pruebas de uso en condiciones reales. Leemos las etiquetas y los expedientes, no las notas de prensa."
+      },
+      "disagrees": {
+        "label": "Quién no está de acuerdo con nosotros",
+        "detail": "Formulamos lo mejor posible la posición contraria en cada comparativo y nombramos la marca que estuvimos a punto de elegir, explicando por qué no la elegimos."
+      },
+      "changeMind": {
+        "label": "Lo que nos haría cambiar de opinión",
+        "detail": "Nuevas pruebas independientes, una reformulación de una marca clasificada o un hallazgo revisado por pares que contradiga nuestro razonamiento actual."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Esta investigación solo está disponible por ahora en inglés. Estamos trabajando en la traducción al español."
+  },
+  "affiliate": {
+    "label": "Aviso",
+    "body": "PlasticFreeLab prueba y recomienda con independencia. A veces percibimos una comisión cuando compra a través de nuestros enlaces — nunca afecta a nuestras clasificaciones."
+  },
+  "authorBio": {
+    "eyebrow": "Sobre la firma",
+    "name": "El equipo de PlasticFreeLab",
+    "body": "Un grupo pequeño de investigadoras y redactores que abre paso entre el ruido en torno a la vida sin tóxicos. Leemos los estudios, leemos las etiquetas, probamos los productos — y actualizamos las recomendaciones a medida que la ciencia avanza. No aceptamos pagos por emplazamiento, declaramos cada relación de afiliación y nombramos las marcas que descartamos.",
+    "standardsLink": "Nuestras normas editoriales →",
+    "correctionLink": "Comuníquenos una corrección →"
+  },
+  "related": {
+    "eyebrow": "Para seguir leyendo",
+    "title": "Relacionado en esta sección."
+  },
+  "sources": {
+    "eyebrow": "Referencias",
+    "title": "Fuentes citadas en esta página."
+  },
+  "notFound": {
+    "metaTitle": "No figura en el archivo",
+    "metaDescription": "La página que ha pedido no figura en nuestro índice. Estos son algunos lugares en los que podría encontrar lo que buscaba.",
+    "eyebrow": "404 · Fuera de archivo",
+    "title": "No hemos encontrado esa página.",
+    "p1": "A veces una URL cambia cuando reorganizamos una sección. A veces un artículo se retira porque la ciencia se ha movido y preferimos quitarlo antes que dejar en línea una recomendación caducada.",
+    "p2": "Sea como sea, en esta dirección no hay nada útil. Las cinco secciones siguientes cubren todo lo que publicamos — casi seguro alguna de ellas tiene lo que buscaba.",
+    "tryHubs": "Pruebe las secciones",
+    "primary": "Volver a la portada",
+    "secondary": "Recibir el despacho semanal",
+    "stampLine1": "FUERA DE",
+    "stampLine2": "ARCHIVO",
+    "stampSub": "· ARCHIVO PLASTICFREELAB ·"
+  },
+  "errorPage": {
+    "eyebrow": "Error · Algo se torció",
+    "title": "Algo se rompió por nuestro lado.",
+    "body": "No es culpa suya. Una página no se ha cargado como debía. Vuelva a intentarlo — si el problema persiste, regrese a la portada, el resto del sitio debería seguir funcionando.",
+    "tryAgain": "Reintentar",
+    "backToHome": "Volver al inicio",
+    "reference": "Referencia · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Un correo sereno a la semana.",
+    "p1": {
+      "before": "Una sola cosa útil: el artículo más relevante que hemos publicado, la alternativa que adoptaríamos primero o un estudio que hemos leído por usted. Sin propuestas comerciales, sin spam de afiliación, sin correos de cuatro mil palabras."
+    },
+    "p2": {
+      "before": "Las suscriptoras reciben además la",
+      "bold": "auditoría de la cocina",
+      "after": " — una lista imprimible con más de cincuenta artículos de cocina, cada uno clasificado: sustituir ya / sustituir más adelante / no merece la pena."
+    },
+    "captureHeadline": "Empiece por la auditoría.",
+    "captureSubhead": "Indique su correo y le enviamos el PDF de inmediato."
+  },
+  "trustNav": {
+    "home": "Inicio"
+  },
+  "trustPages": {
+    "about": {
+      "title": "Sobre PlasticFreeLab",
+      "metaDescription": "Quiénes somos, qué hacemos y por qué hemos construido este proyecto.",
+      "intro": "PlasticFreeLab existe porque la información sobre la vida sin tóxicos suele ser un desorden. Hemos construido un recurso sereno, documentado y de corte investigativo que lee los estudios, prueba los productos y le dice las tres cosas que de verdad importan."
+    },
+    "editorialStandards": {
+      "title": "Normas editoriales",
+      "metaDescription": "Nuestras reglas editoriales públicas — fuentes, correcciones, aviso de afiliación y uso de IA.",
+      "intro": "Toda página promete ser fiable. Esto es lo que eso significa concretamente en PlasticFreeLab — reglas de fuentes, política de correcciones, aviso de afiliación y uso de herramientas de IA."
+    },
+    "affiliateDisclosure": {
+      "title": "Aviso de afiliación",
+      "metaDescription": "Cómo funcionan los enlaces de afiliación en PlasticFreeLab y qué significa para usted.",
+      "intro": "Algunos enlaces a productos de este sitio son enlaces de afiliación. Recibimos una pequeña comisión cuando compra a través de ellos, sin coste adicional para usted, y esas comisiones no influyen jamás en nuestras clasificaciones."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "metaDescription": "Qué recopilamos, cómo lo usamos y cuáles son sus derechos.",
+      "intro": "Esta política describe cómo PlasticFreeLab recopila, utiliza y comparte información cuando visita plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Condiciones de uso",
+      "metaDescription": "Las condiciones que rigen su uso de PlasticFreeLab.",
+      "intro": "Al acceder a plasticfreelab.com acepta estas condiciones. Si no las acepta, le rogamos que no utilice el sitio."
+    },
+    "contact": {
+      "title": "Contacto",
+      "metaDescription": "Cómo ponerse en contacto.",
+      "intro": "Cómo ponerse en contacto — para opiniones generales, correcciones, consultas sobre privacidad y avisos de productos."
+    },
+    "newsletter": {
+      "title": "Un correo sereno a la semana.",
+      "metaDescription": "Un correo sereno a la semana — el artículo más útil de la semana y la alternativa que adoptaríamos primero. Gratis. Cancele la suscripción cuando quiera."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "it": "IT",
+    "es": "ES",
+    "nl": "NL",
+    "pl": "PL",
+    "sv": "SV",
+    "pt": "PT",
+    "ro": "RO",
+    "cs": "CS",
+    "no": "NO",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français",
+    "itFull": "Italiano",
+    "esFull": "Español",
+    "nlFull": "Nederlands",
+    "plFull": "Polski",
+    "svFull": "Svenska",
+    "ptFull": "Português",
+    "roFull": "Română",
+    "csFull": "Čeština",
+    "noFull": "Norsk"
+  },
+  "site": {
+    "tagline": "El laboratorio sin tóxicos para la vida diaria.",
+    "description": "Probamos las alternativas, leemos los estudios y publicamos guías serenas y documentadas sobre microplásticos, PFAS y los cambios domésticos que de verdad merecen la pena."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Microplásticos y disruptores endocrinos",
+      "shortName": "Microplásticos",
+      "oneLiner": "La ciencia, en castellano claro. Lo que se sabe de verdad, lo que sigue en debate y qué se puede hacer al respecto."
+    },
+    "non-toxic-kitchen": {
+      "name": "Cocina sin tóxicos",
+      "shortName": "Cocina",
+      "oneLiner": "Los cambios de mayor impacto en su casa, ordenados por importancia. Menaje, agua, conservación — todo el conjunto."
+    },
+    "non-toxic-personal-care": {
+      "name": "Higiene y cosmética",
+      "shortName": "Higiene",
+      "oneLiner": "Del champú al protector solar, la verdad serena sobre lo que ocupa su baño y lo que merece sustituirse."
+    },
+    "non-toxic-home": {
+      "name": "Entorno doméstico",
+      "shortName": "Hogar",
+      "oneLiner": "Colchones, productos de limpieza, calidad del aire — y las exposiciones discretas en las que nadie piensa."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Ropa y textiles",
+      "shortName": "Ropa",
+      "oneLiner": "Microplásticos, PFAS en la ropa y cadena de suministro textil — con las marcas que han hecho los deberes."
+    }
+  },
+  "pflScore": {
+    "label": "Puntuación PFL",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Excelente",
+      "strongBuy": "Compra recomendada",
+      "good": "Bueno",
+      "caveatBuy": "Compra con reservas",
+      "skip": "Mejor evitar"
+    }
+  },
+  "pipeline": {
+    "label": "En el laboratorio",
+    "queued": "en cola",
+    "updatedWeekly": "Actualizado semanalmente",
+    "inTheLabCount": "{n} en el laboratorio",
+    "queuedCount": "{n} en cola",
+    "badgeAriaLabel": "Pipeline: {testing} en el laboratorio, {queued} en cola. Abrir el registro completo.",
+    "h1": "Lo que estamos probando ahora mismo."
+  },
+  "pipelinePage": {
+    "metaTitle": "Lo que estamos probando ahora mismo",
+    "metaDescription": "Un registro abierto de cada investigación de PlasticFreeLab — en curso, en cola o en revisión. Actualizado semanalmente.",
+    "eyebrow": "El pipeline",
+    "h1": "Lo que estamos probando ahora mismo.",
+    "subtitle": "Un registro abierto de cada investigación — en el laboratorio, en cola o en revisión. Actualizado semanalmente. Lo publicamos porque el secretismo es cosa del publirreportaje.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "En el laboratorio",
+      "drafted": "Redactado, en revisión",
+      "researching": "En investigación, en cola"
+    },
+    "status": {
+      "testing": "En análisis",
+      "drafted": "Redactado",
+      "researching": "En investigación"
+    },
+    "reviewerRole": {
+      "research": "Responsable de investigación",
+      "testing": "Responsable de pruebas",
+      "medical": "Revisión médica",
+      "sourcing": "Responsable de aprovisionamiento"
+    },
+    "expectedTBD": "Fecha por confirmar",
+    "itemsCount": "{n} entradas",
+    "methodologyFooter": "Metodología de pruebas · v1.2 · Última actualización {date} · Consultar",
+    "hubsLine": "Hacia las secciones:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Responsable de pruebas",
+      "testedVia": "Probado según la metodología PFL {version}",
+      "labRun": "Pruebas de laboratorio realizadas el {date}"
+    },
+    "plain": {
+      "team": "El equipo de PlasticFreeLab",
+      "published": "Publicado el {date}",
+      "refreshed": "Actualizado el {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "Metodología PFL",
+    "metaDescription": "Cómo PlasticFreeLab puntúa cada producto. Metodología pública, versionada como un programa.",
+    "eyebrow": "Normas editoriales",
+    "h1": "Metodología PFL",
+    "intro": "Cada producto en PlasticFreeLab se puntúa con la misma rúbrica de cinco dimensiones. La rúbrica es pública, versionada como un programa, y se actualiza cuando una nueva evidencia hace incompleta la versión anterior.",
+    "currentVersionTitle": "Versión vigente",
+    "currentVersionBody": "v1.2, en vigor desde abril de 2026. Añade un panel PFAS según el método SGS 5021A, amplía la ventana de durabilidad de 12 a 24 meses y revisa el cálculo del valor para integrar las condiciones de garantía.",
+    "currentVersionLink": "Leer la especificación v1.2 →",
+    "philosophyTitle": "Por qué una metodología pública",
+    "philosophyP1": "Si no podemos mostrar cómo elegimos, las elecciones valen poco. Cada puntuación de este sitio es un número que cualquier lectora puede reproducir a partir de las mismas evidencias. Publicamos las dimensiones, los pesos, los subensayos y los laboratorios asociados. Decimos lo que no probamos y por qué.",
+    "philosophyP2": "La deriva metodológica es el fallo más frecuente en la reseña de productos. Nuestro contrapeso es el número de versión. Cuando cambiamos la rúbrica, publicamos una nueva versión, archivamos la anterior y volvemos a puntuar las páginas afectadas. Las lectoras ven exactamente qué ha cambiado.",
+    "changeLogTitle": "Registro de cambios",
+    "changeLog": {
+      "v12": "Añadido el panel PFAS según el método SGS 5021A. Ventana de durabilidad ampliada de 12 a 24 meses. Cálculo del valor revisado para ponderar las condiciones de garantía.",
+      "v11": "Primera publicación pública. Rúbrica de cinco dimensiones, cinco roles de revisión, procedimiento de impugnación."
+    },
+    "disputeTitle": "Procedimiento de impugnación",
+    "disputeBody": "Si una marca considera errónea nuestra puntuación, puede presentar una impugnación con documentación. Repetimos la prueba en nuestro banco, no en el suyo. Si sus datos contradicen los nuestros, publicamos ambos. No modificamos puntuaciones vivas bajo amenaza de acción legal; las actualizamos cuando llega mejor evidencia."
+  },
+  "methodologyV12": {
+    "metaTitle": "Metodología PFL v1.2",
+    "metaDescription": "La especificación completa v1.2: cinco dimensiones ponderadas, subensayos, laboratorios asociados y credenciales de los revisores.",
+    "eyebrow": "Especificación · v1.2",
+    "h1": "Metodología PFL v1.2",
+    "updated": "Actualizada en abril de 2026 · Versión anterior: v1.1 ↗",
+    "changelogLink": "Todas las versiones",
+    "intro": "Esta es la especificación de referencia para cada puntuación publicada en PlasticFreeLab entre abril de 2026 y la próxima revisión versionada. Cinco dimensiones ponderadas, veintitrés subensayos, cuatro roles de revisión y un procedimiento de impugnación que no cede bajo presión.",
+    "weightsTitle": "Las cinco dimensiones",
+    "weightsBody": "Cada puntuación de este sitio es una media ponderada de las cinco dimensiones siguientes. Los pesos reflejan lo que, a nuestro juicio, más importa para una recomendación de vida sin tóxicos: la seguridad de los materiales domina porque es por lo que la lectora está aquí, y el valor queda al final porque el dinero se recupera, la exposición no.",
+    "subtestsTitle": "Subensayos",
+    "dimension": {
+      "materialSafety": {
+        "title": "Seguridad de los materiales",
+        "oneLiner": "Composición, migración y certificaciones.",
+        "body": "La seguridad de los materiales es lo que trae aquí a la mayoría de las lectoras y la dimensión que más pesamos. Puntuamos la lista de materiales declarada, las certificaciones independientes (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) y los datos de contaminantes que publica el fabricante. Si el fabricante guarda silencio, encargamos nuestros propios paneles a laboratorios acreditados."
+      },
+      "performance": {
+        "title": "Rendimiento",
+        "oneLiner": "Hace su trabajo — bien — bajo carga realista.",
+        "body": "Un producto sin tóxicos que no rinde no es una recomendación. Medimos funciones propias de la categoría: distribución y retención del calor en el menaje, reducción de contaminantes y caudal en filtros, recuperación estructural y transpirabilidad en textiles. Las puntuaciones de rendimiento salen del banco, no del olfato."
+      },
+      "durability": {
+        "title": "Durabilidad",
+        "oneLiner": "Cómo aguanta 24 meses de uso normal.",
+        "body": "Los recubrimientos saltan, las gomas envejecen, las juntas se encogen. La puntuación de durabilidad capta los modos de fallo que convierten un producto sin tóxicos en uno problemático a los doce meses. Nuestro panel somete cada artículo a un ciclo acelerado de desgaste a 24 meses, complementado con informes longitudinales de hogares reales."
+      },
+      "useExperience": {
+        "title": "Experiencia de uso",
+        "oneLiner": "Cómo es vivir con él durante un mes.",
+        "body": "Peso, equilibrio, facilidad de limpieza, curva de aprendizaje, sonido, olor. La dimensión cualitativa — pero puntuada con rúbricas fijas para que el resultado sea reproducible entre revisores. Tres miembros del panel pasan un mes natural cada uno con el producto antes de puntuar."
+      },
+      "value": {
+        "title": "Relación calidad-precio",
+        "oneLiner": "Coste por año de servicio esperado — relativizado a la categoría.",
+        "body": "Calculamos el valor como coste anual esperado de servicio en un horizonte de diez años, normalizado a la mediana de la categoría. Un artículo caro con una garantía de treinta años suele superar a uno barato con un revestimiento de dos años. Condiciones de garantía, reparabilidad y mercado de segunda mano entran en el cálculo."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "Panel PFAS (método SGS 5021A)",
+        "body": "Análisis cuantitativo de 40 compuestos PFAS con sensibilidad de partes por mil millones. Novedad en v1.2."
+      },
+      "leadCadmium": {
+        "title": "Cribado de plomo y cadmio",
+        "body": "Extracción de superficie según FDA Compliance Policy Guide 7117.06. Apto / valor numérico declarado."
+      },
+      "phthalate": {
+        "title": "Panel de ftalatos",
+        "body": "Análisis GC-MS para los ocho ftalatos restringidos por el CPSIA. Reportado en microgramos por gramo."
+      },
+      "vocChamber": {
+        "title": "Cámara COV",
+        "body": "Ensayo de 72 horas en cámara CDPH 01350 para COV totales y la lista prioritaria de 35 compuestos individuales."
+      },
+      "supplier": {
+        "title": "Auditoría de divulgación de proveedores",
+        "body": "Fabricante Tier 1 publicado, con país y certificación de cada capa de material."
+      },
+      "heatMap": {
+        "title": "Mapa térmico por infrarrojos",
+        "body": "Temperatura de superficie cartografiada cada 30 segundos a lo largo de una curva de calor de 12 minutos."
+      },
+      "deglaze": {
+        "title": "Sellado y desglasado",
+        "body": "Sellado proteico estandarizado más desglasado ácido, valorado por dorado, despegue e integridad de superficie."
+      },
+      "filterEfficacy": {
+        "title": "Reducción de contaminantes",
+        "body": "Agua de desafío conforme a especificación NSF, efluente medido para los diez contaminantes prioritarios."
+      },
+      "loadCycle": {
+        "title": "Ensayo a plena carga",
+        "body": "Uso continuo a plena capacidad durante toda la vida útil declarada del cartucho, con prueba final."
+      },
+      "coatingWear": {
+        "title": "Desgaste acelerado de revestimiento",
+        "body": "Ciclo de abrasión tipo ASTM equivalente a unos 24 meses de uso doméstico normal."
+      },
+      "warrantyAudit": {
+        "title": "Auditoría de garantía",
+        "body": "Cobertura, exclusiones y plazo medio de resolución, extraídos de expedientes públicos cuando es posible."
+      },
+      "fieldReports": {
+        "title": "Informes longitudinales de campo",
+        "body": "Seis hogares del panel informan mensualmente durante doce meses. La caída a mitad de prueba es ya una señal."
+      },
+      "weight": {
+        "title": "Peso y ergonomía",
+        "body": "Masa, equilibrio y alcance en las dimensiones ergonómicas pertinentes. Puntuado contra una referencia de categoría."
+      },
+      "cleanability": {
+        "title": "Facilidad de limpieza",
+        "body": "Ciclos de lavavajillas y a mano, valorados por residuos y degradación del acabado."
+      },
+      "panelScores": {
+        "title": "Puntuación cualitativa del panel",
+        "body": "Tres revisores, rúbrica fija, en ciego cuando la geometría lo permite."
+      },
+      "costPerYear": {
+        "title": "Coste anual esperado",
+        "body": "Precio de compra más consumibles, amortizados sobre la vida útil esperada."
+      },
+      "warrantyDelta": {
+        "title": "Ajuste por valor de garantía",
+        "body": "Las garantías plurianuales que se cumplen reducen el coste anual; las garantías débiles no."
+      },
+      "marketComparable": {
+        "title": "Comparable de mercado",
+        "body": "Indexado contra el coste anual mediano de la categoría de todos los candidatos vigentes."
+      }
+    },
+    "labPartnersTitle": "Laboratorios asociados",
+    "labPartnersBody": "Para los paneles químicos cuantitativos trabajamos con SGS, Eurofins e Intertek. Para PFAS, en concreto, el método SGS 5021A es nuestro estándar. La lista de laboratorios figura aquí como compromiso de transparencia; el estatus de socio no afecta a la puntuación, y los laboratorios no ven la identidad de la marca hasta que el informe está presentado. (Lista completa de socios y política de reciprocidad: se publicarán con la especificación v1.3.)",
+    "reviewersTitle": "Credenciales de los revisores",
+    "reviewersIntro": "Cuatro roles, cada uno con autoridad para eliminar una frase que el equipo no pueda defender.",
+    "reviewers": {
+      "research": {
+        "title": "Responsable de investigación",
+        "bio": "Lee la literatura primaria. Cita el ensayo, no la nota de prensa. La discrepancia con el consenso solo aparece cuando los datos la justifican."
+      },
+      "testing": {
+        "title": "Responsable de pruebas",
+        "bio": "Cocina un mes en cada sartén. Pesa cada botella. Mide cada afirmación. Las herramientas y los cuadernos superan a las opiniones."
+      },
+      "medical": {
+        "title": "Revisión médica",
+        "bio": "Marca los temas YMYL. Confirma que ningún alarmismo haya pasado la edición. Quita en silencio la frase que da miedo."
+      },
+      "sourcing": {
+        "title": "Responsable de aprovisionamiento",
+        "bio": "Lee las fichas técnicas. Triangula las afirmaciones de los fabricantes con pruebas independientes. Nombra las marcas que descartamos y dice por qué."
+      }
+    },
+    "disputeTitle": "Procedimiento de impugnación",
+    "disputeBody": "Si una marca considera errónea nuestra puntuación, puede presentar una impugnación con documentación. Repetimos la prueba en nuestro banco, no en el suyo. Si sus datos contradicen los nuestros, publicamos ambos. No modificamos puntuaciones vivas bajo amenaza de acción legal; las actualizamos cuando llega mejor evidencia.",
+    "changelogTitle": "Registro de cambios",
+    "changeLog": {
+      "v12": "Añadido el panel PFAS según el método SGS 5021A. Ventana de durabilidad ampliada de 12 a 24 meses. Cálculo del valor revisado para ponderar las condiciones de garantía.",
+      "v11": "Primera publicación pública. Rúbrica de cinco dimensiones, cinco roles de revisión, procedimiento de impugnación."
+    }
+  }
+}

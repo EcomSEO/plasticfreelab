@@ -1,0 +1,769 @@
+{
+  "common": {
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "skipToContent": "Sari la conținut",
+    "minRead": "{n} min de lectură",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "De",
+    "updated": "Actualizat la {date}",
+    "lastUpdated": "Ultima actualizare · {date}",
+    "openHub": "Deschide secțiunea",
+    "browse": "Răsfoiește →",
+    "readMore": "Citește ancheta",
+    "backToHome": "Înapoi la pagina principală",
+    "backToFront": "Înapoi la prima pagină",
+    "backToMasthead": "Înapoi la caseta tehnică",
+    "tryAgain": "Încercați din nou",
+    "more": "Mai mult",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Anchete",
+    "kitchen": "Bucătărie",
+    "newsletter": "Newsletter",
+    "getTheAudit": "Primește auditul",
+    "getTheAuditArrow": "Primește auditul →",
+    "editorialStandards": "Standarde editoriale",
+    "about": "Despre noi",
+    "contact": "Contact",
+    "fiveHubs": "Cele cinci secțiuni",
+    "masthead": "Caseta tehnică"
+  },
+  "footer": {
+    "leadParagraph": "O echipă mică, care citește studiile, etichetele și documentele producătorilor — și publică ce am spune unei prietene. Fără plasare de produs. Fără clasamente plătite.",
+    "fiveHubs": "Cele cinci secțiuni",
+    "masthead": "Caseta tehnică",
+    "finePrint": "Mențiuni legale",
+    "about": "Despre noi",
+    "editorialStandards": "Standarde editoriale",
+    "contact": "Contact și sesizări",
+    "newsletter": "Newsletter",
+    "affiliateDisclosure": "Declarație de afiliere",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Condițiile de utilizare",
+    "imprint": "Comisioanele de pe unele linkuri finanțează testele noastre și nu influențează vreodată clasamentele. Actualizăm comparațiile trimestrial."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  Ediția de lansare",
+    "tagline": "Laboratorul fără toxine pentru viața de zi cu zi."
+  },
+  "issueBanner": {
+    "issue": "Numărul 01",
+    "edition": "Ediția de lansare",
+    "investigations": "Deschide cu douăsprezece anchete"
+  },
+  "masthead": {
+    "imprintEdition": "Ediția de lansare",
+    "headlineLine1": "Laboratorul",
+    "headlineWordLab": "fără toxine",
+    "headlineWordThe": "și ghidul",
+    "headlineQuietly": "discret,",
+    "headlineLast": "documentat, către fiecare schimbare care contează.",
+    "footnoteFig": "Fig. 1.",
+    "footnoteText": "Un ghid de teren al expunerilor pe care casa dumneavoastră le tăinuiește — publicat o pagină cu surse pe rând.",
+    "ledeBefore": "PlasticFreeLab citește studiile, încearcă alternativele și publică ce am spune unei prietene, cu surse. Fără morală, fără pastel de lifestyle, fără momeli de tipul",
+    "ledeQuote": "10 toxine șocante",
+    "ledeAfter": ".",
+    "ctaPrimary": "Începem cu bucătăria",
+    "ctaSecondary": "În acest număr",
+    "issueLabel": "În acest număr",
+    "folioText": "Continuați să derulați — cuprinsul este mai jos"
+  },
+  "magazineGrid": {
+    "eyebrow": "În acest număr",
+    "title": {
+      "before": "Douăsprezece anchete,",
+      "italic": "o pagină liniștită",
+      "after": "."
+    },
+    "skipToToc": "La cuprins →",
+    "fromTheDesk": "De la redacție",
+    "currentlyTesting": "În testare",
+    "featuredEyebrow": "Anchetă în prim-plan",
+    "team": "Echipa PlasticFreeLab",
+    "testingLead": "Responsabil de testare"
+  },
+  "investigationTiles": {
+    "eyebrow": "În laborator chiar acum",
+    "title": {
+      "before": "Categoriile la care",
+      "italic": "lucrăm",
+      "after": "în acest trimestru."
+    },
+    "statusTesting": "În testare",
+    "statusPublished": "Publicat",
+    "statusLabel": "Stare · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Ustensile fără toxine",
+        "blurb": "14 seturi, șase săptămâni, o alegere pe care am cumpăra-o din nou."
+      },
+      "storage": {
+        "label": "Păstrarea alimentelor fără plastic",
+        "blurb": "Ce păstrați, ce înlocuiți, ce aruncați acest weekend."
+      },
+      "filter": {
+        "label": "Filtru de apă",
+        "blurb": "Brita, Berkey, AquaTru — o recomandare clară."
+      },
+      "bottles": {
+        "label": "Sticle de sticlă",
+        "blurb": "Borosilicat, sodo-calcic, oțel inoxidabil — măsurăm fiecare."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "Ancheta",
+    "title": {
+      "before": "Cea pe care o",
+      "italic": "punem în prim-plan",
+      "after": "luna aceasta."
+    },
+    "claims": {
+      "01": {
+        "label": "Compoziția materialelor",
+        "body": "Documentele propriilor mărci, nu textul de marketing. Ce straturi sunt declarate, care nu — și ce înseamnă, până la urmă, «fără toxine» într-o promisiune comercială."
+      },
+      "02": {
+        "label": "Comportament la căldură și abraziune",
+        "body": "Șase săptămâni pe banc. Hărți termice în infraroșu, comparație cu fonta și testul pe care majoritatea recenzenților îl sare."
+      },
+      "03": {
+        "label": "Cine nu este de acord — și de ce",
+        "body": "Numim criticii, le legăm lucrările și spunem unde rămânem în dezacord. Anchetă, nu spectacol."
+      }
+    },
+    "editorsPick": "Alegerea redacției",
+    "ourPick": "Alegerea noastră",
+    "cta": "Citiți ancheta integrală",
+    "bylineBy": "De",
+    "bylineName": "Redacția\nPlasticFreeLab",
+    "bylineDate": "Aprilie · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "Cuprinsul",
+    "title": {
+      "before": "Cinci secțiuni.",
+      "italic": "O sută cincizeci",
+      "after": "de articole în pregătire."
+    },
+    "linkAbout": "De ce am construit-o așa →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Cum relatăm · Cine relatează",
+    "title": "Comitetul editorial.",
+    "lede": "Patru scaune la masă. Fiecare poate tăia o frază pe care nu o putem apăra.",
+    "roles": {
+      "research": {
+        "title": "Responsabil de cercetare",
+        "bio": "Citește literatura primară. Citează studiul, nu comunicatul de presă. Dezacordul cu consensul apare doar atunci când datele îl susțin."
+      },
+      "testing": {
+        "title": "Responsabilă de testele casnice",
+        "bio": "Gătește o lună întreagă pe fiecare tigaie. Cântărește fiecare sticlă. Măsoară fiecare afirmație. Uneltele și caietele depășesc numeric opiniile."
+      },
+      "medical": {
+        "title": "Revizoare medicală",
+        "bio": "Marchează afirmațiile YMYL. Confirmă că niciun alarmism nu a trecut de corectură. Persoana care scoate, fără zgomot, fraza neliniștitoare."
+      },
+      "sourcing": {
+        "title": "Responsabilă de aprovizionare",
+        "bio": "Citește fișele tehnice. Compară declarațiile producătorilor cu teste independente. Numește mărcile pe care le respingem — și spune de ce."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Din caietul de laborator",
+    "title": {
+      "before": "La ce",
+      "italic": "lucrăm",
+      "after": "."
+    },
+    "qMarker": "Î.",
+    "aMarker": "R.",
+    "entries": {
+      "01": {
+        "q": "Ce alternativă testăm în aprilie?",
+        "a": "Sticlele de sticlă — borosilicat, sodo-calcic și oțel inoxidabil — cântărite, scăpate, supuse șocului termic. Rezultatele apar în numărul din mai."
+      },
+      "02": {
+        "q": "Ce marcă respingem luna aceasta?",
+        "a": "Una vândută drept «fără PFAS», a cărei propriei fișă cu date de securitate menționează un strat fluoropolimeric. Vom da numele odată cu publicarea integrală, cu documentul la vedere."
+      },
+      "03": {
+        "q": "O cititoare ne întreabă: este recomandarea noastră de filtru de apă depășită?",
+        "a": "Actualizările NSF din 2024 nu modifică recomandarea principală. Locul al doilea este în reevaluare — notă de actualizare așteptată până la sfârșitul lunii."
+      },
+      "04": {
+        "q": "Care este următoarea anchetă?",
+        "a": "Saltelele fără toxine. Am deschis fișele tehnice ale a cinci mărci și am cerut testele independente. Țintă de publicare: iunie."
+      },
+      "05": {
+        "q": "Ce facem când un producător cere un test nou?",
+        "a": "Repetăm testul pe bancul nostru, nu pe al lui. Dacă datele lui contrazic datele noastre, publicăm ambele seturi, numim dezacordul și lăsăm cititoarea să urmărească lucrul."
+      },
+      "06": {
+        "q": "Linkurile afiliate ne schimbă clasamentele?",
+        "a": "Nu au făcut-o niciodată. Comisioanele finanțează testele; nu cumpără locuri. Ce ne trimite o marcă fără să cerem ajunge la teancul de premii, nu la recenzie."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Cele mai recente",
+    "title": "Proaspăt testate, proaspăt documentate."
+  },
+  "credo": {
+    "eyebrow": "Crezul",
+    "title": {
+      "before": "",
+      "italic": "Promitem",
+      "after": "o pagină în care fiecare afirmație are o sursă, fiecare clasament este meritat și fiecare produs respins este numit pe nume."
+    },
+    "01": {
+      "title": "Fiecare afirmație are sursă.",
+      "body": "Ceea ce nu se află într-un articol revizuit de colegi, într-un dosar de reglementare sau într-o declarație a producătorului nu se publică."
+    },
+    "02": {
+      "title": "Metodologia, deschisă.",
+      "body": "Fiecare comparație explică modul în care am ales, ce am verificat, cine este în dezacord și de ce."
+    },
+    "03": {
+      "title": "Fără clasamente plătite.",
+      "body": "Comisioanele plătesc testele. Nu au cumpărat niciodată — și nu vor cumpăra — un loc pe această pagină."
+    },
+    "fullStandards": "Citiți integral standardele editoriale"
+  },
+  "explainers": {
+    "eyebrow": "Termenii",
+    "title": "Cuvintele pe care le tot vedeți, în română limpede."
+  },
+  "newsletterBlock": {
+    "eyebrow": "Depeșa",
+    "title": "Un e-mail așezat și documentat, în fiecare săptămână.",
+    "body": "Fără titluri alarmiste. Fără potop zilnic. Un singur lucru pe care l-am verificat sau în privința căruia ne-am răzgândit, în fiecare marți dimineața. Plus auditul de bucătărie gratuit la abonare."
+  },
+  "emailCapture": {
+    "eyebrow": "Auditul de bucătărie",
+    "headline": "Primiți auditul de bucătărie.",
+    "subhead": "O listă tipăribilă cu peste cincizeci de articole de bucătărie, fiecare clasificat: înlocuit acum / înlocuit mai târziu / nu merită. Gratuită. Livrată imediat.",
+    "emailLabel": "Adresă de e-mail",
+    "placeholder": "dvs@exemplu.ro",
+    "submit": "Trimiteți-mi auditul →",
+    "submitLoading": "Se trimite…",
+    "success": "Mulțumim — verificați-vă căsuța de e-mail. Auditul este pe drum.",
+    "consent": {
+      "before": "Prin abonare acceptați",
+      "privacyLink": "politica noastră de confidențialitate",
+      "after": ". Un e-mail liniștit pe săptămână. Vă puteți dezabona oricând."
+    },
+    "decoPages": "12 pagini",
+    "decoItems": "50+ articole"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Folosim un număr mic de cookie-uri pentru analiză și continuitate de sesiune. Fără cookie-uri publicitare. Consultați",
+      "privacyLink": "politica de confidențialitate",
+      "after": "."
+    },
+    "reject": "Refuz",
+    "accept": "Accept"
+  },
+  "hubPage": {
+    "crumbHome": "Pagina principală",
+    "crumbGuides": "Anchete",
+    "hubXofY": "Secțiunea {i} din {n}",
+    "ourThesisLabel": "Teza noastră",
+    "totalLive": "Articole publicate",
+    "planned": "Planificate în secțiune",
+    "startHereEyebrow": "Începeți aici",
+    "startHereTitle": "Ghidul complet.",
+    "guideEyebrow": "Ancheta de fond",
+    "readPillar": "Citiți ancheta de fond",
+    "comparisonsEyebrow": "Comparațiile clasate",
+    "comparisonsTitle": "Ce am cumpăra cu adevărat.",
+    "explainersEyebrow": "Termenii",
+    "explainersTitle": "Răspunsuri limpezi la întrebările pe care lumea chiar și le pune.",
+    "auditsEyebrow": "Auditurile",
+    "auditsTitle": "Liste pregătite pentru weekend.",
+    "emptyBefore": "Articolele apar aici după ce trec de revizia editorială. Vedeți",
+    "emptyHomeLink": "pagina principală",
+    "emptyAfter": "pentru ce este publicat astăzi.",
+    "minRead": "{n} min de lectură",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "Ancheta de fond",
+    "comparison": "Comparația",
+    "cluster": "Termenul",
+    "listicle": "Auditul"
+  },
+  "postTypeShort": {
+    "pillar": "Anchetă",
+    "comparison": "Comparație",
+    "cluster": "Termen",
+    "listicle": "Audit"
+  },
+  "postChrome": {
+    "translationBanner": "Această anchetă este, deocamdată, disponibilă doar în engleză. Lucrăm la traducerea în română.",
+    "onThisPage": "Pe această pagină",
+    "shortAnswer": "Răspunsul scurt",
+    "rankedList": "Lista clasată",
+    "wouldSkip": "Ce omitem",
+    "methodologyTOC": "Metodologie",
+    "faqShort": "Întrebări frecvente",
+    "changeMind": "Ce ne-ar face să ne răzgândim",
+    "sources": "Surse",
+    "frequentlyAsked": "Întrebări frecvente",
+    "labLabel": "Laboratorul",
+    "tested": "Testate",
+    "testedValue": "{n}+ produse",
+    "cited": "Citate",
+    "citedValue": "{n} surse",
+    "readTime": "Timp de lectură",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Ultima actualizare",
+    "pflScoreEyebrow": "Scor PFL",
+    "scoreBreakdownEyebrow": "Componenta scorului",
+    "scoreBreakdownTitle": "Cum s-a obținut scorul {n}/100.",
+    "scoreDim": {
+      "materialSafety": "Siguranța materialelor",
+      "performance": "Performanță",
+      "durability": "Durabilitate",
+      "useExperience": "Experiența de utilizare",
+      "value": "Raport calitate-preț"
+    }
+  },
+  "comparison": {
+    "eyebrow": "Comparația",
+    "ourPickEyebrow": "Alegerea noastră",
+    "rankedEyebrow": "Lista clasată",
+    "rankedTitle": "Tot ce am cumpăra, pe rând.",
+    "rankedMeta": "{n} alegeri · ordonate după merit",
+    "skipsEyebrow": "Ce omitem — și de ce",
+    "skipsTitle": "Numite, nu sugerate.",
+    "faqEyebrow": "Întrebări frecvente",
+    "faqTitle": "Cele mai dese întrebări pe care le primim.",
+    "changeMindLabel": "Ce ne-ar face să ne răzgândim",
+    "changeMindBody": "Noi teste independente de laborator care contrazic clasamentul actual. Reformularea silențioasă a unui lider de top care pierde o certificare declarată. Un articol revizuit de colegi care schimbă tabloul de siguranță al unuia dintre materialele de mai sus. Vom actualiza pagina în maximum o săptămână și vom marca ce s-a schimbat."
+  },
+  "pillar": {
+    "eyebrow": "Ancheta de fond",
+    "pullQuoteAttribution": "Poziția redacției PlasticFreeLab",
+    "pullQuote": "Preferăm să răspundem în primul paragraf la întrebarea pe care v-o puneți cu adevărat și apoi să ne câștigăm încrederea arătând lucrul.",
+    "keyTakeawayTitle": "Despre ce vorbește această anchetă",
+    "keyTakeawayBody": "Ce spune astăzi cea mai bună evidență disponibilă, ce rămâne realmente incert și ce puteți face chiar din această săptămână — în ordinea priorităților, fiecare afirmație cu sursă.",
+    "faqEyebrow": "Întrebări frecvente",
+    "faqTitle": "Întrebările pe care cititoarele ni le adresează cu adevărat."
+  },
+  "cluster": {
+    "eyebrow": "Termenul",
+    "shortAnswerTitle": "Răspunsul scurt",
+    "shortAnswerBody": "Rezumatul stă aici pentru cei care au nevoie de răspuns acum. Restul paginii îl susține — surse, context și punctele pe care le-am dezbătut în redacție.",
+    "faqEyebrow": "Întrebări frecvente",
+    "faqTitle": "Ce întreabă cititoarele în continuare."
+  },
+  "listicle": {
+    "eyebrow": "Auditul"
+  },
+  "methodology": {
+    "label": "Metodologie",
+    "title": "Cum a fost realizată această comparație",
+    "items": {
+      "picked": {
+        "label": "Criteriile selecției",
+        "detail": "Materiale declarate, certificare independentă, durabilitate la gătit real, teste independente de contaminare acolo unde sunt disponibile."
+      },
+      "evaluated": {
+        "label": "Cum am evaluat",
+        "detail": "Declarațiile producătorilor, dosarele de reglementare, articolele revizuite de colegi și testele de uzură pe teren. Citim etichetele și dosarele, nu comunicatele de presă."
+      },
+      "disagrees": {
+        "label": "Cine ne contrazice",
+        "detail": "În fiecare comparație formulăm cât mai puternic poziția contrară și numim marca pe care era cât pe ce s-o alegem, spunând de ce nu am făcut-o."
+      },
+      "changeMind": {
+        "label": "Ce ne-ar face să ne răzgândim",
+        "detail": "Noi teste independente de laborator, o reformulare a unei mărci clasate sau un rezultat revizuit de colegi care contrazice raționamentul actual."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Această anchetă este, deocamdată, disponibilă doar în engleză. Lucrăm la traducerea în română."
+  },
+  "affiliate": {
+    "label": "Mențiune",
+    "body": "PlasticFreeLab testează și recomandă în mod independent. Uneori primim un comision când cumpărați prin linkurile noastre — nu influențează niciodată clasamentele."
+  },
+  "authorBio": {
+    "eyebrow": "Despre semnătură",
+    "name": "Echipa PlasticFreeLab",
+    "body": "Un grup mic de cercetătoare și redactori care taie zgomotul din jurul vieții fără toxine. Citim studiile, citim etichetele, încercăm produsele — și actualizăm recomandările pe măsură ce știința avansează. Nu acceptăm bani pentru plasare, declarăm fiecare relație de afiliere și numim mărcile pe care le respingem.",
+    "standardsLink": "Standardele noastre editoriale →",
+    "correctionLink": "Trimiteți-ne o corectură →"
+  },
+  "related": {
+    "eyebrow": "Citiți mai departe",
+    "title": "Conexe în această secțiune."
+  },
+  "sources": {
+    "eyebrow": "Bibliografie",
+    "title": "Surse citate pe această pagină."
+  },
+  "notFound": {
+    "metaTitle": "Lipsă din arhivă",
+    "metaDescription": "Pagina pe care o căutați nu se află în indexul nostru. Iată câteva locuri unde s-ar putea să găsiți ce căutați.",
+    "eyebrow": "404 · Lipsă din arhivă",
+    "title": "Nu am găsit această pagină.",
+    "p1": "Uneori URL-ul se schimbă atunci când reorganizăm o secțiune. Uneori un articol este retras pentru că știința a avansat și preferăm să-l scoatem decât să lăsăm online o recomandare expirată.",
+    "p2": "Oricum ar fi, la această adresă nu se află nimic util. Cele cinci secțiuni de mai jos acoperă tot ce publicăm — aproape sigur una conține ce căutați.",
+    "tryHubs": "Încercați secțiunile",
+    "primary": "Înapoi la prima pagină",
+    "secondary": "Primiți depeșa săptămânală",
+    "stampLine1": "LIPSĂ DIN",
+    "stampLine2": "ARHIVĂ",
+    "stampSub": "· ARHIVA PLASTICFREELAB ·"
+  },
+  "errorPage": {
+    "eyebrow": "Eroare · Ceva s-a stricat",
+    "title": "Ceva s-a stricat la noi.",
+    "body": "Nu este vina dumneavoastră. O pagină nu s-a redat așa cum ar fi trebuit. Încercați din nou — dacă eroarea persistă, reveniți la prima pagină, restul site-ului ar trebui să funcționeze normal.",
+    "tryAgain": "Încercați din nou",
+    "backToHome": "Înapoi la pagina principală",
+    "reference": "Referință · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Un e-mail așezat pe săptămână.",
+    "p1": {
+      "before": "Un singur lucru util: cel mai relevant articol pe care l-am publicat, alternativa pe care am adopta-o prima sau un studiu pe care l-am citit pentru dumneavoastră. Fără propuneri comerciale, fără spam de afiliere, fără e-mailuri de patru mii de cuvinte."
+    },
+    "p2": {
+      "before": "Abonatele primesc, în plus,",
+      "bold": "auditul de bucătărie",
+      "after": " — o listă tipăribilă cu peste cincizeci de articole, fiecare marcat: înlocuit acum / înlocuit mai târziu / nu merită."
+    },
+    "captureHeadline": "Începeți cu auditul.",
+    "captureSubhead": "Lăsați-ne adresa și vă trimitem PDF-ul imediat."
+  },
+  "trustNav": {
+    "home": "Pagina principală"
+  },
+  "trustPages": {
+    "about": {
+      "title": "Despre PlasticFreeLab",
+      "metaDescription": "Cine suntem, ce facem și de ce am construit acest proiect.",
+      "intro": "PlasticFreeLab există fiindcă informația despre traiul fără toxine este, de regulă, dezordonată. Am construit o resursă așezată, cu surse și de factură publicistică, care citește studiile, încearcă produsele și vă spune cele trei lucruri care contează cu adevărat."
+    },
+    "editorialStandards": {
+      "title": "Standarde editoriale",
+      "metaDescription": "Regulile noastre editoriale publice — surse, corecturi, declarație de afiliere și utilizarea instrumentelor de IA.",
+      "intro": "Orice site promite că este de încredere. Iată ce înseamnă acest lucru, concret, la PlasticFreeLab — reguli privind sursele, politica de corecturi, declarația de afiliere și modul în care folosim instrumentele de IA."
+    },
+    "affiliateDisclosure": {
+      "title": "Declarație de afiliere",
+      "metaDescription": "Cum funcționează linkurile afiliate pe PlasticFreeLab și ce înseamnă pentru dumneavoastră.",
+      "intro": "Unele linkuri către produse de pe acest site sunt linkuri afiliate. Primim un mic comision atunci când cumpărați prin acestea, fără cost suplimentar pentru dumneavoastră, iar aceste comisioane nu ne influențează niciodată clasamentele."
+    },
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "metaDescription": "Ce colectăm, cum folosim datele și care sunt drepturile dumneavoastră.",
+      "intro": "Această politică descrie modul în care PlasticFreeLab colectează, folosește și partajează informații atunci când vizitați plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Condițiile de utilizare",
+      "metaDescription": "Condițiile care reglementează utilizarea PlasticFreeLab.",
+      "intro": "Prin accesarea plasticfreelab.com acceptați aceste condiții. Dacă nu le acceptați, vă rugăm să nu folosiți site-ul."
+    },
+    "contact": {
+      "title": "Contact",
+      "metaDescription": "Cum ne contactați.",
+      "intro": "Cum ne contactați — pentru reacții generale, corecturi, solicitări legate de confidențialitate și sugestii de produse."
+    },
+    "newsletter": {
+      "title": "Un e-mail așezat pe săptămână.",
+      "metaDescription": "Un e-mail așezat pe săptămână — articolul cel mai util al săptămânii și alternativa pe care am adopta-o prima. Gratuit. Vă puteți dezabona oricând."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Limbă",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "it": "IT",
+    "es": "ES",
+    "nl": "NL",
+    "pl": "PL",
+    "sv": "SV",
+    "pt": "PT",
+    "ro": "RO",
+    "cs": "CS",
+    "no": "NO",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français",
+    "itFull": "Italiano",
+    "esFull": "Español",
+    "nlFull": "Nederlands",
+    "plFull": "Polski",
+    "svFull": "Svenska",
+    "ptFull": "Português",
+    "roFull": "Română",
+    "csFull": "Čeština",
+    "noFull": "Norsk"
+  },
+  "site": {
+    "tagline": "Laboratorul fără toxine pentru viața de zi cu zi.",
+    "description": "Încercăm alternativele, citim studiile și publicăm ghiduri liniștite, documentate, despre microplastice, PFAS și schimbările casnice care chiar merită făcute."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Microplastice și disruptori endocrini",
+      "shortName": "Microplastice",
+      "oneLiner": "Știința, în română limpede. Ce se cunoaște cu adevărat, ce rămâne în dezbatere și ce putem face cu asta."
+    },
+    "non-toxic-kitchen": {
+      "name": "Bucătărie fără toxine",
+      "shortName": "Bucătărie",
+      "oneLiner": "Schimbările cu cel mai mare impact din casă, ordonate după importanță. Ustensile, apă, depozitare — tot pachetul."
+    },
+    "non-toxic-personal-care": {
+      "name": "Igienă și cosmetică",
+      "shortName": "Igienă",
+      "oneLiner": "De la șampon la crema de soare — adevărul așezat despre ce stă în baia dumneavoastră și ce merită schimbat."
+    },
+    "non-toxic-home": {
+      "name": "Mediul de acasă",
+      "shortName": "Acasă",
+      "oneLiner": "Saltele, produse de curățenie, calitatea aerului — și expunerile tăcute la care nu se gândește nimeni."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Îmbrăcăminte și textile",
+      "shortName": "Textile",
+      "oneLiner": "Microplastice, PFAS în haine și lanțul de aprovizionare — cu mărcile care și-au făcut temele."
+    }
+  },
+  "pflScore": {
+    "label": "Scor PFL",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Excelent",
+      "strongBuy": "Achiziție recomandată",
+      "good": "Bun",
+      "caveatBuy": "Achiziție cu rezerve",
+      "skip": "De evitat"
+    }
+  },
+  "pipeline": {
+    "label": "În laborator",
+    "queued": "în așteptare",
+    "updatedWeekly": "Actualizat săptămânal",
+    "inTheLabCount": "{n} în laborator",
+    "queuedCount": "{n} în așteptare",
+    "badgeAriaLabel": "Pipeline: {testing} în laborator, {queued} în așteptare. Deschideți registrul integral.",
+    "h1": "Ce testăm chiar acum."
+  },
+  "pipelinePage": {
+    "metaTitle": "Ce testăm chiar acum",
+    "metaDescription": "Un registru deschis al fiecărei anchete PlasticFreeLab — în lucru, în așteptare sau în redactare. Actualizat săptămânal.",
+    "eyebrow": "Pipeline",
+    "h1": "Ce testăm chiar acum.",
+    "subtitle": "Un registru deschis al fiecărei anchete — în laborator, în așteptare sau în redactare. Actualizat săptămânal. Îl publicăm pentru că discreția este pentru advertorialele din alte locuri.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "În laborator",
+      "drafted": "Redactat, în corectură",
+      "researching": "În cercetare, în așteptare"
+    },
+    "status": {
+      "testing": "În testare",
+      "drafted": "Redactat",
+      "researching": "Cercetare"
+    },
+    "reviewerRole": {
+      "research": "Responsabil de cercetare",
+      "testing": "Responsabil de testare",
+      "medical": "Revizie medicală",
+      "sourcing": "Responsabil de aprovizionare"
+    },
+    "expectedTBD": "Dată de stabilit",
+    "itemsCount": "{n} intrări",
+    "methodologyFooter": "Metodologie de testare · v1.2 · Ultima actualizare {date} · Vedeți",
+    "hubsLine": "Către secțiuni:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Responsabil de testare",
+      "testedVia": "Testat după metodologia PFL {version}",
+      "labRun": "Teste de laborator efectuate pe {date}"
+    },
+    "plain": {
+      "team": "Echipa PlasticFreeLab",
+      "published": "Publicat la {date}",
+      "refreshed": "Actualizat la {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "Metodologia PFL",
+    "metaDescription": "Cum punctează PlasticFreeLab fiecare produs. Metodologie publică, versionată ca un program.",
+    "eyebrow": "Standarde editoriale",
+    "h1": "Metodologia PFL",
+    "intro": "Fiecare produs de pe PlasticFreeLab este punctat după aceeași grilă de cinci dimensiuni. Grila este publică, versionată ca un program și actualizată atunci când o evidență mai bună face versiunea anterioară incompletă.",
+    "currentVersionTitle": "Versiunea în vigoare",
+    "currentVersionBody": "v1.2, în vigoare din aprilie 2026. Adaugă un panel PFAS conform metodei SGS 5021A, extinde fereastra de durabilitate de la 12 la 24 de luni și revizuiește calculul valorii pentru a include condițiile de garanție.",
+    "currentVersionLink": "Citiți specificația v1.2 →",
+    "philosophyTitle": "De ce o metodologie publică",
+    "philosophyP1": "Dacă nu putem arăta cum am ales, alegerile valorează puțin. Fiecare scor de pe site este un număr pe care orice cititoare îl poate reproduce din aceleași dovezi. Publicăm dimensiunile, ponderile, sub-testele și laboratoarele partenere. Spunem ce nu am testat — și de ce.",
+    "philosophyP2": "Devierea metodologică este cea mai frecventă slăbiciune a recenziilor de produs. Bariera noastră este numărul de versiune. Când modificăm grila, lansăm o nouă versiune, arhivăm precedenta și repunctăm articolele afectate. Cititoarele văd exact ce s-a schimbat.",
+    "changeLogTitle": "Jurnalul modificărilor",
+    "changeLog": {
+      "v12": "Adăugat panelul PFAS conform metodei SGS 5021A. Fereastra de durabilitate extinsă de la 12 la 24 de luni. Calculul valorii revizuit pentru a pondera condițiile de garanție.",
+      "v11": "Prima publicare. Grilă cu cinci dimensiuni, cinci roluri de revizie, procedură de contestație."
+    },
+    "disputeTitle": "Procedura de contestație",
+    "disputeBody": "Dacă o marcă susține că scorul nostru este greșit, poate depune o contestație însoțită de documentație. Reluăm testul pe bancul nostru, nu pe al ei. Dacă datele sale contrazic datele noastre, le publicăm pe amândouă. Nu modificăm scoruri publicate sub amenințarea unei acțiuni juridice; le actualizăm atunci când apar dovezi mai bune."
+  },
+  "methodologyV12": {
+    "metaTitle": "Metodologia PFL v1.2",
+    "metaDescription": "Specificația integrală v1.2: cinci dimensiuni ponderate, sub-teste, laboratoare partenere, calificările revizorilor.",
+    "eyebrow": "Specificație · v1.2",
+    "h1": "Metodologia PFL v1.2",
+    "updated": "Actualizată în aprilie 2026 · Versiunea anterioară: v1.1 ↗",
+    "changelogLink": "Toate versiunile",
+    "intro": "Aceasta este specificația de referință pentru fiecare scor publicat pe PlasticFreeLab între aprilie 2026 și următoarea revizie versionată. Cinci dimensiuni ponderate, douăzeci și trei de sub-teste, patru roluri de revizie și o procedură de contestație care nu cedează sub presiune.",
+    "weightsTitle": "Cele cinci dimensiuni",
+    "weightsBody": "Fiecare scor de pe site este o medie ponderată a celor cinci dimensiuni de mai jos. Ponderile reflectă ce credem că contează cel mai mult pentru o recomandare fără toxine: siguranța materialelor domină pentru că aceasta este motivul pentru care cititoarea este aici, iar raportul calitate-preț stă la final pentru că banii se recuperează — expunerea, nu.",
+    "subtestsTitle": "Sub-teste",
+    "dimension": {
+      "materialSafety": {
+        "title": "Siguranța materialelor",
+        "oneLiner": "Compoziție, migrare, certificări.",
+        "body": "Siguranța materialelor este motivul pentru care vin aici cele mai multe cititoare și dimensiunea pe care o ponderăm cel mai greu. Punctăm lista de materiale declarată, certificările independente (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) și datele despre contaminanți publicate de producător. Atunci când producătorul tace, comandăm propriile noastre paneluri la laboratoare acreditate."
+      },
+      "performance": {
+        "title": "Performanță",
+        "oneLiner": "Își face treaba — bine — sub sarcină reală.",
+        "body": "Un produs fără toxine care nu funcționează nu este o recomandare. Măsurăm funcții specifice categoriei: distribuția și reținerea căldurii pentru ustensile, reducerea contaminanților și debitul pentru filtre, recuperarea structurală și respirabilitatea pentru textile. Scorurile de performanță vin de la banc, nu din intuiție."
+      },
+      "durability": {
+        "title": "Durabilitate",
+        "oneLiner": "Cum rezistă la 24 de luni de utilizare normală.",
+        "body": "Acoperirile se ciobesc, elasticele obosesc, garniturile se contractă. Scorul de durabilitate captează tocmai modurile de eșec care, după douăsprezece luni, transformă un produs fără toxine într-unul problematic. Panelul nostru supune fiecare articol la un ciclu accelerat de uzură pe 24 de luni, completat cu rapoarte longitudinale din gospodării reale."
+      },
+      "useExperience": {
+        "title": "Experiența de utilizare",
+        "oneLiner": "Cum este să trăiești cu el o lună.",
+        "body": "Greutate, echilibru, ușurință de curățare, curbă de învățare, sunet, miros. Dimensiunea calitativă — dar punctată după grile fixe, pentru ca rezultatul să fie reproductibil între revizori. Trei membri ai panelului petrec câte o lună calendaristică cu produsul înainte de notare."
+      },
+      "value": {
+        "title": "Raport calitate-preț",
+        "oneLiner": "Cost pe an de viață utilă așteptată — raportat la categorie.",
+        "body": "Calculăm valoarea drept cost anual așteptat de utilizare pe un orizont de zece ani, normalizat la mediana categoriei. Un articol scump cu garanție de treizeci de ani îl întrece adesea pe unul ieftin cu un strat de doi ani. În calcul intră condițiile de garanție, reparabilitatea și piața secundară."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "Panel PFAS (metoda SGS 5021A)",
+        "body": "Analiză cantitativă a 40 de compuși PFAS la nivel de părți per miliard. Noutate în v1.2."
+      },
+      "leadCadmium": {
+        "title": "Test pentru plumb și cadmiu",
+        "body": "Extracție de suprafață conform FDA Compliance Policy Guide 7117.06. Reușit / valoare numerică raportată."
+      },
+      "phthalate": {
+        "title": "Panel ftalați",
+        "body": "Analiză GC-MS pentru cei opt ftalați restricționați de CPSIA. Raportat în micrograme per gram."
+      },
+      "vocChamber": {
+        "title": "Cameră VOC",
+        "body": "Test de 72 de ore în cameră CDPH 01350 pentru VOC totali și lista de prioritate cu 35 de compuși."
+      },
+      "supplier": {
+        "title": "Audit al divulgării furnizorilor",
+        "body": "Producătorul Tier 1 publicat, cu țara și certificarea fiecărui strat de material."
+      },
+      "heatMap": {
+        "title": "Hartă termică în infraroșu",
+        "body": "Temperatura de suprafață cartografiată la fiecare 30 de secunde pe o curbă de încălzire de 12 minute."
+      },
+      "deglaze": {
+        "title": "Rumenire + deglasare",
+        "body": "Rumenire proteică standardizată plus deglasare acidă, evaluate după rumenire, desprindere și integritatea suprafeței."
+      },
+      "filterEfficacy": {
+        "title": "Reducerea contaminanților",
+        "body": "Apa de testare conform specificației NSF, efluentul măsurat pentru cei zece contaminanți prioritari."
+      },
+      "loadCycle": {
+        "title": "Test la sarcină completă",
+        "body": "Utilizare continuă la capacitate maximă pe întreaga durată declarată a cartușului, cu test final."
+      },
+      "coatingWear": {
+        "title": "Uzura accelerată a stratului",
+        "body": "Ciclu de abraziune de tip ASTM, echivalent cu aproximativ 24 de luni de utilizare casnică normală."
+      },
+      "warrantyAudit": {
+        "title": "Audit al garanției",
+        "body": "Acoperire, excluderi și timpul median de rezolvare, extrase din dosare publice acolo unde sunt disponibile."
+      },
+      "fieldReports": {
+        "title": "Rapoarte longitudinale de teren",
+        "body": "Șase gospodării din panel raportează lunar timp de douăsprezece luni. Renunțarea la jumătatea testului este în sine un semnal."
+      },
+      "weight": {
+        "title": "Greutate + ergonomie",
+        "body": "Masă, echilibru și rază de acțiune pentru dimensiunile ergonomice relevante. Evaluate raportat la o referință de categorie."
+      },
+      "cleanability": {
+        "title": "Ușurința la curățare",
+        "body": "Cicluri în mașina de spălat vase și manual, evaluate după reziduuri și degradarea finisajului."
+      },
+      "panelScores": {
+        "title": "Notare calitativă a panelului",
+        "body": "Trei revizori, grilă fixă, în orb acolo unde geometria permite."
+      },
+      "costPerYear": {
+        "title": "Cost anual așteptat",
+        "body": "Preț de achiziție plus consumabile, amortizate pe durata de viață așteptată."
+      },
+      "warrantyDelta": {
+        "title": "Ajustare valoare-garanție",
+        "body": "Garanțiile multianuale care chiar funcționează scad costul anual; cele slabe nu."
+      },
+      "marketComparable": {
+        "title": "Comparabil de piață",
+        "body": "Indexat la costul anual median al categoriei, pentru toți candidații aflați acum pe lista scurtă."
+      }
+    },
+    "labPartnersTitle": "Laboratoare partenere",
+    "labPartnersBody": "Pentru paneluri chimice cantitative lucrăm cu SGS, Eurofins și Intertek. Pentru PFAS, în mod specific, metoda SGS 5021A este standardul nostru. Lista partenerilor stă aici drept angajament de transparență; statutul de partener nu influențează notarea, iar laboratoarele nu cunosc identitatea mărcii decât după depunerea raportului. (Lista completă a partenerilor și politica de reciprocitate: vor apărea odată cu specificația v1.3.)",
+    "reviewersTitle": "Calificările revizorilor",
+    "reviewersIntro": "Patru roluri, fiecare cu drept de a tăia o frază pe care echipa nu o poate apăra.",
+    "reviewers": {
+      "research": {
+        "title": "Responsabil de cercetare",
+        "bio": "Citește literatura primară. Citează studiul, nu comunicatul de presă. Dezacordul cu consensul apare doar atunci când datele îl susțin."
+      },
+      "testing": {
+        "title": "Responsabil de testare",
+        "bio": "Gătește o lună întreagă pe fiecare tigaie. Cântărește fiecare sticlă. Măsoară fiecare afirmație. Uneltele și caietele depășesc numeric opiniile."
+      },
+      "medical": {
+        "title": "Revizie medicală",
+        "bio": "Marchează afirmațiile YMYL. Confirmă că niciun alarmism nu a trecut de corectură. Persoana care scoate, fără zgomot, fraza neliniștitoare."
+      },
+      "sourcing": {
+        "title": "Responsabil de aprovizionare",
+        "bio": "Citește fișele tehnice. Compară declarațiile producătorilor cu teste independente. Numește mărcile pe care le respingem — și spune de ce."
+      }
+    },
+    "disputeTitle": "Procedura de contestație",
+    "disputeBody": "Dacă o marcă susține că scorul nostru este greșit, poate depune o contestație însoțită de documentație. Reluăm testul pe bancul nostru, nu pe al ei. Dacă datele sale contrazic datele noastre, le publicăm pe amândouă. Nu modificăm scoruri publicate sub amenințarea unei acțiuni juridice; le actualizăm atunci când apar dovezi mai bune.",
+    "changelogTitle": "Jurnalul modificărilor",
+    "changeLog": {
+      "v12": "Adăugat panelul PFAS conform metodei SGS 5021A. Fereastra de durabilitate extinsă de la 12 la 24 de luni. Calculul valorii revizuit pentru a pondera condițiile de garanție.",
+      "v11": "Prima publicare. Grilă cu cinci dimensiuni, cinci roluri de revizie, procedură de contestație."
+    }
+  }
+}

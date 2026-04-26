@@ -3,18 +3,33 @@ import { defineRouting } from "next-intl/routing";
 /**
  * Locale routing for plasticfreelab.com.
  *
- * Phase 1 ships English (default), German, and French.
+ * Phase 1 shipped English (default), German, and French. Phase 2 expanded
+ * to 12 locales total: en/de/fr plus Italian, Spanish, Dutch, Polish,
+ * Swedish, Portuguese (PT-PT), Romanian, Czech, and Norwegian Bokmål.
  *
  * Architecture is intentionally additive: dropping a new locale into
  * `locales` plus a matching dictionary file in `i18n/dictionaries/<code>.json`
- * and i18n entries on hubs/posts is all that's required to add e.g. Italian.
+ * and i18n entries on hubs/posts is all that's required to add another.
  *
  * Default locale (`en`) is served from the root path with no prefix —
  * `/best-non-toxic-cookware`. Other locales are prefix-required —
- * `/de/best-non-toxic-cookware`, `/fr/best-non-toxic-cookware`. Slugs
- * stay in English in phase 1 (route translation is phase 2).
+ * `/de/best-non-toxic-cookware`, `/it/best-non-toxic-cookware`, etc.
+ * Slugs stay in English (route translation is a later phase).
  */
-export const locales = ["en", "de", "fr"] as const;
+export const locales = [
+  "en",
+  "de",
+  "fr",
+  "it",
+  "es",
+  "nl",
+  "pl",
+  "sv",
+  "pt",
+  "ro",
+  "cs",
+  "no",
+] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "en";

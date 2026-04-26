@@ -208,7 +208,7 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
           <section id="score-breakdown" className="mt-10">
             <Eyebrow tone="sage">{tChrome("scoreBreakdownEyebrow")}</Eyebrow>
             <h2 className="font-serif text-2xl md:text-[1.7rem] text-forest mt-2 mb-5 leading-tight">
-              {tChrome("scoreBreakdownTitle")}
+              {tChrome("scoreBreakdownTitle", { n: post.pflScore.overall })}
             </h2>
             <div className="pfl-breakdown max-w-2xl">
               {([

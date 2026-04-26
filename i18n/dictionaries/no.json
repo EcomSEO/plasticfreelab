@@ -1,0 +1,769 @@
+{
+  "common": {
+    "openMenu": "Åpne menyen",
+    "closeMenu": "Lukk menyen",
+    "skipToContent": "Hopp til innholdet",
+    "minRead": "{n} min lesning",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "Av",
+    "updated": "Oppdatert {date}",
+    "lastUpdated": "Sist oppdatert · {date}",
+    "openHub": "Åpne avdelingen",
+    "browse": "Bla →",
+    "readMore": "Les hovedartikkelen",
+    "backToHome": "Tilbake til forsiden",
+    "backToFront": "Tilbake til førstesiden",
+    "backToMasthead": "Tilbake til kolofonen",
+    "tryAgain": "Prøv igjen",
+    "more": "Mer",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Undersøkelser",
+    "kitchen": "Kjøkken",
+    "newsletter": "Nyhetsbrev",
+    "getTheAudit": "Hent revisjonen",
+    "getTheAuditArrow": "Hent revisjonen →",
+    "editorialStandards": "Redaksjonelle retningslinjer",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "fiveHubs": "De fem avdelingene",
+    "masthead": "Kolofonen"
+  },
+  "footer": {
+    "leadParagraph": "Et lite team som leser studiene, etikettene og produsentenes dokumenter — og publiserer det vi ville sagt til en venn. Ingen produktplassering. Ingen betalte rangeringer.",
+    "fiveHubs": "De fem avdelingene",
+    "masthead": "Kolofonen",
+    "finePrint": "Det med liten skrift",
+    "about": "Om oss",
+    "editorialStandards": "Redaksjonelle retningslinjer",
+    "contact": "Kontakt og tips",
+    "newsletter": "Nyhetsbrev",
+    "affiliateDisclosure": "Affiliate-merknad",
+    "privacy": "Personvernerklæring",
+    "terms": "Bruksvilkår",
+    "imprint": "Provisjoner fra enkelte lenker finansierer testene våre og påvirker aldri rangeringene. Sammenligninger oppdateres kvartalsvis."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  Lanseringsutgaven",
+    "tagline": "Det giftfrie laboratoriet for hverdagen."
+  },
+  "issueBanner": {
+    "issue": "Nummer 01",
+    "edition": "Lanseringsutgaven",
+    "investigations": "Åpner med tolv undersøkelser"
+  },
+  "masthead": {
+    "imprintEdition": "Lanseringsutgaven",
+    "headlineLine1": "Det giftfrie",
+    "headlineWordLab": "laboratoriet",
+    "headlineWordThe": "og den",
+    "headlineQuietly": "stille,",
+    "headlineLast": "kildebelagte guiden til hvert bytte som teller.",
+    "footnoteFig": "Fig. 1.",
+    "footnoteText": "En feltguide til eksponeringene hjemmet ditt holder tyste — utgitt én kildebelagt side om gangen.",
+    "ledeBefore": "PlasticFreeLab leser studiene, prøver byttene og publiserer det vi ville sagt til en venn, med kilder. Ingen formaning, ingen pastellaktig livsstil, ingen agn av typen",
+    "ledeQuote": "10 sjokkerende gifter",
+    "ledeAfter": ".",
+    "ctaPrimary": "Begynn på kjøkkenet",
+    "ctaSecondary": "I dette nummeret",
+    "issueLabel": "I dette nummeret",
+    "folioText": "Fortsett å rulle — innholdsfortegnelsen ligger lenger ned"
+  },
+  "magazineGrid": {
+    "eyebrow": "I dette nummeret",
+    "title": {
+      "before": "Tolv undersøkelser,",
+      "italic": "én rolig side",
+      "after": "."
+    },
+    "skipToToc": "Til innholdsfortegnelsen →",
+    "fromTheDesk": "Fra redaksjonen",
+    "currentlyTesting": "Tester nå",
+    "featuredEyebrow": "Utvalgt undersøkelse",
+    "team": "PlasticFreeLab-redaksjonen",
+    "testingLead": "Testansvarlig"
+  },
+  "investigationTiles": {
+    "eyebrow": "Akkurat nå i laboratoriet",
+    "title": {
+      "before": "Kategoriene vi",
+      "italic": "jobber med",
+      "after": "i kvartalet."
+    },
+    "statusTesting": "Testes",
+    "statusPublished": "Publisert",
+    "statusLabel": "Status · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Giftfrie kjøkkenredskaper",
+        "blurb": "14 sett, seks uker, ett valg vi ville kjøpt på nytt."
+      },
+      "storage": {
+        "label": "Plastfri matoppbevaring",
+        "blurb": "Hva du beholder, hva du bytter ut, hva som ryker i helgen."
+      },
+      "filter": {
+        "label": "Vannfilter",
+        "blurb": "Brita, Berkey, AquaTru — én tydelig anbefaling."
+      },
+      "bottles": {
+        "label": "Glassflasker",
+        "blurb": "Borosilikat, soda-kalk, rustfritt — vi måler hver enkelt."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "Undersøkelsen",
+    "title": {
+      "before": "Den vi",
+      "italic": "løfter frem",
+      "after": "i måneden."
+    },
+    "claims": {
+      "01": {
+        "label": "Materialsammensetning",
+        "body": "Merkets eget grunnlag, ikke markedsteksten. Hvilke lag som blir oppgitt, hvilke ikke — og hva «giftfri» faktisk ender med å bety i et kommersielt løfte."
+      },
+      "02": {
+        "label": "Atferd ved varme og slitasje",
+        "body": "Seks uker på prøvebenken. Termiske kart i infrarødt, sammenligning med støpejern og testen de fleste anmeldere hopper over."
+      },
+      "03": {
+        "label": "Hvem som er uenig — og hvorfor",
+        "body": "Vi navngir kritikerne, lenker til arbeidet deres og sier hvor vi fortsatt er uenige. Undersøkelse, ikke forestilling."
+      }
+    },
+    "editorsPick": "Redaksjonens valg",
+    "ourPick": "Vårt valg",
+    "cta": "Les hele undersøkelsen",
+    "bylineBy": "Av",
+    "bylineName": "PlasticFreeLab-\nredaksjonen",
+    "bylineDate": "April · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "Innholdsfortegnelsen",
+    "title": {
+      "before": "Fem avdelinger.",
+      "italic": "Hundre og femti",
+      "after": "tekster på vei."
+    },
+    "linkAbout": "Hvorfor vi har bygd det slik →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Hvordan vi rapporterer · Hvem som rapporterer",
+    "title": "Redaksjonen.",
+    "lede": "Fire stoler ved bordet. Hver av dem kan stryke en setning vi ikke kan forsvare.",
+    "roles": {
+      "research": {
+        "title": "Forskningsansvarlig",
+        "bio": "Leser primærlitteraturen. Siterer studien, ikke pressemeldingen. Avvik fra konsensusen dukker først opp når dataene bærer det."
+      },
+      "testing": {
+        "title": "Ansvarlig for husholdningstester",
+        "bio": "Lager mat på hver panne i en måned. Veier hver flaske. Måler hvert utsagn. Verktøy og notatbøker overgår meningene i antall."
+      },
+      "medical": {
+        "title": "Medisinsk gjennomgang",
+        "bio": "Markerer YMYL-påstander. Bekrefter at ingen alarmretorikk har sluppet gjennom korrekturen. Den som stille fjerner den urovekkende setningen."
+      },
+      "sourcing": {
+        "title": "Innkjøpsansvarlig",
+        "bio": "Leser produktblader. Krysspeiler produsenters påstander mot uavhengige tester. Navngir merkene vi avviser — og sier hvorfor."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Fra laboratorienotatene",
+    "title": {
+      "before": "Hva vi",
+      "italic": "jobber med",
+      "after": "."
+    },
+    "qMarker": "S.",
+    "aMarker": "S.",
+    "entries": {
+      "01": {
+        "q": "Hvilket bytte tester vi i april?",
+        "a": "Glassflasker — borosilikat mot soda-kalk mot rustfritt, veid, sluppet og temperatursjokket. Resultatene kommer i mai-utgaven."
+      },
+      "02": {
+        "q": "Hvilket merke avviser vi i denne måneden?",
+        "a": "Et som markedsføres som «PFAS-fritt», men hvis eget sikkerhetsdatablad oppgir et fluorpolymerbelegg. Vi navngir det med hele saken, dokumentet ved siden av."
+      },
+      "03": {
+        "q": "En leser spør: er vannfilteranbefalingen vår utdatert?",
+        "a": "NSF-oppdateringene fra 2024 endrer ikke hovedanbefalingen. Andreplassen er under ny vurdering — oppdateringsnotat ventes innen utgangen av måneden."
+      },
+      "04": {
+        "q": "Hva er den neste undersøkelsen?",
+        "a": "Giftfrie madrasser. Vi har åpnet produktbladene til fem merker og bedt om uavhengige testdata. Publiseringsmål: juni."
+      },
+      "05": {
+        "q": "Hvordan håndterer vi en produsent som ber om ny test?",
+        "a": "Vi tester på nytt på vår benk, ikke på deres. Hvis dataene deres motsier våre, publiserer vi begge, navngir uenigheten og lar leseren følge arbeidet."
+      },
+      "06": {
+        "q": "Endrer affiliatlenker rangeringene våre?",
+        "a": "Det har de aldri gjort. Provisjoner finansierer testene; de kjøper ingen plassering. Det et merke sender oss uoppfordret havner i premiehaugen, ikke i anmeldelsen."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Nyeste",
+    "title": "Ferskt testet, ferskt belagt."
+  },
+  "credo": {
+    "eyebrow": "Kredoet",
+    "title": {
+      "before": "",
+      "italic": "Vi lover",
+      "after": "en side der hvert utsagn har kilde, hver plassering er fortjent og hvert avvist produkt blir navngitt."
+    },
+    "01": {
+      "title": "Hvert utsagn kildebelagt.",
+      "body": "Det som ikke står i en fagfellevurdert studie, et myndighetsdokument eller en produsenterklæring, blir ikke publisert."
+    },
+    "02": {
+      "title": "Metodikken åpen.",
+      "body": "Hver sammenligning forklarer hvordan vi valgte, hva vi verifiserte, hvem som er uenig og hvorfor."
+    },
+    "03": {
+      "title": "Ingen betalte rangeringer.",
+      "body": "Provisjoner betaler testene. De har aldri kjøpt — og kommer aldri til å kjøpe — en plass på denne siden."
+    },
+    "fullStandards": "Les de redaksjonelle retningslinjene i sin helhet"
+  },
+  "explainers": {
+    "eyebrow": "Begrepene",
+    "title": "Ordene som dukker opp om og om igjen, på enkel norsk."
+  },
+  "newsletterBlock": {
+    "eyebrow": "Depesjen",
+    "title": "Én rolig, kildebelagt e-post hver uke.",
+    "body": "Ingen skrekkoverskrifter. Ingen daglig syndflod. Én ting vi har verifisert eller ombestemt oss om, hver tirsdag morgen. Pluss den gratis kjøkkengjennomgangen ved abonnement."
+  },
+  "emailCapture": {
+    "eyebrow": "Kjøkkengjennomgangen",
+    "headline": "Hent kjøkkengjennomgangen.",
+    "subhead": "En utskriftsvennlig liste med over femti kjøkkenartikler, hver klassifisert: bytt nå / bytt senere / ikke bry deg. Gratis. Levert umiddelbart.",
+    "emailLabel": "E-postadresse",
+    "placeholder": "du@eksempel.no",
+    "submit": "Send meg gjennomgangen →",
+    "submitLoading": "Sender…",
+    "success": "Takk — sjekk innboksen din. Gjennomgangen er på vei.",
+    "consent": {
+      "before": "Ved å abonnere godtar du vår",
+      "privacyLink": "personvernerklæring",
+      "after": ". Én rolig e-post i uken. Avregistrer deg når som helst."
+    },
+    "decoPages": "12 sider",
+    "decoItems": "50+ artikler"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Vi bruker et lite antall informasjonskapsler for analyse og øktkontinuitet. Ingen annonsekapsler. Se vår",
+      "privacyLink": "personvernerklæring",
+      "after": "."
+    },
+    "reject": "Avvis",
+    "accept": "Godta"
+  },
+  "hubPage": {
+    "crumbHome": "Forside",
+    "crumbGuides": "Undersøkelser",
+    "hubXofY": "Avdeling {i} av {n}",
+    "ourThesisLabel": "Vår tese",
+    "totalLive": "Tekster publisert",
+    "planned": "Planlagt i avdelingen",
+    "startHereEyebrow": "Begynn her",
+    "startHereTitle": "Den fullstendige guiden.",
+    "guideEyebrow": "Hovedartikkelen",
+    "readPillar": "Les hovedartikkelen",
+    "comparisonsEyebrow": "Rangerte sammenligninger",
+    "comparisonsTitle": "Det vi faktisk ville kjøpt.",
+    "explainersEyebrow": "Begrepene",
+    "explainersTitle": "Klare svar på spørsmålene folk faktisk stiller.",
+    "auditsEyebrow": "Gjennomgangene",
+    "auditsTitle": "Lister klare for helgen.",
+    "emptyBefore": "Tekstene lander her når de har passert den redaksjonelle gjennomgangen. Se",
+    "emptyHomeLink": "forsiden",
+    "emptyAfter": "for det som ligger ute i dag.",
+    "minRead": "{n} min lesning",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "Hovedartikkelen",
+    "comparison": "Sammenligningen",
+    "cluster": "Begrepet",
+    "listicle": "Gjennomgangen"
+  },
+  "postTypeShort": {
+    "pillar": "Hovedartikkel",
+    "comparison": "Sammenligning",
+    "cluster": "Begrep",
+    "listicle": "Gjennomgang"
+  },
+  "postChrome": {
+    "translationBanner": "Denne undersøkelsen er foreløpig kun tilgjengelig på engelsk. Vi arbeider med den norske oversettelsen.",
+    "onThisPage": "På denne siden",
+    "shortAnswer": "Det korte svaret",
+    "rankedList": "Den rangerte listen",
+    "wouldSkip": "Det vi hopper over",
+    "methodologyTOC": "Metodikk",
+    "faqShort": "Vanlige spørsmål",
+    "changeMind": "Hva som ville fått oss til å snu",
+    "sources": "Kilder",
+    "frequentlyAsked": "Vanlige spørsmål",
+    "labLabel": "Laboratoriet",
+    "tested": "Testet",
+    "testedValue": "{n}+ produkter",
+    "cited": "Sitert",
+    "citedValue": "{n} kilder",
+    "readTime": "Lesetid",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Sist oppdatert",
+    "pflScoreEyebrow": "PFL-poeng",
+    "scoreBreakdownEyebrow": "Grunnlaget for poengene",
+    "scoreBreakdownTitle": "Slik ble {n}/100 til.",
+    "scoreDim": {
+      "materialSafety": "Materialsikkerhet",
+      "performance": "Ytelse",
+      "durability": "Holdbarhet",
+      "useExperience": "Brukeropplevelse",
+      "value": "Pris i forhold til verdi"
+    }
+  },
+  "comparison": {
+    "eyebrow": "Sammenligningen",
+    "ourPickEyebrow": "Vårt valg",
+    "rankedEyebrow": "Den rangerte listen",
+    "rankedTitle": "Alt vi ville kjøpt, i rekkefølge.",
+    "rankedMeta": "{n} valg · ordnet etter fortjeneste",
+    "skipsEyebrow": "Det vi hopper over — og hvorfor",
+    "skipsTitle": "Navngitt, ikke antydet.",
+    "faqEyebrow": "Vanlige spørsmål",
+    "faqTitle": "Det folk spør oss om oftest.",
+    "changeMindLabel": "Hva som ville fått oss til å snu",
+    "changeMindBody": "Nye uavhengige laboratorietester som strider mot dagens rangering. En stille reformulering hos et toppvalg som mister en oppgitt sertifisering. En fagfellevurdert artikkel som endrer sikkerhetsbildet for et av materialene over. Vi oppdaterer siden innen en uke og merker hva som er endret."
+  },
+  "pillar": {
+    "eyebrow": "Hovedartikkelen",
+    "pullQuoteAttribution": "PlasticFreeLab-redaksjonens posisjon",
+    "pullQuote": "Vi besvarer heller spørsmålet du faktisk stilte i første avsnitt, og fortjener tilliten din ved å vise arbeidet etterpå.",
+    "keyTakeawayTitle": "Hva denne artikkelen dekker",
+    "keyTakeawayBody": "Hva den beste tilgjengelige evidensen sier i dag, hva som virkelig forblir usikkert og hva du kan gjøre allerede denne uken — i prioritert rekkefølge, hver påstand med kilde.",
+    "faqEyebrow": "Vanlige spørsmål",
+    "faqTitle": "Spørsmålene leserne faktisk bringer til oss."
+  },
+  "cluster": {
+    "eyebrow": "Begrepet",
+    "shortAnswerTitle": "Det korte svaret",
+    "shortAnswerBody": "Sammendraget står her for de som trenger svaret nå. Resten av siden står for det — kilder, kontekst og punktene vi diskuterte i redaksjonen.",
+    "faqEyebrow": "Vanlige spørsmål",
+    "faqTitle": "Det leserne spør om videre."
+  },
+  "listicle": {
+    "eyebrow": "Gjennomgangen"
+  },
+  "methodology": {
+    "label": "Metodikk",
+    "title": "Slik ble denne sammenligningen til",
+    "items": {
+      "picked": {
+        "label": "Hva vi valgte ut fra",
+        "detail": "Oppgitte materialer, uavhengig sertifisering, holdbarhet i reell matlaging og uavhengige forurensningstester der disse fantes."
+      },
+      "evaluated": {
+        "label": "Hvordan vi vurderte",
+        "detail": "Produsentenes egne erklæringer, myndighetsdokumenter, fagfellevurderte artikler og praktiske slitasjetester. Vi leser etiketter og dokumenter, ikke pressemeldinger."
+      },
+      "disagrees": {
+        "label": "Hvem som er uenig med oss",
+        "detail": "I hver sammenligning formulerer vi motpartens posisjon så sterkt vi kan og navngir merket vi nesten valgte — med grunnen til at vi likevel ikke gjorde det."
+      },
+      "changeMind": {
+        "label": "Hva som ville fått oss til å snu",
+        "detail": "Nye uavhengige laboratorietester, en reformulering hos et rangert merke eller et fagfellevurdert funn som strider mot dagens resonnement."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Denne undersøkelsen er foreløpig kun tilgjengelig på engelsk. Vi arbeider med den norske oversettelsen."
+  },
+  "affiliate": {
+    "label": "Merknad",
+    "body": "PlasticFreeLab tester og anbefaler uavhengig. Vi får av og til en provisjon når du kjøper via våre lenker — det påvirker aldri rangeringene."
+  },
+  "authorBio": {
+    "eyebrow": "Om signaturen",
+    "name": "PlasticFreeLab-redaksjonen",
+    "body": "En liten gruppe forskere og skribenter som skjærer gjennom støyen rundt giftfri hverdag. Vi leser studiene, leser etikettene, prøver produktene — og oppdaterer anbefalingene etter hvert som vitenskapen flytter seg. Vi tar ikke betalt for produktplassering, oppgir hvert affiliatesamarbeid og navngir merkene vi avviser.",
+    "standardsLink": "Våre redaksjonelle retningslinjer →",
+    "correctionLink": "Send oss en rettelse →"
+  },
+  "related": {
+    "eyebrow": "Les videre",
+    "title": "Beslektet i denne avdelingen."
+  },
+  "sources": {
+    "eyebrow": "Referanser",
+    "title": "Kilder vi siterer på denne siden."
+  },
+  "notFound": {
+    "metaTitle": "Ikke i arkivet",
+    "metaDescription": "Siden du etterspurte ligger ikke i indeksen vår. Her er noen steder der det du var ute etter kan finnes.",
+    "eyebrow": "404 · Ikke i arkivet",
+    "title": "Vi fant ikke siden.",
+    "p1": "Iblant skifter en URL adresse når vi omorganiserer en avdeling. Iblant tar vi en tekst ned fordi vitenskapen har flyttet seg, og vi vil heller fjerne den enn å la en utdatert anbefaling stå på nettet.",
+    "p2": "Uansett: på denne adressen finnes det ikke noe nyttig. De fem avdelingene under dekker alt vi publiserer — nesten helt sikkert finnes det du var ute etter i én av dem.",
+    "tryHubs": "Prøv avdelingene",
+    "primary": "Tilbake til førstesiden",
+    "secondary": "Få det ukentlige nyhetsbrevet",
+    "stampLine1": "IKKE I",
+    "stampLine2": "ARKIVET",
+    "stampSub": "· PLASTICFREELAB-ARKIVET ·"
+  },
+  "errorPage": {
+    "eyebrow": "Feil · Noe gikk galt",
+    "title": "Noe gikk i stykker hos oss.",
+    "body": "Ikke din feil. En side ble ikke gjengitt slik den skulle. Prøv igjen — om feilen fortsetter, gå tilbake til forsiden, resten av nettstedet skal fungere normalt.",
+    "tryAgain": "Prøv igjen",
+    "backToHome": "Tilbake til forsiden",
+    "reference": "Referanse · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Én rolig e-post i uken.",
+    "p1": {
+      "before": "Én nyttig ting: den viktigste teksten vi har publisert, byttet vi ville gjort først, eller en studie vi leste for deg. Ingen salgsmaskin, ingen affiliatespam, ingen e-poster på fire tusen ord."
+    },
+    "p2": {
+      "before": "Abonnenter får i tillegg",
+      "bold": "kjøkkengjennomgangen",
+      "after": " — en utskriftsvennlig liste med over femti kjøkkenartikler, hver klassifisert: bytt nå / bytt senere / ikke bry deg."
+    },
+    "captureHeadline": "Begynn med gjennomgangen.",
+    "captureSubhead": "Legg igjen e-postadressen, så sender vi PDF-en med en gang."
+  },
+  "trustNav": {
+    "home": "Forside"
+  },
+  "trustPages": {
+    "about": {
+      "title": "Om PlasticFreeLab",
+      "metaDescription": "Hvem vi er, hva vi gjør og hvorfor vi har bygd dette.",
+      "intro": "PlasticFreeLab finnes fordi informasjonen om giftfri hverdag som regel er rotete. Vi har bygd en rolig, kildebelagt og undersøkende ressurs som leser studiene, prøver produktene og forteller deg de tre tingene som faktisk har betydning."
+    },
+    "editorialStandards": {
+      "title": "Redaksjonelle retningslinjer",
+      "metaDescription": "Våre offentlige redaksjonelle regler — kilder, rettelser, affiliate-merknad og bruk av AI-verktøy.",
+      "intro": "Alle nettsteder lover å være pålitelige. Her er hva det konkret betyr hos PlasticFreeLab — kilderegler, rettelsespraksis, affiliate-merknad og bruken vår av AI-verktøy."
+    },
+    "affiliateDisclosure": {
+      "title": "Affiliate-merknad",
+      "metaDescription": "Hvordan affiliatlenker fungerer på PlasticFreeLab og hva det betyr for deg.",
+      "intro": "Noen av produktlenkene på dette nettstedet er affiliatlenker. Vi får en liten provisjon når du kjøper via dem, uten ekstra kostnad for deg, og disse provisjonene påvirker aldri rangeringene."
+    },
+    "privacy": {
+      "title": "Personvernerklæring",
+      "metaDescription": "Hva vi samler inn, hvordan vi bruker det og hvilke rettigheter du har.",
+      "intro": "Denne erklæringen beskriver hvordan PlasticFreeLab samler inn, bruker og deler informasjon når du besøker plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Bruksvilkår",
+      "metaDescription": "Vilkårene som styrer bruken din av PlasticFreeLab.",
+      "intro": "Ved å bruke plasticfreelab.com godtar du disse vilkårene. Hvis du ikke godtar dem, ber vi deg la være å bruke nettstedet."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "metaDescription": "Hvordan nå oss.",
+      "intro": "Hvordan nå oss — for generelle tilbakemeldinger, rettelser, personvernhenvendelser og produkttips."
+    },
+    "newsletter": {
+      "title": "Én rolig e-post i uken.",
+      "metaDescription": "Én rolig e-post i uken — den nyttigste teksten i uken og byttet vi ville gjort først. Gratis. Avregistrer deg når som helst."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Språk",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "it": "IT",
+    "es": "ES",
+    "nl": "NL",
+    "pl": "PL",
+    "sv": "SV",
+    "pt": "PT",
+    "ro": "RO",
+    "cs": "CS",
+    "no": "NO",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français",
+    "itFull": "Italiano",
+    "esFull": "Español",
+    "nlFull": "Nederlands",
+    "plFull": "Polski",
+    "svFull": "Svenska",
+    "ptFull": "Português",
+    "roFull": "Română",
+    "csFull": "Čeština",
+    "noFull": "Norsk"
+  },
+  "site": {
+    "tagline": "Det giftfrie laboratoriet for hverdagen.",
+    "description": "Vi prøver byttene, leser studiene og publiserer rolige, kildebelagte guider om mikroplast, PFAS og hverdagsendringene som virkelig er verdt strevet."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Mikroplast og hormonforstyrrere",
+      "shortName": "Mikroplast",
+      "oneLiner": "Vitenskapen, på enkel norsk. Hva som virkelig er etablert, hva som fortsatt diskuteres og hva man kan gjøre med det."
+    },
+    "non-toxic-kitchen": {
+      "name": "Giftfritt kjøkken",
+      "shortName": "Kjøkken",
+      "oneLiner": "Hjemmets viktigste bytter, ordnet etter betydning. Kjøkkenredskaper, vann, oppbevaring — hele settet."
+    },
+    "non-toxic-personal-care": {
+      "name": "Hud og hygiene",
+      "shortName": "Hygiene",
+      "oneLiner": "Fra sjampo til solkrem — den rolige sannheten om hva som står på badet og hva som er verdt å bytte."
+    },
+    "non-toxic-home": {
+      "name": "Hjemmemiljø",
+      "shortName": "Hjemmet",
+      "oneLiner": "Madrasser, vaskemidler, luftkvalitet — og de stille eksponeringene ingen tenker på."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Klær og tekstil",
+      "shortName": "Klær",
+      "oneLiner": "Mikroplast, PFAS i klær og tekstilkjeden — med merkene som har gjort jobben."
+    }
+  },
+  "pflScore": {
+    "label": "PFL-poeng",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Utmerket",
+      "strongBuy": "Sterkt kjøp",
+      "good": "Bra",
+      "caveatBuy": "Kjøp med forbehold",
+      "skip": "Hopp over"
+    }
+  },
+  "pipeline": {
+    "label": "I labben",
+    "queued": "i kø",
+    "updatedWeekly": "Oppdatert ukentlig",
+    "inTheLabCount": "{n} i labben",
+    "queuedCount": "{n} i kø",
+    "badgeAriaLabel": "Pipeline: {testing} i labben, {queued} i kø. Åpne hele loggen.",
+    "h1": "Det vi tester akkurat nå."
+  },
+  "pipelinePage": {
+    "metaTitle": "Det vi tester akkurat nå",
+    "metaDescription": "En åpen logg over hver PlasticFreeLab-undersøkelse — pågående, i kø eller i korrektur. Oppdatert ukentlig.",
+    "eyebrow": "Pipeline",
+    "h1": "Det vi tester akkurat nå.",
+    "subtitle": "En åpen logg over hver undersøkelse — i labben, i kø eller i korrektur. Oppdatert ukentlig. Vi publiserer den fordi hemmelighold hører hjemme i annonser.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "I labben",
+      "drafted": "Utkast, i korrektur",
+      "researching": "Forskning, i kø"
+    },
+    "status": {
+      "testing": "Testes",
+      "drafted": "Utkast",
+      "researching": "Forskning"
+    },
+    "reviewerRole": {
+      "research": "Forskningsansvarlig",
+      "testing": "Testansvarlig",
+      "medical": "Medisinsk gjennomgang",
+      "sourcing": "Innkjøpsansvarlig"
+    },
+    "expectedTBD": "Dato kommer",
+    "itemsCount": "{n} oppføringer",
+    "methodologyFooter": "Testmetodikk · v1.2 · Sist oppdatert {date} · Se",
+    "hubsLine": "Til avdelingene:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Testansvarlig",
+      "testedVia": "Testet etter PFL-metodikken {version}",
+      "labRun": "Laboratorietester gjennomført {date}"
+    },
+    "plain": {
+      "team": "PlasticFreeLab-redaksjonen",
+      "published": "Publisert {date}",
+      "refreshed": "Oppdatert {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "PFL-metodikk",
+    "metaDescription": "Hvordan PlasticFreeLab vurderer hvert produkt. Offentlig metodikk, versjonert som programvare.",
+    "eyebrow": "Redaksjonelle retningslinjer",
+    "h1": "PFL-metodikk",
+    "intro": "Hvert produkt på PlasticFreeLab vurderes mot den samme rubrikken med fem dimensjoner. Rubrikken er offentlig, versjonert som programvare og oppdateres når bedre evidens gjør forrige versjon ufullstendig.",
+    "currentVersionTitle": "Gjeldende versjon",
+    "currentVersionBody": "v1.2, gjeldende fra april 2026. Legger til et PFAS-panel etter SGS-metode 5021A, utvider holdbarhetsvinduet fra 12 til 24 måneder og endrer verdiberegningen så garantivilkår teller med.",
+    "currentVersionLink": "Les spesifikasjonen v1.2 →",
+    "philosophyTitle": "Hvorfor en offentlig metodikk",
+    "philosophyP1": "Hvis vi ikke kan vise hvordan vi har valgt, er valgene lite verdt. Hvert poeng på nettstedet er et tall som hver leser kan reprodusere ut fra de samme bevisene. Vi publiserer dimensjonene, vektene, deltestene og laboratoriepartnerne. Vi sier hva vi ikke testet — og hvorfor.",
+    "philosophyP2": "Metodologisk drift er den vanligste svakheten i produkttester. Vår sperre er versjonsnummeret. Når vi endrer rubrikken, slipper vi en ny versjon, arkiverer den forrige og scorer berørte tekster på nytt. Leserne ser nøyaktig hva som er endret.",
+    "changeLogTitle": "Endringslogg",
+    "changeLog": {
+      "v12": "Lagt til PFAS-panel etter SGS-metode 5021A. Holdbarhetsvinduet utvidet fra 12 til 24 måneder. Verdiberegningen endret slik at garantivilkår vektes.",
+      "v11": "Første offentlige utgave. Rubrikk i fem dimensjoner, fem korrekturroller, tvistprosedyre."
+    },
+    "disputeTitle": "Tvistprosedyre",
+    "disputeBody": "Hvis et merke mener vår score er feil, kan det legge frem en innsigelse med dokumentasjon. Vi tester på nytt på vår benk, ikke på deres. Hvis dataene deres motsier våre, publiserer vi begge. Vi endrer ikke aktive scorer under trussel om rettslige skritt; vi oppdaterer dem når bedre evidens kommer."
+  },
+  "methodologyV12": {
+    "metaTitle": "PFL-metodikk v1.2",
+    "metaDescription": "Den fullstendige spesifikasjonen v1.2: fem vektede dimensjoner, deltester, laboratoriepartnere, anmelderkvalifikasjoner.",
+    "eyebrow": "Spesifikasjon · v1.2",
+    "h1": "PFL-metodikk v1.2",
+    "updated": "Oppdatert i april 2026 · Forrige versjon: v1.1 ↗",
+    "changelogLink": "Alle versjoner",
+    "intro": "Dette er den gjeldende spesifikasjonen for hver produktscore som publiseres på PlasticFreeLab mellom april 2026 og neste versjonerte utgave. Fem vektede dimensjoner, tjuetre deltester, fire korrekturroller og en tvistprosedyre som ikke gir etter for press.",
+    "weightsTitle": "De fem dimensjonene",
+    "weightsBody": "Hver score på nettstedet er et vektet gjennomsnitt av de fem dimensjonene under. Vektene speiler det vi mener teller mest for en anbefaling om giftfri hverdag: materialsikkerhet dominerer fordi det er grunnen til at leseren er her, og pris i forhold til verdi står sist fordi penger kan hentes inn igjen — eksponering kan ikke.",
+    "subtestsTitle": "Deltester",
+    "dimension": {
+      "materialSafety": {
+        "title": "Materialsikkerhet",
+        "oneLiner": "Hva det er laget av, hva det avgir, hva som er sertifisert.",
+        "body": "Materialsikkerhet er det som tar de fleste lesere hit, og dimensjonen vi vekter tyngst. Vi vurderer den oppgitte materiallisten, uavhengige sertifiseringer (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) og eventuelle data om forurensninger som produsenten publiserer. Tier produsenten, bestiller vi egne paneler hos akkrediterte laboratorier."
+      },
+      "performance": {
+        "title": "Ytelse",
+        "oneLiner": "Gjør det jobben — godt — under realistisk belastning.",
+        "body": "Et giftfritt produkt som ikke leverer er ingen anbefaling. Vi måler kategorityp funksjon: varmefordeling og -holding for kjøkkenredskaper, forurensningsreduksjon og strømning for filtre, strukturell tilbakefjæring og pustegenskaper for tekstil. Ytelsesscorer kommer fra benken, ikke fra følelsen."
+      },
+      "durability": {
+        "title": "Holdbarhet",
+        "oneLiner": "Hvordan det tåler 24 måneders normal bruk.",
+        "body": "Belegg flises av, gummi blir trett, pakninger krymper. Holdbarhetsscoren fanger nettopp de feilmodusene som etter tolv måneder gjør et giftfritt produkt om til et problematisk. Panelet kjører hver gjenstand gjennom en akselerert slitasjesyklus over 24 måneder, supplert med langsgående rapporter fra reelle hjem."
+      },
+      "useExperience": {
+        "title": "Brukeropplevelse",
+        "oneLiner": "Hvordan det er å leve med i en måned.",
+        "body": "Vekt, balanse, vaskbarhet, læringskurve, lyd, lukt. Den kvalitative dimensjonen — men scoret etter faste rubrikker så resultatet kan reproduseres mellom anmeldere. Tre panelmedlemmer tilbringer hver sin kalendermåned med produktet før de scorer."
+      },
+      "value": {
+        "title": "Pris i forhold til verdi",
+        "oneLiner": "Kostnad per år forventet driftslevetid — relativ til kategorien.",
+        "body": "Vi måler verdi som forventet kostnad per driftsår over en tiårshorisont, normalisert mot kategoriens median. En dyr gjenstand med tretti års garanti slår ofte en billig med toårig belegg. Garantivilkår, reparerbarhet og bruktmarked teller med."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "PFAS-panel (SGS-metode 5021A)",
+        "body": "Kvantitativ analyse av 40 PFAS-forbindelser på ppb-nivå. Nytt i v1.2."
+      },
+      "leadCadmium": {
+        "title": "Bly- og kadmiumscreening",
+        "body": "Overflateekstraksjon etter FDA Compliance Policy Guide 7117.06. Bestått / numerisk verdi rapporteres."
+      },
+      "phthalate": {
+        "title": "Ftalatpanel",
+        "body": "GC-MS-analyse for de åtte ftalatene som er begrenset av CPSIA. Rapporteres i mikrogram per gram."
+      },
+      "vocChamber": {
+        "title": "VOC-kammer",
+        "body": "72-timers test i CDPH 01350-kammer for total VOC og prioritetslisten på 35 enkeltforbindelser."
+      },
+      "supplier": {
+        "title": "Leverandørtransparenstest",
+        "body": "Tier 1-produsent publisert, med land og sertifisering for hvert materiallag."
+      },
+      "heatMap": {
+        "title": "Infrarødt varmekart",
+        "body": "Overflatetemperatur kartlagt med 30-sekunders intervaller over en 12-minutters varmekurve."
+      },
+      "deglaze": {
+        "title": "Bruning + deglassering",
+        "body": "Standardisert proteinbruning og syrlig deglassering, vurdert etter bruning, frigjøring og overflateintegritet."
+      },
+      "filterEfficacy": {
+        "title": "Forurensningsreduksjon",
+        "body": "Inngangsvann etter NSF-spesifikasjon, utgangsvann målt for de ti prioriterte forurensningene."
+      },
+      "loadCycle": {
+        "title": "Fullastsyklus",
+        "body": "Kontinuerlig bruk på full kapasitet gjennom hele oppgitt levetid for kassetten, med ny test ved slutten."
+      },
+      "coatingWear": {
+        "title": "Akselerert beleggslitasje",
+        "body": "ASTM-lignende slitasjesyklus tilsvarende omtrent 24 måneders normal hjemmebruk."
+      },
+      "warrantyAudit": {
+        "title": "Garantirevisjon",
+        "body": "Dekning, unntak og median behandlingstid hentet fra offentlige saker der det er mulig."
+      },
+      "fieldReports": {
+        "title": "Langsgående feltrapporter",
+        "body": "Seks panelhjem rapporterer månedlig i tolv måneder. Frafall midt i testen er i seg selv et signal."
+      },
+      "weight": {
+        "title": "Vekt + ergonomi",
+        "body": "Masse, balanse og rekkevidde for relevante ergonomiske mål. Vurderes mot en kategoriferanse."
+      },
+      "cleanability": {
+        "title": "Vaskbarhet",
+        "body": "Oppvaskmaskin- og håndvaskssykluser, vurdert etter rester og degradering av overflaten."
+      },
+      "panelScores": {
+        "title": "Kvalitativ panelscoring",
+        "body": "Tre anmeldere, fast rubrikk, blindt der geometrien tillater det."
+      },
+      "costPerYear": {
+        "title": "Forventet kostnad per år",
+        "body": "Anskaffelsespris pluss forbruksmateriell, amortisert over forventet levetid."
+      },
+      "warrantyDelta": {
+        "title": "Justering for garantiverdi",
+        "body": "Flerårige garantier som faktisk holder reduserer årskostnaden; svake garantier gjør det ikke."
+      },
+      "marketComparable": {
+        "title": "Markedssammenligning",
+        "body": "Indeksert mot kategoriens median for årskostnad blant alle aktuelle kandidater."
+      }
+    },
+    "labPartnersTitle": "Laboratoriepartnere",
+    "labPartnersBody": "For kvantitative kjemiske paneler samarbeider vi med SGS, Eurofins og Intertek. For PFAS spesifikt er SGS-metode 5021A vår standard. Listen står her som en åpenhetsforpliktelse; partnerstatus påvirker ikke scoringen, og laboratoriene ser ikke merkets identitet før rapporten er levert. (Fullstendig partnerliste og resiprositetsregel: kommer med spesifikasjonen v1.3.)",
+    "reviewersTitle": "Anmelderkvalifikasjoner",
+    "reviewersIntro": "Fire roller, hver med myndighet til å stryke en setning teamet ikke kan forsvare.",
+    "reviewers": {
+      "research": {
+        "title": "Forskningsansvarlig",
+        "bio": "Leser primærlitteraturen. Siterer studien, ikke pressemeldingen. Avvik fra konsensusen dukker først opp når dataene bærer det."
+      },
+      "testing": {
+        "title": "Testansvarlig",
+        "bio": "Lager mat på hver panne i en måned. Veier hver flaske. Måler hvert utsagn. Verktøy og notatbøker overgår meningene i antall."
+      },
+      "medical": {
+        "title": "Medisinsk gjennomgang",
+        "bio": "Markerer YMYL-påstander. Bekrefter at ingen alarmretorikk har sluppet gjennom korrekturen. Den som stille fjerner den urovekkende setningen."
+      },
+      "sourcing": {
+        "title": "Innkjøpsansvarlig",
+        "bio": "Leser produktblader. Krysspeiler produsenters påstander mot uavhengige tester. Navngir merkene vi avviser — og sier hvorfor."
+      }
+    },
+    "disputeTitle": "Tvistprosedyre",
+    "disputeBody": "Hvis et merke mener vår score er feil, kan det legge frem en innsigelse med dokumentasjon. Vi tester på nytt på vår benk, ikke på deres. Hvis dataene deres motsier våre, publiserer vi begge. Vi endrer ikke aktive scorer under trussel om rettslige skritt; vi oppdaterer dem når bedre evidens kommer.",
+    "changelogTitle": "Endringslogg",
+    "changeLog": {
+      "v12": "Lagt til PFAS-panel etter SGS-metode 5021A. Holdbarhetsvinduet utvidet fra 12 til 24 måneder. Verdiberegningen endret slik at garantivilkår vektes.",
+      "v11": "Første offentlige utgave. Rubrikk i fem dimensjoner, fem korrekturroller, tvistprosedyre."
+    }
+  }
+}

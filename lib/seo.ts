@@ -36,6 +36,15 @@ const OG_LOCALE: Record<Locale, string> = {
   en: "en_US",
   de: "de_DE",
   fr: "fr_FR",
+  it: "it_IT",
+  es: "es_ES",
+  nl: "nl_NL",
+  pl: "pl_PL",
+  sv: "sv_SE",
+  pt: "pt_PT",
+  ro: "ro_RO",
+  cs: "cs_CZ",
+  no: "no_NO",
 };
 
 export function canonical(path: string): string {

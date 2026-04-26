@@ -1,0 +1,769 @@
+{
+  "common": {
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "skipToContent": "Naar de inhoud",
+    "minRead": "{n} min leestijd",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "Door",
+    "updated": "Bijgewerkt op {date}",
+    "lastUpdated": "Laatst bijgewerkt · {date}",
+    "openHub": "Rubriek openen",
+    "browse": "Bladeren →",
+    "readMore": "Lees het hoofdartikel",
+    "backToHome": "Terug naar de startpagina",
+    "backToFront": "Terug naar de voorpagina",
+    "backToMasthead": "Terug naar het colofon",
+    "tryAgain": "Opnieuw proberen",
+    "more": "Meer",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Onderzoeken",
+    "kitchen": "Keuken",
+    "newsletter": "Nieuwsbrief",
+    "getTheAudit": "Ontvang de audit",
+    "getTheAuditArrow": "Ontvang de audit →",
+    "editorialStandards": "Redactionele standaarden",
+    "about": "Over ons",
+    "contact": "Contact",
+    "fiveHubs": "De vijf rubrieken",
+    "masthead": "Het colofon"
+  },
+  "footer": {
+    "leadParagraph": "Een klein team dat de studies, de etiketten en de fabrikantsdocumenten leest — en publiceert wat we tegen een vriendin zouden zeggen. Geen productplaatsing. Geen betaalde rangschikkingen.",
+    "fiveHubs": "De vijf rubrieken",
+    "masthead": "Het colofon",
+    "finePrint": "Kleine lettertjes",
+    "about": "Over ons",
+    "editorialStandards": "Redactionele standaarden",
+    "contact": "Contact en tips",
+    "newsletter": "Nieuwsbrief",
+    "affiliateDisclosure": "Affiliate-melding",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "imprint": "Commissies op sommige links financieren onze tests en hebben nooit invloed op onze rangschikkingen. We werken vergelijkingen elk kwartaal bij."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  De openingseditie",
+    "tagline": "Het giftvrije laboratorium voor het dagelijks leven."
+  },
+  "issueBanner": {
+    "issue": "Nummer 01",
+    "edition": "De openingseditie",
+    "investigations": "Opent met twaalf onderzoeken"
+  },
+  "masthead": {
+    "imprintEdition": "De openingseditie",
+    "headlineLine1": "Het giftvrije",
+    "headlineWordLab": "laboratorium",
+    "headlineWordThe": "en de",
+    "headlineQuietly": "stille,",
+    "headlineLast": "onderbouwde gids voor elke wissel die telt.",
+    "footnoteFig": "Afb. 1.",
+    "footnoteText": "Een veldgids voor de blootstellingen die uw huis stilhoudt — gepubliceerd, één onderbouwde pagina per keer.",
+    "ledeBefore": "PlasticFreeLab leest de studies, test de alternatieven en publiceert wat we tegen een vriendin zouden zeggen, met bronnen. Geen vermaning, geen lifestylepastel, geen aas in de stijl van",
+    "ledeQuote": "10 schokkende gifstoffen",
+    "ledeAfter": ".",
+    "ctaPrimary": "Begin in de keuken",
+    "ctaSecondary": "In dit nummer",
+    "issueLabel": "In dit nummer",
+    "folioText": "Scroll verder — de inhoudsopgave staat eronder"
+  },
+  "magazineGrid": {
+    "eyebrow": "In dit nummer",
+    "title": {
+      "before": "Twaalf onderzoeken,",
+      "italic": "één rustige pagina",
+      "after": "."
+    },
+    "skipToToc": "Naar de inhoudsopgave →",
+    "fromTheDesk": "Van de redactie",
+    "currentlyTesting": "Wordt getest",
+    "featuredEyebrow": "Uitgelicht onderzoek",
+    "team": "Het team van PlasticFreeLab",
+    "testingLead": "Testleiding"
+  },
+  "investigationTiles": {
+    "eyebrow": "Op dit moment in het lab",
+    "title": {
+      "before": "De categorieën waaraan wij",
+      "italic": "dit kwartaal",
+      "after": "werken."
+    },
+    "statusTesting": "Wordt getest",
+    "statusPublished": "Gepubliceerd",
+    "statusLabel": "Status · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Giftvrij kookgerei",
+        "blurb": "14 sets, zes weken, één keuze die we opnieuw zouden kopen."
+      },
+      "storage": {
+        "label": "Plasticvrij voedselbewaren",
+        "blurb": "Wat houdt u, wat vervangt u, wat gaat dit weekend weg."
+      },
+      "filter": {
+        "label": "Waterfilter",
+        "blurb": "Brita, Berkey, AquaTru — één heldere aanbeveling."
+      },
+      "bottles": {
+        "label": "Glazen flessen",
+        "blurb": "Borosilicaat, kalk-natron, roestvast staal — we meten ze stuk voor stuk."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "Het onderzoek",
+    "title": {
+      "before": "Het onderzoek dat wij",
+      "italic": "deze maand",
+      "after": "naar voren halen."
+    },
+    "claims": {
+      "01": {
+        "label": "Materiaalsamenstelling",
+        "body": "De eigen documenten van de merken, niet de marketingtekst. Welke lagen worden geopenbaard, welke niet — en wat «giftvrij» in een commerciële belofte uiteindelijk betekent."
+      },
+      "02": {
+        "label": "Gedrag bij hitte en slijtage",
+        "body": "Zes weken op de proefbank. Infrarode temperatuurkaarten, vergelijking met gietijzer en de test die de meeste recensenten overslaan."
+      },
+      "03": {
+        "label": "Wie het oneens is, en waarom",
+        "body": "Wij noemen de critici, linken hun werk en geven aan waar wij het oneens blijven. Onderzoek, geen voorstelling."
+      }
+    },
+    "editorsPick": "Keuze van de redactie",
+    "ourPick": "Onze keuze",
+    "cta": "Lees het volledige onderzoek",
+    "bylineBy": "Door",
+    "bylineName": "De redactie van\nPlasticFreeLab",
+    "bylineDate": "April · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "De inhoudsopgave",
+    "title": {
+      "before": "Vijf rubrieken.",
+      "italic": "Honderdvijftig",
+      "after": "artikelen op komst."
+    },
+    "linkAbout": "Waarom we het zo hebben gebouwd →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Hoe wij berichten · Wie bericht",
+    "title": "De redactieraad.",
+    "lede": "Vier stoelen aan tafel. Elk kan een zin schrappen die wij niet kunnen verdedigen.",
+    "roles": {
+      "research": {
+        "title": "Hoofd onderzoek",
+        "bio": "Leest de primaire literatuur. Citeert de studie, niet het persbericht. Afwijking van de wetenschappelijke consensus verschijnt pas wanneer de gegevens haar dragen."
+      },
+      "testing": {
+        "title": "Hoofd huishoudelijke tests",
+        "bio": "Kookt een maand op elke pan. Weegt elke fles. Meet elke claim. Werktuigen en notitieboeken overtreffen in aantal de meningen."
+      },
+      "medical": {
+        "title": "Medisch reviewer",
+        "bio": "Markeert YMYL-uitspraken. Bevestigt dat geen alarmistische taal door de eindredactie is gekomen. Diegene die de zorgwekkende zin stilzwijgend wegneemt."
+      },
+      "sourcing": {
+        "title": "Hoofd inkoop",
+        "bio": "Leest specificatiebladen. Verifieert claims van fabrikanten met onafhankelijke testgegevens. Noemt de merken die wij afwijzen — en zegt waarom."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Uit het laboratoriumschrift",
+    "title": {
+      "before": "Waar we mee",
+      "italic": "bezig zijn",
+      "after": "."
+    },
+    "qMarker": "V.",
+    "aMarker": "A.",
+    "entries": {
+      "01": {
+        "q": "Welke wissel testen we in april?",
+        "a": "Glazen flessen — borosilicaat tegen kalk-natron tegen roestvast staal, gewogen, gevallen, blootgesteld aan thermische schok. Resultaten verschijnen in het meinummer."
+      },
+      "02": {
+        "q": "Welk merk wijzen wij deze maand af?",
+        "a": "Een merk dat zichzelf als «PFAS-vrij» verkoopt, terwijl het eigen veiligheidsinformatieblad een fluoropolymeerlaag vermeldt. Wij noemen het bij de volledige publicatie, met het document erbij."
+      },
+      "03": {
+        "q": "Een lezeres vraagt: is onze keuze voor waterfilter verouderd?",
+        "a": "De NSF-actualisaties van 2024 wijzigen onze topaanbeveling niet. De tweede plaats wordt opnieuw beoordeeld — verwacht een actualisatienota tegen het einde van de maand."
+      },
+      "04": {
+        "q": "Wat is het volgende onderzoek?",
+        "a": "Giftvrije matrassen. Wij hebben de specificatiebladen van vijf merken geopend en onafhankelijke testgegevens opgevraagd. Streefdatum publicatie: juni."
+      },
+      "05": {
+        "q": "Hoe gaan wij om met een fabrikant die om een nieuwe test vraagt?",
+        "a": "Wij testen opnieuw op onze bank, niet op de zijne. Spreken zijn gegevens de onze tegen, dan publiceren wij beide, benoemen het verschil en laten de lezeres het werk volgen."
+      },
+      "06": {
+        "q": "Veranderen affiliate-links onze rangschikkingen?",
+        "a": "Dat is nooit gebeurd. Commissies financieren de tests; ze kopen geen plaats. Wat een merk ons ongevraagd toestuurt, gaat naar de weggeefstapel, niet naar de recensie."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Het meest recent",
+    "title": "Vers getest, vers onderbouwd."
+  },
+  "credo": {
+    "eyebrow": "Het credo",
+    "title": {
+      "before": "",
+      "italic": "Wij beloven",
+      "after": "een pagina waarop elke uitspraak onderbouwd is, elke rangschikking verdiend en elk afgewezen product met name genoemd."
+    },
+    "01": {
+      "title": "Elke uitspraak onderbouwd.",
+      "body": "Wat niet in een door peers beoordeelde studie, een regelgevingsdossier of een fabrikantsverklaring staat, wordt niet gepubliceerd."
+    },
+    "02": {
+      "title": "Methodologie open.",
+      "body": "Elke vergelijking legt uit hoe wij hebben gekozen, wat wij hebben geverifieerd, wie het oneens is en waarom."
+    },
+    "03": {
+      "title": "Geen betaalde rangschikkingen.",
+      "body": "Commissies betalen de tests. Ze hebben nooit een plaats op deze pagina gekocht — en zullen dat ook nooit doen."
+    },
+    "fullStandards": "Lees de volledige redactionele standaarden"
+  },
+  "explainers": {
+    "eyebrow": "De begrippen",
+    "title": "De termen die u steeds tegenkomt, in helder Nederlands."
+  },
+  "newsletterBlock": {
+    "eyebrow": "De depesche",
+    "title": "Eén rustige, onderbouwde mail per week.",
+    "body": "Geen schrikkoppen. Geen dagelijkse stortvloed. Eén ding dat wij hebben gecontroleerd of waarover wij zijn omgegaan, elke dinsdagochtend. Plus de gratis keuken-audit zodra u zich aanmeldt."
+  },
+  "emailCapture": {
+    "eyebrow": "De keuken-audit",
+    "headline": "Ontvang de keuken-audit.",
+    "subhead": "Een afdrukbare lijst van meer dan vijftig keukenartikelen, elk geclassificeerd als nu vervangen / later vervangen / laat maar. Gratis. Direct geleverd.",
+    "emailLabel": "E-mailadres",
+    "placeholder": "u@voorbeeld.nl",
+    "submit": "Stuur me de audit →",
+    "submitLoading": "Bezig met verzenden…",
+    "success": "Dank u — kijk in uw inbox. De audit is onderweg.",
+    "consent": {
+      "before": "Door u aan te melden gaat u akkoord met ons",
+      "privacyLink": "privacybeleid",
+      "after": ". Eén rustige mail per week. Op elk moment uitschrijven."
+    },
+    "decoPages": "12 pagina's",
+    "decoItems": "50+ artikelen"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Wij gebruiken een klein aantal cookies voor analyse en sessiecontinuïteit. Geen reclamecookies. Zie ons",
+      "privacyLink": "privacybeleid",
+      "after": "."
+    },
+    "reject": "Weigeren",
+    "accept": "Accepteren"
+  },
+  "hubPage": {
+    "crumbHome": "Start",
+    "crumbGuides": "Onderzoeken",
+    "hubXofY": "Rubriek {i} van {n}",
+    "ourThesisLabel": "Onze stelling",
+    "totalLive": "Artikelen online",
+    "planned": "Gepland in de rubriek",
+    "startHereEyebrow": "Begin hier",
+    "startHereTitle": "De volledige gids.",
+    "guideEyebrow": "Het hoofdartikel",
+    "readPillar": "Lees het hoofdartikel",
+    "comparisonsEyebrow": "De gerangschikte vergelijkingen",
+    "comparisonsTitle": "Wat wij echt zouden kopen.",
+    "explainersEyebrow": "De begrippen",
+    "explainersTitle": "Heldere antwoorden op de vragen die mensen stellen.",
+    "auditsEyebrow": "De audits",
+    "auditsTitle": "Lijsten klaar voor het weekend.",
+    "emptyBefore": "Artikelen verschijnen hier zodra zij de redactionele toetsing zijn doorgekomen. Zie de",
+    "emptyHomeLink": "startpagina",
+    "emptyAfter": "voor wat vandaag online staat.",
+    "minRead": "{n} min leestijd",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "Het hoofdartikel",
+    "comparison": "De vergelijking",
+    "cluster": "Het begrip",
+    "listicle": "De audit"
+  },
+  "postTypeShort": {
+    "pillar": "Hoofdartikel",
+    "comparison": "Vergelijking",
+    "cluster": "Begrip",
+    "listicle": "Audit"
+  },
+  "postChrome": {
+    "translationBanner": "Dit onderzoek is voorlopig alleen in het Engels beschikbaar. Wij werken aan de Nederlandse vertaling.",
+    "onThisPage": "Op deze pagina",
+    "shortAnswer": "Het korte antwoord",
+    "rankedList": "De gerangschikte lijst",
+    "wouldSkip": "Wat wij overslaan",
+    "methodologyTOC": "Methodologie",
+    "faqShort": "Veelgestelde vragen",
+    "changeMind": "Wat ons van mening zou doen veranderen",
+    "sources": "Bronnen",
+    "frequentlyAsked": "Veelgestelde vragen",
+    "labLabel": "Het laboratorium",
+    "tested": "Getest",
+    "testedValue": "{n}+ producten",
+    "cited": "Geciteerd",
+    "citedValue": "{n} bronnen",
+    "readTime": "Leestijd",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Laatst bijgewerkt",
+    "pflScoreEyebrow": "PFL-score",
+    "scoreBreakdownEyebrow": "Score-onderbouwing",
+    "scoreBreakdownTitle": "Hoe de {n}/100 tot stand kwam.",
+    "scoreDim": {
+      "materialSafety": "Materiaalveiligheid",
+      "performance": "Prestatie",
+      "durability": "Duurzaamheid",
+      "useExperience": "Gebruikservaring",
+      "value": "Prijs-kwaliteit"
+    }
+  },
+  "comparison": {
+    "eyebrow": "De vergelijking",
+    "ourPickEyebrow": "Onze keuze",
+    "rankedEyebrow": "De gerangschikte lijst",
+    "rankedTitle": "Alles wat wij zouden kopen, op volgorde.",
+    "rankedMeta": "{n} keuzes · gerangschikt op verdienste",
+    "skipsEyebrow": "Wat wij overslaan — en waarom",
+    "skipsTitle": "Genoemd, niet aangestipt.",
+    "faqEyebrow": "De veelgestelde vragen",
+    "faqTitle": "Wat mensen ons het vaakst vragen.",
+    "changeMindLabel": "Wat ons van mening zou doen veranderen",
+    "changeMindBody": "Nieuwe onafhankelijke labtests die onze huidige rangschikking tegenspreken. Een stille herformulering van een hooggeplaatste keuze die een aangegeven certificering laat vallen. Een door peers beoordeeld artikel dat het veiligheidsbeeld voor een van bovenstaande materialen wijzigt. Wij werken deze pagina binnen een week bij en geven aan wat is veranderd."
+  },
+  "pillar": {
+    "eyebrow": "Het hoofdartikel",
+    "pullQuoteAttribution": "Standpunt van de redactie van PlasticFreeLab",
+    "pullQuote": "Wij beantwoorden de vraag die u werkelijk stelt liever in de eerste alinea, en verdienen daarna uw vertrouwen door het werk te tonen.",
+    "keyTakeawayTitle": "Wat dit hoofdartikel behandelt",
+    "keyTakeawayBody": "Wat de beste beschikbare evidentie vandaag zegt, wat werkelijk onzeker blijft en wat u deze week kunt doen — naar prioriteit geordend, elke uitspraak onderbouwd.",
+    "faqEyebrow": "De veelgestelde vragen",
+    "faqTitle": "De vragen die lezers ons werkelijk stellen."
+  },
+  "cluster": {
+    "eyebrow": "Het begrip",
+    "shortAnswerTitle": "Het korte antwoord",
+    "shortAnswerBody": "De samenvatting staat hier voor wie het antwoord nu nodig heeft. De rest van de pagina onderbouwt het — bronnen, context en de punten die wij intern bespraken.",
+    "faqEyebrow": "De veelgestelde vragen",
+    "faqTitle": "Wat lezers vervolgens vragen."
+  },
+  "listicle": {
+    "eyebrow": "De audit"
+  },
+  "methodology": {
+    "label": "Methodologie",
+    "title": "Hoe deze vergelijking is opgesteld",
+    "items": {
+      "picked": {
+        "label": "Selectiecriteria",
+        "detail": "Verklaarde materialen, onafhankelijke certificering, duurzaamheid in echt koken en onafhankelijke contaminanttests indien beschikbaar."
+      },
+      "evaluated": {
+        "label": "Hoe wij beoordelen",
+        "detail": "Verklaringen van fabrikanten, regelgevingsdocumenten, door peers beoordeelde artikelen en hands-on slijtagetests. Wij lezen de etiketten en de dossiers, niet de persberichten."
+      },
+      "disagrees": {
+        "label": "Wie het oneens is met ons",
+        "detail": "Wij geven in elke vergelijking de tegengestelde positie zo sterk mogelijk weer en noemen het merk dat wij bijna kozen — en de reden waarom niet."
+      },
+      "changeMind": {
+        "label": "Wat ons van mening zou doen veranderen",
+        "detail": "Nieuwe onafhankelijke labtests, een herformulering door een gerangschikt merk of een door peers beoordeelde bevinding die onze huidige redenering tegenspreekt."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Dit onderzoek is voorlopig alleen in het Engels beschikbaar. Wij werken aan de Nederlandse vertaling."
+  },
+  "affiliate": {
+    "label": "Melding",
+    "body": "PlasticFreeLab test en beveelt aan in volledige onafhankelijkheid. Wij ontvangen soms een commissie wanneer u via onze links koopt — die heeft geen invloed op onze rangschikkingen."
+  },
+  "authorBio": {
+    "eyebrow": "Over de auteur",
+    "name": "Het team van PlasticFreeLab",
+    "body": "Een kleine groep onderzoekers en redacteuren die door de ruis rond het giftvrije leven heen werkt. Wij lezen de studies, lezen de etiketten, testen de producten — en stellen onze aanbevelingen bij naarmate de wetenschap vordert. Wij aanvaarden geen betaling voor productplaatsing, vermelden elke affiliate-relatie en noemen de merken die wij afwijzen.",
+    "standardsLink": "Onze redactionele standaarden →",
+    "correctionLink": "Stuur ons een correctie →"
+  },
+  "related": {
+    "eyebrow": "Lees verder",
+    "title": "Verwant in deze rubriek."
+  },
+  "sources": {
+    "eyebrow": "Verwijzingen",
+    "title": "Bronnen geciteerd op deze pagina."
+  },
+  "notFound": {
+    "metaTitle": "Niet in het archief",
+    "metaDescription": "De pagina die u zocht staat niet in onze index. Hier zijn enkele plekken waar u zou kunnen vinden waar u naar op zoek was.",
+    "eyebrow": "404 · Niet in het archief",
+    "title": "Wij konden die pagina niet vinden.",
+    "p1": "Soms verandert een URL wanneer wij een rubriek herordenen. Soms wordt een artikel teruggetrokken omdat de wetenschap is verschoven en wij een verouderde aanbeveling liever offline halen.",
+    "p2": "Hoe dan ook, op dit adres staat niets bruikbaars. De vijf rubrieken hieronder dekken alles wat wij publiceren — bijna zeker bevat er één wat u zocht.",
+    "tryHubs": "Probeer de rubrieken",
+    "primary": "Terug naar de voorpagina",
+    "secondary": "Ontvang het wekelijkse bulletin",
+    "stampLine1": "NIET IN",
+    "stampLine2": "ARCHIEF",
+    "stampSub": "· PLASTICFREELAB-ARCHIEF ·"
+  },
+  "errorPage": {
+    "eyebrow": "Fout · Iets is misgegaan",
+    "title": "Aan onze kant is iets misgegaan.",
+    "body": "Niet uw schuld. Een pagina is niet weergegeven zoals zij hoorde. Probeer het opnieuw — als de fout aanhoudt, ga terug naar de voorpagina, de rest van de site zou zich verder normaal moeten gedragen.",
+    "tryAgain": "Opnieuw proberen",
+    "backToHome": "Terug naar de startpagina",
+    "reference": "Referentie · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Eén rustige mail per week.",
+    "p1": {
+      "before": "Eén nuttig ding: het belangrijkste artikel dat wij publiceerden, de wissel die wij als eerste zouden maken of een studie die wij voor u lazen. Geen verkooppraatjes, geen affiliate-spam, geen mails van vierduizend woorden."
+    },
+    "p2": {
+      "before": "Abonnees ontvangen daarnaast de",
+      "bold": "keuken-audit",
+      "after": " — een afdrukbare lijst van meer dan vijftig keukenartikelen, elk geclassificeerd: nu vervangen / later vervangen / laat maar."
+    },
+    "captureHeadline": "Begin met de audit.",
+    "captureSubhead": "Geef uw e-mailadres door en wij sturen het pdf direct."
+  },
+  "trustNav": {
+    "home": "Start"
+  },
+  "trustPages": {
+    "about": {
+      "title": "Over PlasticFreeLab",
+      "metaDescription": "Wie wij zijn, wat wij doen en waarom wij dit hebben opgezet.",
+      "intro": "PlasticFreeLab bestaat omdat de informatie over giftvrij leven doorgaans een rommeltje is. Wij hebben een rustige, onderbouwde en onderzoeksgerichte plek opgezet die de studies leest, de producten test en u de drie dingen vertelt die werkelijk tellen."
+    },
+    "editorialStandards": {
+      "title": "Redactionele standaarden",
+      "metaDescription": "Onze openbare redactionele regels — bronnen, correcties, affiliate-melding en gebruik van AI-hulpmiddelen.",
+      "intro": "Elke website belooft betrouwbaar te zijn. Hier staat wat dat bij PlasticFreeLab concreet betekent — bronregels, correctiebeleid, affiliate-melding en ons gebruik van AI-hulpmiddelen."
+    },
+    "affiliateDisclosure": {
+      "title": "Affiliate-melding",
+      "metaDescription": "Hoe affiliate-links op PlasticFreeLab werken en wat dat voor u betekent.",
+      "intro": "Sommige productlinks op deze website zijn affiliate-links. Wij ontvangen een kleine commissie wanneer u via die links koopt, zonder extra kosten voor u, en die commissies beïnvloeden onze rangschikkingen nooit."
+    },
+    "privacy": {
+      "title": "Privacybeleid",
+      "metaDescription": "Wat wij verzamelen, hoe wij het gebruiken en wat uw rechten zijn.",
+      "intro": "Dit privacybeleid beschrijft hoe PlasticFreeLab informatie verzamelt, gebruikt en deelt wanneer u plasticfreelab.com bezoekt."
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden",
+      "metaDescription": "De voorwaarden die uw gebruik van PlasticFreeLab regelen.",
+      "intro": "Door plasticfreelab.com te bezoeken aanvaardt u deze voorwaarden. Indien u ze niet aanvaardt, gebruik de site dan niet."
+    },
+    "contact": {
+      "title": "Contact",
+      "metaDescription": "Hoe u ons kunt bereiken.",
+      "intro": "Hoe u ons kunt bereiken — voor algemene reacties, correcties, privacyverzoeken en producttips."
+    },
+    "newsletter": {
+      "title": "Eén rustige mail per week.",
+      "metaDescription": "Eén rustige mail per week — het nuttigste artikel van de week en de wissel die wij als eerste zouden maken. Gratis. Op elk moment uitschrijven."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Taal",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "it": "IT",
+    "es": "ES",
+    "nl": "NL",
+    "pl": "PL",
+    "sv": "SV",
+    "pt": "PT",
+    "ro": "RO",
+    "cs": "CS",
+    "no": "NO",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français",
+    "itFull": "Italiano",
+    "esFull": "Español",
+    "nlFull": "Nederlands",
+    "plFull": "Polski",
+    "svFull": "Svenska",
+    "ptFull": "Português",
+    "roFull": "Română",
+    "csFull": "Čeština",
+    "noFull": "Norsk"
+  },
+  "site": {
+    "tagline": "Het giftvrije laboratorium voor het dagelijks leven.",
+    "description": "Wij testen de alternatieven, lezen de studies en publiceren rustige, onderbouwde gidsen over microplastics, PFAS en de huishoudelijke veranderingen die werkelijk de moeite waard zijn."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Microplastics & hormoonverstoorders",
+      "shortName": "Microplastics",
+      "oneLiner": "De wetenschap, in helder Nederlands. Wat werkelijk vaststaat, wat nog ter discussie ligt en wat ermee te doen."
+    },
+    "non-toxic-kitchen": {
+      "name": "Giftvrije keuken",
+      "shortName": "Keuken",
+      "oneLiner": "De wisselingen met de grootste impact in huis, geordend op belang. Kookgerei, water, opslag — het hele pakket."
+    },
+    "non-toxic-personal-care": {
+      "name": "Persoonlijke verzorging",
+      "shortName": "Verzorging",
+      "oneLiner": "Van shampoo tot zonnebrand, de rustige waarheid over wat in uw badkamer staat en wat het waard is om te vervangen."
+    },
+    "non-toxic-home": {
+      "name": "Woonomgeving",
+      "shortName": "Wonen",
+      "oneLiner": "Matrassen, schoonmaakmiddelen, luchtkwaliteit — en de stille blootstellingen waar niemand bij stilstaat."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Kleding en textiel",
+      "shortName": "Kleding",
+      "oneLiner": "Microplastics, PFAS in kleding en de textielketen — met de merken die hun werk hebben gedaan."
+    }
+  },
+  "pflScore": {
+    "label": "PFL-score",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Uitstekend",
+      "strongBuy": "Sterke aanrader",
+      "good": "Goed",
+      "caveatBuy": "Koop met voorbehoud",
+      "skip": "Overslaan"
+    }
+  },
+  "pipeline": {
+    "label": "In het lab",
+    "queued": "in de wachtrij",
+    "updatedWeekly": "Wekelijks bijgewerkt",
+    "inTheLabCount": "{n} in het lab",
+    "queuedCount": "{n} in de wachtrij",
+    "badgeAriaLabel": "Pipeline: {testing} in het lab, {queued} in de wachtrij. Open het volledige logboek.",
+    "h1": "Wat wij op dit moment testen."
+  },
+  "pipelinePage": {
+    "metaTitle": "Wat wij op dit moment testen",
+    "metaDescription": "Een open logboek van elk PlasticFreeLab-onderzoek — in uitvoering, in de wachtrij of in eindredactie. Wekelijks bijgewerkt.",
+    "eyebrow": "De pipeline",
+    "h1": "Wat wij op dit moment testen.",
+    "subtitle": "Een open logboek van elk onderzoek — in het lab, in de wachtrij of in eindredactie. Wekelijks bijgewerkt. Wij publiceren het omdat geheimhouding iets is voor advertorials.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "In het lab",
+      "drafted": "Geschreven, in eindredactie",
+      "researching": "Onderzoek, in de wachtrij"
+    },
+    "status": {
+      "testing": "Wordt getest",
+      "drafted": "Geschreven",
+      "researching": "Onderzoek"
+    },
+    "reviewerRole": {
+      "research": "Hoofd onderzoek",
+      "testing": "Testleiding",
+      "medical": "Medisch reviewer",
+      "sourcing": "Hoofd inkoop"
+    },
+    "expectedTBD": "Datum nog te bevestigen",
+    "itemsCount": "{n} items",
+    "methodologyFooter": "Testmethodiek · v1.2 · Laatst bijgewerkt {date} · Zie",
+    "hubsLine": "Naar de rubrieken:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Testleiding",
+      "testedVia": "Getest volgens PFL-methodiek {version}",
+      "labRun": "Labtests uitgevoerd op {date}"
+    },
+    "plain": {
+      "team": "Het team van PlasticFreeLab",
+      "published": "Gepubliceerd op {date}",
+      "refreshed": "Bijgewerkt op {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "PFL-methodiek",
+    "metaDescription": "Hoe PlasticFreeLab elk product beoordeelt. Openbare methodiek, geversioneerd als software.",
+    "eyebrow": "Redactionele standaarden",
+    "h1": "PFL-methodiek",
+    "intro": "Elk product op PlasticFreeLab wordt beoordeeld volgens dezelfde rubriek met vijf dimensies. De rubriek is openbaar, geversioneerd als software en wordt bijgewerkt zodra nieuwe evidentie de vorige versie onvolledig laat lijken.",
+    "currentVersionTitle": "Huidige versie",
+    "currentVersionBody": "v1.2, van kracht sinds april 2026. Voegt een PFAS-paneel toe volgens SGS-methode 5021A, breidt het duurzaamheidsvenster uit van 12 naar 24 maanden en herziet de waardeberekening om garantievoorwaarden mee te wegen.",
+    "currentVersionLink": "Lees de specificatie v1.2 →",
+    "philosophyTitle": "Waarom een openbare methodiek",
+    "philosophyP1": "Als wij niet kunnen tonen hoe wij hebben gekozen, zijn de keuzes weinig waard. Elke score op deze website is een getal dat elke lezeres uit dezelfde evidentie kan reproduceren. Wij publiceren de dimensies, de gewichten, de subtests en de laboratoriumpartners. Wij vermelden wat wij niet hebben getest, en waarom.",
+    "philosophyP2": "Methodologische verschuiving is de meest voorkomende fout in productrecensies. Ons tegenwicht is het versienummer. Wanneer wij de rubriek wijzigen, brengen wij een nieuwe versie uit, archiveren de vorige en herwaarderen de betreffende artikelen. Lezers zien precies wat is veranderd.",
+    "changeLogTitle": "Wijzigingslog",
+    "changeLog": {
+      "v12": "PFAS-paneel toegevoegd volgens SGS-methode 5021A. Duurzaamheidsvenster verlengd van 12 tot 24 maanden. Waardeberekening herzien om garantievoorwaarden te wegen.",
+      "v11": "Eerste openbare uitgave. Rubriek met vijf dimensies, vijf reviewerrollen, geschillenprocedure."
+    },
+    "disputeTitle": "Geschillenprocedure",
+    "disputeBody": "Als een merk meent dat onze score onjuist is, kan het met documentatie bezwaar maken. Wij testen opnieuw op onze bank, niet op de hunne. Spreken hun gegevens de onze tegen, dan publiceren wij beide. Wij wijzigen levende scores niet onder dreiging van juridische actie; wij actualiseren ze wanneer er betere evidentie komt."
+  },
+  "methodologyV12": {
+    "metaTitle": "PFL-methodiek v1.2",
+    "metaDescription": "De volledige specificatie v1.2: vijf gewogen dimensies, subtests, laboratoriumpartners, kwalificaties van reviewers.",
+    "eyebrow": "Specificatie · v1.2",
+    "h1": "PFL-methodiek v1.2",
+    "updated": "Bijgewerkt in april 2026 · Vorige versie: v1.1 ↗",
+    "changelogLink": "Alle versies",
+    "intro": "Dit is de werkende specificatie voor elke productscore die op PlasticFreeLab wordt gepubliceerd tussen april 2026 en de volgende geversioneerde uitgave. Vijf gewogen dimensies, drieëntwintig subtests, vier reviewerrollen en een geschillenprocedure die niet zwicht onder druk.",
+    "weightsTitle": "De vijf dimensies",
+    "weightsBody": "Elke score op deze website is een gewogen gemiddelde van de vijf onderstaande dimensies. De gewichten weerspiegelen wat naar onze overtuiging het meest telt voor een aanbeveling rond giftvrij leven: materiaalveiligheid domineert omdat dat de reden is dat onze lezeres hier is, en prijs-kwaliteit komt achteraan omdat geld terug te halen is — blootstelling niet.",
+    "subtestsTitle": "Subtests",
+    "dimension": {
+      "materialSafety": {
+        "title": "Materiaalveiligheid",
+        "oneLiner": "Waaruit het bestaat, wat het afgeeft, wat is gecertificeerd.",
+        "body": "Materiaalveiligheid is wat de meeste lezeressen hier brengt en de zwaarst gewogen dimensie. Wij beoordelen de bekendgemaakte stuklijst, onafhankelijke certificeringen (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) en eventuele contaminantgegevens die de fabrikant publiceert. Zwijgt de fabrikant, dan laten wij eigen panels uitvoeren bij geaccrediteerde laboratoria."
+      },
+      "performance": {
+        "title": "Prestatie",
+        "oneLiner": "Doet het zijn werk — goed — onder realistische belasting.",
+        "body": "Een giftvrij product dat niet presteert is geen aanbeveling. Wij meten categoriegebonden functies: warmteverdeling en -behoud bij kookgerei, contaminantreductie en doorstroming bij filters, structurele veerkracht en ademend vermogen bij textiel. Prestatiescores komen van de bank, niet uit gevoel."
+      },
+      "durability": {
+        "title": "Duurzaamheid",
+        "oneLiner": "Hoe het 24 maanden normaal gebruik doorstaat.",
+        "body": "Coatings schilferen, elastiek vermoeit, pakkingen krimpen. De duurzaamheidsscore vat de faaltypen die een giftvrij product na twaalf maanden tot een problematisch product maken. Ons panel onderwerpt elk artikel aan een versnelde slijtagecyclus van 24 maanden, aangevuld met longitudinale rapporten uit echte huishoudens."
+      },
+      "useExperience": {
+        "title": "Gebruikservaring",
+        "oneLiner": "Hoe het is om er een maand mee te leven.",
+        "body": "Gewicht, balans, reinigbaarheid, leercurve, geluid, geur. De kwalitatieve dimensie — beoordeeld op vaste rubrieken zodat het resultaat tussen reviewers reproduceerbaar blijft. Drie panelleden brengen elk een kalendermaand met het product door voordat zij scoren."
+      },
+      "value": {
+        "title": "Prijs-kwaliteit",
+        "oneLiner": "Kosten per jaar verwachte gebruiksduur — relatief aan de categorie.",
+        "body": "Wij berekenen de waarde als verwachte kosten per jaar gebruiksduur over een horizon van tien jaar, genormaliseerd op de mediaan van de categorie. Een duur artikel met een dertigjarige garantie verslaat vaak een goedkoop artikel met een tweejarige coating. Garantievoorwaarden, repareerbaarheid en tweedehandsmarkt tellen mee."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "PFAS-paneel (SGS-methode 5021A)",
+        "body": "Kwantitatieve analyse van 40 PFAS-verbindingen op delen-per-miljard-niveau. Nieuw in v1.2."
+      },
+      "leadCadmium": {
+        "title": "Lood- en cadmiumscreening",
+        "body": "Oppervlakteëxtractie volgens FDA Compliance Policy Guide 7117.06. Geslaagd / numerieke waarde gerapporteerd."
+      },
+      "phthalate": {
+        "title": "Ftalatenpaneel",
+        "body": "GC-MS-analyse voor de acht onder CPSIA beperkte ftalaten. Gerapporteerd in microgram per gram."
+      },
+      "vocChamber": {
+        "title": "VOC-kamer",
+        "body": "Kamertest van 72 uur volgens CDPH 01350 voor totale VOC's en de prioriteitslijst van 35 afzonderlijke verbindingen."
+      },
+      "supplier": {
+        "title": "Auditing van leveranciersbekendmaking",
+        "body": "Tier 1-fabrikant gepubliceerd, met land en certificering van elke materiaallaag."
+      },
+      "heatMap": {
+        "title": "Infrarode warmtekaart",
+        "body": "Oppervlaktetemperatuur in kaart gebracht in intervallen van 30 seconden over een verwarmingscurve van 12 minuten."
+      },
+      "deglaze": {
+        "title": "Aanbraden + deglaceren",
+        "body": "Gestandaardiseerd aanbraden van eiwit plus zuur deglaceren, beoordeeld op bruining, loslating en oppervlakte-integriteit."
+      },
+      "filterEfficacy": {
+        "title": "Contaminantreductie",
+        "body": "Influent volgens NSF-specificatie, effluent gemeten voor de tien prioritaire contaminanten."
+      },
+      "loadCycle": {
+        "title": "Volle-belastingstest",
+        "body": "Continue gebruik op volle capaciteit gedurende de aangegeven levensduur van het patroon, met eindcontrole."
+      },
+      "coatingWear": {
+        "title": "Versnelde coatingslijtage",
+        "body": "ASTM-achtige slijtcyclus equivalent aan ongeveer 24 maanden normaal huishoudelijk gebruik."
+      },
+      "warrantyAudit": {
+        "title": "Garantieaudit",
+        "body": "Dekking, uitsluitingen en mediane afhandelingstijd, ontleend aan openbare dossiers waar beschikbaar."
+      },
+      "fieldReports": {
+        "title": "Longitudinale veldrapporten",
+        "body": "Zes panelhuishoudens rapporteren maandelijks gedurende twaalf maanden. Tussentijds afhaken is op zichzelf een signaal."
+      },
+      "weight": {
+        "title": "Gewicht en ergonomie",
+        "body": "Massa, balans en reikwijdte voor de relevante ergonomische dimensies. Beoordeeld tegen een categoriebasis."
+      },
+      "cleanability": {
+        "title": "Reinigbaarheid",
+        "body": "Vaatwasser- en handwascycli, beoordeeld op residuen en aantasting van de afwerking."
+      },
+      "panelScores": {
+        "title": "Kwalitatieve panelbeoordeling",
+        "body": "Drie reviewers, vaste rubriek, geblindeerd waar de geometrie het toelaat."
+      },
+      "costPerYear": {
+        "title": "Verwachte kosten per jaar",
+        "body": "Aanschafprijs plus verbruiksartikelen, geamortiseerd over de verwachte levensduur."
+      },
+      "warrantyDelta": {
+        "title": "Aanpassing waarde-garantie",
+        "body": "Meerjarige garanties die uitkeren verlagen de jaarkosten; zwakke garanties niet."
+      },
+      "marketComparable": {
+        "title": "Marktvergelijking",
+        "body": "Geïndexeerd tegen de categoriemediane jaarkosten van alle huidige kandidaten op de shortlist."
+      }
+    },
+    "labPartnersTitle": "Laboratoriumpartners",
+    "labPartnersBody": "Voor kwantitatieve chemische panels werken wij met SGS, Eurofins en Intertek. Speciaal voor PFAS is SGS-methode 5021A onze standaard. De partnerlijst staat hier als transparantieverbintenis; partnerstatus heeft geen invloed op de scoring, en laboratoria zien de identiteit van het merk pas wanneer het rapport is ingediend. (Volledige partnerlijst en wederkerigheidsbeleid: te publiceren met de specificatie v1.3.)",
+    "reviewersTitle": "Kwalificaties van reviewers",
+    "reviewersIntro": "Vier rollen, elk gemachtigd om een zin te schrappen die het team niet kan verdedigen.",
+    "reviewers": {
+      "research": {
+        "title": "Hoofd onderzoek",
+        "bio": "Leest de primaire literatuur. Citeert de studie, niet het persbericht. Afwijking van de wetenschappelijke consensus verschijnt pas wanneer de gegevens haar dragen."
+      },
+      "testing": {
+        "title": "Testleiding",
+        "bio": "Kookt een maand op elke pan. Weegt elke fles. Meet elke claim. Werktuigen en notitieboeken overtreffen in aantal de meningen."
+      },
+      "medical": {
+        "title": "Medisch reviewer",
+        "bio": "Markeert YMYL-uitspraken. Bevestigt dat geen alarmistische taal door de eindredactie is gekomen. Diegene die de zorgwekkende zin stilzwijgend wegneemt."
+      },
+      "sourcing": {
+        "title": "Hoofd inkoop",
+        "bio": "Leest specificatiebladen. Triangulieert claims van fabrikanten met onafhankelijke testgegevens. Noemt de merken die wij afwijzen — en zegt waarom."
+      }
+    },
+    "disputeTitle": "Geschillenprocedure",
+    "disputeBody": "Als een merk meent dat onze score onjuist is, kan het met documentatie bezwaar maken. Wij testen opnieuw op onze bank, niet op de hunne. Spreken hun gegevens de onze tegen, dan publiceren wij beide. Wij wijzigen levende scores niet onder dreiging van juridische actie; wij actualiseren ze wanneer er betere evidentie komt.",
+    "changelogTitle": "Wijzigingslog",
+    "changeLog": {
+      "v12": "PFAS-paneel toegevoegd volgens SGS-methode 5021A. Duurzaamheidsvenster verlengd van 12 tot 24 maanden. Waardeberekening herzien om garantievoorwaarden te wegen.",
+      "v11": "Eerste openbare uitgave. Rubriek met vijf dimensies, vijf reviewerrollen, geschillenprocedure."
+    }
+  }
+}

@@ -1,0 +1,769 @@
+{
+  "common": {
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "skipToContent": "Přeskočit k obsahu",
+    "minRead": "{n} min čtení",
+    "min": "{n} min",
+    "minCaps": "{n} MIN",
+    "by": "Autor:",
+    "updated": "Aktualizováno {date}",
+    "lastUpdated": "Naposledy aktualizováno · {date}",
+    "openHub": "Otevřít rubriku",
+    "browse": "Procházet →",
+    "readMore": "Přečíst hlavní text",
+    "backToHome": "Zpět na úvodní stránku",
+    "backToFront": "Zpět na titulní stranu",
+    "backToMasthead": "Zpět do tiráže",
+    "tryAgain": "Zkusit znovu",
+    "more": "Více",
+    "moreArrow": "→"
+  },
+  "header": {
+    "guides": "Šetření",
+    "kitchen": "Kuchyně",
+    "newsletter": "Newsletter",
+    "getTheAudit": "Získat audit",
+    "getTheAuditArrow": "Získat audit →",
+    "editorialStandards": "Redakční zásady",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "fiveHubs": "Pět rubrik",
+    "masthead": "Tiráž"
+  },
+  "footer": {
+    "leadParagraph": "Malý tým, který čte studie, etikety a podklady výrobců — a zveřejňuje to, co bychom řekli kamarádce. Žádné product placement. Žádná placená umístění.",
+    "fiveHubs": "Pět rubrik",
+    "masthead": "Tiráž",
+    "finePrint": "Drobným písmem",
+    "about": "O nás",
+    "editorialStandards": "Redakční zásady",
+    "contact": "Kontakt a tipy",
+    "newsletter": "Newsletter",
+    "affiliateDisclosure": "Affiliate prohlášení",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky používání",
+    "imprint": "Provize z některých odkazů financují naše testy a nikdy neovlivňují pořadí. Srovnání aktualizujeme čtvrtletně."
+  },
+  "intro": {
+    "edition": "{volume}  ·  {issue}  ·  Úvodní vydání",
+    "tagline": "Netoxická laboratoř pro každý den."
+  },
+  "issueBanner": {
+    "issue": "Číslo 01",
+    "edition": "Úvodní vydání",
+    "investigations": "Otevírá dvanáct šetření"
+  },
+  "masthead": {
+    "imprintEdition": "Úvodní vydání",
+    "headlineLine1": "Netoxická",
+    "headlineWordLab": "laboratoř",
+    "headlineWordThe": "a tichý,",
+    "headlineQuietly": "doložený",
+    "headlineLast": "průvodce každou výměnou, na které záleží.",
+    "footnoteFig": "Obr. 1.",
+    "footnoteText": "Polní průvodce expozicemi, které vám doma nikdo neřekne — vydáváme jednu doloženou stránku za druhou.",
+    "ledeBefore": "PlasticFreeLab čte studie, zkouší výměny a publikuje to, co bychom řekli kamarádce, se zdroji. Žádné kárání, žádný pastelový lifestyle, žádné návnady typu",
+    "ledeQuote": "10 šokujících jedů",
+    "ledeAfter": ".",
+    "ctaPrimary": "Začínáme v kuchyni",
+    "ctaSecondary": "V tomto čísle",
+    "issueLabel": "V tomto čísle",
+    "folioText": "Pokračujte dolů — obsah je níž"
+  },
+  "magazineGrid": {
+    "eyebrow": "V tomto čísle",
+    "title": {
+      "before": "Dvanáct šetření,",
+      "italic": "jedna klidná stránka",
+      "after": "."
+    },
+    "skipToToc": "Na obsah →",
+    "fromTheDesk": "Z redakce",
+    "currentlyTesting": "Aktuálně testujeme",
+    "featuredEyebrow": "Vybrané šetření",
+    "team": "Tým PlasticFreeLab",
+    "testingLead": "Vedoucí testů"
+  },
+  "investigationTiles": {
+    "eyebrow": "Právě v laboratoři",
+    "title": {
+      "before": "Kategorie, na nichž",
+      "italic": "pracujeme",
+      "after": "v tomto čtvrtletí."
+    },
+    "statusTesting": "Testuje se",
+    "statusPublished": "Vydáno",
+    "statusLabel": "Stav · {status}",
+    "tiles": {
+      "cookware": {
+        "label": "Netoxické nádobí",
+        "blurb": "14 sad, šest týdnů, jedna volba, kterou bychom si koupili znovu."
+      },
+      "storage": {
+        "label": "Skladování bez plastu",
+        "blurb": "Co si necháte, co vyměníte, co o víkendu vyhodíte."
+      },
+      "filter": {
+        "label": "Filtr na vodu",
+        "blurb": "Brita, Berkey, AquaTru — jedno jasné doporučení."
+      },
+      "bottles": {
+        "label": "Skleněné lahve",
+        "blurb": "Borosilikát, sodno-vápenaté sklo, nerez — měříme každou."
+      }
+    }
+  },
+  "pinnedInvestigation": {
+    "eyebrow": "Šetření",
+    "title": {
+      "before": "To, které",
+      "italic": "vyzdvihujeme",
+      "after": "tento měsíc."
+    },
+    "claims": {
+      "01": {
+        "label": "Složení materiálů",
+        "body": "Vlastní podklady značek, ne marketingový text. Které vrstvy jsou zveřejněny, které ne — a co «netoxický» nakonec znamená v obchodním slibu."
+      },
+      "02": {
+        "label": "Chování při teplotě a oděru",
+        "body": "Šest týdnů na zkušebním stole. Termální mapy v infračerveném pásmu, srovnání s litinou a test, který většina recenzentů přeskakuje."
+      },
+      "03": {
+        "label": "Kdo nesouhlasí — a proč",
+        "body": "Jmenujeme kritiky, odkazujeme jejich práce a říkáme, kde nadále nesouhlasíme. Šetření, ne představení."
+      }
+    },
+    "editorsPick": "Volba redakce",
+    "ourPick": "Naše volba",
+    "cta": "Přečíst celé šetření",
+    "bylineBy": "Autor:",
+    "bylineName": "Redakce\nPlasticFreeLab",
+    "bylineDate": "Duben · MMXXVI"
+  },
+  "homeHubs": {
+    "eyebrow": "Obsah",
+    "title": {
+      "before": "Pět rubrik.",
+      "italic": "Sto padesát",
+      "after": "textů na cestě."
+    },
+    "linkAbout": "Proč jsme to postavili takto →"
+  },
+  "editorialBoard": {
+    "eyebrow": "Jak referujeme · Kdo referuje",
+    "title": "Redakční rada.",
+    "lede": "Čtyři židle u stolu. Každá může škrtnout větu, kterou nedokážeme obhájit.",
+    "roles": {
+      "research": {
+        "title": "Vedoucí výzkumu",
+        "bio": "Čte primární literaturu. Cituje studii, ne tiskovou zprávu. Nesouhlas s konsensem se objevuje až tehdy, kdy ho nesou data."
+      },
+      "testing": {
+        "title": "Vedoucí domácích testů",
+        "bio": "Vaří měsíc na každé pánvi. Váží každou lahev. Měří každé tvrzení. Nářadí a sešity převažují nad názory."
+      },
+      "medical": {
+        "title": "Lékařská recenze",
+        "bio": "Označuje YMYL tvrzení. Potvrzuje, že žádné poplašné formulace neprošly korekturou. Ten, kdo tiše odstraňuje znepokojivou větu."
+      },
+      "sourcing": {
+        "title": "Vedoucí zásobování",
+        "bio": "Čte technické listy. Porovnává tvrzení výrobců s nezávislými testy. Jmenuje značky, které odmítáme — a říká proč."
+      }
+    }
+  },
+  "labNotebook": {
+    "eyebrow": "Z laboratorního deníku",
+    "title": {
+      "before": "Na čem",
+      "italic": "pracujeme",
+      "after": "."
+    },
+    "qMarker": "O.",
+    "aMarker": "O.",
+    "entries": {
+      "01": {
+        "q": "Jakou výměnu testujeme v dubnu?",
+        "a": "Skleněné lahve — borosilikát versus sodno-vápenaté sklo versus nerez, vážené, upouštěné, vystavené teplotnímu šoku. Výsledky vyjdou v květnové depeši."
+      },
+      "02": {
+        "q": "Kterou značku tento měsíc odmítáme?",
+        "a": "Tu prodávanou jako «PFAS-free», jejíž vlastní bezpečnostní list uvádí fluoropolymerový povlak. Jméno zveřejníme s celým textem, s podkladem."
+      },
+      "03": {
+        "q": "Čtenářka se ptá: je naše doporučení filtru na vodu zastaralé?",
+        "a": "Aktualizace NSF z roku 2024 naše hlavní doporučení nemění. Druhé místo je v přezkumu — aktualizační poznámku očekávejte do konce měsíce."
+      },
+      "04": {
+        "q": "Které šetření je další v pořadí?",
+        "a": "Netoxické matrace. Otevřeli jsme technické listy pěti značek a vyžádali nezávislé testy. Cíl publikace: červen."
+      },
+      "05": {
+        "q": "Jak postupujeme, když výrobce žádá nový test?",
+        "a": "Test opakujeme na našem stole, ne na jeho. Pokud jeho data odporují našim, zveřejníme obě sady, pojmenujeme rozpor a necháme čtenářku, ať si práci přečte."
+      },
+      "06": {
+        "q": "Mění affiliate odkazy naše pořadí?",
+        "a": "Nikdy nezměnily. Provize platí testy; nekupují místo. Co nám značka pošle nevyžádaně, putuje na hromadu k rozdání, ne do recenze."
+      }
+    }
+  },
+  "latest": {
+    "eyebrow": "Nejnovější",
+    "title": "Čerstvě otestováno, čerstvě doloženo."
+  },
+  "credo": {
+    "eyebrow": "Krédo",
+    "title": {
+      "before": "",
+      "italic": "Slibujeme",
+      "after": "stránku, kde má každé tvrzení zdroj, každé umístění je zasloužené a každý odmítnutý produkt je jmenován."
+    },
+    "01": {
+      "title": "Každé tvrzení doložené.",
+      "body": "Co není v recenzované studii, regulačním dokumentu nebo prohlášení výrobce, nepublikujeme."
+    },
+    "02": {
+      "title": "Otevřená metodologie.",
+      "body": "Každé srovnání vysvětluje, jak jsme vybírali, co jsme ověřili, kdo nesouhlasí a proč."
+    },
+    "03": {
+      "title": "Žádná placená umístění.",
+      "body": "Provize platí testy. Nikdy si na této stránce nekoupily — a nikdy si nekoupí — pozici."
+    },
+    "fullStandards": "Přečíst celé redakční zásady"
+  },
+  "explainers": {
+    "eyebrow": "Pojmy",
+    "title": "Termíny, které pořád potkáváte, srozumitelně."
+  },
+  "newsletterBlock": {
+    "eyebrow": "Depeše",
+    "title": "Jeden klidný, doložený e-mail týdně.",
+    "body": "Žádné poplašné titulky. Žádný denní příval. Jedna věc, kterou jsme ověřili nebo o níž jsme změnili názor, každé úterý ráno. K tomu zdarma kuchyňský audit při registraci."
+  },
+  "emailCapture": {
+    "eyebrow": "Kuchyňský audit",
+    "headline": "Získejte kuchyňský audit.",
+    "subhead": "Tisknutelný seznam více než padesáti kuchyňských předmětů, každý označený: vyměnit hned / vyměnit později / není potřeba. Zdarma. Doručeno okamžitě.",
+    "emailLabel": "E-mailová adresa",
+    "placeholder": "vy@priklad.cz",
+    "submit": "Pošlete mi audit →",
+    "submitLoading": "Odesílá se…",
+    "success": "Děkujeme — zkontrolujte si schránku. Audit je na cestě.",
+    "consent": {
+      "before": "Přihlášením souhlasíte s našimi",
+      "privacyLink": "zásadami ochrany osobních údajů",
+      "after": ". Jeden klidný e-mail týdně. Odhlášení kdykoli."
+    },
+    "decoPages": "12 stran",
+    "decoItems": "50+ položek"
+  },
+  "cookieBanner": {
+    "body": {
+      "before": "Používáme malý počet cookies pro analýzu a kontinuitu relace. Žádné reklamní cookies. Viz naše",
+      "privacyLink": "zásady ochrany osobních údajů",
+      "after": "."
+    },
+    "reject": "Odmítnout",
+    "accept": "Přijmout"
+  },
+  "hubPage": {
+    "crumbHome": "Úvod",
+    "crumbGuides": "Šetření",
+    "hubXofY": "Rubrika {i} z {n}",
+    "ourThesisLabel": "Naše teze",
+    "totalLive": "Vydaných textů",
+    "planned": "Plánovaných v rubrice",
+    "startHereEyebrow": "Začněte zde",
+    "startHereTitle": "Úplný průvodce.",
+    "guideEyebrow": "Hlavní text",
+    "readPillar": "Přečíst hlavní text",
+    "comparisonsEyebrow": "Hodnocená srovnání",
+    "comparisonsTitle": "Co bychom skutečně koupili.",
+    "explainersEyebrow": "Pojmy",
+    "explainersTitle": "Srozumitelné odpovědi na otázky, které lidé skutečně kladou.",
+    "auditsEyebrow": "Audity",
+    "auditsTitle": "Seznamy připravené na víkend.",
+    "emptyBefore": "Texty se zde objevují po projití redakční kontroly. Viz",
+    "emptyHomeLink": "úvodní stránka",
+    "emptyAfter": ", kde je dnes online vše, co jsme vydali.",
+    "minRead": "{n} min čtení",
+    "min": "{n} min"
+  },
+  "postType": {
+    "pillar": "Hlavní text",
+    "comparison": "Srovnání",
+    "cluster": "Pojem",
+    "listicle": "Audit"
+  },
+  "postTypeShort": {
+    "pillar": "Text",
+    "comparison": "Srovnání",
+    "cluster": "Pojem",
+    "listicle": "Audit"
+  },
+  "postChrome": {
+    "translationBanner": "Toto šetření je zatím dostupné pouze v angličtině. Pracujeme na českém překladu.",
+    "onThisPage": "Na této stránce",
+    "shortAnswer": "Krátká odpověď",
+    "rankedList": "Seznam podle pořadí",
+    "wouldSkip": "Co vynecháme",
+    "methodologyTOC": "Metodologie",
+    "faqShort": "Časté otázky",
+    "changeMind": "Co by nás přimělo změnit názor",
+    "sources": "Zdroje",
+    "frequentlyAsked": "Časté otázky",
+    "labLabel": "Laboratoř",
+    "tested": "Testováno",
+    "testedValue": "{n}+ produktů",
+    "cited": "Citováno",
+    "citedValue": "{n} zdrojů",
+    "readTime": "Čas čtení",
+    "readTimeValue": "{n} min",
+    "lastUpdated": "Naposledy aktualizováno",
+    "pflScoreEyebrow": "Skóre PFL",
+    "scoreBreakdownEyebrow": "Z čeho se skóre skládá",
+    "scoreBreakdownTitle": "Jak vzniklo {n}/100.",
+    "scoreDim": {
+      "materialSafety": "Bezpečnost materiálů",
+      "performance": "Výkon",
+      "durability": "Odolnost",
+      "useExperience": "Uživatelský zážitek",
+      "value": "Poměr cena – kvalita"
+    }
+  },
+  "comparison": {
+    "eyebrow": "Srovnání",
+    "ourPickEyebrow": "Naše volba",
+    "rankedEyebrow": "Seznam podle pořadí",
+    "rankedTitle": "Vše, co bychom koupili, popořadě.",
+    "rankedMeta": "{n} voleb · seřazeno podle zásluh",
+    "skipsEyebrow": "Co vynecháme — a proč",
+    "skipsTitle": "Pojmenováno, ne naznačeno.",
+    "faqEyebrow": "Časté otázky",
+    "faqTitle": "Co se nás ptáte nejčastěji.",
+    "changeMindLabel": "Co by nás přimělo změnit názor",
+    "changeMindBody": "Nové nezávislé laboratorní testy, které popírají naše současné pořadí. Tichá změna receptury produktu z čela žebříčku, jež ztratí deklarovanou certifikaci. Recenzovaný článek, který mění bezpečnostní obraz některého z výše uvedených materiálů. Stránku aktualizujeme do týdne a vyznačíme, co se změnilo."
+  },
+  "pillar": {
+    "eyebrow": "Hlavní text",
+    "pullQuoteAttribution": "Stanovisko redakce PlasticFreeLab",
+    "pullQuote": "Raději odpovíme v prvním odstavci na otázku, kterou jste si skutečně položili, a teprve pak si vydobudeme důvěru tím, že ukážeme práci.",
+    "keyTakeawayTitle": "O čem tento text je",
+    "keyTakeawayBody": "Co dnes říká nejlepší dostupný důkaz, co skutečně zůstává nejisté a co můžete udělat ještě tento týden — podle priority, s každým tvrzením doloženým zdrojem.",
+    "faqEyebrow": "Časté otázky",
+    "faqTitle": "Otázky, které nám čtenáři skutečně přinášejí."
+  },
+  "cluster": {
+    "eyebrow": "Pojem",
+    "shortAnswerTitle": "Krátká odpověď",
+    "shortAnswerBody": "Shrnutí stojí zde pro toho, kdo potřebuje odpověď hned. Zbytek stránky ji obhajuje — zdroje, kontext a body, které jsme probírali v redakci.",
+    "faqEyebrow": "Časté otázky",
+    "faqTitle": "Co se čtenáři ptají dál."
+  },
+  "listicle": {
+    "eyebrow": "Audit"
+  },
+  "methodology": {
+    "label": "Metodologie",
+    "title": "Jak toto srovnání vzniklo",
+    "items": {
+      "picked": {
+        "label": "Co jsme hodnotili při výběru",
+        "detail": "Zveřejněné materiály, nezávislé certifikace, odolnost při skutečném vaření, nezávislé testy kontaminace, pokud jsou dostupné."
+      },
+      "evaluated": {
+        "label": "Jak jsme posuzovali",
+        "detail": "Prohlášení výrobců, regulační dokumenty, recenzované články a praktické zkoušky opotřebení. Čteme etikety a podklady, ne tiskové zprávy."
+      },
+      "disagrees": {
+        "label": "Kdo s námi nesouhlasí",
+        "detail": "V každém srovnání formulujeme protichůdné stanovisko co nejsilněji a jmenujeme značku, kterou jsme málem vybrali — a důvod, proč jsme ji nakonec nevybrali."
+      },
+      "changeMind": {
+        "label": "Co by nás přimělo změnit názor",
+        "detail": "Nové nezávislé laboratorní testy, změna receptury u značky v žebříčku nebo recenzované zjištění, které popírá naši stávající úvahu."
+      }
+    }
+  },
+  "translationBanner": {
+    "body": "Toto šetření je zatím dostupné pouze v angličtině. Pracujeme na českém překladu."
+  },
+  "affiliate": {
+    "label": "Upozornění",
+    "body": "PlasticFreeLab testuje a doporučuje nezávisle. Občas dostáváme provizi, když nakoupíte přes naše odkazy — naše pořadí to nikdy neovlivní."
+  },
+  "authorBio": {
+    "eyebrow": "O autorech",
+    "name": "Tým PlasticFreeLab",
+    "body": "Malá skupina badatelek a redaktorů, která prosekává hluk kolem netoxického života. Čteme studie, čteme etikety, zkoušíme produkty — a doporučení aktualizujeme s tím, jak se posouvá věda. Nepřijímáme platby za product placement, zveřejňujeme každý affiliate vztah a jmenujeme značky, které odmítáme.",
+    "standardsLink": "Naše redakční zásady →",
+    "correctionLink": "Pošlete nám opravu →"
+  },
+  "related": {
+    "eyebrow": "Pokračujte ve čtení",
+    "title": "Související v této rubrice."
+  },
+  "sources": {
+    "eyebrow": "Bibliografie",
+    "title": "Zdroje, které citujeme na této stránce."
+  },
+  "notFound": {
+    "metaTitle": "Mimo archiv",
+    "metaDescription": "Stránka, kterou jste hledali, není v našem indexu. Zde je několik míst, která mohou obsahovat to, co jste hledali.",
+    "eyebrow": "404 · Mimo archiv",
+    "title": "Tu stránku jsme nenašli.",
+    "p1": "URL se někdy mění, když přerovnáváme rubriku. Někdy text stáhneme, protože věda postoupila a my raději zastaralé doporučení odebereme, než abychom ho nechávali na síti.",
+    "p2": "Tak či tak, na této adrese není nic užitečného. Pět rubrik níže pokrývá vše, co publikujeme — téměř jistě v jedné z nich najdete to, co jste hledali.",
+    "tryHubs": "Zkuste rubriky",
+    "primary": "Zpět na titulní stranu",
+    "secondary": "Odebírat týdenní depeši",
+    "stampLine1": "MIMO",
+    "stampLine2": "ARCHIV",
+    "stampSub": "· ARCHIV PLASTICFREELAB ·"
+  },
+  "errorPage": {
+    "eyebrow": "Chyba · Něco se pokazilo",
+    "title": "Něco se nám rozbilo.",
+    "body": "Není to vaše vina. Stránka se nezobrazila, jak měla. Zkuste to znovu — pokud potíž přetrvává, vraťte se na titulní stranu, zbytek webu by měl fungovat normálně.",
+    "tryAgain": "Zkusit znovu",
+    "backToHome": "Zpět na úvodní stránku",
+    "reference": "Odkaz · {digest}"
+  },
+  "newsletterPage": {
+    "title": "Jeden klidný e-mail týdně.",
+    "p1": {
+      "before": "Jedna užitečná věc: nejdůležitější text, který jsme vydali, výměna, kterou bychom udělali jako první, nebo studie, kterou jsme přečetli za vás. Žádné prodejní nabídky, žádný affiliate spam, žádné e-maily o čtyřech tisících slovech."
+    },
+    "p2": {
+      "before": "Odběratelé navíc dostanou",
+      "bold": "kuchyňský audit",
+      "after": " — tisknutelný seznam více než padesáti kuchyňských předmětů, každý označený: vyměnit hned / vyměnit později / není potřeba."
+    },
+    "captureHeadline": "Začněte auditem.",
+    "captureSubhead": "Stačí adresa — PDF posíláme okamžitě."
+  },
+  "trustNav": {
+    "home": "Úvod"
+  },
+  "trustPages": {
+    "about": {
+      "title": "O PlasticFreeLab",
+      "metaDescription": "Kdo jsme, co děláme a proč jsme tento web založili.",
+      "intro": "PlasticFreeLab existuje proto, že informace o netoxickém životě bývají obvykle zmatené. Vybudovali jsme klidný, doložený a investigativní zdroj, který čte studie, zkouší produkty a říká vám tři věci, na nichž skutečně záleží."
+    },
+    "editorialStandards": {
+      "title": "Redakční zásady",
+      "metaDescription": "Naše veřejné redakční postupy — zdroje, opravy, affiliate prohlášení a využívání nástrojů AI.",
+      "intro": "Každý web slibuje, že je důvěryhodný. Tady je, co to konkrétně znamená v PlasticFreeLab — pravidla pro zdroje, postup oprav, affiliate prohlášení a způsob, jak používáme nástroje AI."
+    },
+    "affiliateDisclosure": {
+      "title": "Affiliate prohlášení",
+      "metaDescription": "Jak fungují affiliate odkazy v PlasticFreeLab a co to znamená pro vás.",
+      "intro": "Některé odkazy na produkty jsou affiliate odkazy. Když přes ně nakoupíte, dostáváme malou provizi — bez navýšení ceny pro vás — a tyto provize naše pořadí nikdy neovlivňují."
+    },
+    "privacy": {
+      "title": "Zásady ochrany osobních údajů",
+      "metaDescription": "Co shromažďujeme, jak to využíváme a jaká máte práva.",
+      "intro": "Tyto zásady popisují, jakým způsobem PlasticFreeLab shromažďuje, používá a sdílí informace, když navštívíte plasticfreelab.com."
+    },
+    "terms": {
+      "title": "Podmínky používání",
+      "metaDescription": "Podmínky, za nichž PlasticFreeLab používáte.",
+      "intro": "Vstupem na plasticfreelab.com akceptujete tyto podmínky. Pokud s nimi nesouhlasíte, prosím web nepoužívejte."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "metaDescription": "Jak nás zastihnout.",
+      "intro": "Jak nás zastihnout — pro obecné reakce, opravy, dotazy k soukromí a tipy na produkty."
+    },
+    "newsletter": {
+      "title": "Jeden klidný e-mail týdně.",
+      "metaDescription": "Jeden klidný e-mail týdně — nejužitečnější text v týdnu a výměna, kterou bychom provedli jako první. Zdarma. Odhlášení kdykoli."
+    }
+  },
+  "localeSwitcher": {
+    "label": "Jazyk",
+    "en": "EN",
+    "de": "DE",
+    "fr": "FR",
+    "it": "IT",
+    "es": "ES",
+    "nl": "NL",
+    "pl": "PL",
+    "sv": "SV",
+    "pt": "PT",
+    "ro": "RO",
+    "cs": "CS",
+    "no": "NO",
+    "enFull": "English",
+    "deFull": "Deutsch",
+    "frFull": "Français",
+    "itFull": "Italiano",
+    "esFull": "Español",
+    "nlFull": "Nederlands",
+    "plFull": "Polski",
+    "svFull": "Svenska",
+    "ptFull": "Português",
+    "roFull": "Română",
+    "csFull": "Čeština",
+    "noFull": "Norsk"
+  },
+  "site": {
+    "tagline": "Netoxická laboratoř pro každý den.",
+    "description": "Zkoušíme alternativy, čteme studie a vydáváme klidné, doložené průvodce mikroplasty, PFAS a domácími změnami, které opravdu stojí za to."
+  },
+  "hubs": {
+    "microplastics-and-edcs": {
+      "name": "Mikroplasty a endokrinní disruptory",
+      "shortName": "Mikroplasty",
+      "oneLiner": "Věda srozumitelně. Co je doopravdy známé, o čem se stále vede debata a co s tím."
+    },
+    "non-toxic-kitchen": {
+      "name": "Netoxická kuchyně",
+      "shortName": "Kuchyně",
+      "oneLiner": "Doma nejúčinnější výměny, seřazené podle významu. Nádobí, voda, skladování — celý balík."
+    },
+    "non-toxic-personal-care": {
+      "name": "Hygiena a kosmetika",
+      "shortName": "Hygiena",
+      "oneLiner": "Od šamponu po opalovací krém — klidná pravda o tom, co máte v koupelně a co stojí za výměnu."
+    },
+    "non-toxic-home": {
+      "name": "Domácí prostředí",
+      "shortName": "Domov",
+      "oneLiner": "Matrace, čisticí prostředky, kvalita vzduchu — a tichá expozice, na niž nikdo nemyslí."
+    },
+    "non-toxic-clothing-and-textiles": {
+      "name": "Oděvy a textil",
+      "shortName": "Oděvy",
+      "oneLiner": "Mikroplasty, PFAS v oblečení a textilní dodavatelský řetězec — se značkami, které odvedly práci."
+    }
+  },
+  "pflScore": {
+    "label": "Skóre PFL",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Vynikající",
+      "strongBuy": "Doporučujeme",
+      "good": "Dobré",
+      "caveatBuy": "Koupě s výhradami",
+      "skip": "Vynechat"
+    }
+  },
+  "pipeline": {
+    "label": "V laboratoři",
+    "queued": "ve frontě",
+    "updatedWeekly": "Aktualizováno týdně",
+    "inTheLabCount": "{n} v laboratoři",
+    "queuedCount": "{n} ve frontě",
+    "badgeAriaLabel": "Pipeline: {testing} v laboratoři, {queued} ve frontě. Otevřít celý záznam.",
+    "h1": "Co právě testujeme."
+  },
+  "pipelinePage": {
+    "metaTitle": "Co právě testujeme",
+    "metaDescription": "Otevřený záznam každého šetření PlasticFreeLab — v běhu, ve frontě nebo v korektuře. Aktualizováno týdně.",
+    "eyebrow": "Pipeline",
+    "h1": "Co právě testujeme.",
+    "subtitle": "Otevřený záznam každého šetření — v laboratoři, ve frontě nebo v korektuře. Aktualizováno týdně. Vydáváme jej proto, že tajnůstkářství patří k advertorialům.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "V laboratoři",
+      "drafted": "Sepsáno, v korektuře",
+      "researching": "Výzkum, ve frontě"
+    },
+    "status": {
+      "testing": "V testech",
+      "drafted": "Sepsáno",
+      "researching": "Výzkum"
+    },
+    "reviewerRole": {
+      "research": "Vedoucí výzkumu",
+      "testing": "Vedoucí testů",
+      "medical": "Lékařská recenze",
+      "sourcing": "Vedoucí zásobování"
+    },
+    "expectedTBD": "Termín bude upřesněn",
+    "itemsCount": "{n} položek",
+    "methodologyFooter": "Testovací metodika · v1.2 · Naposledy aktualizováno {date} · Viz",
+    "hubsLine": "Do rubrik:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Vedoucí testů",
+      "testedVia": "Testováno podle metodiky PFL {version}",
+      "labRun": "Laboratorní testy provedeny {date}"
+    },
+    "plain": {
+      "team": "Tým PlasticFreeLab",
+      "published": "Vydáno {date}",
+      "refreshed": "Aktualizováno {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "Metodika PFL",
+    "metaDescription": "Jak PlasticFreeLab hodnotí každý produkt. Veřejná metodika, verzovaná jako software.",
+    "eyebrow": "Redakční zásady",
+    "h1": "Metodika PFL",
+    "intro": "Každý produkt v PlasticFreeLab je hodnocen podle stejné rubriky o pěti dimenzích. Rubrika je veřejná, verzovaná jako software a aktualizovaná, jakmile lepší důkaz učiní předchozí verzi neúplnou.",
+    "currentVersionTitle": "Platná verze",
+    "currentVersionBody": "v1.2 platná od dubna 2026. Doplňuje PFAS panel podle metody SGS 5021A, rozšiřuje okno pro odolnost z 12 na 24 měsíců a upravuje výpočet hodnoty tak, aby zohledňoval podmínky záruky.",
+    "currentVersionLink": "Přečíst specifikaci v1.2 →",
+    "philosophyTitle": "Proč veřejná metodika",
+    "philosophyP1": "Když nedokážeme ukázat, jak jsme vybírali, jsou výběry málo platné. Každé skóre na webu je číslo, které může každá čtenářka zopakovat ze stejných důkazů. Zveřejňujeme dimenze, váhy, dílčí testy a laboratorní partnery. Říkáme, co jsme netestovali — a proč.",
+    "philosophyP2": "Metodologický posun je nejčastější slabinou recenzí. Naší pojistkou je číslo verze. Když rubriku změníme, vydáme novou verzi, archivujeme předchozí a dotčené texty znovu ohodnotíme. Čtenářky vidí přesně, co se změnilo.",
+    "changeLogTitle": "Změnový záznam",
+    "changeLog": {
+      "v12": "Doplněn PFAS panel podle metody SGS 5021A. Okno pro odolnost rozšířeno z 12 na 24 měsíců. Výpočet hodnoty upraven tak, aby vážil záruční podmínky.",
+      "v11": "První veřejné vydání. Pětidimenzionální rubrika, pět recenzentských rolí, postup pro spory."
+    },
+    "disputeTitle": "Postup pro spory",
+    "disputeBody": "Považuje-li značka naše skóre za chybné, může podat námitku s dokumentací. Test opakujeme na našem stole, ne na jejím. Jestliže její data odporují našim, zveřejníme obě sady. Pod hrozbou právních kroků živá skóre neměníme; aktualizujeme je, jakmile přijdou lepší důkazy."
+  },
+  "methodologyV12": {
+    "metaTitle": "Metodika PFL v1.2",
+    "metaDescription": "Úplná specifikace v1.2: pět vážených dimenzí, dílčí testy, laboratorní partneři, kvalifikace recenzentů.",
+    "eyebrow": "Specifikace · v1.2",
+    "h1": "Metodika PFL v1.2",
+    "updated": "Aktualizováno v dubnu 2026 · Předchozí verze: v1.1 ↗",
+    "changelogLink": "Všechny verze",
+    "intro": "Toto je závazná specifikace pro každé skóre, které vyjde v PlasticFreeLab mezi dubnem 2026 a další verzovanou edicí. Pět vážených dimenzí, dvacet tři dílčích testů, čtyři recenzentské role a postup pro spory, který se nedá zlomit.",
+    "weightsTitle": "Pět dimenzí",
+    "weightsBody": "Každé skóre je vážený průměr následujících pěti dimenzí. Váhy odrážejí, co podle nás nejvíc rozhoduje pro doporučení v oblasti netoxického života: bezpečnost materiálů dominuje, protože proto je čtenářka tady, a poměr cena – kvalita stojí na konci, protože peníze se vrátit dají — expozice ne.",
+    "subtestsTitle": "Dílčí testy",
+    "dimension": {
+      "materialSafety": {
+        "title": "Bezpečnost materiálů",
+        "oneLiner": "Z čeho je, co uvolňuje, co je certifikováno.",
+        "body": "Bezpečnost materiálů je důvodem, proč sem většina čtenářek přichází, a dimenzí s nejvyšší vahou. Hodnotíme zveřejněný soupis materiálů, nezávislé certifikace (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) a případné údaje o kontaminantech zveřejněné výrobcem. Mlčí-li výrobce, zadáváme vlastní panely v akreditovaných laboratořích."
+      },
+      "performance": {
+        "title": "Výkon",
+        "oneLiner": "Plní svou roli — dobře — pod realistickou zátěží.",
+        "body": "Netoxický produkt, který nepracuje, není doporučení. Měříme funkce dané kategorie: rozložení a udržení tepla u nádobí, snížení kontaminantů a průtok u filtrů, návrat tvaru a prodyšnost u textilu. Skóre výkonu pochází ze stolu, ne z dojmu."
+      },
+      "durability": {
+        "title": "Odolnost",
+        "oneLiner": "Jak vydrží 24 měsíců běžného používání.",
+        "body": "Povlaky se odlupují, gumy stárnou, těsnění se smršťuje. Skóre odolnosti zachycuje právě ty způsoby selhání, které po dvanácti měsících promění netoxický produkt v problematický. Panel podrobuje každý kus zrychlenému opotřebovacímu cyklu na 24 měsíců, doplněnému dlouhodobými reporty z reálných domácností."
+      },
+      "useExperience": {
+        "title": "Uživatelský zážitek",
+        "oneLiner": "Jaké je s tím žít měsíc.",
+        "body": "Hmotnost, vyvážení, snadnost čištění, křivka učení, zvuk, vůně. Kvalitativní dimenze — ale hodnocena podle pevných rubrik tak, aby výsledek byl reprodukovatelný napříč recenzenty. Tři členové panelu stráví s produktem každý kalendářní měsíc, než hodnocení udělí."
+      },
+      "value": {
+        "title": "Poměr cena – kvalita",
+        "oneLiner": "Náklad na rok očekávané životnosti — ve vztahu k kategorii.",
+        "body": "Hodnotu počítáme jako očekávané náklady na rok provozu na desetiletém horizontu, normalizované na medián kategorie. Drahý kus s třicetiletou zárukou často poráží levný s dvouletým povlakem. Do výpočtu vstupují záruční podmínky, opravitelnost a sekundární trh."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "PFAS panel (metoda SGS 5021A)",
+        "body": "Kvantitativní analýza 40 sloučenin PFAS na úrovni částí na miliardu. Novinka v1.2."
+      },
+      "leadCadmium": {
+        "title": "Test na olovo a kadmium",
+        "body": "Povrchová extrakce dle FDA Compliance Policy Guide 7117.06. Vyhověl / číselná hodnota se vykazují."
+      },
+      "phthalate": {
+        "title": "Panel ftalátů",
+        "body": "GC-MS analýza pro osm ftalátů omezených podle CPSIA. Vykazováno v mikrogramech na gram."
+      },
+      "vocChamber": {
+        "title": "VOC komora",
+        "body": "Sedmdesátdvouhodinový test v komoře CDPH 01350 pro celkové VOC a prioritní seznam 35 jednotlivých sloučenin."
+      },
+      "supplier": {
+        "title": "Audit zveřejnění dodavatelů",
+        "body": "Výrobce Tier 1 zveřejněn, se zemí a certifikací každé materiálové vrstvy."
+      },
+      "heatMap": {
+        "title": "Infračervená teplotní mapa",
+        "body": "Povrchová teplota mapovaná v intervalech 30 sekund přes dvanáctiminutovou křivku ohřevu."
+      },
+      "deglaze": {
+        "title": "Opékání + deglazování",
+        "body": "Standardizované opékání bílkovin a kyselé deglazování, hodnoceno podle zhnědnutí, oddělení a integrity povrchu."
+      },
+      "filterEfficacy": {
+        "title": "Snížení kontaminantů",
+        "body": "Výzvová voda dle specifikace NSF, výstupní voda měřená pro deset prioritních kontaminantů."
+      },
+      "loadCycle": {
+        "title": "Test plné zátěže",
+        "body": "Nepřetržité používání při plném výkonu po celou deklarovanou životnost vložky, s opětovným měřením na konci."
+      },
+      "coatingWear": {
+        "title": "Zrychlené opotřebení povlaku",
+        "body": "Abrazivní cyklus dle ASTM, ekvivalent přibližně 24 měsíců běžného domácího používání."
+      },
+      "warrantyAudit": {
+        "title": "Audit záruky",
+        "body": "Krytí, výjimky a medián doby vyřízení, převzaté z veřejných spisů, kde to lze."
+      },
+      "fieldReports": {
+        "title": "Dlouhodobé terénní zprávy",
+        "body": "Šest panelových domácností hlásí každý měsíc po dvanáct měsíců. Odstoupení uprostřed testu je samo o sobě signál."
+      },
+      "weight": {
+        "title": "Hmotnost + ergonomie",
+        "body": "Hmotnost, vyvážení a dosah u relevantních ergonomických rozměrů. Hodnoceno proti referenčnímu hodnotě kategorie."
+      },
+      "cleanability": {
+        "title": "Snadnost čištění",
+        "body": "Cykly v myčce a ručního mytí, hodnocené podle reziduí a degradace povrchové úpravy."
+      },
+      "panelScores": {
+        "title": "Kvalitativní hodnocení panelu",
+        "body": "Tři recenzenti, pevná rubrika, naslepo tam, kde to geometrie dovolí."
+      },
+      "costPerYear": {
+        "title": "Očekávaný náklad na rok",
+        "body": "Pořizovací cena plus spotřební materiál, amortizováno na očekávanou životnost."
+      },
+      "warrantyDelta": {
+        "title": "Korekce hodnoty zárukou",
+        "body": "Víceleté záruky, které skutečně platí, snižují roční náklad; slabé záruky nikoli."
+      },
+      "marketComparable": {
+        "title": "Tržní srovnatelnost",
+        "body": "Indexováno proti mediánu ročního nákladu kategorie u všech aktuálních kandidátů."
+      }
+    },
+    "labPartnersTitle": "Laboratorní partneři",
+    "labPartnersBody": "Pro kvantitativní chemické panely spolupracujeme s SGS, Eurofins a Intertek. Pro PFAS je naším standardem konkrétně metoda SGS 5021A. Seznam partnerů zde stojí jako závazek transparentnosti; status partnera neovlivňuje hodnocení a laboratoře vidí identitu značky až po podání zprávy. (Úplný seznam partnerů a pravidlo reciprocity: zveřejníme se specifikací v1.3.)",
+    "reviewersTitle": "Kvalifikace recenzentů",
+    "reviewersIntro": "Čtyři role, každá s pravomocí škrtnout větu, kterou tým neumí obhájit.",
+    "reviewers": {
+      "research": {
+        "title": "Vedoucí výzkumu",
+        "bio": "Čte primární literaturu. Cituje studii, ne tiskovou zprávu. Nesouhlas s konsensem se objevuje až tehdy, kdy ho nesou data."
+      },
+      "testing": {
+        "title": "Vedoucí testů",
+        "bio": "Vaří měsíc na každé pánvi. Váží každou lahev. Měří každé tvrzení. Nářadí a sešity převažují nad názory."
+      },
+      "medical": {
+        "title": "Lékařská recenze",
+        "bio": "Označuje YMYL tvrzení. Potvrzuje, že žádné poplašné formulace neprošly korekturou. Ten, kdo tiše odstraňuje znepokojivou větu."
+      },
+      "sourcing": {
+        "title": "Vedoucí zásobování",
+        "bio": "Čte technické listy. Porovnává tvrzení výrobců s nezávislými testy. Jmenuje značky, které odmítáme — a říká proč."
+      }
+    },
+    "disputeTitle": "Postup pro spory",
+    "disputeBody": "Považuje-li značka naše skóre za chybné, může podat námitku s dokumentací. Test opakujeme na našem stole, ne na jejím. Jestliže její data odporují našim, zveřejníme obě sady. Pod hrozbou právních kroků živá skóre neměníme; aktualizujeme je, jakmile přijdou lepší důkazy.",
+    "changelogTitle": "Změnový záznam",
+    "changeLog": {
+      "v12": "Doplněn PFAS panel podle metody SGS 5021A. Okno pro odolnost rozšířeno z 12 na 24 měsíců. Výpočet hodnoty upraven tak, aby vážil záruční podmínky.",
+      "v11": "První veřejné vydání. Pětidimenzionální rubrika, pět recenzentských rolí, postup pro spory."
+    }
+  }
+}
