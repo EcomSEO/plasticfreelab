@@ -21,27 +21,35 @@ export default async function NotFound() {
 
   return (
     <main>
-      <section className="relative border-b border-forest/10 overflow-hidden">
-        <div className="missing-stamp hidden md:block" aria-hidden>
-          <svg
-            width="280"
-            height="280"
-            viewBox="0 0 280 280"
-            fill="none"
-            className="text-terracotta/70"
-          >
-            <circle cx="140" cy="140" r="120" stroke="currentColor" strokeWidth="2.5" strokeDasharray="3 5" />
-            <circle cx="140" cy="140" r="102" stroke="currentColor" strokeWidth="1" />
-            <text x="140" y="125" textAnchor="middle" fontFamily="Fraunces, serif" fontSize="28" fontWeight="600" letterSpacing="4" fill="currentColor">
-              {t("stampLine1")}
-            </text>
-            <text x="140" y="165" textAnchor="middle" fontFamily="Fraunces, serif" fontSize="28" fontWeight="600" letterSpacing="4" fill="currentColor">
-              {t("stampLine2")}
-            </text>
-            <text x="140" y="200" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="9" letterSpacing="3" fill="currentColor" opacity="0.7">
+      <section className="relative border-b border-gray-line overflow-hidden bg-white">
+        <div
+          className="hidden md:flex absolute top-1/2 right-8 -translate-y-1/2 items-center justify-center"
+          aria-hidden
+          style={{
+            width: 220,
+            height: 160,
+            background: "#1A3338",
+            color: "#FFFFFF",
+            borderRadius: 2,
+            fontFamily: "Roboto, sans-serif",
+            opacity: 0.95,
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1, letterSpacing: 0 }}>404</div>
+            <div
+              style={{
+                marginTop: 10,
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "#F55310",
+              }}
+            >
               {t("stampSub")}
-            </text>
-          </svg>
+            </div>
+          </div>
         </div>
 
         <div className="relative mx-auto max-w-4xl px-6 pt-16 md:pt-24 pb-16 md:pb-20">

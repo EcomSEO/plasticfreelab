@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-// Brand mark — "P" in Fraunces-grade serif on forest, the wordmark's primary ink.
+// Brand mark — "P" with orange accent dot on the ink-teal masthead color.
 export default async function Icon() {
   return new ImageResponse(
     (
@@ -14,12 +14,12 @@ export default async function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#2C3E2F",
-          color: "#F4EFE6",
-          fontFamily: "Georgia, 'Times New Roman', serif",
-          fontWeight: 600,
-          fontSize: 24,
-          letterSpacing: "-0.04em",
+          background: "#1A3338",
+          color: "#FFFFFF",
+          fontFamily: "Roboto, system-ui, sans-serif",
+          fontWeight: 700,
+          fontSize: 22,
+          letterSpacing: 0,
           lineHeight: 1,
         }}
       >
@@ -30,7 +30,7 @@ export default async function Icon() {
               width: 3,
               height: 3,
               borderRadius: 999,
-              background: "#7A8B6F",
+              background: "#F55310",
               marginLeft: 1,
               display: "block",
             }}

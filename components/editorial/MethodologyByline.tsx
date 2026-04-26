@@ -1,6 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { Monogram } from "./Monogram";
 import type { Post } from "@/lib/content/posts";
 import type { Locale } from "@/i18n/routing";
 
@@ -11,26 +10,21 @@ const DATE_LOCALE: Record<string, string> = {
 };
 
 /**
- * MethodologyByline — caps Inter byline that appears under post H1.
+ * MethodologyByline — runrepeat-style plain inline byline.
  *
- * Two shapes:
- *  - Scored posts (comparison + listicle, when `post.pflScore` is set):
- *      [Monogram T] CARLOS SÁNCHEZ · TESTING LEAD  ·  TESTED VIA PFL METHODOLOGY V1.2 ↗  ·  LAB TESTS RUN APR 2026
- *  - Unscored posts (pillar + cluster):
- *      [Monogram] THE PLASTICFREELAB TEAM  ·  PUBLISHED APR 2026  ·  REFRESHED APR 2026
+ *   [Author photo 32px round] Carlos Sánchez · Sep 11, 2025 · Reviewed using methodology v1.2
  *
- * The methodology version links to /methodology/v1-2 (or whatever
- * version is set on the post). Stone color, hover-underlined sage.
+ * Roboto 400, 14px, gray-mute. Methodology link in ink, underlined on hover.
  */
 export async function MethodologyByline({ post }: { post: Post }) {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("methodologyByline");
   const dateOpts: Intl.DateTimeFormatOptions = {
     month: "short",
+    day: "numeric",
     year: "numeric",
   };
   const dateLocale = DATE_LOCALE[locale] ?? "en-US";
-
   const scored = Boolean(post.pflScore);
 
   if (scored) {
@@ -42,33 +36,64 @@ export async function MethodologyByline({ post }: { post: Post }) {
 
     return (
       <div className="method-byline">
-        <Monogram size={24} letters="T" tone="terracotta" />
+        <span
+          aria-hidden
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 32,
+            height: 32,
+            borderRadius: "50%",
+            backgroundColor: "#EEEEEE",
+            color: "#1A3338",
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 700,
+            fontSize: 12,
+          }}
+        >
+          {(t("scored.reviewerName")?.[0] ?? "T").toUpperCase()}
+        </span>
         <span className="method-byline__name">{t("scored.reviewerName")}</span>
         <span className="method-byline__sep">·</span>
-        <span>{t("scored.reviewerRole")}</span>
+        <span>{testedDateLabel}</span>
         <span className="method-byline__sep">·</span>
         <Link href={versionPath} className="method-byline__link">
           {t("scored.testedVia", { version: version.toUpperCase() })}
-          <span aria-hidden> ↗</span>
         </Link>
-        <span className="method-byline__sep">·</span>
-        <span>
-          {t("scored.labRun", { date: testedDateLabel.toUpperCase() })}
-        </span>
       </div>
     );
   }
 
-  const publishedLabel = new Date(post.publishedAt)
-    .toLocaleDateString(dateLocale, dateOpts)
-    .toUpperCase();
-  const refreshedLabel = new Date(post.updatedAt)
-    .toLocaleDateString(dateLocale, dateOpts)
-    .toUpperCase();
+  const publishedLabel = new Date(post.publishedAt).toLocaleDateString(
+    dateLocale,
+    dateOpts
+  );
+  const refreshedLabel = new Date(post.updatedAt).toLocaleDateString(
+    dateLocale,
+    dateOpts
+  );
 
   return (
     <div className="method-byline">
-      <Monogram size={24} />
+      <span
+        aria-hidden
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: 32,
+          height: 32,
+          borderRadius: "50%",
+          backgroundColor: "#EEEEEE",
+          color: "#1A3338",
+          fontFamily: "Roboto, sans-serif",
+          fontWeight: 700,
+          fontSize: 12,
+        }}
+      >
+        P
+      </span>
       <span className="method-byline__name">{t("plain.team")}</span>
       <span className="method-byline__sep">·</span>
       <span>{t("plain.published", { date: publishedLabel })}</span>

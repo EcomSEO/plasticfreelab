@@ -1,12 +1,22 @@
 import Link from "next/link";
 
+/**
+ * Wordmark — runrepeat-style text logo.
+ *
+ * variant="light" (default): ink + orange text (light/white backgrounds).
+ * variant="dark":            white + white text (dark masthead bg).
+ *
+ * Roboto throughout. The leaf SVG inherits the variant color.
+ */
 export function Wordmark({
   size = "md",
   asLink = true,
+  variant = "light",
   className = "",
 }: {
   size?: "sm" | "md" | "lg" | "xl";
   asLink?: boolean;
+  variant?: "light" | "dark";
   className?: string;
 }) {
   const sizeClass =
@@ -27,6 +37,11 @@ export function Wordmark({
       ? "h-5 w-5"
       : "h-7 w-7 md:h-8 md:w-8";
 
+  const isDark = variant === "dark";
+  const primaryColor = isDark ? "#FFFFFF" : "#1A3338";
+  const accentColor = isDark ? "#FFFFFF" : "#F55310";
+  const filter = isDark ? "brightness(0) invert(1)" : undefined;
+
   const inner = (
     <span className={`inline-flex items-center gap-2 ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -35,24 +50,31 @@ export function Wordmark({
         alt=""
         aria-hidden
         className={`${markSize} shrink-0`}
+        style={filter ? { filter } : undefined}
       />
       <span className="inline-flex items-baseline">
         <span
-          className={`font-serif ${sizeClass} text-forest font-semibold tracking-tight`}
-          style={{ fontVariationSettings: '"opsz" 144, "SOFT" 40' }}
+          className={sizeClass}
+          style={{
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 700,
+            color: primaryColor,
+            letterSpacing: 0,
+          }}
         >
           PlasticFree
         </span>
         <span
-          className={`font-serif ${sizeClass} text-terracotta font-semibold tracking-tight`}
-          style={{ fontVariationSettings: '"opsz" 144, "SOFT" 40' }}
+          className={sizeClass}
+          style={{
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: isDark ? 400 : 700,
+            color: accentColor,
+            letterSpacing: 0,
+          }}
         >
           Lab
         </span>
-        <span
-          aria-hidden
-          className="ml-1 mt-1 h-1.5 w-1.5 rounded-full bg-sage self-end mb-2"
-        />
       </span>
     </span>
   );

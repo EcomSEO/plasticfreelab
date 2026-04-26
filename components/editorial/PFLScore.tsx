@@ -1,24 +1,18 @@
 /**
- * PFLScore — round numeric badge with rotating textPath ring.
+ * PFLScore — runrepeat-style squared rectangle pill.
  *
- * The flagship signal: every product carries a 0-100 composite score,
- * tier-mapped to a brand color. Mirrors `VerifiedSeal` for visual and
- * implementation parity (same SVG strategy, same rotation animation,
- * same `prefers-reduced-motion` respect).
- *
+ * Replaces the previous round seal with rotating textPath ring.
  * Sizes:
- *   - "lg" → 96px, used on review hero, comparison hero, methodology
- *     feature blocks. Carries rotating perimeter text + tier label.
- *   - "sm" → 40px, used on cards, magazine grid, listicle rows. Plain
- *     filled circle with the number centered. No rotation.
+ *   - "sm"  → 36×26  (cards, post tiles, comparison row badges)
+ *   - "md"  → 56×40  (medium contexts)
+ *   - "lg"  → 88×64  (review/comparison hero)
  *
- * Tier mapping (composite score → tier + colors):
- *   90-100  Excellent     · sage bg / cream number
- *   80-89   Strong buy    · sage bg / cream number
- *   70-79   Good          · cream-deep bg, sage border / forest number
- *   60-69   Caveat buy    · cream-deep bg, terracotta border / forest number,
- *                           terracotta label
- *   0-59    Skip          · terracotta-deep bg / cream number
+ * Tier mapping → colors and label:
+ *   90-100  Superb!     score-green  / white
+ *   80-89   Great!      score-green  / white
+ *   70-79   Good        yellow       / black
+ *   60-69   Decent      yellow       / black
+ *   0-59    Bad         red          / white
  */
 
 export type PFLScoreTier =
@@ -28,9 +22,17 @@ export type PFLScoreTier =
   | "caveatBuy"
   | "skip";
 
-export type PFLScoreSize = "lg" | "sm";
+export type PFLScoreSize = "lg" | "md" | "sm";
 
-const TIER_LABEL_EN: Record<PFLScoreTier, string> = {
+const TIER_LABEL: Record<PFLScoreTier, string> = {
+  excellent: "SUPERB!",
+  strongBuy: "GREAT!",
+  good: "GOOD",
+  caveatBuy: "DECENT",
+  skip: "BAD",
+};
+
+const TIER_OUTER_LABEL: Record<PFLScoreTier, string> = {
   excellent: "EXCELLENT",
   strongBuy: "STRONG BUY",
   good: "GOOD",
@@ -48,52 +50,23 @@ export function tierForScore(score: number): PFLScoreTier {
 
 type TierColors = {
   bg: string;
-  border?: string;
-  number: string;
-  label: string;
-  ring: string;
+  text: string;
+  outerLabel: string;
 };
 
 const COLORS: Record<PFLScoreTier, TierColors> = {
-  excellent: {
-    bg: "#7A8B6F", // sage
-    number: "#F4EFE6", // cream
-    label: "#F4EFE6",
-    ring: "#F4EFE6",
-  },
-  strongBuy: {
-    bg: "#7A8B6F",
-    number: "#F4EFE6",
-    label: "#F4EFE6",
-    ring: "#F4EFE6",
-  },
-  good: {
-    bg: "#EBE2D1", // cream-deep
-    border: "#7A8B6F",
-    number: "#2C3E2F", // forest
-    label: "#2C3E2F",
-    ring: "#2C3E2F",
-  },
-  caveatBuy: {
-    bg: "#EBE2D1",
-    border: "#C97D4F", // terracotta
-    number: "#2C3E2F",
-    label: "#C97D4F",
-    ring: "#2C3E2F",
-  },
-  skip: {
-    bg: "#A35E36", // terracotta-deep
-    number: "#F4EFE6",
-    label: "#F4EFE6",
-    ring: "#F4EFE6",
-  },
+  excellent: { bg: "#098040", text: "#FFFFFF", outerLabel: "#098040" },
+  strongBuy: { bg: "#098040", text: "#FFFFFF", outerLabel: "#098040" },
+  good: { bg: "#FFB717", text: "#000000", outerLabel: "#B27F00" },
+  caveatBuy: { bg: "#FFB717", text: "#000000", outerLabel: "#B27F00" },
+  skip: { bg: "#C53127", text: "#FFFFFF", outerLabel: "#C53127" },
 };
 
-function ringTextFor(tier: PFLScoreTier): string {
-  if (tier === "skip") return "PLASTICFREELAB · NOT RECOMMENDED · ";
-  if (tier === "caveatBuy") return "PLASTICFREELAB · CAVEAT BUY · ";
-  return "PLASTICFREELAB · PFL SCORE · METHODOLOGY V1.2 · ";
-}
+const DIMENSIONS: Record<PFLScoreSize, { w: number; h: number; numFs: number; labelFs: number; outerFs: number }> = {
+  sm: { w: 36, h: 26, numFs: 14, labelFs: 0, outerFs: 9 },
+  md: { w: 56, h: 40, numFs: 22, labelFs: 8, outerFs: 10 },
+  lg: { w: 88, h: 64, numFs: 36, labelFs: 11, outerFs: 11 },
+};
 
 export function PFLScore({
   score,
@@ -109,168 +82,83 @@ export function PFLScore({
   const safeScore = Math.max(0, Math.min(100, Math.round(score)));
   const tier = tierForScore(safeScore);
   const colors = COLORS[tier];
-  const tierLabel = TIER_LABEL_EN[tier];
+  const tierLabel = TIER_LABEL[tier];
+  const outerLabel = TIER_OUTER_LABEL[tier];
+  const dim = DIMENSIONS[size];
 
-  if (size === "sm") {
-    const px = 40;
-    const numberSize = 16;
-    return (
+  return (
+    <span
+      className={`pfl-score pfl-score--${size} pfl-score--${tier} ${className}`}
+      style={{
+        display: "inline-flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: size === "sm" ? 0 : 4,
+      }}
+      aria-label={`PFL Score ${safeScore} of 100, ${outerLabel}`}
+    >
       <span
-        className={`pfl-score pfl-score--sm pfl-score--${tier} ${className}`}
         style={{
-          width: px,
-          height: px,
+          display: "inline-flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          width: dim.w,
+          height: dim.h,
           background: colors.bg,
-          border: colors.border ? `1px solid ${colors.border}` : "none",
+          color: colors.text,
+          borderRadius: 2,
+          fontFamily: "Roboto, sans-serif",
+          lineHeight: 1,
         }}
-        aria-label={`PFL Score ${safeScore} of 100, ${tierLabel}`}
       >
         <span
-          className="pfl-score__num pfl-score__num--sm"
+          className="pfl-score__num"
           style={{
-            color: colors.number,
-            fontSize: numberSize,
+            fontWeight: 700,
+            fontSize: dim.numFs,
+            fontVariantNumeric: "tabular-nums",
+            letterSpacing: 0,
           }}
         >
           {safeScore}
         </span>
-        {showTier && (
+        {size !== "sm" && (
           <span
-            className="pfl-score__sm-label"
-            aria-hidden="true"
-            style={{ color: "#6B6B68" }}
+            style={{
+              fontFamily: "Roboto, sans-serif",
+              fontSize: dim.labelFs,
+              fontWeight: 400,
+              letterSpacing: "0.05em",
+              textTransform: "uppercase",
+              marginTop: 2,
+            }}
           >
             {tierLabel}
           </span>
         )}
       </span>
-    );
-  }
-
-  // Large variant
-  const px = 96;
-  const cx = px / 2;
-  const cy = px / 2;
-  const rOuter = px / 2 - 1;
-  const rTextPath = px / 2 - 8;
-  const rInner = px / 2 - 14;
-  const ringFontSize = Math.max(6, px * 0.082);
-  const ringText = ringTextFor(tier);
-  const repeatedText = `${ringText}${ringText}`;
-  const id = `pfl-score-${tier}-${safeScore}-${px}`;
-  const pathId = `${id}-path`;
-
-  return (
-    <span
-      className={`pfl-score pfl-score--lg pfl-score--${tier} ${className}`}
-      style={{ width: px, height: px }}
-      aria-label={`PFL Score ${safeScore} of 100, ${tierLabel}`}
-    >
-      <svg
-        viewBox={`0 0 ${px} ${px}`}
-        width={px}
-        height={px}
-        className="pfl-score__svg"
-        aria-hidden="true"
-      >
-        <defs>
-          <path
-            id={pathId}
-            d={`M ${cx},${cy} m -${rTextPath},0 a ${rTextPath},${rTextPath} 0 1,1 ${
-              rTextPath * 2
-            },0 a ${rTextPath},${rTextPath} 0 1,1 -${rTextPath * 2},0`}
-            fill="none"
-          />
-        </defs>
-
-        {/* Outer disk (filled brand color) */}
-        <circle cx={cx} cy={cy} r={rOuter} fill={colors.bg} />
-
-        {/* Optional 1px tier border for cream-deep tiers */}
-        {colors.border && (
-          <circle
-            cx={cx}
-            cy={cy}
-            r={rOuter - 0.5}
-            fill="none"
-            stroke={colors.border}
-            strokeWidth={1}
-          />
-        )}
-
-        {/* Rotating perimeter text */}
-        <g className="pfl-score__ring">
-          <text
-            fill={colors.ring}
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 600,
-              fontSize: ringFontSize,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-            }}
-            opacity={0.7}
-          >
-            <textPath href={`#${pathId}`} startOffset="0%">
-              {repeatedText}
-            </textPath>
-          </text>
-        </g>
-
-        {/* Number */}
-        <text
-          x={cx}
-          y={cy + (showTier ? 2 : 8)}
-          textAnchor="middle"
-          fill={colors.number}
+      {showTier && size !== "sm" && (
+        <span
           style={{
-            fontFamily: "Fraunces, Georgia, serif",
-            fontWeight: 600,
-            fontSize: 36,
-            fontVariantNumeric: "tabular-nums",
-            letterSpacing: "-0.02em",
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 700,
+            fontSize: dim.outerFs,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            color: colors.outerLabel,
+            marginTop: 2,
           }}
         >
-          {safeScore}
-        </text>
-
-        {/* Tier label */}
-        {showTier && (
-          <text
-            x={cx}
-            y={cy + 18}
-            textAnchor="middle"
-            fill={colors.label}
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 600,
-              fontSize: 9,
-              letterSpacing: "0.16em",
-              textTransform: "uppercase",
-            }}
-          >
-            {tierLabel}
-          </text>
-        )}
-
-        {/* Inner hairline */}
-        <circle
-          cx={cx}
-          cy={cy}
-          r={rInner}
-          fill="none"
-          stroke={colors.ring}
-          strokeWidth={0.5}
-          opacity={0.25}
-        />
-      </svg>
+          {outerLabel}
+        </span>
+      )}
     </span>
   );
 }
 
 /**
- * PFLScoreInline — small score + tier name laid out side by side.
- * Useful for ranked product rows in comparisons and listicles.
+ * PFLScoreInline — small score + tier label laid out side by side.
  */
 export function PFLScoreInline({
   score,
@@ -281,11 +169,17 @@ export function PFLScoreInline({
 }) {
   const safeScore = Math.max(0, Math.min(100, Math.round(score)));
   const tier = tierForScore(safeScore);
-  const tierLabel = TIER_LABEL_EN[tier];
+  const tierLabel = TIER_OUTER_LABEL[tier];
+  const colors = COLORS[tier];
   return (
     <span className={`pfl-score-inline ${className}`}>
       <PFLScore score={safeScore} size="sm" showTier={false} />
-      <span className="pfl-score-inline__label">{tierLabel}</span>
+      <span
+        className="pfl-score-inline__label"
+        style={{ color: colors.outerLabel }}
+      >
+        {tierLabel}
+      </span>
     </span>
   );
 }

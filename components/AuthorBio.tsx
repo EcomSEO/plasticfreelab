@@ -8,8 +8,13 @@ export async function AuthorBio() {
       <div className="flex flex-col md:flex-row gap-6 items-start">
         <div
           aria-hidden
-          className="shrink-0 h-16 w-16 rounded-full bg-forest text-cream flex items-center justify-center font-serif text-xl"
-          style={{ fontVariationSettings: '"opsz" 144, "SOFT" 40' }}
+          className="shrink-0 h-16 w-16 rounded-full bg-forest text-cream flex items-center justify-center"
+          style={{
+            fontFamily: "Roboto, sans-serif",
+            fontWeight: 700,
+            fontSize: 20,
+            letterSpacing: 0,
+          }}
         >
           PL
         </div>
