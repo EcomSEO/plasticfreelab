@@ -8,9 +8,9 @@ type LocaleSite = {
 export const SITE = {
   name: "PlasticFreeLab",
   url: "https://plasticfreelab.com",
-  tagline: "The non-toxic lab for everyday life.",
+  tagline: "We test what's actually inside the products in your kitchen.",
   description:
-    "We test the swaps, read the studies, and publish calm, cited guides to microplastics, PFAS, and the household changes actually worth making.",
+    "We send pans, food storage, water filters, and bottles to an accredited lab. We home-test in real kitchens. We publish what we find, including what we wouldn't buy ourselves.",
   author: "The PlasticFreeLab Team",
   email: "hello@plasticfreelab.com",
   launched: true,
@@ -18,59 +18,59 @@ export const SITE = {
   issue: "No. 01",
   i18n: {
     de: {
-      tagline: "Das schadstoffarme Labor für den Alltag.",
+      tagline: "Wir prüfen, was tatsächlich in Ihren Küchenprodukten steckt.",
       description:
-        "Wir prüfen die Alternativen, lesen die Studien und veröffentlichen ruhige, belegte Leitfäden zu Mikroplastik, PFAS und den Veränderungen im Haushalt, die sich tatsächlich lohnen.",
+        "Wir schicken Pfannen, Vorratsdosen, Wasserfilter und Trinkflaschen in ein akkreditiertes Labor. Wir testen sie zu Hause in echten Küchen. Wir veröffentlichen, was wir finden, auch das, was wir selbst nicht kaufen würden.",
     },
     fr: {
-      tagline: "Le laboratoire non toxique pour le quotidien.",
+      tagline: "Nous testons ce que vos ustensiles de cuisine contiennent vraiment.",
       description:
-        "Nous testons les alternatives, lisons les études et publions des guides apaisés, sourcés, sur les microplastiques, les PFAS et les changements domestiques qui valent la peine.",
+        "Nous envoyons casseroles, contenants, filtres à eau et bouteilles dans un laboratoire accrédité. Nous les testons chez nous, en cuisine réelle. Nous publions ce que nous trouvons, y compris ce que nous n'achèterions pas.",
     },
     it: {
-      tagline: "Il laboratorio non tossico per la vita quotidiana.",
+      tagline: "Verifichiamo cosa c'è davvero nei prodotti della vostra cucina.",
       description:
-        "Proviamo le alternative, leggiamo gli studi e pubblichiamo guide sobrie e documentate sui microplastici, le PFAS e i cambiamenti domestici che valgono davvero la pena.",
+        "Mandiamo pentole, contenitori, filtri per l'acqua e borracce a un laboratorio accreditato. Le proviamo in cucine vere. Pubblichiamo ciò che troviamo, comprese le cose che non compreremmo.",
     },
     es: {
-      tagline: "El laboratorio sin tóxicos para la vida diaria.",
+      tagline: "Comprobamos qué hay realmente en los productos de su cocina.",
       description:
-        "Probamos las alternativas, leemos los estudios y publicamos guías serenas y documentadas sobre microplásticos, PFAS y los cambios domésticos que de verdad merecen la pena.",
+        "Enviamos sartenes, recipientes, filtros de agua y botellas a un laboratorio acreditado. Las probamos en cocinas reales. Publicamos lo que encontramos, incluido lo que nosotros no compraríamos.",
     },
     nl: {
-      tagline: "Het giftvrije laboratorium voor het dagelijks leven.",
+      tagline: "Wij testen wat er echt in uw keukenproducten zit.",
       description:
-        "Wij testen de alternatieven, lezen de studies en publiceren rustige, onderbouwde gidsen over microplastics, PFAS en de huishoudelijke veranderingen die werkelijk de moeite waard zijn.",
+        "Wij sturen pannen, voorraadbakjes, waterfilters en flessen naar een geaccrediteerd lab. Wij testen ze thuis in echte keukens. Wij publiceren wat we vinden, ook wat we zelf niet zouden kopen.",
     },
     pl: {
-      tagline: "Laboratorium bez toksyn na co dzień.",
+      tagline: "Sprawdzamy, co naprawdę kryje się w produktach z Państwa kuchni.",
       description:
-        "Sprawdzamy zamienniki, czytamy badania i publikujemy spokojne, udokumentowane przewodniki o mikroplastiku, PFAS i domowych zmianach, które naprawdę warto wprowadzić.",
+        "Wysyłamy patelnie, pojemniki, filtry do wody i butelki do akredytowanego laboratorium. Testujemy je w prawdziwych kuchniach. Publikujemy wyniki, także te dotyczące rzeczy, których sami byśmy nie kupili.",
     },
     sv: {
-      tagline: "Det giftfria labbet för vardagen.",
+      tagline: "Vi testar vad som faktiskt finns i dina köksprodukter.",
       description:
-        "Vi testar bytena, läser studierna och publicerar lugna, källbelagda guider om mikroplaster, PFAS och de hushållsförändringar som verkligen är värda besväret.",
+        "Vi skickar stekpannor, förvaringskärl, vattenfilter och flaskor till ett ackrediterat laboratorium. Vi testar dem hemma i riktiga kök. Vi publicerar vad vi hittar, även det vi själva inte skulle köpa.",
     },
     pt: {
-      tagline: "O laboratório sem tóxicos para o dia a dia.",
+      tagline: "Verificamos o que está mesmo dentro dos produtos da sua cozinha.",
       description:
-        "Provamos as alternativas, lemos os estudos e publicamos guias calmos e fundamentados sobre microplásticos, PFAS e as mudanças domésticas que valem mesmo a pena.",
+        "Enviamos frigideiras, recipientes, filtros de água e garrafas a um laboratório acreditado. Testamo-los em cozinhas reais. Publicamos o que encontramos, incluindo aquilo que nós próprios não compraríamos.",
     },
     ro: {
-      tagline: "Laboratorul fără toxine pentru viața de zi cu zi.",
+      tagline: "Verificăm ce conțin de fapt produsele din bucătăria dumneavoastră.",
       description:
-        "Încercăm alternativele, citim studiile și publicăm ghiduri liniștite, documentate, despre microplastice, PFAS și schimbările casnice care chiar merită făcute.",
+        "Trimitem tigăi, recipiente, filtre de apă și sticle la un laborator acreditat. Le încercăm acasă, în bucătării reale. Publicăm ce găsim, inclusiv ce nu am cumpăra noi înșine.",
     },
     cs: {
-      tagline: "Netoxická laboratoř pro každý den.",
+      tagline: "Ověřujeme, co je doopravdy ve výrobcích z vaší kuchyně.",
       description:
-        "Zkoušíme alternativy, čteme studie a vydáváme klidné, doložené průvodce mikroplasty, PFAS a domácími změnami, které opravdu stojí za to.",
+        "Pánve, dózy, vodní filtry a láhve posíláme do akreditované laboratoře. Testujeme je doma, ve skutečných kuchyních. Zveřejňujeme, co najdeme, včetně věcí, které bychom sami nekoupili.",
     },
     no: {
-      tagline: "Det giftfrie laboratoriet for hverdagen.",
+      tagline: "Vi tester hva som faktisk finnes i kjøkkenproduktene dine.",
       description:
-        "Vi prøver byttene, leser studiene og publiserer rolige, kildebelagte guider om mikroplast, PFAS og hverdagsendringene som virkelig er verdt strevet.",
+        "Vi sender panner, oppbevaringsbokser, vannfilter og flasker til et akkreditert laboratorium. Vi tester dem hjemme i ekte kjøkken. Vi publiserer det vi finner, også det vi selv ikke ville kjøpt.",
     },
   } satisfies Partial<Record<Locale, LocaleSite>>,
 } as const;

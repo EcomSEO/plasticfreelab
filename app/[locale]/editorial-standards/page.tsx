@@ -54,8 +54,8 @@ export default async function EditorialStandardsPage({
       <h2>Testing vs. researching</h2>
       <p>When we recommend a product:</p>
       <ul>
-        <li><strong>&ldquo;We tested this&rdquo;</strong> — we physically bought or received the product and used it for long enough to form a real opinion. We disclose the length of test and what we evaluated.</li>
-        <li><strong>&ldquo;We evaluated this from research&rdquo;</strong> — we didn&apos;t physically test it, but we read the manufacturer documentation, third-party lab results, and user reports carefully. We label this clearly.</li>
+        <li><strong>&ldquo;We tested this&rdquo;:</strong> we physically bought or received the product and used it for long enough to form a real opinion. We disclose the length of test and what we evaluated.</li>
+        <li><strong>&ldquo;We evaluated this from research&rdquo;:</strong> we didn&apos;t physically test it, but we read the manufacturer documentation, third-party lab results, and user reports carefully. We label this clearly.</li>
       </ul>
       <p>We never blur the line.</p>
 
@@ -68,7 +68,7 @@ export default async function EditorialStandardsPage({
       <ol>
         <li>Correct the text</li>
         <li>Add a dated correction note at the bottom of the post</li>
-        <li>Don&apos;t silently edit — the history stays visible</li>
+        <li>Don&apos;t silently edit. The history stays visible.</li>
       </ol>
       <p>Email corrections to: hello@plasticfreelab.com. We respond within 5 business days.</p>
 

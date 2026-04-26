@@ -123,18 +123,53 @@ export async function PillarTemplate({ post }: { post: Post }) {
           {pt.h1}
         </h1>
 
+        {/* Inline byline: author photo + name + reading time + last-updated date */}
         <div className="mt-6 flex flex-wrap items-center gap-4">
+          <div className="flex items-center gap-3">
+            <span
+              aria-hidden
+              className="inline-block rounded-full"
+              style={{
+                width: 32,
+                height: 32,
+                backgroundColor: "#F7F7F7",
+                border: "1px solid #EEEEEE",
+              }}
+            />
+            <span
+              style={{
+                fontFamily: "Roboto, sans-serif",
+                fontSize: 14,
+                fontWeight: 500,
+                color: "#1A3338",
+              }}
+            >
+              The PlasticFreeLab Team
+            </span>
+          </div>
+          <span aria-hidden className="text-stone opacity-50">·</span>
           <ReviewStamp
             updatedAt={post.updatedAt}
             readingTime={post.readingTime}
           />
         </div>
 
+        {/* Wide hero photo-slot (21:9 ratio for pillar long-form feel) */}
+        <div
+          className="mt-8 rounded-sm overflow-hidden"
+          style={{
+            aspectRatio: "21 / 9",
+            backgroundColor: "#EEEEEE",
+            border: "1px solid #EEEEEE",
+          }}
+          aria-hidden
+        />
+
         <LabRule className="mt-8" />
 
         <TranslationPendingBanner />
 
-        <p className="drop-cap mt-10 text-[1.12rem] md:text-[1.17rem] leading-[1.7] text-charcoal/90 max-w-[62ch]">
+        <p className="drop-cap mt-10 text-[1.12rem] md:text-[1.17rem] leading-[1.7] text-charcoal/90 max-w-prose">
           {pt.description}
         </p>
 

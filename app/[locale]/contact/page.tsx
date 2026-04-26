@@ -42,13 +42,13 @@ export default async function ContactPage({
       <TranslationPendingBanner />
 
       <h2>General</h2>
-      <p><strong>hello@plasticfreelab.com</strong> — feedback, questions, product tips, everything else.</p>
+      <p>For feedback, questions, product tips, and everything else, write to <strong>hello@plasticfreelab.com</strong>.</p>
 
       <h2>Corrections</h2>
-      <p><strong>corrections@plasticfreelab.com</strong> — spotted something wrong? We respond within 5 business days and publish corrections publicly when warranted.</p>
+      <p>Spotted something wrong? Email <strong>corrections@plasticfreelab.com</strong>. We respond within 5 business days and publish corrections publicly when warranted.</p>
 
       <h2>Privacy</h2>
-      <p><strong>privacy@plasticfreelab.com</strong> — questions about data, deletion requests, anything GDPR or CCPA-related.</p>
+      <p>For questions about data, deletion requests, and anything GDPR or CCPA-related, email <strong>privacy@plasticfreelab.com</strong>.</p>
 
       <h2>Response times</h2>
       <p>We&apos;re a small team. We read everything. We respond to most emails within 3-5 business days.</p>

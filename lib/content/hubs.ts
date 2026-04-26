@@ -418,7 +418,7 @@ export const hubs: Hub[] = [
     name: "Clothing & Textiles",
     shortName: "Clothing",
     oneLiner:
-      "Microplastics, PFAS in clothes, and the textile supply chain — with the brands worth buying.",
+      "Microplastics, PFAS in clothes, and the textile supply chain, with the brands worth buying.",
     thesis:
       "Synthetic fabrics shed microplastics every wash and many carry PFAS from the factory. This hub covers what's in your wardrobe and which brands have done the work.",
     i18n: {

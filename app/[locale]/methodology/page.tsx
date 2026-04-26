@@ -55,10 +55,10 @@ export default async function MethodologyPage({
       <h2>{t("changeLogTitle")}</h2>
       <ul>
         <li>
-          <strong>v1.2 (April 2026)</strong> — {t("changeLog.v12")}
+          <strong>v1.2 (April 2026):</strong> {t("changeLog.v12")}
         </li>
         <li>
-          <strong>v1.1 (January 2026)</strong> — {t("changeLog.v11")}
+          <strong>v1.1 (January 2026):</strong> {t("changeLog.v11")}
         </li>
       </ul>
 

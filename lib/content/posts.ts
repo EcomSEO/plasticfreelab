@@ -526,11 +526,11 @@ export const posts: Post[] = [
       },
       {
         q: "Is organic cotton underwear really plastic-free?",
-        a: "Mostly, with caveats. GOTS-certified organic cotton is plastic-free in the fabric itself. The elastic is the question — most organic underwear uses a small percentage of elastane (spandex), which is a synthetic. Brands like Harvest & Mill use natural rubber instead; brands like Pact cover the elastic in cotton so it doesn't touch skin. Truly zero-synthetic is possible (Cottonique) but rare.",
+        a: "Mostly, with caveats. GOTS-certified organic cotton is plastic-free in the fabric itself. The elastic is the question. Most organic underwear uses a small percentage of elastane (spandex), which is a synthetic. Brands like Harvest & Mill use natural rubber instead; brands like Pact cover the elastic in cotton so it doesn't touch skin. Truly zero-synthetic is possible (Cottonique) but rare.",
       },
       {
         q: "What does GOTS certification mean?",
-        a: "The Global Organic Textile Standard certifies both the fiber (organic cotton must be at least 70% to 95% of fabric weight depending on tier) and the processing chemistry. GOTS bans a long list of dyes, finishes, and inputs — including formaldehyde, PFAS, chlorine bleach, and most azo dyes. It's the strictest widely-available textile certification. Look for the GOTS logo with a license number on the garment tag.",
+        a: "The Global Organic Textile Standard certifies both the fiber (organic cotton must be at least 70% to 95% of fabric weight depending on tier) and the processing chemistry. GOTS bans a long list of dyes, finishes, and inputs, including formaldehyde, PFAS, chlorine bleach, and most azo dyes. It's the strictest widely-available textile certification. Look for the GOTS logo with a license number on the garment tag.",
       },
       {
         q: "Is bamboo underwear plastic-free?",
@@ -542,7 +542,7 @@ export const posts: Post[] = [
       },
       {
         q: "How do I wash organic cotton underwear to make it last?",
-        a: "Cold wash, gentle cycle, hang dry or low tumble. The dryer's high heat is what kills elastane first — once the waistband loses stretch, the garment's done. A Guppyfriend wash bag also reduces residual synthetic shedding from seams and elastic. Most of our test pairs are going on 18+ months with no visible wear.",
+        a: "Cold wash, gentle cycle, hang dry or low tumble. The dryer's high heat is what kills elastane first. Once the waistband loses stretch, the garment's done. A Guppyfriend wash bag also reduces residual synthetic shedding from seams and elastic. Most of our test pairs are going on 18+ months with no visible wear.",
       },
     ],
     sources: [
@@ -579,7 +579,7 @@ export const posts: Post[] = [
       "The Complete Non-Toxic Kitchen Guide: Everything to Swap, in Priority Order",
     h1: "The complete non-toxic kitchen guide",
     description:
-      "Everything worth swapping in your kitchen, ranked by impact. Cookware, water, storage, small appliances, utensils — the complete priority list.",
+      "Everything worth swapping in your kitchen, ranked by impact. Cookware, water, storage, small appliances, utensils. The complete priority list.",
     hub: "non-toxic-kitchen",
     postType: "pillar",
     publishedAt: "2026-04-20",
@@ -592,11 +592,11 @@ export const posts: Post[] = [
     faq: [
       {
         q: "What should I swap first in my kitchen?",
-        a: "Cookware, then water, then storage. That's the order that maximizes exposure reduction per dollar. Non-stick pans are the single highest-impact swap — a scratched Teflon pan releases particles directly into food at temperatures above 500F. After that, install a filter appropriate to your water report (AquaTru countertop is the sensible default). Then replace the worst plastic storage containers. Everything else is tier two.",
+        a: "Cookware, then water, then storage. That's the order that maximizes exposure reduction per dollar. Non-stick pans are the single highest-impact swap; a scratched Teflon pan releases particles directly into food at temperatures above 500F. After that, install a filter appropriate to your water report (AquaTru countertop is the sensible default). Then replace the worst plastic storage containers. Everything else is tier two.",
       },
       {
         q: "Do I really need to throw out my plastic containers?",
-        a: "Not all of them, and not all at once. Replace any container with visible scratches, any container you heat food in, and any container holding acidic or fatty foods long-term. Those three categories account for the bulk of plasticizer migration per FDA testing. Rigid, unscratched, cold-storage-only plastic is much lower-risk. A 2022 review in Environment International (Leslie et al.) found microplastics in 77% of blood samples tested in 22 donors — the exposure is diffuse, so perfect isn't the goal.",
+        a: "Not all of them, and not all at once. Replace any container with visible scratches, any container you heat food in, and any container holding acidic or fatty foods long-term. Those three categories account for the bulk of plasticizer migration per FDA testing. Rigid, unscratched, cold-storage-only plastic is much lower-risk. A 2022 review in Environment International (Leslie et al.) found microplastics in 77% of blood samples tested in 22 donors. The exposure is diffuse, so perfect isn't the goal.",
       },
       {
         q: "Is it safe to microwave in plastic?",

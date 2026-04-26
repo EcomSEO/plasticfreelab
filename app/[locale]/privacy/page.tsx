@@ -60,10 +60,10 @@ export default async function PrivacyPage({
       <h2>3. Third parties</h2>
       <p>We use the following third-party services:</p>
       <ul>
-        <li><strong>Vercel</strong> — hosting and delivery</li>
-        <li><strong>Neon</strong> — analytics database</li>
-        <li><strong>Beehiiv</strong> — newsletter delivery</li>
-        <li><strong>Supabase</strong> — asset storage</li>
+        <li><strong>Vercel:</strong> hosting and delivery</li>
+        <li><strong>Neon:</strong> analytics database</li>
+        <li><strong>Beehiiv:</strong> newsletter delivery</li>
+        <li><strong>Supabase:</strong> asset storage</li>
       </ul>
 
       <h2>4. Affiliate links</h2>

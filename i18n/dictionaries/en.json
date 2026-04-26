@@ -32,7 +32,7 @@
     "masthead": "The masthead"
   },
   "footer": {
-    "leadParagraph": "A small team reading the studies, the labels, and the filings — publishing what we'd tell a friend. No product placement. No paid rankings.",
+    "leadParagraph": "A small team reading the studies, the labels, and the filings, publishing what we'd tell a friend. No product placement. No paid rankings.",
     "fiveHubs": "The five hubs",
     "masthead": "The masthead",
     "finePrint": "Fine print",
@@ -47,7 +47,7 @@
   },
   "intro": {
     "edition": "{volume}  ·  {issue}  ·  The Launch Edition",
-    "tagline": "The non-toxic lab for everyday life."
+    "tagline": "We test what's actually inside the products in your kitchen."
   },
   "issueBanner": {
     "issue": "Issue No. 01",
@@ -62,14 +62,14 @@
     "headlineQuietly": "quietly",
     "headlineLast": "cited guide to every swap that matters.",
     "footnoteFig": "Fig. 1.",
-    "footnoteText": "A field guide to the exposures your house keeps quiet — published one cited page at a time.",
+    "footnoteText": "A field guide to the exposures your house keeps quiet, published one cited page at a time.",
     "ledeBefore": "PlasticFreeLab reads the studies, tests the swaps, and publishes what we'd tell a friend, with sources. No scolding, no lifestyle pastel, no",
     "ledeQuote": "10 shocking toxins",
     "ledeAfter": "fear bait.",
     "ctaPrimary": "Start with the kitchen",
     "ctaSecondary": "In this issue",
     "issueLabel": "In this issue",
-    "folioText": "Scroll — the table of contents is below"
+    "folioText": "Scroll. The table of contents is below."
   },
   "magazineGrid": {
     "eyebrow": "In this issue",
@@ -110,7 +110,7 @@
       },
       "bottles": {
         "label": "Glass bottles",
-        "blurb": "Borosilicate, soda-lime, stainless — we're measuring each."
+        "blurb": "Borosilicate, soda-lime, stainless. We're measuring each."
       }
     }
   },
@@ -186,7 +186,7 @@
     "entries": {
       "01": {
         "q": "Which swap are we testing in April?",
-        "a": "Glass water bottles — borosilicate vs soda-lime vs stainless, weighed, dropped, temperature-shocked. Results publish in the May dispatch."
+        "a": "Glass water bottles: borosilicate vs soda-lime vs stainless, weighed, dropped, temperature-shocked. Results publish in the May dispatch."
       },
       "02": {
         "q": "What brand are we rejecting this month?",
@@ -194,7 +194,7 @@
       },
       "03": {
         "q": "A reader asked: is our water filter pick outdated?",
-        "a": "The 2024 NSF updates don't change our top recommendation. The runner-up slot is under review — expect a refresh note by end of month."
+        "a": "The 2024 NSF updates don't change our top recommendation. The runner-up slot is under review. Expect a refresh note by end of month."
       },
       "04": {
         "q": "What's the next investigation?",
@@ -252,7 +252,7 @@
     "placeholder": "you@example.com",
     "submit": "Send me the audit →",
     "submitLoading": "Sending…",
-    "success": "Thanks — check your inbox. The audit is on its way.",
+    "success": "Thanks. Check your inbox. The audit is on its way.",
     "consent": {
       "before": "By subscribing, you agree to our",
       "privacyLink": "Privacy Policy",
@@ -341,7 +341,7 @@
     "rankedEyebrow": "The Ranked List",
     "rankedTitle": "Everything we'd buy, in order.",
     "rankedMeta": "{n} picks · ranked by merit",
-    "skipsEyebrow": "What we'd skip — and why",
+    "skipsEyebrow": "What we'd skip, and why",
     "skipsTitle": "Named, not hinted at.",
     "faqEyebrow": "The FAQ",
     "faqTitle": "What people ask us most.",
@@ -353,14 +353,14 @@
     "pullQuoteAttribution": "PlasticFreeLab house view",
     "pullQuote": "We'd rather answer the question you actually asked in the first paragraph, then earn your trust by showing the work.",
     "keyTakeawayTitle": "What this guide covers",
-    "keyTakeawayBody": "What the best available evidence says today, what's still genuinely uncertain, and what you can actually do this week — in priority order, with every claim sourced.",
+    "keyTakeawayBody": "What the best available evidence says today, what's still genuinely uncertain, and what you can actually do this week, in priority order, with every claim sourced.",
     "faqEyebrow": "The FAQ",
     "faqTitle": "The questions people actually bring us."
   },
   "cluster": {
     "eyebrow": "The Explainer",
     "shortAnswerTitle": "The short answer",
-    "shortAnswerBody": "The TL;DR sits here for readers who need the answer now. The rest of the page earns that answer — with sources, context, and the things our team debated internally.",
+    "shortAnswerBody": "The TL;DR sits here for readers who need the answer now. The rest of the page earns that answer, with sources, context, and the things our team debated internally.",
     "faqEyebrow": "The FAQ",
     "faqTitle": "What people ask us next."
   },
@@ -394,12 +394,12 @@
   },
   "affiliate": {
     "label": "Disclosure",
-    "body": "PlasticFreeLab tests and recommends independently. We sometimes earn a commission when you buy through our links — it never affects our rankings."
+    "body": "PlasticFreeLab tests and recommends independently. We sometimes earn a commission when you buy through our links. It never affects our rankings."
   },
   "authorBio": {
     "eyebrow": "About the byline",
     "name": "The PlasticFreeLab Team",
-    "body": "A small group of researchers and writers cutting through the noise around non-toxic living. We read the studies, read the labels, test the products — and update our recommendations as the science evolves. We do not accept payment for product placement, we disclose every affiliate relationship, and we name the brands we reject.",
+    "body": "A small group of researchers and writers cutting through the noise around non-toxic living. We read the studies, read the labels, test the products. We update our recommendations as the science evolves. We do not accept payment for product placement, we disclose every affiliate relationship, and we name the brands we reject.",
     "standardsLink": "Our editorial standards →",
     "correctionLink": "Send us a correction →"
   },
@@ -417,7 +417,7 @@
     "eyebrow": "404 · Not on file",
     "title": "We couldn't find that page.",
     "p1": "Sometimes a URL changes when we reorganize a hub. Sometimes a post gets retired because the science moved and we'd rather pull it than leave a stale recommendation on the internet.",
-    "p2": "Either way, nothing useful lives at this address. The five hubs below cover everything we publish — one of them almost certainly has what you were looking for.",
+    "p2": "Either way, nothing useful lives at this address. The five hubs below cover everything we publish. One of them almost certainly has what you were looking for.",
     "tryHubs": "Try the hubs",
     "primary": "Back to the front page",
     "secondary": "Get the weekly dispatch",
@@ -428,7 +428,7 @@
   "errorPage": {
     "eyebrow": "Error · Something slipped",
     "title": "Something broke on our side.",
-    "body": "Not the reader's fault. A page failed to render the way it was supposed to. Try again — if it keeps happening, head back to the front page and the rest of the site should still behave.",
+    "body": "Not the reader's fault. A page failed to render the way it was supposed to. Try again. If it keeps happening, head back to the front page and the rest of the site should still behave.",
     "tryAgain": "Try again",
     "backToHome": "Back to home",
     "reference": "Reference · {digest}"
@@ -441,7 +441,7 @@
     "p2": {
       "before": "Subscribers also get the",
       "bold": "Kitchen Swap Audit",
-      "after": "— a printable checklist of 50+ kitchen items, each ranked swap now / swap eventually / don't bother."
+      "after": ", a printable checklist of 50+ kitchen items, each ranked swap now / swap eventually / don't bother."
     },
     "captureHeadline": "Start with the audit.",
     "captureSubhead": "Add your email and we'll send the PDF right away."
@@ -457,8 +457,8 @@
     },
     "editorialStandards": {
       "title": "Editorial Standards",
-      "metaDescription": "Our public-facing editorial policies — sourcing, corrections, affiliate disclosure, AI tooling.",
-      "intro": "Every site promises to be trustworthy. Here is what that actually means on PlasticFreeLab — sourcing rules, corrections policy, affiliate disclosure, and our use of AI tooling."
+      "metaDescription": "Our public-facing editorial policies: sourcing, corrections, affiliate disclosure, AI tooling.",
+      "intro": "Every site promises to be trustworthy. Here is what that actually means on PlasticFreeLab: sourcing rules, corrections policy, affiliate disclosure, and our use of AI tooling."
     },
     "affiliateDisclosure": {
       "title": "Affiliate Disclosure",
@@ -478,11 +478,11 @@
     "contact": {
       "title": "Contact",
       "metaDescription": "How to reach us.",
-      "intro": "How to reach us — for general feedback, corrections, privacy requests, and product tips."
+      "intro": "How to reach us, for general feedback, corrections, privacy requests, and product tips."
     },
     "newsletter": {
       "title": "One calm email a week.",
-      "metaDescription": "One calm email a week — the most-useful post we published, plus the swap we'd make first. Free. Unsubscribe anytime."
+      "metaDescription": "One calm email a week. The most-useful post we published, plus the swap we'd make first. Free. Unsubscribe anytime."
     }
   },
   "localeSwitcher": {
@@ -513,8 +513,8 @@
     "noFull": "Norsk"
   },
   "site": {
-    "tagline": "The non-toxic lab for everyday life.",
-    "description": "We test the swaps, read the studies, and publish calm, cited guides to microplastics, PFAS, and the household changes actually worth making."
+    "tagline": "We test what's actually inside the products in your kitchen.",
+    "description": "We send pans, food storage, water filters, and bottles to an accredited lab. We home-test in real kitchens. We publish what we find, including what we wouldn't buy ourselves."
   },
   "hubs": {
     "microplastics-and-edcs": {
@@ -540,7 +540,7 @@
     "non-toxic-clothing-and-textiles": {
       "name": "Clothing & Textiles",
       "shortName": "Clothing",
-      "oneLiner": "Microplastics, PFAS in clothes, and the textile supply chain — with the brands worth buying."
+      "oneLiner": "Microplastics, PFAS in clothes, and the textile supply chain, with the brands worth buying."
     }
   },
   "pflScore": {
@@ -643,7 +643,7 @@
       },
       "performance": {
         "title": "Performance",
-        "oneLiner": "Does it actually do its job — well — under realistic load.",
+        "oneLiner": "Does it actually do its job, well, under realistic load.",
         "body": "A non-toxic product that doesn't perform is not a recommendation. We measure category-appropriate function: heat distribution and retention for cookware, contaminant reduction and flow rate for filters, structural recovery and breathability for textiles. Performance scores are bench-measured, not vibe-checked."
       },
       "durability": {
@@ -654,11 +654,11 @@
       "useExperience": {
         "title": "Use experience",
         "oneLiner": "What it's like to live with for a month.",
-        "body": "Weight, balance, cleanability, learning curve, sound, smell. The qualitative dimension — but scored against fixed rubrics so the result reproduces between reviewers. Three panel members each spend a calendar month with the product before scoring."
+        "body": "Weight, balance, cleanability, learning curve, sound, smell. The qualitative dimension, but scored against fixed rubrics so the result reproduces between reviewers. Three panel members each spend a calendar month with the product before scoring."
       },
       "value": {
         "title": "Value",
-        "oneLiner": "Cost per year of expected service life — relative to category.",
+        "oneLiner": "Cost per year of expected service life, relative to category.",
         "body": "We score value as expected cost per year of service over a 10-year horizon, normalized against the category median. A pricey item with a 30-year warranty often outscores a cheap item with a 2-year coating. Warranty terms, refurbishment availability, and resale market all feed in."
       }
     },

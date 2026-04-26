@@ -88,7 +88,7 @@ export default async function MethodologyV12Page({
       <ul>
         {DIMENSIONS.map((d) => (
           <li key={d.key}>
-            <strong>{t(`dimension.${d.key}.title`)}</strong> — {d.weight}% ·{" "}
+            <strong>{t(`dimension.${d.key}.title`)}</strong> ({d.weight}%):{" "}
             {t(`dimension.${d.key}.oneLiner`)}
           </li>
         ))}
@@ -104,7 +104,7 @@ export default async function MethodologyV12Page({
           <ul>
             {d.subtests.map((st) => (
               <li key={st}>
-                <strong>{t(`subtest.${st}.title`)}</strong> —{" "}
+                <strong>{t(`subtest.${st}.title`)}:</strong>{" "}
                 {t(`subtest.${st}.body`)}
               </li>
             ))}
@@ -157,10 +157,10 @@ export default async function MethodologyV12Page({
       <h2>{t("changelogTitle")}</h2>
       <ul>
         <li>
-          <strong>v1.2 (April 2026)</strong> — {t("changeLog.v12")}
+          <strong>v1.2 (April 2026):</strong> {t("changeLog.v12")}
         </li>
         <li>
-          <strong>v1.1 (January 2026)</strong> — {t("changeLog.v11")}
+          <strong>v1.1 (January 2026):</strong> {t("changeLog.v11")}
         </li>
       </ul>
     </TrustPageTemplate>
