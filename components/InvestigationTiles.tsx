@@ -2,19 +2,22 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Eyebrow } from "./editorial/Eyebrow";
 import { VerifiedSeal } from "./editorial/VerifiedSeal";
+import { PFLScore } from "./editorial/PFLScore";
+import { getPost } from "@/lib/content/posts";
 
 type TileKey = "cookware" | "storage" | "filter" | "bottles";
 
 const TILES: Array<{
   key: TileKey;
   href: string;
+  slug: string;
   status: "testing" | "published";
   tint: "sage" | "terracotta" | "forest" | "stone";
 }> = [
-  { key: "cookware", href: "/best-non-toxic-cookware", status: "published", tint: "sage" },
-  { key: "storage", href: "/12-things-to-throw-out-of-your-kitchen", status: "published", tint: "terracotta" },
-  { key: "filter", href: "/best-water-filters", status: "published", tint: "forest" },
-  { key: "bottles", href: "/brita-vs-berkey-vs-aquatru", status: "testing", tint: "stone" },
+  { key: "cookware", href: "/best-non-toxic-cookware", slug: "best-non-toxic-cookware", status: "published", tint: "sage" },
+  { key: "storage", href: "/12-things-to-throw-out-of-your-kitchen", slug: "12-things-to-throw-out-of-your-kitchen", status: "published", tint: "terracotta" },
+  { key: "filter", href: "/best-water-filters", slug: "best-water-filters", status: "published", tint: "forest" },
+  { key: "bottles", href: "/brita-vs-berkey-vs-aquatru", slug: "brita-vs-berkey-vs-aquatru", status: "testing", tint: "stone" },
 ];
 
 export async function InvestigationTiles() {
@@ -48,17 +51,25 @@ export async function InvestigationTiles() {
             const blurb = t(`tiles.${tile.key}.blurb` as const);
             const status =
               tile.status === "testing" ? t("statusTesting") : t("statusPublished");
+            const post = getPost(tile.slug);
+            const score = post?.pflScore?.overall;
             return (
               <li key={tile.key}>
                 <Link href={tile.href} className="inv-tile group">
                   <div className={`inv-tile__image inv-tile__image--${tile.tint}`}>
                     <div className="inv-tile__gradient" aria-hidden />
                     <div className="inv-tile__grain" aria-hidden />
-                    <VerifiedSeal
-                      size={64}
-                      variant={tile.status === "testing" ? "currently-testing" : "verified"}
-                      className="inv-tile__seal"
-                    />
+                    {tile.status === "published" && typeof score === "number" ? (
+                      <span className="inv-tile__seal">
+                        <PFLScore score={score} size="lg" showTier={false} />
+                      </span>
+                    ) : (
+                      <VerifiedSeal
+                        size={64}
+                        variant="currently-testing"
+                        className="inv-tile__seal"
+                      />
+                    )}
                   </div>
                   <div className="inv-tile__body">
                     <span

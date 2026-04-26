@@ -323,7 +323,17 @@
     "citedValue": "{n} sources",
     "readTime": "Temps de lecture",
     "readTimeValue": "{n} min",
-    "lastUpdated": "Dernière mise à jour"
+    "lastUpdated": "Dernière mise à jour",
+    "pflScoreEyebrow": "Score PFL",
+    "scoreBreakdownEyebrow": "Détail du score",
+    "scoreBreakdownTitle": "Comment {n}/100 est obtenu.",
+    "scoreDim": {
+      "materialSafety": "Sécurité des matériaux",
+      "performance": "Performance",
+      "durability": "Durabilité",
+      "useExperience": "Expérience d’usage",
+      "value": "Rapport qualité-prix"
+    }
   },
   "comparison": {
     "eyebrow": "Le comparatif",
@@ -513,6 +523,229 @@
       "name": "Vêtements & textiles",
       "shortName": "Textile",
       "oneLiner": "Microplastiques, PFAS dans les vêtements et chaîne d’approvisionnement textile — avec les marques qui ont fait le travail."
+    }
+  },
+  "pflScore": {
+    "label": "Score PFL",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Excellent",
+      "strongBuy": "Recommandation forte",
+      "good": "Bon",
+      "caveatBuy": "Achat sous réserve",
+      "skip": "À éviter"
+    }
+  },
+  "pipeline": {
+    "label": "Au labo",
+    "queued": "en attente",
+    "updatedWeekly": "Mis à jour chaque semaine",
+    "inTheLabCount": "{n} au labo",
+    "queuedCount": "{n} en attente",
+    "badgeAriaLabel": "Pipeline : {testing} au labo, {queued} en attente. Ouvrir le journal complet.",
+    "h1": "Ce que nous testons en ce moment."
+  },
+  "pipelinePage": {
+    "metaTitle": "Ce que nous testons en ce moment",
+    "metaDescription": "Le journal ouvert de chaque enquête PlasticFreeLab — en cours, en file d’attente ou en relecture. Mis à jour chaque semaine.",
+    "eyebrow": "Le pipeline",
+    "h1": "Ce que nous testons en ce moment.",
+    "subtitle": "Le journal ouvert de chaque enquête — au laboratoire, en relecture ou en file d’attente. Mis à jour chaque semaine. Nous le publions parce que le secret est réservé aux publi-rédactionnels.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "Au laboratoire",
+      "drafted": "Rédigés, en relecture",
+      "researching": "À l’étude, en attente"
+    },
+    "status": {
+      "testing": "Au labo",
+      "drafted": "Rédigé",
+      "researching": "À l’étude"
+    },
+    "reviewerRole": {
+      "research": "Responsable recherche",
+      "testing": "Responsable des tests",
+      "medical": "Relecture médicale",
+      "sourcing": "Responsable approvisionnement"
+    },
+    "expectedTBD": "Date à confirmer",
+    "itemsCount": "{n} entrées",
+    "methodologyFooter": "Méthodologie d’essai · v1.2 · Dernière mise à jour {date} · Voir",
+    "hubsLine": "Vers les rubriques :"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Responsable des tests",
+      "testedVia": "Testé selon la méthodologie PFL {version}",
+      "labRun": "Tests laboratoire menés en {date}"
+    },
+    "plain": {
+      "team": "L’équipe PlasticFreeLab",
+      "published": "Publié en {date}",
+      "refreshed": "Actualisé en {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "Méthodologie PFL",
+    "metaDescription": "Comment PlasticFreeLab note chaque produit. Méthodologie publique, versionnée comme un logiciel.",
+    "eyebrow": "Standards éditoriaux",
+    "h1": "Méthodologie PFL",
+    "intro": "Chaque produit sur PlasticFreeLab est noté selon la même grille à cinq dimensions. La grille est publique, versionnée comme un logiciel, et mise à jour dès qu’une meilleure base de preuves rend la version précédente incomplète.",
+    "currentVersionTitle": "Version en vigueur",
+    "currentVersionBody": "v1.2, en application depuis avril 2026. Ajoute un panel PFAS selon la méthode SGS 5021A, étend la fenêtre de durabilité de 12 à 24 mois et révise le calcul de la valeur pour intégrer les conditions de garantie.",
+    "currentVersionLink": "Lire la spécification v1.2 →",
+    "philosophyTitle": "Pourquoi une méthodologie publique",
+    "philosophyP1": "Si nous ne pouvons pas montrer comment nous avons choisi, nos choix valent peu. Chaque score sur ce site est un nombre que toute lectrice peut reproduire à partir des mêmes preuves. Nous publions les dimensions, les pondérations, les sous-tests et les laboratoires partenaires. Nous précisons ce que nous n’avons pas testé, et pourquoi.",
+    "philosophyP2": "La dérive méthodologique est l’écueil le plus fréquent dans le test de produits. Notre garde-fou est le numéro de version. Quand nous modifions la grille, nous publions une nouvelle version, archivons l’ancienne et re-notons les pages concernées. Les lectrices voient exactement ce qui a changé.",
+    "changeLogTitle": "Journal des modifications",
+    "changeLog": {
+      "v12": "Ajout du panel PFAS selon la méthode SGS 5021A. Fenêtre de durabilité étendue de 12 à 24 mois. Calcul de la valeur révisé pour intégrer la garantie.",
+      "v11": "Première version publique. Grille à cinq dimensions, cinq rôles éditoriaux, procédure de contestation."
+    },
+    "disputeTitle": "Procédure de contestation",
+    "disputeBody": "Si une marque estime notre score erroné, elle peut déposer une contestation accompagnée de pièces. Nous re-testons sur notre paillasse, pas sur la sienne. Si ses données contredisent les nôtres, nous publions les deux. Nous ne modifions pas un score sous menace de procédure ; nous l’actualisons quand de meilleures preuves arrivent."
+  },
+  "methodologyV12": {
+    "metaTitle": "Méthodologie PFL v1.2",
+    "metaDescription": "La spécification complète v1.2 : cinq dimensions pondérées, sous-tests, laboratoires partenaires, qualifications des relecteurs.",
+    "eyebrow": "Spécification · v1.2",
+    "h1": "Méthodologie PFL v1.2",
+    "updated": "Mise à jour en avril 2026 · Version précédente : v1.1 ↗",
+    "changelogLink": "Toutes les versions",
+    "intro": "Voici la spécification de référence pour chaque score publié sur PlasticFreeLab entre avril 2026 et la prochaine révision versionnée. Cinq dimensions pondérées, vingt-trois sous-tests, quatre rôles de relecture et une procédure de contestation qui ne plie pas sous la pression.",
+    "weightsTitle": "Les cinq dimensions",
+    "weightsBody": "Chaque score sur ce site est une moyenne pondérée des cinq dimensions ci-dessous. Les pondérations reflètent ce qui, selon nous, compte le plus pour une recommandation non toxique : la sécurité des matériaux domine parce que c’est pour cela que la lectrice est là, et la valeur arrive en dernier parce que l’argent se rattrape, l’exposition non.",
+    "subtestsTitle": "Sous-tests",
+    "dimension": {
+      "materialSafety": {
+        "title": "Sécurité des matériaux",
+        "oneLiner": "Composition, migrations, certifications.",
+        "body": "La sécurité des matériaux est ce qui amène la plupart des lectrices ici, et la dimension la plus pondérée. Nous notons la nomenclature divulguée, les certifications indépendantes (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard) et les données d’essai publiées par le fabricant. Quand le fabricant reste silencieux, nous commandons nos propres analyses dans des laboratoires accrédités."
+      },
+      "performance": {
+        "title": "Performance",
+        "oneLiner": "Le produit fait-il son travail — bien — sous charge réelle.",
+        "body": "Un produit non toxique qui ne fonctionne pas n’est pas une recommandation. Nous mesurons des fonctions propres à la catégorie : répartition et rétention thermique pour la cuisson, réduction des contaminants et débit pour les filtres, tenue structurelle et respirabilité pour le textile. Les notes de performance sortent de la paillasse, pas du ressenti."
+      },
+      "durability": {
+        "title": "Durabilité",
+        "oneLiner": "Comment il tient 24 mois d’usage normal.",
+        "body": "Les revêtements s’écaillent, les élastiques fatiguent, les joints rétrécissent. La note de durabilité capte précisément les modes de défaillance qui transforment un produit non toxique en produit douteux après douze mois. Notre panel soumet chaque article à un cycle d’usure accéléré sur 24 mois, complété par les retours longitudinaux de foyers réels."
+      },
+      "useExperience": {
+        "title": "Expérience d’usage",
+        "oneLiner": "Vivre avec, pendant un mois, c’est comment.",
+        "body": "Poids, équilibre, nettoyabilité, courbe d’apprentissage, son, odeur. La dimension qualitative — notée selon des grilles fixes pour que le résultat se reproduise d’un relecteur à l’autre. Trois membres du panel passent chacun un mois calendaire avec le produit avant de noter."
+      },
+      "value": {
+        "title": "Rapport qualité-prix",
+        "oneLiner": "Coût par an de service attendu — relativisé à la catégorie.",
+        "body": "Nous notons la valeur en coût attendu par an de service sur dix ans, normalisé sur la médiane de catégorie. Un article coûteux avec garantie trentenaire bat souvent un article bon marché avec un revêtement de deux ans. Conditions de garantie, réparabilité et marché de l’occasion entrent dans le calcul."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "Panel PFAS (méthode SGS 5021A)",
+        "body": "Analyse quantitative de 40 composés PFAS à des seuils en parties par milliard. Nouveau en v1.2."
+      },
+      "leadCadmium": {
+        "title": "Dépistage plomb et cadmium",
+        "body": "Extraction de surface selon FDA Compliance Policy Guide 7117.06. Pass / valeur reportée."
+      },
+      "phthalate": {
+        "title": "Panel phtalates",
+        "body": "Analyse GC-MS pour les huit phtalates restreints par le CPSIA. Reporté en microgrammes par gramme."
+      },
+      "vocChamber": {
+        "title": "Chambre COV",
+        "body": "Test de 72 heures en chambre CDPH 01350 pour les COV totaux et la liste prioritaire de 35 composés."
+      },
+      "supplier": {
+        "title": "Audit de divulgation des fournisseurs",
+        "body": "Fabricant Tier 1 publié, avec pays et certification de chaque couche matérielle."
+      },
+      "heatMap": {
+        "title": "Carte thermique infrarouge",
+        "body": "Température de surface relevée toutes les 30 secondes sur une courbe de chauffe de 12 minutes."
+      },
+      "deglaze": {
+        "title": "Saisie + déglaçage",
+        "body": "Saisie protéique standardisée puis déglaçage acide, notés sur le brunissage, le décollement et l’intégrité."
+      },
+      "filterEfficacy": {
+        "title": "Réduction des contaminants",
+        "body": "Eau de challenge selon spécification NSF, effluent mesuré pour les dix contaminants prioritaires."
+      },
+      "loadCycle": {
+        "title": "Cycle pleine charge",
+        "body": "Usage continu à pleine capacité sur la durée de vie annoncée, avec recontrôle en fin de vie."
+      },
+      "coatingWear": {
+        "title": "Usure accélérée du revêtement",
+        "body": "Cycle d’abrasion type ASTM, équivalant à environ 24 mois d’usage domestique normal."
+      },
+      "warrantyAudit": {
+        "title": "Audit de garantie",
+        "body": "Couverture, exclusions et délai médian de traitement, à partir des dossiers publics quand disponibles."
+      },
+      "fieldReports": {
+        "title": "Retours longitudinaux",
+        "body": "Six foyers du panel rapportent chaque mois pendant 12 mois. Un abandon en cours de test est lui-même un signal."
+      },
+      "weight": {
+        "title": "Poids + ergonomie",
+        "body": "Masse, équilibre et portée pour les dimensions ergonomiques pertinentes. Notés contre une référence de catégorie."
+      },
+      "cleanability": {
+        "title": "Nettoyabilité",
+        "body": "Cycles lave-vaisselle et lavage manuel, notés sur les résidus et la dégradation de finition."
+      },
+      "panelScores": {
+        "title": "Notation qualitative du panel",
+        "body": "Trois relecteurs, grille fixe, en aveugle quand la géométrie le permet."
+      },
+      "costPerYear": {
+        "title": "Coût attendu par an",
+        "body": "Prix d’achat plus consommables, amortis sur la durée de service attendue."
+      },
+      "warrantyDelta": {
+        "title": "Ajustement valeur-garantie",
+        "body": "Une garantie pluriannuelle qui aboutit réduit le coût annuel ; une garantie faible ne le fait pas."
+      },
+      "marketComparable": {
+        "title": "Comparable marché",
+        "body": "Indexé sur le coût annuel médian de la catégorie pour tous les candidats actuellement listés."
+      }
+    },
+    "labPartnersTitle": "Laboratoires partenaires",
+    "labPartnersBody": "Pour les analyses chimiques quantitatives, nous travaillons avec SGS, Eurofins et Intertek. Pour les PFAS spécifiquement, la méthode SGS 5021A est notre standard. La liste des partenaires figure ici comme engagement de transparence ; le statut de partenaire n’influe pas sur la notation, et les laboratoires n’ont accès à l’identité de la marque qu’une fois le rapport déposé. (Liste complète et règle de réciprocité : à publier avec la spécification v1.3.)",
+    "reviewersTitle": "Qualifications des relecteurs",
+    "reviewersIntro": "Quatre rôles, chacun habilité à supprimer une phrase que l’équipe ne peut pas étayer.",
+    "reviewers": {
+      "research": {
+        "title": "Responsable recherche",
+        "bio": "Lit la littérature primaire. Cite l’essai, pas le communiqué de presse. Le désaccord avec le consensus n’apparaît que lorsque les données le justifient."
+      },
+      "testing": {
+        "title": "Responsable des tests",
+        "bio": "Cuisine sur chaque poêle pendant un mois. Pèse chaque bouteille. Mesure chaque promesse. Outils et carnets l’emportent sur les opinions."
+      },
+      "medical": {
+        "title": "Relecture médicale",
+        "bio": "Signale les sujets YMYL. Confirme qu’aucune phrase anxiogène n’est passée à la relecture. La personne qui retire silencieusement la formule effrayante."
+      },
+      "sourcing": {
+        "title": "Responsable approvisionnement",
+        "bio": "Lit les fiches techniques. Recoupe les annonces des fabricants avec des essais tiers. Nomme les marques que nous écartons — et dit pourquoi."
+      }
+    },
+    "disputeTitle": "Procédure de contestation",
+    "disputeBody": "Si une marque estime notre score erroné, elle peut déposer une contestation accompagnée de pièces. Nous re-testons sur notre paillasse, pas sur la sienne. Si ses données contredisent les nôtres, nous publions les deux. Nous ne modifions pas un score sous menace de procédure ; nous l’actualisons quand de meilleures preuves arrivent.",
+    "changelogTitle": "Journal des modifications",
+    "changeLog": {
+      "v12": "Ajout du panel PFAS selon la méthode SGS 5021A. Fenêtre de durabilité étendue de 12 à 24 mois. Calcul de la valeur révisé pour intégrer la garantie.",
+      "v11": "Première version publique. Grille à cinq dimensions, cinq rôles éditoriaux, procédure de contestation."
     }
   }
 }

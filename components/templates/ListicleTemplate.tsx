@@ -16,6 +16,8 @@ import { ItemListJsonLd } from "../schema/ItemListJsonLd";
 import { ArticleShell } from "./PageShell";
 import { Eyebrow } from "../editorial/Eyebrow";
 import { DotRule, LabRule } from "../editorial/DotRule";
+import { PFLScore } from "../editorial/PFLScore";
+import { MethodologyByline } from "../editorial/MethodologyByline";
 
 export async function ListicleTemplate({ post }: { post: Post }) {
   const t = await getTranslations("listicle");
@@ -62,6 +64,10 @@ export async function ListicleTemplate({ post }: { post: Post }) {
           {pt.h1}
         </h1>
 
+        <div className="mt-5">
+          <MethodologyByline post={post} />
+        </div>
+
         <div className="mt-5 flex flex-wrap items-center gap-4">
           <ReviewStamp
             updatedAt={post.updatedAt}
@@ -90,9 +96,20 @@ export async function ListicleTemplate({ post }: { post: Post }) {
                   </span>
                 </div>
                 <div>
-                  <h2 className="font-serif text-[1.4rem] md:text-[1.55rem] text-forest leading-tight group-hover:text-sage transition">
-                    {item.name}
-                  </h2>
+                  <div className="flex items-start justify-between gap-4">
+                    <h2 className="font-serif text-[1.4rem] md:text-[1.55rem] text-forest leading-tight group-hover:text-sage transition">
+                      {item.name}
+                    </h2>
+                    {typeof item.score === "number" && (
+                      <span className="shrink-0">
+                        <PFLScore
+                          score={item.score}
+                          size="sm"
+                          showTier={false}
+                        />
+                      </span>
+                    )}
+                  </div>
                   <p className="mt-2.5 text-[15px] text-charcoal/85 leading-relaxed max-w-[62ch]">
                     {item.summary}
                   </p>

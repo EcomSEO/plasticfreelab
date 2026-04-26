@@ -19,6 +19,8 @@ const RESERVED = new Set([
   "editorial-standards",
   "newsletter",
   "guides",
+  "pipeline",
+  "methodology",
   "sitemap.xml",
   "robots.txt",
   "llms.txt",

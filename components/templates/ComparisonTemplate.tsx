@@ -21,6 +21,8 @@ import { DotRule, LabRule } from "../editorial/DotRule";
 import { TierBadge } from "../editorial/TierBadge";
 import { MethodologyBlock } from "../editorial/MethodologyBlock";
 import { WhatWouldChangeOurMind } from "../editorial/WhatWouldChangeOurMind";
+import { PFLScore } from "../editorial/PFLScore";
+import { MethodologyByline } from "../editorial/MethodologyByline";
 
 const DATE_LOCALE: Record<string, string> = {
   en: "en-US",
@@ -162,15 +164,31 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
           )}
         </div>
 
-        <h1 className="display-headline text-forest mt-4 text-[2.25rem] md:text-[3.1rem] leading-[1.04]">
-          {pt.h1}
-        </h1>
+        {/* Hero — runrepeat-style 2-col with H1 + deck on left, large PFL Score on right */}
+        <div className="mt-4 grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+          <div>
+            <h1 className="display-headline text-forest text-[2.25rem] md:text-[3.1rem] leading-[1.04]">
+              {pt.h1}
+            </h1>
+            <p className="mt-6 text-lg md:text-[1.22rem] text-charcoal/85 max-w-[60ch] leading-[1.55]">
+              {pt.description}
+            </p>
+          </div>
+          {post.pflScore && (
+            <div className="flex flex-col items-start lg:items-center gap-3">
+              <PFLScore score={post.pflScore.overall} size="lg" />
+              <div className="caps-label text-stone">
+                {tChrome("pflScoreEyebrow")}
+              </div>
+            </div>
+          )}
+        </div>
 
-        <p className="mt-6 text-lg md:text-[1.22rem] text-charcoal/85 max-w-[60ch] leading-[1.55]">
-          {pt.description}
-        </p>
+        <div className="mt-6">
+          <MethodologyByline post={post} />
+        </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-4">
+        <div className="mt-5 flex flex-wrap items-center gap-4">
           <ReviewStamp
             updatedAt={post.updatedAt}
             readingTime={post.readingTime}
@@ -185,14 +203,55 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
 
         <TranslationPendingBanner />
 
+        {/* Score breakdown — 5 dimensions as horizontal bars */}
+        {post.pflScore && (
+          <section id="score-breakdown" className="mt-10">
+            <Eyebrow tone="sage">{tChrome("scoreBreakdownEyebrow")}</Eyebrow>
+            <h2 className="font-serif text-2xl md:text-[1.7rem] text-forest mt-2 mb-5 leading-tight">
+              {tChrome("scoreBreakdownTitle")}
+            </h2>
+            <div className="pfl-breakdown max-w-2xl">
+              {([
+                ["materialSafety", post.pflScore.materialSafety, 35],
+                ["performance", post.pflScore.performance, 20],
+                ["durability", post.pflScore.durability, 15],
+                ["useExperience", post.pflScore.useExperience, 15],
+                ["value", post.pflScore.value, 15],
+              ] as const).map(([key, value, weight]) => (
+                <div key={key} className="pfl-breakdown__row">
+                  <span className="pfl-breakdown__label">
+                    {tChrome(`scoreDim.${key}` as const)} · {weight}%
+                  </span>
+                  <span className="pfl-breakdown__bar">
+                    <span
+                      className="pfl-breakdown__fill"
+                      style={{ width: `${value}%` }}
+                    />
+                  </span>
+                  <span className="pfl-breakdown__value">{value}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Our Pick */}
         {post.ourPick && (
-          <section id="our-pick" className="mt-10">
+          <section id="our-pick" className="mt-12">
             <div className="relative overflow-hidden bg-gradient-to-br from-cream-deep to-paper border border-sage/40 rounded-sm p-7 md:p-10">
               <div className="absolute top-0 left-0 w-1.5 h-full bg-sage" />
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <TierBadge tier={post.ourPick.tier} />
                 <Eyebrow tone="sage">{t("ourPickEyebrow")}</Eyebrow>
+                {typeof post.ourPick.score === "number" && (
+                  <span className="ml-auto">
+                    <PFLScore
+                      score={post.ourPick.score}
+                      size="sm"
+                      showTier={false}
+                    />
+                  </span>
+                )}
               </div>
               <h2 className="font-serif text-[1.9rem] md:text-[2.35rem] text-forest leading-[1.08]">
                 {post.ourPick.name}
@@ -242,6 +301,15 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
                       <div>
                         <div className="flex flex-wrap items-center gap-3 mb-3">
                           <TierBadge tier={p.tier} />
+                          {typeof p.score === "number" && (
+                            <span className="ml-auto">
+                              <PFLScore
+                                score={p.score}
+                                size="sm"
+                                showTier={false}
+                              />
+                            </span>
+                          )}
                         </div>
                         <h3 className="font-serif text-2xl text-forest leading-tight">
                           {p.name}
@@ -280,6 +348,15 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
                         {p.name}
                       </h3>
                       <TierBadge tier={p.tier} />
+                      {typeof p.score === "number" && (
+                        <span className="ml-auto">
+                          <PFLScore
+                            score={p.score}
+                            size="sm"
+                            showTier={false}
+                          />
+                        </span>
+                      )}
                     </div>
                     <p className="text-[14.5px] text-charcoal/85 leading-relaxed">
                       {p.summary}

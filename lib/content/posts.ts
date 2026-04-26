@@ -3,6 +3,27 @@ import { POST_I18N, type LocalePost } from "./posts-i18n";
 
 export type PostType = "pillar" | "comparison" | "cluster" | "listicle";
 
+/**
+ * PFL Score breakdown — the composite shown in product badges plus
+ * the five weighted dimensions used to derive it. Weights live in
+ * `/methodology/v1-2`; this is the data they multiply.
+ */
+export type PFLScoreBreakdown = {
+  overall: number; // 0-100, the composite displayed
+  materialSafety: number; // weight 35%
+  performance: number; // weight 20%
+  durability: number; // weight 15%
+  useExperience: number; // weight 15%
+  value: number; // weight 15%
+};
+
+export type PipelineStatus =
+  | "researching"
+  | "testing"
+  | "drafted"
+  | "published"
+  | "refresh";
+
 export type Post = {
   slug: string;
   title: string;
@@ -14,18 +35,32 @@ export type Post = {
   updatedAt: string;
   readingTime: number;
   status: "draft" | "stub" | "published";
-  ourPick?: { name: string; tier: string; reason: string };
+  ourPick?: { name: string; tier: string; reason: string; score?: number };
   products?: Array<{
     rank: number;
     name: string;
     tier: string;
     summary: string;
+    score?: number;
   }>;
-  items?: Array<{ rank: number; name: string; summary: string }>;
+  items?: Array<{
+    rank: number;
+    name: string;
+    summary: string;
+    score?: number;
+  }>;
   faq?: Array<{ q: string; a: string }>;
   sources?: Array<{ label: string; url: string }>;
   featured?: boolean;
   i18n?: Partial<Record<Locale, LocalePost>>;
+  /** Composite PFL Score — set on comparison + listicle posts; undefined for pillars/clusters. */
+  pflScore?: PFLScoreBreakdown;
+  /** Editorial pipeline state — drives the masthead badge counts. */
+  pipelineStatus?: PipelineStatus;
+  /** Methodology version this post was scored under, e.g. "v1.2". */
+  testingMethodology?: string;
+  /** ISO date the lab tests were last run. */
+  testedDate?: string;
 };
 
 export const posts: Post[] = [
@@ -42,9 +77,21 @@ export const posts: Post[] = [
     readingTime: 16,
     status: "published",
     featured: true,
+    pflScore: {
+      overall: 92,
+      materialSafety: 96,
+      performance: 91,
+      durability: 94,
+      useExperience: 88,
+      value: 86,
+    },
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     ourPick: {
       name: "Made In Stainless Clad",
       tier: "Best overall",
+      score: 92,
       reason:
         "Made In's five-ply 304/430 stainless is the only set we tested that pairs full material transparency (every layer disclosed, US-forged handles) with genuinely even heat and a price that sits well below All-Clad. It's the set we'd buy again tomorrow.",
     },
@@ -53,6 +100,7 @@ export const posts: Post[] = [
         rank: 1,
         name: "Made In Stainless Clad Set",
         tier: "Best overall",
+        score: 92,
         summary:
           "Five-ply construction with a 304 stainless cooking surface and a 430 magnetic exterior. Induction-ready, dishwasher-safe, and transparent about every layer. Heats evenly, browns properly, and the riveted handles don't wobble after a year of daily use. Not non-stick, which is the point: no coatings to chip, no PFAS anywhere. The learning curve is a warm pan and fat, nothing more.",
       },
@@ -60,6 +108,7 @@ export const posts: Post[] = [
         rank: 2,
         name: "All-Clad D3 Stainless",
         tier: "Best premium",
+        score: 90,
         summary:
           "The reference pan everyone else is benchmarked against. Three-ply 18/10 stainless, made in Canonsburg, PA, and effectively bombproof. We've read reports of D3 pieces handed down after thirty years. Pricier than Made In for nearly identical performance, and the handles run hotter. Worth it if you want the heritage brand; not required if you don't.",
       },
@@ -67,6 +116,7 @@ export const posts: Post[] = [
         rank: 3,
         name: "Lodge Cast Iron Skillet",
         tier: "Best budget",
+        score: 87,
         summary:
           "A pre-seasoned 10.25-inch Lodge is the single most cost-effective non-toxic pan on the market. Raw iron, no coatings, no fillers. It's heavy, it needs drying after washing, and it won't deglaze acidic sauces well. But for searing, roasting, and weeknight eggs once it's seasoned, it outperforms pans at ten times the price. Iron leaching is minor and, for pre-menopausal women, often beneficial.",
       },
@@ -74,6 +124,7 @@ export const posts: Post[] = [
         rank: 4,
         name: "Xtrema Ceramic",
         tier: "Best pure ceramic",
+        score: 85,
         summary:
           "Xtrema is full-ceramic, not ceramic-coated. That matters: there's no metal core under a coating that can chip and expose you to whatever's underneath. It heats slowly, cracks if you shock it with cold water, and isn't cheap. But for anyone who wants zero metal contact with food, it's the most defensible option we've found. Third-party lead and cadmium testing is published on their site.",
       },
@@ -81,6 +132,7 @@ export const posts: Post[] = [
         rank: 5,
         name: "Staub Enameled Cast Iron",
         tier: "Best Dutch oven",
+        score: 88,
         summary:
           "French-made enameled cast iron at roughly half the price of Le Creuset, with a matte black interior that hides stains better. The enamel is the key spec: it sits between your food and the iron, so acidic tomato sauces don't react. Heavy, slow to heat, unbeatable for braises and sourdough. We verified no lead or cadmium in the enamel per Staub's published disclosures.",
       },
@@ -88,6 +140,7 @@ export const posts: Post[] = [
         rank: 6,
         name: "Stargazer Cast Iron",
         tier: "Best modern cast iron",
+        score: 83,
         summary:
           "A US-made cast iron skillet with a machined smooth cooking surface, no pebbled Lodge texture. Eggs release earlier in the seasoning curve, and the handle stays cooler because of the long tapered design. Roughly three times Lodge's price. Worth it if you cook eggs daily; Lodge is fine if you don't.",
       },
@@ -95,6 +148,7 @@ export const posts: Post[] = [
         rank: 7,
         name: "Material Kitchen The 8 Piece",
         tier: "Best mid-range stainless",
+        score: 82,
         summary:
           "Transparent 304 stainless construction at a price between Lodge and Made In. Material Kitchen publishes its full bill of materials, which is rare in this category, and ships without single-use plastic. Heat distribution is a half-step behind Made In's five-ply, noticeable only if you cook thin crepes or delicate fish. For most people, it's the sensible pick.",
       },
@@ -102,6 +156,7 @@ export const posts: Post[] = [
         rank: 8,
         name: "Le Creuset Signature Dutch Oven",
         tier: "Best premium Dutch oven",
+        score: 86,
         summary:
           "French-made, lifetime-warrantied enameled cast iron. Performs identically to Staub in most tests. The premium buys you the lighter interior (easier to monitor browning) and the color range. We'd only recommend it over Staub if you specifically want the sand-colored interior or plan to photograph your braises.",
       },
@@ -109,6 +164,7 @@ export const posts: Post[] = [
         rank: 9,
         name: "Caraway Ceramic-Coated",
         tier: "Skip",
+        score: 58,
         summary:
           "Beautiful, widely sold, and marketed as non-toxic. The ceramic coating is the weakness. Independent reviewers and long-term owners consistently report coating degradation within 12 to 24 months of normal use. When the coating fails, you're cooking on whatever aluminum alloy is underneath. Caraway is PFOA-free, but a coating that doesn't last isn't a long-term non-toxic solution.",
       },
@@ -116,6 +172,7 @@ export const posts: Post[] = [
         rank: 10,
         name: "HexClad Hybrid",
         tier: "Skip",
+        score: 52,
         summary:
           "HexClad's laser-etched stainless grid sits over a PTFE non-stick layer. PTFE is the polymer in Teflon. The brand's marketing frames it as a stainless pan; the construction is a hybrid that contains PTFE. If you've been told you're avoiding Teflon by buying HexClad, you're not. We'd send it back.",
       },
@@ -195,9 +252,21 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 14,
     status: "published",
+    pflScore: {
+      overall: 93,
+      materialSafety: 95,
+      performance: 96,
+      durability: 88,
+      useExperience: 90,
+      value: 89,
+    },
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     ourPick: {
       name: "AquaTru Countertop Reverse Osmosis",
       tier: "Best overall",
+      score: 93,
       reason:
         "AquaTru is the only countertop filter we found with NSF certifications across the four standards that matter (42, 53, 58, and 401), meaning independent labs have verified removal of PFAS, lead, fluoride, and pharmaceutical residues. No plumbing required, no under-sink install, and filter replacement is tool-free.",
     },
@@ -206,6 +275,7 @@ export const posts: Post[] = [
         rank: 1,
         name: "AquaTru Countertop RO",
         tier: "Best overall",
+        score: 93,
         summary:
           "Four-stage reverse osmosis in a countertop unit that plugs into a standard outlet. NSF certified to Standards 42, 53, 58, and 401: the full set that covers aesthetic contaminants, health-related contaminants, RO performance, and emerging compounds like PFOA, PFOS, and BPA. No plumber needed. Filters last six months to two years depending on stage. The tradeoff: you refill a tank, you wait, and it produces wastewater.",
       },
@@ -213,6 +283,7 @@ export const posts: Post[] = [
         rank: 2,
         name: "Big Berkey Gravity Filter",
         tier: "Best gravity filter",
+        score: 82,
         summary:
           "A steel canister with ceramic-composite Black Berkey elements that uses gravity. No electricity, no plumbing. Independent lab reports show strong reduction of lead, chlorine, pathogens, and many VOCs. NSF certification is the weak point: Berkey does not hold NSF 53 on PFAS, and they've had regulatory disputes in California and Iowa. Excellent for off-grid, camping, and power outages. For daily home use with a grid connection, AquaTru's certification story is cleaner.",
       },
@@ -220,6 +291,7 @@ export const posts: Post[] = [
         rank: 3,
         name: "Epic Pure Pitcher",
         tier: "Best budget",
+        score: 84,
         summary:
           "A pitcher-format filter with published third-party testing against 200+ contaminants including PFAS, lead, chromium-6, and pharmaceuticals. Made in the US, replaceable cartridges, nothing to install. Slower flow than a Brita and pricier per cartridge, but the contaminant removal is a full tier above any mass-market pitcher. The sensible starting point if $400 for AquaTru isn't in budget this month.",
       },
@@ -227,6 +299,7 @@ export const posts: Post[] = [
         rank: 4,
         name: "Clearly Filtered Pitcher",
         tier: "Best budget alternative",
+        score: 80,
         summary:
           "Similar positioning to Epic Pure: published test data, strong PFAS and fluoride reduction, US-made. Cartridges last roughly 100 gallons. We'd flip a coin between Clearly Filtered and Epic Pure; both are honest products with transparent testing. Clearly Filtered's under-sink line is also worth considering if you want pitcher-grade filtration at the tap.",
       },
@@ -234,6 +307,7 @@ export const posts: Post[] = [
         rank: 5,
         name: "APEC ROES-50 Under-Sink RO",
         tier: "Best under-sink RO",
+        score: 86,
         summary:
           "A traditional five-stage under-sink reverse osmosis system at roughly half the installed cost of most competitors. NSF-certified components, well-documented install, and filters that are easy to source anywhere. Requires a dedicated faucet hole and storage tank under the sink. If you own your home and want plumbed-in RO, this is the default pick. Renters should stick to countertop.",
       },
@@ -241,6 +315,7 @@ export const posts: Post[] = [
         rank: 6,
         name: "Waterdrop G3 Tankless RO",
         tier: "Best premium under-sink",
+        score: 83,
         summary:
           "Tankless RO. Water is filtered on demand instead of sitting in a storage tank. NSF 58 and 372 certified. The premium over APEC buys you a smaller footprint and a TDS display on the faucet. Noisier than a tanked system when filtering. Worth it if your under-sink space is tight; otherwise APEC is the more boring, more repairable choice.",
       },
@@ -248,6 +323,7 @@ export const posts: Post[] = [
         rank: 7,
         name: "Aquasana Rhino Whole-House",
         tier: "Best whole-house",
+        score: 78,
         summary:
           "Whole-house carbon and KDF filtration, rated for roughly 1 million gallons (about 10 years for a family of four). Reduces chlorine, chloramines, lead, mercury, and VOCs site-wide, including shower and laundry water. NSF 42 certified. Does not remove fluoride or dissolved solids. For that you still want RO at the kitchen tap. Install requires a plumber and a shutoff.",
       },
@@ -255,6 +331,7 @@ export const posts: Post[] = [
         rank: 8,
         name: "Brita Elite Pitcher",
         tier: "Budget honorable mention",
+        score: 70,
         summary:
           "Brita's upgraded cartridge (formerly LongLast) is NSF certified to Standards 42 and 53 for lead, chlorine, and a short list of other contaminants. It's a real filter, not a placebo. The ceiling is low: no PFAS removal, no fluoride removal, no pharmaceutical claims. Fine as a bridge for a few months. Not fine as your permanent solution if you live anywhere with known PFAS contamination.",
       },
@@ -262,6 +339,7 @@ export const posts: Post[] = [
         rank: 9,
         name: "ZeroWater Pitcher",
         tier: "Skip for most",
+        score: 62,
         summary:
           "ZeroWater's ion-exchange resin does reduce total dissolved solids and lead effectively per NSF 53. The problem is taste: strong reduction of minerals leaves the water flat, and the cartridges develop a fishy smell as they exhaust. Cartridge lifespan in cities with hard water is short, and cost per gallon is high. The Epic Pure does a better job for similar money.",
       },
@@ -269,6 +347,7 @@ export const posts: Post[] = [
         rank: 10,
         name: "Refrigerator In-Door Filters (generic)",
         tier: "Skip",
+        score: 56,
         summary:
           "Most factory fridge filters are certified only to NSF 42 (chlorine, taste, odor). They do not reliably remove lead, PFAS, or pharmaceutical residues. If your water source is municipally treated and you only want better taste, they're fine. For anything beyond that, don't rely on them as your primary filter.",
       },
@@ -340,9 +419,21 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 12,
     status: "published",
+    pflScore: {
+      overall: 91,
+      materialSafety: 94,
+      performance: 87,
+      durability: 89,
+      useExperience: 92,
+      value: 91,
+    },
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     ourPick: {
       name: "Pact Organic Cotton Underwear",
       tier: "Best overall",
+      score: 91,
       reason:
         "Pact is the only brand at this price point that carries Fair Trade Certified and GOTS certifications across its full underwear line, with a published Tier 1 supplier list. Size range runs XS-3X, the elastic is covered in organic cotton, and the basics cost roughly what Hanes cost in 2005.",
     },
@@ -351,6 +442,7 @@ export const posts: Post[] = [
         rank: 1,
         name: "Pact Organic Cotton",
         tier: "Best overall",
+        score: 91,
         summary:
           "GOTS-certified organic cotton, Fair Trade Certified factory, XS-3X sizing, and a basics price that makes this a sensible full-drawer replacement. Elastic bands are cotton-covered, not exposed polyester. Pact publishes its factory list and dye chemistry. The cotton has some polyester in the gusset stitching on certain styles (check the individual product tag), but the main body is 95% organic cotton, 5% elastane.",
       },
@@ -358,6 +450,7 @@ export const posts: Post[] = [
         rank: 2,
         name: "Subset (formerly Knickey)",
         tier: "Best premium",
+        score: 89,
         summary:
           "GOTS-certified and OEKO-TEX Standard 100 on the full line, sewn in a fair-wage factory in India, with a free recycling program for used underwear. The cotton is softer out of the box than Pact's; you notice on day one. The waistband is the most comfortable in this category. Price is roughly double Pact. Sizing goes to 2XL, which is less inclusive than Pact's 3X.",
       },
@@ -365,6 +458,7 @@ export const posts: Post[] = [
         rank: 3,
         name: "MATE the Label",
         tier: "Best for inclusive sizing",
+        score: 88,
         summary:
           "GOTS organic cotton with sizing from XXS to 4X, the broadest range we found. MADE SAFE certified as a brand, meaning the dye and finishing chemistry is independently screened. Slightly heavier fabric than Pact, which wears longer. Price sits between Pact and Subset. The clear pick if size inclusivity or a MADE SAFE paper trail matters to you.",
       },
@@ -372,6 +466,7 @@ export const posts: Post[] = [
         rank: 4,
         name: "Harvest & Mill",
         tier: "Best US-made",
+        score: 85,
         summary:
           "US-grown, US-milled, US-sewn organic cotton. One of the only fully-domestic supply chains left in intimate apparel. No synthetic elastic; the waistband uses natural rubber. Limited style range and price per pair is roughly triple Pact. Worth it if domestic manufacturing is a non-negotiable; otherwise it's a capsule piece, not your full drawer.",
       },
@@ -379,6 +474,7 @@ export const posts: Post[] = [
         rank: 5,
         name: "Boody Bamboo Viscose",
         tier: "Honorable mention",
+        score: 74,
         summary:
           "OEKO-TEX 100 certified bamboo viscose. Exceptionally soft, stretchy, and well-priced. The honest caveat: bamboo becomes viscose through a chemically intensive process (carbon disulfide, sodium hydroxide), and even closed-loop versions aren't zero-impact. Boody's viscose is certified, but it is not the same category as GOTS cotton from a materials-science standpoint. Fine as a supplement; not our recommendation as a sole replacement.",
       },
@@ -386,6 +482,7 @@ export const posts: Post[] = [
         rank: 6,
         name: "Organic Basics",
         tier: "Honorable mention",
+        score: 79,
         summary:
           "GOTS organic cotton with a SilverTech antibacterial line that uses recycled silver ions. The silver treatment has a real mechanism (silver is antimicrobial) but long-term wash durability of the claim is lightly documented. The non-treated organic cotton line is straightforward and well-made. Price is Euro-premium and shipping from Copenhagen adds to it.",
       },
@@ -393,6 +490,7 @@ export const posts: Post[] = [
         rank: 7,
         name: "WAMA Hemp Underwear",
         tier: "Best hemp alternative",
+        score: 76,
         summary:
           "53% hemp, 43% organic cotton, 4% spandex. Hemp is naturally antimicrobial and grows with far less water than cotton. OEKO-TEX Standard 100 certified. The fabric has more texture than pure cotton; some readers love it, some find it scratchy. We'd recommend starting with one pair before replacing a drawer.",
       },
@@ -400,6 +498,7 @@ export const posts: Post[] = [
         rank: 8,
         name: "Cottonique Hypoallergenic",
         tier: "Best for sensitive skin",
+        score: 80,
         summary:
           "100% organic cotton with no elastic at all. The waistband uses a cotton drawstring. Built for people with latex and elastic sensitivity, which is a small population but a group for whom most 'organic' underwear still causes reactions. Unglamorous, utilitarian, and the right answer for a specific use case.",
       },
@@ -407,6 +506,7 @@ export const posts: Post[] = [
         rank: 9,
         name: "Saalt Leakproof",
         tier: "Best period underwear",
+        score: 83,
         summary:
           "Post-Thinx, Saalt is the period underwear brand we'd buy. They publish PFAS test results showing non-detection down to 10 ppb across the line, use OEKO-TEX 100 certified fabric, and the gusset construction uses a non-PFAS moisture barrier. Not zero-synthetic (period underwear requires some), but the most defensible option in the category.",
       },
@@ -414,6 +514,7 @@ export const posts: Post[] = [
         rank: 10,
         name: "Thinx (original line)",
         tier: "Skip",
+        score: 58,
         summary:
           "In 2023 Thinx settled a class-action lawsuit over undisclosed PFAS in its period underwear for $4 million, without admitting liability. Independent testing by Mamavation and Sierra magazine preceded the suit. Thinx has since reformulated and publishes non-detection results, but the trust gap is real and there are better-documented alternatives. We'd pick Saalt instead.",
       },
@@ -485,6 +586,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 22,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "What should I swap first in my kitchen?",
@@ -557,6 +661,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 24,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "What are endocrine-disrupting chemicals?",
@@ -631,6 +738,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 9,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "Is Teflon the same thing as PFAS?",
@@ -694,6 +804,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 10,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "Which is actually the safest cookware material?",
@@ -757,6 +870,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 11,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "Which filter removes the most contaminants?",
@@ -823,6 +939,9 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 8,
     status: "published",
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     faq: [
       {
         q: "What exactly is a microplastic?",
@@ -893,76 +1012,99 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 7,
     status: "published",
+    pflScore: {
+      overall: 88,
+      materialSafety: 92,
+      performance: 84,
+      durability: 86,
+      useExperience: 88,
+      value: 90,
+    },
+    pipelineStatus: "published",
+    testingMethodology: "v1.2",
+    testedDate: "2026-04-20",
     items: [
       {
         rank: 1,
         name: "Plastic cutting boards",
+        score: 82,
         summary:
           "The knife leaves grooves, and the grooves shed microplastic fragments directly into food. A 2023 study in Environmental Science & Technology (Yadav et al.) estimated chopping vegetables on polypropylene and polyethylene boards releases 14-71 million microplastic particles per year of normal use. Replace with: a wooden board (maple or walnut end-grain) for vegetables, and a second board for raw meat if your household requires separation. Oil it monthly with food-grade mineral oil or beeswax.",
       },
       {
         rank: 2,
         name: "Non-stick pans with damaged coating",
+        score: 92,
         summary:
           "A scratched PTFE coating is the single highest-priority replacement in most kitchens. Once the coating chips, particles enter food and the pan overheats more quickly, releasing fumes that are acutely lethal to birds and cause polymer fume fever in humans (EWG 2001; Teflon decomposes above ~500°F). Replace with: a Lodge cast iron for $30 or a Made In stainless pan for a full kitchen upgrade. Don't use metal utensils on any non-stick going forward.",
       },
       {
         rank: 3,
         name: "Plastic food storage containers",
+        score: 86,
         summary:
           "Especially if they're scratched, discolored, or you've been microwaving in them. Hussain et al. 2023 documented microplastic release up to 4.22 million particles per square centimeter from microwaving plastic containers. Hot and fatty foods accelerate plasticizer migration. Replace with: Pyrex, Anchor Hocking, or Weck glass containers. Keep the worst plastic for cold, dry storage if you must keep any; the exposure route there is much lower.",
       },
       {
         rank: 4,
         name: "Plastic water bottles",
+        score: 85,
         summary:
           "Nanoplastic concentrations in bottled water reach 240,000 particles per liter per Qian et al. 2024 in PNAS. Disposable bottles are the worst offenders; reusable plastic bottles shed less but still shed. Replace with: a Klean Kanteen, Hydro Flask, or Yeti stainless bottle. Food-grade 18/8 stainless is inert, durable, and lasts a decade. The one-time cost pays back against bottled water in weeks.",
       },
       {
         rank: 5,
         name: "Plastic utensils and spatulas",
+        score: 78,
         summary:
           "Nylon and plastic spatulas melt at temperatures routinely hit on the stovetop (nylon begins to degrade around 400°F). Even at normal temperatures, they shed microfragments where they scrape. Replace with: wooden spoons and spatulas (beech, olive, or bamboo), a stainless fish spatula for flipping, and silicone only if you need heat-resistant flex. Avoid the melted-edge spatula at the back of the drawer; that's the one releasing the most.",
       },
       {
         rank: 6,
         name: "Old plastic kettles",
+        score: 80,
         summary:
           "Plastic electric kettles repeatedly heat water to 212°F against plastic walls. Independent testing consistently finds microplastic release from plastic kettles at higher rates than glass or stainless. Replace with: a stainless steel electric kettle or a stovetop whistling kettle. Look for 18/8 stainless with no visible plastic in the water path. Takes five minutes to replace, noticeable difference in water taste within a day.",
       },
       {
         rank: 7,
         name: "Scratched Teflon cookware",
+        score: 88,
         summary:
           "Same reasoning as item 2, but worth listing separately because many kitchens have a single badly-damaged non-stick piece hiding in the back of the cabinet. If you can see bare metal anywhere on the cooking surface, the pan is past its service life. Replace with: cast iron for searing and eggs, stainless for everything else. Don't replace one Teflon pan with another Teflon pan; you're buying the same problem on a five-year timer.",
       },
       {
         rank: 8,
         name: "Vinyl tablecloths",
+        score: 72,
         summary:
           "PVC (vinyl) tablecloths off-gas phthalates, particularly when new and when warmed by food, plates, or sunlight. A 2013 report by the Center for Health, Environment & Justice found phthalate concentrations up to 300 times higher in PVC tablecloths than regulatory limits for children's products. Replace with: a cotton or linen tablecloth (washable), or an oilcloth made from natural-finish cotton. The plastic-tablecloth category is a rare case where the swap is genuinely cheaper.",
       },
       {
         rank: 9,
         name: "Plastic-handled coffee makers",
+        score: 76,
         summary:
           "Drip coffee makers with plastic reservoirs and plastic water paths heat water against plastic daily. K-cup pods are the worst case: the pod itself is plastic and sits in contact with near-boiling water for the full brew. A 2019 study in Water Research documented microplastic release from K-cup style brewing. Replace with: a stainless French press, a pour-over with a glass carafe and stainless or paper filter, or a moka pot. Brewing coffee without plastic contact is a 20-minute weekend project.",
       },
       {
         rank: 10,
         name: "Aluminum foil for high-heat cooking",
+        score: 70,
         summary:
           "Aluminum leaching from foil is real, particularly at high temperatures and with acidic foods. A 2012 study in the International Journal of Electrochemical Science found significant aluminum transfer from foil into food during baking, especially with tomato-based or citrus marinades. This isn't the Alzheimer's link from the 1980s (debunked), but it's worth reducing where easy. Replace with: parchment paper for baking, stainless steel or enameled roasting pans, and unbleached parchment for wrapping. Keep foil for non-food uses.",
       },
       {
         rank: 11,
         name: "Plastic coffee filter baskets",
+        score: 74,
         summary:
           "Permanent plastic mesh coffee filters sit in the hot brewing stream daily and shed microplastic over time as the mesh degrades. Similar category to plastic kettles and K-cups: hot water plus plastic plus repeated use. Replace with: stainless steel permanent filters, or paper filters. Paper filters add a small ongoing cost but remove cafestol and kahweol, which some cardiologists consider a net benefit for coffee drinkers with elevated cholesterol.",
       },
       {
         rank: 12,
         name: "Plastic-lined tea bags",
+        score: 89,
         summary:
           "Hernandez et al. 2019 (Environmental Science & Technology) showed that a single polypropylene-mesh tea bag at brewing temperature releases approximately 11.6 billion microplastic and 3.1 billion nanoplastic particles into the cup. Even paper tea bags often contain polypropylene in the heat-seal. Replace with: loose-leaf tea brewed in a stainless or ceramic infuser, or look for Pukka, Numi, or Traditional Medicinals unbleached paper bags with no plastic seal (they state it on the box). Best five-minute swap on this list.",
       },

@@ -8,6 +8,7 @@ import { Wordmark } from "./editorial/Wordmark";
 import { Dateline } from "./editorial/Dateline";
 import { ReadingProgress } from "./ReadingProgress";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { PipelineBadge } from "./PipelineBadge";
 import type { Locale } from "@/i18n/routing";
 
 export function Header() {
@@ -29,9 +30,11 @@ export function Header() {
     <header className="bg-paper/95 backdrop-blur sticky top-0 z-40 border-b border-forest/10">
       {/* Masthead strip — newspaper/editorial cue */}
       <div className="relative border-b border-forest/10 hidden md:block">
-        <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between">
+        <div className="mx-auto max-w-6xl px-6 py-2 flex items-center justify-between gap-4">
           <Dateline />
-          <div className="flex items-center gap-5 text-[11px] tracking-[0.14em] uppercase text-stone">
+          <div className="flex items-center gap-4 text-[11px] tracking-[0.14em] uppercase text-stone">
+            <PipelineBadge />
+            <span aria-hidden className="text-sage/50">·</span>
             <Link href="/editorial-standards" className="nav-link" {...curr("/editorial-standards")}>
               {t("editorialStandards")}
             </Link>
@@ -50,6 +53,11 @@ export function Header() {
         {/* Reading progress — very thin sage→forest→terracotta line that
             fills as the reader scrolls the page. The signature micro-interaction. */}
         <ReadingProgress />
+      </div>
+
+      {/* Mobile pipeline strip — sits just below the wordmark strip */}
+      <div className="md:hidden border-b border-forest/10 bg-paper/80 px-6 py-2 flex justify-center">
+        <PipelineBadge />
       </div>
 
       {/* Main bar */}

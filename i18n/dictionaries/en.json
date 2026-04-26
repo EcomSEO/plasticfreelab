@@ -323,7 +323,17 @@
     "citedValue": "{n} sources",
     "readTime": "Read time",
     "readTimeValue": "{n} min",
-    "lastUpdated": "Last updated"
+    "lastUpdated": "Last updated",
+    "pflScoreEyebrow": "PFL Score",
+    "scoreBreakdownEyebrow": "Score breakdown",
+    "scoreBreakdownTitle": "How the {n}/100 was earned.",
+    "scoreDim": {
+      "materialSafety": "Material safety",
+      "performance": "Performance",
+      "durability": "Durability",
+      "useExperience": "Use experience",
+      "value": "Value"
+    }
   },
   "comparison": {
     "eyebrow": "The Comparison",
@@ -513,6 +523,229 @@
       "name": "Clothing & Textiles",
       "shortName": "Clothing",
       "oneLiner": "Microplastics, PFAS in clothes, and the textile supply chain — with the brands worth buying."
+    }
+  },
+  "pflScore": {
+    "label": "PFL Score",
+    "outOf": "{score}/100",
+    "tier": {
+      "excellent": "Excellent",
+      "strongBuy": "Strong buy",
+      "good": "Good",
+      "caveatBuy": "Caveat buy",
+      "skip": "Skip"
+    }
+  },
+  "pipeline": {
+    "label": "In the lab",
+    "queued": "queued",
+    "updatedWeekly": "Updated weekly",
+    "inTheLabCount": "{n} in the lab",
+    "queuedCount": "{n} queued",
+    "badgeAriaLabel": "Pipeline: {testing} in the lab, {queued} queued. Open the full log.",
+    "h1": "What we're testing right now."
+  },
+  "pipelinePage": {
+    "metaTitle": "What we're testing right now",
+    "metaDescription": "An open log of every PlasticFreeLab investigation in flight, queued, or in writeup. Updated weekly.",
+    "eyebrow": "The pipeline",
+    "h1": "What we're testing right now.",
+    "subtitle": "An open log of every investigation in flight, queued, or in writeup. Updated weekly. We share this because secrecy is for advertorials.",
+    "crumbLabel": "Pipeline",
+    "section": {
+      "testing": "In the lab",
+      "drafted": "Drafted, in review",
+      "researching": "Researching, queued"
+    },
+    "status": {
+      "testing": "Testing",
+      "drafted": "Drafted",
+      "researching": "Researching"
+    },
+    "reviewerRole": {
+      "research": "Research lead",
+      "testing": "Testing lead",
+      "medical": "Medical reviewer",
+      "sourcing": "Sourcing lead"
+    },
+    "expectedTBD": "Date TBD",
+    "itemsCount": "{n} items",
+    "methodologyFooter": "Testing methodology · v1.2 · Last updated {date} · See",
+    "hubsLine": "Browse the hubs:"
+  },
+  "methodologyByline": {
+    "scored": {
+      "reviewerName": "Carlos Sánchez",
+      "reviewerRole": "Testing lead",
+      "testedVia": "Tested via PFL methodology {version}",
+      "labRun": "Lab tests run {date}"
+    },
+    "plain": {
+      "team": "The PlasticFreeLab Team",
+      "published": "Published {date}",
+      "refreshed": "Refreshed {date}"
+    }
+  },
+  "methodologyPage": {
+    "metaTitle": "PFL Methodology",
+    "metaDescription": "How PlasticFreeLab scores every product. Public methodology, versioned like software.",
+    "eyebrow": "Editorial standards",
+    "h1": "PFL Methodology",
+    "intro": "Every product on PlasticFreeLab is scored against the same five-dimension rubric. The rubric is public, versioned like software, and updated when better evidence makes our previous version look incomplete.",
+    "currentVersionTitle": "Current version",
+    "currentVersionBody": "v1.2, in force since April 2026. Adds a PFAS panel using SGS Method 5021A, expands the durability scoring window from 12 to 24 months, and revises the value calculation to account for warranty terms.",
+    "currentVersionLink": "Read the v1.2 specification →",
+    "philosophyTitle": "Why a public methodology",
+    "philosophyP1": "If we can't show how we picked, the picks aren't worth much. Every score on this site is a number that any reader can replicate from the same evidence. We publish the dimensions, the weights, the sub-tests, and the lab partners. We disclose what we did not test, and why.",
+    "philosophyP2": "Methodology drift is the most common failure mode in product review writing. Our defense against it is the version number. When we change the rubric, we ship a new version, archive the old one, and re-score the affected posts. Readers see exactly what changed.",
+    "changeLogTitle": "Change log",
+    "changeLog": {
+      "v12": "Added PFAS panel using SGS Method 5021A. Expanded durability window 12→24 months. Revised value formula to weight warranty terms.",
+      "v11": "Initial public release. Five-dimension rubric, five reviewer roles, dispute policy."
+    },
+    "disputeTitle": "Dispute resolution",
+    "disputeBody": "If a brand believes our scoring is wrong, they can submit a dispute with documentation. We re-test on our bench, not theirs. If their data contradicts ours, we publish both. We do not edit live scores under threat of legal action; we update them when better evidence arrives."
+  },
+  "methodologyV12": {
+    "metaTitle": "PFL Methodology v1.2",
+    "metaDescription": "The full v1.2 specification: five weighted dimensions, sub-tests, lab partners, reviewer credentials.",
+    "eyebrow": "Specification · v1.2",
+    "h1": "PFL Methodology v1.2",
+    "updated": "Updated April 2026 · Previous version: v1.1 ↗",
+    "changelogLink": "All versions",
+    "intro": "This is the working specification for every product score published on PlasticFreeLab between April 2026 and the next versioned release. Five weighted dimensions, twenty-three sub-tests, four reviewer roles, and a dispute policy that doesn't move under pressure.",
+    "weightsTitle": "The five dimensions",
+    "weightsBody": "Every score on this site is a weighted average of the five dimensions below. The weights reflect what we believe matters most for a non-toxic-living recommendation: material safety dominates because it's why our reader is here, and value sits last because price is recoverable while exposure is not.",
+    "subtestsTitle": "Sub-tests",
+    "dimension": {
+      "materialSafety": {
+        "title": "Material safety",
+        "oneLiner": "What it's made of, what it leaches, what's certified.",
+        "body": "Material safety is what most readers come for and the dimension we weight highest. We score the disclosed bill of materials, third-party certifications (NSF, GOTS, OEKO-TEX, MADE SAFE, Greenguard), and any contaminant test data the manufacturer publishes. Where the manufacturer is silent, we order our own panels through accredited labs."
+      },
+      "performance": {
+        "title": "Performance",
+        "oneLiner": "Does it actually do its job — well — under realistic load.",
+        "body": "A non-toxic product that doesn't perform is not a recommendation. We measure category-appropriate function: heat distribution and retention for cookware, contaminant reduction and flow rate for filters, structural recovery and breathability for textiles. Performance scores are bench-measured, not vibe-checked."
+      },
+      "durability": {
+        "title": "Durability",
+        "oneLiner": "How well it survives 24 months of normal use.",
+        "body": "Coatings chip, elastic dies, gaskets shrink. Durability scoring captures the failure modes that turn a non-toxic product into a sub-toxic one twelve months in. Our panel runs each item through a 24-month accelerated wear cycle plus longitudinal field reports from real households."
+      },
+      "useExperience": {
+        "title": "Use experience",
+        "oneLiner": "What it's like to live with for a month.",
+        "body": "Weight, balance, cleanability, learning curve, sound, smell. The qualitative dimension — but scored against fixed rubrics so the result reproduces between reviewers. Three panel members each spend a calendar month with the product before scoring."
+      },
+      "value": {
+        "title": "Value",
+        "oneLiner": "Cost per year of expected service life — relative to category.",
+        "body": "We score value as expected cost per year of service over a 10-year horizon, normalized against the category median. A pricey item with a 30-year warranty often outscores a cheap item with a 2-year coating. Warranty terms, refurbishment availability, and resale market all feed in."
+      }
+    },
+    "subtest": {
+      "pfasPanel": {
+        "title": "PFAS panel (SGS Method 5021A)",
+        "body": "Quantitative analysis for 40 PFAS compounds at parts-per-billion sensitivity. New in v1.2."
+      },
+      "leadCadmium": {
+        "title": "Lead and cadmium screen",
+        "body": "Surface-contact extraction per FDA Compliance Policy Guide 7117.06. Pass / numeric value reported."
+      },
+      "phthalate": {
+        "title": "Phthalate panel",
+        "body": "GC-MS analysis for the eight phthalates restricted under CPSIA. Reported in micrograms per gram."
+      },
+      "vocChamber": {
+        "title": "VOC chamber",
+        "body": "72-hour CDPH 01350 chamber test for total VOCs and the priority list of 35 individual compounds."
+      },
+      "supplier": {
+        "title": "Supplier disclosure audit",
+        "body": "Tier 1 manufacturer published, with country and certification of each material layer."
+      },
+      "heatMap": {
+        "title": "Infrared heat map",
+        "body": "Surface temperature mapped at 30-second intervals across a 12-minute heat curve."
+      },
+      "deglaze": {
+        "title": "Deglaze + sear panel",
+        "body": "Standardized protein sear plus acidic deglaze, scored on browning, release, and surface integrity."
+      },
+      "filterEfficacy": {
+        "title": "Contaminant reduction",
+        "body": "NSF-spec influent challenge water, effluent measured for the ten priority contaminants."
+      },
+      "loadCycle": {
+        "title": "Load-cycle test",
+        "body": "Full-capacity continuous use over the cartridge's stated lifetime, with end-of-life retest."
+      },
+      "coatingWear": {
+        "title": "Accelerated coating wear",
+        "body": "ASTM-style abrasion cycle equivalent to roughly 24 months of normal home use."
+      },
+      "warrantyAudit": {
+        "title": "Warranty audit",
+        "body": "Coverage, exclusions, and median claim resolution time pulled from public small-claims filings where available."
+      },
+      "fieldReports": {
+        "title": "Longitudinal field reports",
+        "body": "Six panel households report monthly for 12 months. Mid-test attrition is itself a signal."
+      },
+      "weight": {
+        "title": "Weight + ergonomics",
+        "body": "Mass, balance, and reach for the relevant ergonomic dimensions. Scored against a category baseline."
+      },
+      "cleanability": {
+        "title": "Cleanability",
+        "body": "Dishwasher and hand-wash cycles, scored on residue and finish degradation."
+      },
+      "panelScores": {
+        "title": "Panel qualitative scoring",
+        "body": "Three reviewers, fixed rubric, blind to brand where the geometry allows it."
+      },
+      "costPerYear": {
+        "title": "Expected cost per year",
+        "body": "Purchase price plus consumables, amortized over expected service life."
+      },
+      "warrantyDelta": {
+        "title": "Warranty value adjustment",
+        "body": "Multi-year warranties that pay out reduce the per-year cost; weak warranties don't."
+      },
+      "marketComparable": {
+        "title": "Market comparable score",
+        "body": "Indexed against the median in-category cost-per-year of all current shortlist entrants."
+      }
+    },
+    "labPartnersTitle": "Lab partners",
+    "labPartnersBody": "We use SGS, Eurofins, and Intertek for quantitative chemical panels. For PFAS specifically, SGS's Method 5021A is our default. Lab partners are listed as a transparency commitment; partner status doesn't affect scoring, and labs do not see brand identity until the report is filed. (Full partner list and reciprocity policy: to be wired alongside the launch of the v1.3 spec.)",
+    "reviewersTitle": "Reviewer credentials",
+    "reviewersIntro": "Four roles, each empowered to kill a sentence the team can't defend.",
+    "reviewers": {
+      "research": {
+        "title": "Research lead",
+        "bio": "Reads the primary literature. Cites the trial, not the press release. Disagreement with the consensus only shows up when the data earns it."
+      },
+      "testing": {
+        "title": "Testing lead",
+        "bio": "Cooks on every pan for a month. Weighs every bottle. Measures every claim. Tools and notebooks outnumber opinions."
+      },
+      "medical": {
+        "title": "Medical reviewer",
+        "bio": "Flags YMYL claims. Confirms no fearmongering made it past the edit. Quietly removes the scary sentence."
+      },
+      "sourcing": {
+        "title": "Sourcing lead",
+        "bio": "Reads spec sheets. Triangulates manufacturer claims with third-party test data. Names the brands we reject, and says why."
+      }
+    },
+    "disputeTitle": "Dispute resolution",
+    "disputeBody": "If a brand believes our scoring is wrong, they can submit a dispute with documentation. We re-test on our bench, not theirs. If their data contradicts ours, we publish both. We do not edit live scores under threat of legal action; we update them when better evidence arrives.",
+    "changelogTitle": "Change log",
+    "changeLog": {
+      "v12": "Added PFAS panel via SGS Method 5021A. Expanded durability window from 12 to 24 months. Revised value formula to weight warranty terms.",
+      "v11": "Initial public release. Five-dimension rubric, five reviewer roles, dispute policy."
     }
   }
 }

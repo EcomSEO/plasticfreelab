@@ -6,6 +6,7 @@ import type { Locale } from "@/i18n/routing";
 import { Eyebrow } from "./editorial/Eyebrow";
 import { Byline, Monogram } from "./editorial/Monogram";
 import { VerifiedSeal } from "./editorial/VerifiedSeal";
+import { PFLScore } from "./editorial/PFLScore";
 
 export async function MagazineGrid({
   featured,
@@ -96,6 +97,15 @@ export async function MagazineGrid({
               </p>
               <div className="mag-grid__byline-row">
                 <Byline readingTime={featured.post.readingTime} monogramSize={28} />
+                {featured.post.pflScore && (
+                  <span className="ml-3">
+                    <PFLScore
+                      score={featured.post.pflScore.overall}
+                      size="sm"
+                      showTier={false}
+                    />
+                  </span>
+                )}
                 <span className="mag-grid__testing-lead" aria-hidden>
                   <span className="mag-grid__sage-dot" />
                   {t("testingLead")}
@@ -131,6 +141,13 @@ export async function MagazineGrid({
                           {post.readingTime} MIN
                         </div>
                       </div>
+                      {post.pflScore && (
+                        <PFLScore
+                          score={post.pflScore.overall}
+                          size="sm"
+                          showTier={false}
+                        />
+                      )}
                     </Link>
                   </li>
                 );
