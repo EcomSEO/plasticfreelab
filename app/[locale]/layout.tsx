@@ -51,8 +51,14 @@ export async function generateMetadata({
   const tagline = siteTagline(locale);
   const description = siteDescription(locale);
 
+  // 2026-04-29 lock (01-plasticfreelab.md Phase 0 recommendation a):
+  // hreflang restored to EN + x-default only through Wave 1 close.
+  // Other locale routes still resolve to avoid breaking inbound URLs;
+  // only the hreflang surface is trimmed to prevent Search Console
+  // "alternate page with wrong hreflang" errors.
+  const HREFLANG_LOCALES: Locale[] = ["en"];
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) {
+  for (const l of HREFLANG_LOCALES) {
     languages[l] = localeUrl(l, "/");
   }
   languages["x-default"] = localeUrl("en", "/");
@@ -72,7 +78,7 @@ export async function generateMetadata({
       type: "website",
       siteName: SITE.name,
       locale: OG_LOCALE[locale],
-      alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
+      alternateLocale: HREFLANG_LOCALES.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
     },
     twitter: {
       card: "summary_large_image",

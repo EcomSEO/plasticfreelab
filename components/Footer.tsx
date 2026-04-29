@@ -2,6 +2,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { hubs, tHub } from "@/lib/content/hubs";
 import type { Locale } from "@/i18n/routing";
+import { RegulatoryAuthoritiesStrip } from "./RegulatoryAuthoritiesStrip";
 
 /**
  * Footer — runrepeat-style dark-teal utilitarian footer.
@@ -117,8 +118,13 @@ export async function Footer() {
         </div>
       </div>
 
+      {/* Per-locale environmental + DPA authority strip */}
+      <div className="mx-auto max-w-7xl px-4 md:px-6 [&_div]:!text-white/70 [&_a]:!text-white/85 [&_a:hover]:!text-white">
+        <RegulatoryAuthoritiesStrip />
+      </div>
+
       {/* Bottom strip */}
-      <div className="border-t border-white/15">
+      <div className="border-t border-white/15 mt-2">
         <div
           className="mx-auto max-w-7xl px-4 md:px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 text-[12px] text-white/70"
           style={{ fontFamily: "Roboto, sans-serif" }}

@@ -2,7 +2,17 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/content/site";
 import { hubs } from "@/lib/content/hubs";
 import { posts } from "@/lib/content/posts";
-import { defaultLocale, locales } from "@/i18n/routing";
+import { defaultLocale, type Locale } from "@/i18n/routing";
+
+/**
+ * Per the 2026-04-29 audit-fix sweep (01-plasticfreelab.md Phase 0
+ * recommendation a): hreflang declarations are restored to EN +
+ * x-default only through Wave 1 close. Other locale routes still
+ * resolve so inbound URLs keep working, but the sitemap surface is
+ * EN-only to avoid Search Console "alternate page with wrong hreflang"
+ * errors. Re-evaluate at Wave 4.
+ */
+const HREFLANG_LOCALES: readonly Locale[] = ["en"];
 import { localeUrl } from "@/lib/seo";
 
 /**
@@ -25,12 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     } = {}
   ): MetadataRoute.Sitemap => {
     const languages: Record<string, string> = {};
-    for (const l of locales) {
+    for (const l of HREFLANG_LOCALES) {
       languages[l] = localeUrl(l, path);
     }
     languages["x-default"] = localeUrl(defaultLocale, path);
 
-    return locales.map((l) => ({
+    return HREFLANG_LOCALES.map((l) => ({
       url: localeUrl(l, path),
       lastModified: opts.lastModified ?? now,
       changeFrequency: opts.changeFrequency,
