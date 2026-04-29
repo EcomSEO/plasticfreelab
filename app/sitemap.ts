@@ -68,13 +68,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...[
       "/about",
       "/editorial-standards",
+      "/corrections-policy",
+      "/methodology",
+      "/pipeline",
+      "/authors",
+      "/scientific-advisors",
       "/privacy",
       "/terms",
       "/affiliate-disclosure",
+      "/impressum",
       "/contact",
       "/newsletter",
     ].flatMap((path) =>
       buildEntry(path, { changeFrequency: "yearly", priority: 0.3 })
+    ),
+    // Per-author and per-advisor profile pages.
+    ...[
+      "/authors/linnea-asher",
+      "/authors/maren-keszler",
+      "/scientific-advisors/dr-holly-mason",
+    ].flatMap((path) =>
+      buildEntry(path, { changeFrequency: "monthly", priority: 0.5 })
     ),
   ];
   return entries;
