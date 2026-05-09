@@ -6,6 +6,7 @@ import type { Locale } from "@/i18n/routing";
 import { Breadcrumbs } from "../Breadcrumbs";
 import { ReviewStamp } from "../ReviewStamp";
 import { AffiliateDisclosure } from "../AffiliateDisclosure";
+import { ProductBuyChannels } from "../ProductBuyChannels";
 import { AuthorBio } from "../AuthorBio";
 import { RelatedPosts } from "../RelatedPosts";
 import { SourcesList } from "../SourcesList";
@@ -259,6 +260,10 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
               <p className="mt-5 text-[16.5px] text-charcoal/90 leading-relaxed max-w-[62ch]">
                 {post.ourPick.reason}
               </p>
+              <ProductBuyChannels
+                productKey={post.ourPick.productKey}
+                variant="full"
+              />
             </div>
           </section>
         )}
@@ -317,6 +322,10 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
                         <p className="mt-3 text-[15.5px] text-charcoal/85 leading-relaxed">
                           {p.summary}
                         </p>
+                        <ProductBuyChannels
+                          productKey={p.productKey}
+                          variant="compact"
+                        />
                       </div>
                     </div>
                   </li>
