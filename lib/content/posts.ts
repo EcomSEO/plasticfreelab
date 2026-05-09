@@ -64,6 +64,11 @@ export type Post = {
   faq?: Array<{ q: string; a: string }>;
   sources?: Array<{ label: string; url: string }>;
   featured?: boolean;
+  /** Optional category atmosphere image rendered above the post body
+   *  on comparison + pillar templates. Sourced from kie.ai per the
+   *  kie-ai-cookbook §brand atmosphere shots — never depicts a
+   *  specific branded product. Path is repo-relative starting with /. */
+  heroImage?: { src: string; alt: string };
   i18n?: Partial<Record<Locale, LocalePost>>;
   /** Composite PFL Score — set on comparison + listicle posts; undefined for pillars/clusters. */
   pflScore?: PFLScoreBreakdown;
@@ -88,6 +93,10 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 16,
     status: "published",
+    heroImage: {
+      src: "/images/categories/non-toxic-cookware.jpg",
+      alt: "Three unbranded cooking pots arranged on a wooden cutting board on a stone counter with morning kitchen light.",
+    },
     featured: true,
     pflScore: {
       overall: 92,
@@ -269,6 +278,10 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 14,
     status: "published",
+    heroImage: {
+      src: "/images/categories/water-filters.jpg",
+      alt: "Clean glass of water on a kitchen counter catching window light, with a generic countertop water dispenser blurred in the background.",
+    },
     pflScore: {
       overall: 93,
       materialSafety: 95,
@@ -678,6 +691,10 @@ export const posts: Post[] = [
       "What microplastics and EDCs are, where they come from, what the science actually says, and what to do about it, without the panic.",
     hub: "microplastics-and-edcs",
     postType: "pillar",
+    heroImage: {
+      src: "/images/categories/microplastics-edcs.jpg",
+      alt: "Top-down close-up of clean transparent water in a glass beaker on a slate surface with a single ripple, calm investigative editorial composition.",
+    },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
     readingTime: 24,
@@ -887,6 +904,10 @@ export const posts: Post[] = [
       "Brita, Berkey, AquaTru: three filters, three different jobs. Here's the honest comparison with the contaminant data.",
     hub: "non-toxic-kitchen",
     postType: "cluster",
+    heroImage: {
+      src: "/images/categories/water-filters.jpg",
+      alt: "Clean glass of water on a kitchen counter catching window light, with a generic countertop water dispenser blurred in the background.",
+    },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
     readingTime: 11,

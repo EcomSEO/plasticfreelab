@@ -8,6 +8,8 @@ What's wired, what still needs operator inputs, how to add new products.
 
 The affiliate plumbing is fully wired and live. Every link uses `rel="sponsored nofollow noopener"`. Every link is preceded by a visible `<AffiliateLabel>` (FTC + EU UWG §5a compliant). The Amazon Associates tag is the operator's real account tag `ecomseo02-20`, verified against the operator's other approved sites (wasstripsreview.nl, bestwatercolorbrushes.com).
 
+Category atmosphere imagery is sourced from kie.ai per the network image cookbook — generic kitchen / water / pantry / bathroom scenes that never depict a specific branded product. Per-product photography uses Amazon's product CDN (which Associates are explicitly permitted to hotlink).
+
 Six of the network's comparison-post products are bound to the registry and now render buy buttons:
 
 | Product (in posts.ts) | productKey | Primary path | Amazon ASIN |
@@ -19,6 +21,57 @@ Six of the network's comparison-post products are bound to the registry and now 
 | AquaTru Countertop RO | `aquatru-classic` | aquatruwater.com | _pending_ |
 | Big Berkey | `berkey-big` | berkey-direct | _pending_ |
 | Brita Elite Pitcher | `brita-elite-pitcher` | Amazon (already primary) | (set) |
+
+---
+
+## Imagery — what's live, what's pending
+
+### Category atmosphere shots (live)
+
+Six kie.ai-generated atmosphere images shipped to `public/images/categories/`:
+
+| Slug | Used by post(s) | Notes |
+|---|---|---|
+| `non-toxic-cookware.jpg` | best-non-toxic-cookware | Three unbranded cooking pots on wooden cutting board |
+| `water-filters.jpg` | best-water-filters, brita-vs-berkey-vs-aquatru | Glass of water on kitchen counter |
+| `glass-food-storage.jpg` | (available; bind when post ships) | Pantry shelf with unbranded glass jars |
+| `personal-care.jpg` | (available; bind when post ships) | Unbranded amber bottles on marble |
+| `cleaning.jpg` | (available; bind when post ships) | Unbranded amber spray bottle on linen |
+| `microplastics-edcs.jpg` | microplastics-and-edcs-guide | Glass beaker with single ripple |
+
+To bind a category image to a post, add `heroImage` to the Post entry:
+
+```ts
+{
+  slug: "...",
+  heroImage: {
+    src: "/images/categories/cleaning.jpg",
+    alt: "Plain spec describing what is in the frame.",
+  },
+  ...
+}
+```
+
+Templates auto-render the image in a 16:9 figure between the H1 and the byline. No template edits needed.
+
+### Per-product photos (operator action)
+
+Per-product imagery is NOT auto-generated — every product photo must be a real photo of the real product. The cleanest path:
+
+1. **Find the canonical Amazon listing** for the product (search by brand + model).
+2. **Right-click the product photo on Amazon → Copy image address.** The URL will look like `https://m.media-amazon.com/images/I/{id}.jpg` or `https://m.media-amazon.com/images/I/{id}._AC_SL1500_.jpg`.
+3. **Paste into the registry entry:**
+   ```ts
+   "lodge-cast-iron-skillet": {
+     // ... existing fields ...
+     imageUrl: "https://m.media-amazon.com/images/I/...jpg",
+     imageAlt: "Lodge 12-inch cast iron skillet, top-down view.",
+   },
+   ```
+
+Amazon Associates are explicitly permitted to hotlink images via the m.media-amazon.com CDN. (See Amazon Associates Operating Agreement §6 — "Recommended Listings.")
+
+**Do NOT use kie.ai for individual product photos.** Per the kie.ai cookbook compliance rules: "NO branded packaging readable. Generic plain containers only." A fake AI image of a Caraway pan or Lodge skillet would be brand misuse + reader-trust suicide.
 
 ---
 
