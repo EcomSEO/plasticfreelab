@@ -454,8 +454,8 @@ export const posts: Post[] = [
     readingTime: 12,
     status: "published",
     heroImage: {
-      src: "/images/categories/personal-care.jpg",
-      alt: "Three unbranded amber glass bottles on a marble surface in soft morning light.",
+      src: "/images/categories/textiles.jpg",
+      alt: "Neatly folded stack of plain unbranded ivory cotton textiles on a wooden bench in soft morning window light.",
     },
     pflScore: {
       overall: 91,
@@ -621,8 +621,8 @@ export const posts: Post[] = [
     hub: "non-toxic-kitchen",
     postType: "pillar",
     heroImage: {
-      src: "/images/categories/cleaning.jpg",
-      alt: "Plain unbranded amber spray bottle on a folded white linen towel in soft morning light.",
+      src: "/images/categories/kitchen-pillar.jpg",
+      alt: "Calm minimal kitchen with a plain ceramic mug, wooden cutting board, and small herb pot on a stone counter.",
     },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
@@ -780,8 +780,8 @@ export const posts: Post[] = [
       "Teflon, PFAS, PFOA: what's actually in your non-stick pan, what the evidence shows about exposure, and when it's worth replacing.",
     hub: "non-toxic-kitchen",
     heroImage: {
-      src: "/images/categories/non-toxic-cookware.jpg",
-      alt: "Three unbranded cooking pots arranged on a wooden cutting board on a stone counter with morning kitchen light.",
+      src: "/images/categories/cookware-alt.jpg",
+      alt: "Two unbranded matte-black cast-iron pans stacked on a slate countertop next to a sprig of thyme and a folded white linen cloth.",
     },
     postType: "cluster",
     publishedAt: "2026-04-20",
@@ -921,8 +921,8 @@ export const posts: Post[] = [
     hub: "non-toxic-kitchen",
     postType: "cluster",
     heroImage: {
-      src: "/images/categories/water-filters.jpg",
-      alt: "Clean glass of water on a kitchen counter catching window light, with a generic countertop water dispenser blurred in the background.",
+      src: "/images/categories/water-filters-alt.jpg",
+      alt: "Clear stream of water pouring from a plain glass pitcher into a clean drinking glass on a stone counter, soft morning kitchen light.",
     },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
@@ -990,8 +990,8 @@ export const posts: Post[] = [
     title: "What Are Microplastics? A Plain-English Explainer",
     h1: "What are microplastics?",
     heroImage: {
-      src: "/images/categories/microplastics-edcs.jpg",
-      alt: "Top-down close-up of clean transparent water in a glass beaker on a slate surface with a single ripple, calm investigative editorial composition.",
+      src: "/images/categories/microplastics-alt.jpg",
+      alt: "Top-down macro of plain natural-fibre linen weave on a wooden surface, soft window light, calm investigative composition.",
     },
     description:
       "Microplastics are small plastic fragments under 5mm. Here's what they're made of, where they come from, and what the evidence says about human health, calmly.",
@@ -1071,8 +1071,8 @@ export const posts: Post[] = [
     hub: "non-toxic-kitchen",
     postType: "listicle",
     heroImage: {
-      src: "/images/categories/non-toxic-cookware.jpg",
-      alt: "Three unbranded cooking pots arranged on a wooden cutting board on a stone counter with morning kitchen light.",
+      src: "/images/categories/kitchen-decluttering.jpg",
+      alt: "Kitchen counter with three plain unbranded items being removed and placed into a brown paper bag in soft morning light.",
     },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",

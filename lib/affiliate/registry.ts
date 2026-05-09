@@ -81,6 +81,24 @@ const AMAZON_TAG = "ecomseo02-20";
 const amazonUrl = (asin: string) =>
   `https://www.amazon.com/dp/${asin}/?tag=${AMAZON_TAG}`;
 
+/**
+ * Build the deterministic Amazon product image URL from an ASIN.
+ *
+ * Amazon serves a stable per-ASIN cover image at the
+ * `images-na.ssl-images-amazon.com/images/P/{ASIN}.01.LZZZZZZZ.jpg`
+ * endpoint — this is the same pattern used by the operator's other
+ * approved sites (bestwatercolorbrushes.com, wasstripsreview.nl) and
+ * by Amazon's own partner widgets. Associates are explicitly
+ * permitted to hotlink images from this CDN per Operating
+ * Agreement §6.
+ *
+ * The `LZZZZZZZ` size code is the largest available; Amazon resizes
+ * down to whatever the requesting browser needs via the URL's
+ * embedded scaling. No PA-API key required.
+ */
+export const amazonImageUrl = (asin: string) =>
+  `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
+
 export const AFFILIATES: Record<string, AffiliateLink> = {
   // ── Cookware ───────────────────────────────────────────────────────
   "caraway-cookware-set": {
