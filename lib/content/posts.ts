@@ -453,6 +453,10 @@ export const posts: Post[] = [
     updatedAt: "2026-04-20",
     readingTime: 12,
     status: "published",
+    heroImage: {
+      src: "/images/categories/personal-care.jpg",
+      alt: "Three unbranded amber glass bottles on a marble surface in soft morning light.",
+    },
     pflScore: {
       overall: 91,
       materialSafety: 94,
@@ -616,6 +620,10 @@ export const posts: Post[] = [
       "Everything worth swapping in your kitchen, ranked by impact. Cookware, water, storage, small appliances, utensils. The complete priority list.",
     hub: "non-toxic-kitchen",
     postType: "pillar",
+    heroImage: {
+      src: "/images/categories/cleaning.jpg",
+      alt: "Plain unbranded amber spray bottle on a folded white linen towel in soft morning light.",
+    },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
     readingTime: 22,
@@ -771,6 +779,10 @@ export const posts: Post[] = [
     description:
       "Teflon, PFAS, PFOA: what's actually in your non-stick pan, what the evidence shows about exposure, and when it's worth replacing.",
     hub: "non-toxic-kitchen",
+    heroImage: {
+      src: "/images/categories/non-toxic-cookware.jpg",
+      alt: "Three unbranded cooking pots arranged on a wooden cutting board on a stone counter with morning kitchen light.",
+    },
     postType: "cluster",
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
@@ -834,6 +846,10 @@ export const posts: Post[] = [
     slug: "cast-iron-vs-ceramic-vs-stainless",
     title: "Cast Iron vs Ceramic vs Stainless Steel: Which Is Actually Safest?",
     h1: "Cast iron vs ceramic vs stainless steel: which is actually safest?",
+    heroImage: {
+      src: "/images/categories/glass-food-storage.jpg",
+      alt: "Top-down photograph of a wooden pantry shelf with three plain unbranded glass storage jars in soft window light.",
+    },
     description:
       "A calm, cited comparison of the three main non-toxic cookware materials, with a verdict for each use case.",
     hub: "non-toxic-kitchen",
@@ -973,6 +989,10 @@ export const posts: Post[] = [
     slug: "what-are-microplastics",
     title: "What Are Microplastics? A Plain-English Explainer",
     h1: "What are microplastics?",
+    heroImage: {
+      src: "/images/categories/microplastics-edcs.jpg",
+      alt: "Top-down close-up of clean transparent water in a glass beaker on a slate surface with a single ripple, calm investigative editorial composition.",
+    },
     description:
       "Microplastics are small plastic fragments under 5mm. Here's what they're made of, where they come from, and what the evidence says about human health, calmly.",
     hub: "microplastics-and-edcs",
@@ -1050,6 +1070,10 @@ export const posts: Post[] = [
       "The kitchen audit checklist: 12 items worth replacing, in priority order, with a one-line reason and a one-line swap for each.",
     hub: "non-toxic-kitchen",
     postType: "listicle",
+    heroImage: {
+      src: "/images/categories/non-toxic-cookware.jpg",
+      alt: "Three unbranded cooking pots arranged on a wooden cutting board on a stone counter with morning kitchen light.",
+    },
     publishedAt: "2026-04-20",
     updatedAt: "2026-04-20",
     readingTime: 7,

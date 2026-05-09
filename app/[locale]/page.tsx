@@ -532,16 +532,25 @@ export default async function HomePage({
                 <li key={p.slug}>
                   <Link href={`/${p.slug}`} className="card-editorial block h-full">
                     <div
-                      className="aspect-[4/3] relative"
+                      className="aspect-[4/3] relative overflow-hidden"
                       style={{ backgroundColor: "#F7F7F7" }}
-                      aria-hidden
                     >
+                      {p.heroImage ? (
+                        <img
+                          src={p.heroImage.src}
+                          alt={p.heroImage.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                      ) : null}
                       {p.pflScore && (
                         <span
                           style={{
                             position: "absolute",
                             top: 8,
                             right: 8,
+                            zIndex: 1,
                           }}
                         >
                           <PFLScore
