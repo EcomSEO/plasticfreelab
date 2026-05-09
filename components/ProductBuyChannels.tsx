@@ -46,11 +46,16 @@ export function ProductBuyChannels({
    *     overrides + manually-pasted Amazon `m.media-amazon.com` URLs).
    *  2. Else, when an `amazonAsin` is registered, derive the deterministic
    *     image URL from the ASIN (the bestwatercolorbrushes.com pattern).
-   *  3. Else, render no image (the buy buttons still show).
+   *  3. Else, when the primary URL is itself an Amazon affiliate link,
+   *     parse the ASIN out of `/dp/{ASIN}/` and use that.
+   *  4. Else, render no image (the buy buttons still show).
    */
+  const asinFromPrimary =
+    a?.thirdPartyUrl?.match(/\/dp\/([A-Z0-9]{10})/i)?.[1];
+  const resolvedAsin = a?.amazonAsin ?? asinFromPrimary;
   const productImageUrl =
     a?.imageUrl ??
-    (a?.amazonAsin ? amazonImageUrl(a.amazonAsin) : undefined);
+    (resolvedAsin ? amazonImageUrl(resolvedAsin) : undefined);
   const productImageAlt =
     a?.imageAlt ?? (a ? `${a.brand} ${a.name}` : "");
 
