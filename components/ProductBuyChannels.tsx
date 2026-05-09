@@ -1,6 +1,10 @@
 import { AffiliateLink } from "./AffiliateLink";
 import { AffiliateLabel } from "./AffiliateLabel";
-import { getAffiliateChannels } from "@/lib/affiliate/registry";
+import {
+  AFFILIATES,
+  amazonImageUrl,
+  getAffiliateChannels,
+} from "@/lib/affiliate/registry";
 
 /**
  * ProductBuyChannels — renders the per-product affiliate buy buttons
@@ -34,10 +38,37 @@ export function ProductBuyChannels({
   if (!productKey) return null;
   const channels = getAffiliateChannels(productKey);
   if (channels.length === 0) return null;
+  const a = AFFILIATES[productKey];
+
+  /**
+   * Resolve the product image:
+   *  1. Operator-provided `imageUrl` wins (allows brand-direct media-kit
+   *     overrides + manually-pasted Amazon `m.media-amazon.com` URLs).
+   *  2. Else, when an `amazonAsin` is registered, derive the deterministic
+   *     image URL from the ASIN (the bestwatercolorbrushes.com pattern).
+   *  3. Else, render no image (the buy buttons still show).
+   */
+  const productImageUrl =
+    a?.imageUrl ??
+    (a?.amazonAsin ? amazonImageUrl(a.amazonAsin) : undefined);
+  const productImageAlt =
+    a?.imageAlt ?? (a ? `${a.brand} ${a.name}` : "");
 
   if (variant === "full") {
     return (
-      <div className="mt-6 flex flex-wrap items-center gap-3">
+      <div className="mt-6">
+        {productImageUrl && (
+          <figure className="mb-5 max-w-xs">
+            <img
+              src={productImageUrl}
+              alt={productImageAlt}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-sm border border-forest/10 bg-white p-2"
+            />
+          </figure>
+        )}
+        <div className="flex flex-wrap items-center gap-3">
         <AffiliateLabel />
         {channels.map((c) => (
           <AffiliateLink
@@ -54,12 +85,25 @@ export function ProductBuyChannels({
               : `Check price · ${c.label}`}
           </AffiliateLink>
         ))}
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="mt-4 flex flex-wrap items-center gap-2 text-[13px]">
+    <div className="mt-4">
+      {productImageUrl && (
+        <figure className="mb-3 max-w-[140px]">
+          <img
+            src={productImageUrl}
+            alt={productImageAlt}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-auto rounded-sm border border-forest/10 bg-white p-2"
+          />
+        </figure>
+      )}
+      <div className="flex flex-wrap items-center gap-2 text-[13px]">
       <AffiliateLabel />
       {channels.map((c, i) => (
         <span key={c.url} className="flex items-center gap-2">
@@ -76,6 +120,7 @@ export function ProductBuyChannels({
           </AffiliateLink>
         </span>
       ))}
+      </div>
     </div>
   );
 }

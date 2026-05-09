@@ -724,16 +724,22 @@ export default async function HomePage({
                 n: "01",
                 title: "We buy with our own money",
                 body: "Every product is purchased anonymously at retail. We send a sample to an ISO 17025 accredited lab and screen for the analytes that matter for that category.",
+                img: "/images/categories/step-buy.jpg",
+                alt: "Plain brown paper retail package on a wooden doorstep with an unbranded paper receipt resting on top in soft morning daylight.",
               },
               {
                 n: "02",
                 title: "We home-test in real kitchens",
                 body: "Every product runs through real-life use cases. Cookware gets seared, scrubbed, dishwashed. Filters get challenged with spiked water. Bottles get drop-tested.",
+                img: "/images/categories/step-test.jpg",
+                alt: "Plain glass laboratory beaker with clear liquid on a stainless steel laboratory bench in soft cool laboratory light.",
               },
               {
                 n: "03",
                 title: "Tests are standardized",
                 body: "Same protocol for every product in a category. Results are comparable across products. Methodology is published, versioned, and revisable.",
+                img: "/images/categories/step-protocol.jpg",
+                alt: "Open paper notebook with a blank grid-paper page on a wooden desk next to an unbranded fountain pen and folded measuring tape in soft morning light.",
               },
             ].map((step) => (
               <li
@@ -741,10 +747,17 @@ export default async function HomePage({
                 className="bg-white border border-gray-line rounded-sm p-5"
               >
                 <div
-                  className="aspect-[4/3] mb-4 rounded-sm"
+                  className="aspect-[4/3] mb-4 rounded-sm overflow-hidden"
                   style={{ backgroundColor: "#EEEEEE" }}
-                  aria-hidden
-                />
+                >
+                  <img
+                    src={step.img}
+                    alt={step.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <span
                   style={{
                     fontFamily: "Roboto, sans-serif",
