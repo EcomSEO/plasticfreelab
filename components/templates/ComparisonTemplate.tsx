@@ -165,6 +165,21 @@ export async function ComparisonTemplate({ post }: { post: Post }) {
           )}
         </div>
 
+        {/* Optional category atmosphere image — kie.ai sourced per
+         *  kie-ai-cookbook compliance rules. Never depicts a specific
+         *  branded product. */}
+        {post.heroImage && (
+          <figure className="mt-6 -mx-5 md:mx-0 overflow-hidden md:rounded-sm">
+            <img
+              src={post.heroImage.src}
+              alt={post.heroImage.alt}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </figure>
+        )}
+
         {/* Hero — runrepeat-style 2-col with H1 + deck on left, large PFL Score on right */}
         <div className="mt-4 grid lg:grid-cols-[1fr_auto] gap-8 items-start">
           <div>

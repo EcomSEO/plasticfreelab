@@ -59,6 +59,21 @@ export async function ClusterTemplate({ post }: { post: Post }) {
           {pt.h1}
         </h1>
 
+        {/* Optional category atmosphere image — kie.ai sourced per
+         *  kie-ai-cookbook compliance rules. Never depicts a specific
+         *  branded product. */}
+        {post.heroImage && (
+          <figure className="mt-7 -mx-5 md:mx-0 overflow-hidden md:rounded-sm">
+            <img
+              src={post.heroImage.src}
+              alt={post.heroImage.alt}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+          </figure>
+        )}
+
         <div className="mt-5 flex flex-wrap items-center gap-4">
           <ReviewStamp
             updatedAt={post.updatedAt}

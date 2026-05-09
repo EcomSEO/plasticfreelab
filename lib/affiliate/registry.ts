@@ -44,6 +44,14 @@ export type AffiliateLink = {
    *  brand-direct link. Add the real ASIN once verified — never
    *  guess. */
   amazonAsin?: string;
+  /** Optional product image URL. Two acceptable sources:
+   *  1. Amazon's product CDN (e.g. https://m.media-amazon.com/images/I/{id}.jpg)
+   *     — Amazon Associates are explicitly permitted to hotlink these.
+   *  2. Brand-direct media kit (with permission).
+   *  Never an AI-generated image of a specific branded product. */
+  imageUrl?: string;
+  /** Alt text for the product image. Required when imageUrl is set. */
+  imageAlt?: string;
   ownedShopUrl?: string;
   ownedShopAvailableFromDate?: string;
   category:
