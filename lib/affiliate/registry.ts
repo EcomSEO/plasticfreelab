@@ -28,6 +28,8 @@ export type AffiliateLink = {
   productKey: string;
   brand: string;
   name: string;
+  /** Primary affiliate URL (brand-direct ShareASale/Impact link OR
+   *  Amazon affiliate link if Amazon is the primary purchase path). */
   thirdPartyUrl: string;
   thirdPartyLabel:
     | "Amazon"
@@ -37,6 +39,11 @@ export type AffiliateLink = {
     | "Berkey"
     | "AquaTru"
     | "Brita";
+  /** Optional Amazon ASIN. When set, surfaces a secondary "Buy on
+   *  Amazon" link tagged with `ecomseo02-20` alongside the primary
+   *  brand-direct link. Add the real ASIN once verified — never
+   *  guess. */
+  amazonAsin?: string;
   ownedShopUrl?: string;
   ownedShopAvailableFromDate?: string;
   category:
@@ -51,7 +58,18 @@ export type AffiliateLink = {
   blurb: string;
 };
 
-const AMAZON_TAG = "plasticfreelab-20";
+/**
+ * Amazon Associates tracking tag — real account `ecomseo02-20`.
+ *
+ * Verified via the operator's other approved sites (wasstripsreview.nl,
+ * bestwatercolorbrushes.com) which use the same tag in published
+ * affiliate links. Do NOT swap to a placeholder or invented tag —
+ * unapproved tags violate the Operating Agreement and Amazon will
+ * close the account.
+ */
+const AMAZON_TAG = "ecomseo02-20";
+
+/** Build a tagged Amazon link from an ASIN. */
 const amazonUrl = (asin: string) =>
   `https://www.amazon.com/dp/${asin}/?tag=${AMAZON_TAG}`;
 
@@ -221,6 +239,67 @@ export function getAffiliate(
     return { url: a.ownedShopUrl, label: "PlasticFreeLab Shop", isOwned: true };
   }
   return { url: a.thirdPartyUrl, label: a.thirdPartyLabel, isOwned: false };
+}
+
+/**
+ * Returns the secondary "Buy on Amazon" channel for a product, when
+ * the registry entry has an `amazonAsin` set AND the primary URL
+ * is brand-direct (not already Amazon). Returns null when there is
+ * no useful secondary channel — i.e. the primary path already lands
+ * on Amazon, or the product has no ASIN registered.
+ */
+export function getAmazonChannel(
+  productKey: string,
+): { url: string; label: "Amazon" } | null {
+  const a = AFFILIATES[productKey];
+  if (!a || !a.amazonAsin) return null;
+  if (a.thirdPartyLabel === "Amazon") return null;
+  return { url: amazonUrl(a.amazonAsin), label: "Amazon" };
+}
+
+/**
+ * Returns ALL purchase channels for a product (primary + Amazon
+ * fallback if registered + future owned shop). Used by the product
+ * card to render multiple buy buttons.
+ */
+export function getAffiliateChannels(productKey: string): Array<{
+  url: string;
+  label: string;
+  isOwned: boolean;
+  isPrimary: boolean;
+}> {
+  const a = AFFILIATES[productKey];
+  if (!a) return [];
+  const out: Array<{
+    url: string;
+    label: string;
+    isOwned: boolean;
+    isPrimary: boolean;
+  }> = [];
+  if (a.ownedShopUrl) {
+    out.push({
+      url: a.ownedShopUrl,
+      label: "PlasticFreeLab Shop",
+      isOwned: true,
+      isPrimary: true,
+    });
+  } else {
+    out.push({
+      url: a.thirdPartyUrl,
+      label: a.thirdPartyLabel,
+      isOwned: false,
+      isPrimary: true,
+    });
+  }
+  if (a.amazonAsin && a.thirdPartyLabel !== "Amazon" && !a.ownedShopUrl) {
+    out.push({
+      url: amazonUrl(a.amazonAsin),
+      label: "Amazon",
+      isOwned: false,
+      isPrimary: false,
+    });
+  }
+  return out;
 }
 
 export function affiliatesByCategory(

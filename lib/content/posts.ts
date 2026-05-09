@@ -35,13 +35,25 @@ export type Post = {
   updatedAt: string;
   readingTime: number;
   status: "draft" | "stub" | "published";
-  ourPick?: { name: string; tier: string; reason: string; score?: number };
+  ourPick?: {
+    name: string;
+    tier: string;
+    reason: string;
+    score?: number;
+    /** Optional registry key — see lib/affiliate/registry.ts. When set,
+     *  the ComparisonTemplate renders <AffiliateLabel> + buy-channel
+     *  buttons (brand-direct + Amazon if ASIN present) below the
+     *  pick card, per FTC + EU UWG §5a labelling requirements. */
+    productKey?: string;
+  };
   products?: Array<{
     rank: number;
     name: string;
     tier: string;
     summary: string;
     score?: number;
+    /** Optional registry key — see lib/affiliate/registry.ts. */
+    productKey?: string;
   }>;
   items?: Array<{
     rank: number;
@@ -94,6 +106,7 @@ export const posts: Post[] = [
       score: 92,
       reason:
         "Made In's five-ply 304/430 stainless is the only set we tested that pairs full material transparency (every layer disclosed, US-forged handles) with genuinely even heat and a price that sits well below All-Clad. It's the set we'd buy again tomorrow.",
+      productKey: "made-in-stainless-clad",
     },
     products: [
       {
@@ -103,6 +116,7 @@ export const posts: Post[] = [
         score: 92,
         summary:
           "Five-ply construction with a 304 stainless cooking surface and a 430 magnetic exterior. Induction-ready, dishwasher-safe, and transparent about every layer. Heats evenly, browns properly, and the riveted handles don't wobble after a year of daily use. Not non-stick, which is the point: no coatings to chip, no PFAS anywhere. The learning curve is a warm pan and fat, nothing more.",
+        productKey: "made-in-stainless-clad",
       },
       {
         rank: 2,
@@ -119,6 +133,7 @@ export const posts: Post[] = [
         score: 87,
         summary:
           "A pre-seasoned 10.25-inch Lodge is the single most cost-effective non-toxic pan on the market. Raw iron, no coatings, no fillers. It's heavy, it needs drying after washing, and it won't deglaze acidic sauces well. But for searing, roasting, and weeknight eggs once it's seasoned, it outperforms pans at ten times the price. Iron leaching is minor and, for pre-menopausal women, often beneficial.",
+        productKey: "lodge-cast-iron-skillet",
       },
       {
         rank: 4,
@@ -127,6 +142,7 @@ export const posts: Post[] = [
         score: 85,
         summary:
           "Xtrema is full-ceramic, not ceramic-coated. That matters: there's no metal core under a coating that can chip and expose you to whatever's underneath. It heats slowly, cracks if you shock it with cold water, and isn't cheap. But for anyone who wants zero metal contact with food, it's the most defensible option we've found. Third-party lead and cadmium testing is published on their site.",
+        productKey: "xtrema-ceramic",
       },
       {
         rank: 5,
@@ -167,6 +183,7 @@ export const posts: Post[] = [
         score: 58,
         summary:
           "Beautiful, widely sold, and marketed as non-toxic. The ceramic coating is the weakness. Independent reviewers and long-term owners consistently report coating degradation within 12 to 24 months of normal use. When the coating fails, you're cooking on whatever aluminum alloy is underneath. Caraway is PFOA-free, but a coating that doesn't last isn't a long-term non-toxic solution.",
+        productKey: "caraway-cookware-set",
       },
       {
         rank: 10,
@@ -269,6 +286,7 @@ export const posts: Post[] = [
       score: 93,
       reason:
         "AquaTru is the only countertop filter we found with NSF certifications across the four standards that matter (42, 53, 58, and 401), meaning independent labs have verified removal of PFAS, lead, fluoride, and pharmaceutical residues. No plumbing required, no under-sink install, and filter replacement is tool-free.",
+      productKey: "aquatru-classic",
     },
     products: [
       {
@@ -278,6 +296,7 @@ export const posts: Post[] = [
         score: 93,
         summary:
           "Four-stage reverse osmosis in a countertop unit that plugs into a standard outlet. NSF certified to Standards 42, 53, 58, and 401: the full set that covers aesthetic contaminants, health-related contaminants, RO performance, and emerging compounds like PFOA, PFOS, and BPA. No plumber needed. Filters last six months to two years depending on stage. The tradeoff: you refill a tank, you wait, and it produces wastewater.",
+        productKey: "aquatru-classic",
       },
       {
         rank: 2,
@@ -286,6 +305,7 @@ export const posts: Post[] = [
         score: 82,
         summary:
           "A steel canister with ceramic-composite Black Berkey elements that uses gravity. No electricity, no plumbing. Independent lab reports show strong reduction of lead, chlorine, pathogens, and many VOCs. NSF certification is the weak point: Berkey does not hold NSF 53 on PFAS, and they've had regulatory disputes in California and Iowa. Excellent for off-grid, camping, and power outages. For daily home use with a grid connection, AquaTru's certification story is cleaner.",
+        productKey: "berkey-big",
       },
       {
         rank: 3,
@@ -334,6 +354,7 @@ export const posts: Post[] = [
         score: 70,
         summary:
           "Brita's upgraded cartridge (formerly LongLast) is NSF certified to Standards 42 and 53 for lead, chlorine, and a short list of other contaminants. It's a real filter, not a placebo. The ceiling is low: no PFAS removal, no fluoride removal, no pharmaceutical claims. Fine as a bridge for a few months. Not fine as your permanent solution if you live anywhere with known PFAS contamination.",
+        productKey: "brita-elite-pitcher",
       },
       {
         rank: 9,
