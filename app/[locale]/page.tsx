@@ -460,14 +460,14 @@ export default async function HomePage({
           </h2>
           <ul className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
             {[
-              { label: "Cookware", href: "/best-non-toxic-cookware" },
-              { label: "Food storage", href: "/12-things-to-throw-out-of-your-kitchen" },
-              { label: "Water filters", href: "/best-water-filters" },
-              { label: "Cleaning", href: "/guides/non-toxic-home" },
-              { label: "Personal care", href: "/guides/non-toxic-personal-care" },
-              { label: "Bedding", href: "/guides/non-toxic-home" },
-              { label: "Underwear", href: "/best-microplastic-free-underwear" },
-              { label: "Drinkware", href: "/brita-vs-berkey-vs-aquatru" },
+              { label: "Cookware", href: "/best-non-toxic-cookware", img: "/images/categories/non-toxic-cookware.jpg" },
+              { label: "Food storage", href: "/12-things-to-throw-out-of-your-kitchen", img: "/images/categories/glass-food-storage.jpg" },
+              { label: "Water filters", href: "/best-water-filters", img: "/images/categories/water-filters.jpg" },
+              { label: "Cleaning", href: "/guides/non-toxic-home", img: "/images/categories/cleaning.jpg" },
+              { label: "Personal care", href: "/guides/non-toxic-personal-care", img: "/images/categories/personal-care.jpg" },
+              { label: "Bedding", href: "/guides/non-toxic-home", img: "/images/categories/bedding.jpg" },
+              { label: "Underwear", href: "/best-microplastic-free-underwear", img: "/images/categories/textiles.jpg" },
+              { label: "Drinkware", href: "/brita-vs-berkey-vs-aquatru", img: "/images/categories/drinkware.jpg" },
             ].map((tile) => (
               <li key={tile.label}>
                 <Link
@@ -475,13 +475,20 @@ export default async function HomePage({
                   className="card-editorial block aspect-square p-3 flex flex-col justify-between"
                 >
                   <div
-                    className="rounded-sm flex-1 mb-2"
+                    className="rounded-sm flex-1 mb-2 overflow-hidden"
                     style={{
                       backgroundColor: "#F7F7F7",
                       border: "1px solid #EEEEEE",
                     }}
-                    aria-hidden
-                  />
+                  >
+                    <img
+                      src={tile.img}
+                      alt={`${tile.label} category`}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <span
                     style={{
                       fontFamily: "Roboto, sans-serif",

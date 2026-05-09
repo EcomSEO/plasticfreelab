@@ -57,8 +57,27 @@ export async function InvestigationTiles() {
               <li key={tile.key}>
                 <Link href={tile.href} className="inv-tile group">
                   <div className={`inv-tile__image inv-tile__image--${tile.tint}`}>
-                    <div className="inv-tile__gradient" aria-hidden />
-                    <div className="inv-tile__grain" aria-hidden />
+                    {post?.heroImage ? (
+                      <img
+                        src={post.heroImage.src}
+                        alt={post.heroImage.alt}
+                        loading="lazy"
+                        decoding="async"
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          zIndex: 0,
+                        }}
+                      />
+                    ) : (
+                      <>
+                        <div className="inv-tile__gradient" aria-hidden />
+                        <div className="inv-tile__grain" aria-hidden />
+                      </>
+                    )}
                     {tile.status === "published" && typeof score === "number" ? (
                       <span className="inv-tile__seal">
                         <PFLScore score={score} size="lg" showTier={false} />
